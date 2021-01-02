@@ -1,11 +1,12 @@
 let myname;
 myname = prompt('Enter name:');
 
-// Basic function declaration
+//Basic function declaration with a parameter.
 function greetUser(name) {
-    const GREETING = 'Good afternoon ';
+    const GREETING = 'Good morning ';
     document.querySelector('.greeting').innerHTML = GREETING + name;
 }
+//Basic function call with an argument.
 greetUser(myname);
 
 // Functions can be defined in several ways, each with different
@@ -15,7 +16,7 @@ greetUser(myname);
 // assigning it to a variable. Also demonstrates use of an anonymous
 // function (i.e. a function lacking an explicit name).
 let greetUser1 = function (name) {
-	const GREETING1 = 'Good day ';
+	const GREETING1 = 'Good afternoon ';
     document.querySelector('.greeting').innerHTML = GREETING1 + name;
 }
 //greetUser1(myname);
