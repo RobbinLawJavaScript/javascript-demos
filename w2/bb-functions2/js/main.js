@@ -1,4 +1,4 @@
-// basic function declaration
+// basic function declaration with no parameters.
 function greetUser() {
     let name;
     const GREETING = 'Good afternoon ';
@@ -9,5 +9,5 @@ function greetUser() {
     alert(GREETING + name);
     console.log('after alert');
 }
-// call this function in the script.
+//calling the function with no arguments.
 greetUser();
