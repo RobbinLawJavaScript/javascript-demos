@@ -4,8 +4,8 @@
 // declare a variable. Variables declared in 
 // the global scope are added to the global
 // object (window in the browser) and all vars
-// in a function are hoisted to the top of the 
-// function
+// in a function block or if block var's are hoisted to the top of the 
+// function or if
 var x = 1;
 if (x === 1) {
   var x = 2;
