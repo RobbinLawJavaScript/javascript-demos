@@ -15,6 +15,7 @@ console.log('ElementById: ' + someElement.innerHTML);
 // document.getElementsByClassName(selector) – returns a list of matched elements
 someElements = document.getElementsByClassName("someClass");
 console.log('ElementsByClassName: ' + someElements[0].innerHTML);
+console.log('ElementsByClassName: ' + someElements[1].innerHTML);
 
 // document.querySelector(selector) – returns the first matched element
 someElement = document.querySelector("p");
@@ -30,5 +31,6 @@ someElements = document.querySelectorAll("p");
 console.log('querySelectorAllByTag: ' + someElements[0].innerHTML);
 someElements = document.querySelectorAll("#someId1");
 console.log('querySelectorAllById: ' + someElements[0].innerHTML);
+console.log('querySelectorAllById: ' + someElements[1].innerHTML);
 someElements = document.querySelectorAll(".someClass1");
 console.log('querySelectorAllByClass: ' + someElements[0].innerHTML);
