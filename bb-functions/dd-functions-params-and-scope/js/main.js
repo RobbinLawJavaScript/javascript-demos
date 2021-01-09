@@ -8,13 +8,12 @@ myname = prompt('Enter name:');
 // a local reference to the parameter 'myname', the global 'myname' variable
 // is effectively unreachable within the function.
 function greetUser(myname) {
-    const GREETING = 'Good afternoon ';
-
+    const GREETING = 'Good morning ';
     document.querySelector('.greeting').innerHTML = GREETING + myname;
 }
 // Functions that define parameters are passed arguments when called.
 // Below, the first call will pass the global 'myname' variable's value
 // (i.e. whatever was entered in the prompt box) to the greetUser
-// function.
+// functions myname parameter.
 
 greetUser(myname);
