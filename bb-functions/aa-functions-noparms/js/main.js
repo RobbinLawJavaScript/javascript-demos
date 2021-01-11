@@ -11,3 +11,6 @@ function greetUser() {
 }
 //calling the function with no arguments.
 greetUser();
+
+function fun() {}
+fun();
