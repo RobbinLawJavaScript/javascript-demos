@@ -4,20 +4,20 @@ myname = prompt('Enter name:');
 //Basic function declaration with a parameter.
 function greetUser(name) {
     const GREETING = 'Good morning ';
-    document.querySelector('.greeting').innerHTML = GREETING + name;
+    document.querySelector('.greeting2').innerHTML = GREETING + name;
 }
-//Basic function call with an argument.
+//Basic function call with one argument.
 greetUser(myname);
 
 // Functions can be defined in several ways, each with different
 // implications.
 
-// Function expression, using a function in an expression and
+// Function expressions, using a function in an expression and
 // assigning it to a variable. Also demonstrates use of an anonymous
 // function (i.e. a function lacking an explicit name).
 let greetUser1 = function (name) {
 	const GREETING1 = 'Good afternoon ';
-    document.querySelector('.greeting').innerHTML = GREETING1 + name;
+    document.querySelector('.greeting2').innerHTML = GREETING1 + name;
 }
 //greetUser1(myname);
 
@@ -28,6 +28,6 @@ let greetUser1 = function (name) {
 // later on. Otherwise, the function can be used as shown previously. 
 let greetUser2 = (name) => {
 	const GREETING2 = 'Good night ';
-    document.querySelector('.greeting').innerHTML = GREETING2 + name;
+    document.querySelector('.greeting2').innerHTML = GREETING2 + name;
 } 
 //greetUser2(myname);
