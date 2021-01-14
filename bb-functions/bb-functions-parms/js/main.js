@@ -4,10 +4,10 @@ myname = prompt('Enter name:');
 //Basic function declaration with a parameter.
 function greetUser(name) {
     const GREETING = 'Good morning ';
-    document.querySelector('.greeting2').innerHTML = GREETING + name;
+    document.querySelector('p.greeting2').innerHTML = GREETING + name;
 }
 //Basic function call with one argument.
-greetUser(myname);
+//greetUser(myname);
 
 // Functions can be defined in several ways, each with different
 // implications.
@@ -30,4 +30,4 @@ let greetUser2 = (name) => {
 	const GREETING2 = 'Good night ';
     document.querySelector('.greeting2').innerHTML = GREETING2 + name;
 } 
-//greetUser2(myname);
+greetUser2(myname);
