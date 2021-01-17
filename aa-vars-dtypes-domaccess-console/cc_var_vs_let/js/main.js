@@ -1,11 +1,12 @@
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
 
 // Previous to ES6, var was the only way to 
-// declare a variable. Variables declared in 
-// the global scope are added to the global
-// object (window in the browser) and all vars
-// in a function block or if block var's are hoisted to the top of the 
-// function or if
+// declare a variable. Variables declared with var
+// are in the global scope and therefore are 
+// added to the global object (window in the browser).
+// All vars in a function or in any block 
+// (as shown in the if statement below) 
+// are hoisted to the top of the function or block.
 var x = 1;
 if (x === 1) {
   var x = 2;

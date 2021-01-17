@@ -7,7 +7,7 @@ function greetUser(name) {
     document.querySelector('p.greeting2').innerHTML = GREETING + name;
 }
 //Basic function call with one argument.
-//greetUser(myname);
+greetUser(myname);
 
 // Functions can be defined in several ways, each with different
 // implications.

@@ -1,5 +1,9 @@
 // basic function declaration with no parameters.
 function greetUser() {
+    // Both let and const do not add identifiers
+    // to the global scope as they are both block-
+    // scoped (rather than function-scoped like var).
+    // Variables declared with const cannot be reassigned.
     let myname;
     const GREETING = 'Good afternoon ';
     myname = prompt('Enter name:');
