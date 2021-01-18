@@ -17,7 +17,7 @@ greetUser(myname);
 // function (i.e. a function lacking an explicit name).
 let greetUser1 = function (name) {
 	const GREETING1 = 'Good afternoon ';
-    document.querySelector('.greeting2').innerHTML = GREETING1 + name;
+    document.querySelector('p.greeting2').innerHTML = GREETING1 + name;
 }
 //greetUser1(myname);
 
@@ -28,6 +28,6 @@ let greetUser1 = function (name) {
 // later on. Otherwise, the function can be used as shown previously. 
 let greetUser2 = (name) => {
 	const GREETING2 = 'Good night ';
-    document.querySelector('.greeting2').innerHTML = GREETING2 + name;
+    document.querySelector('p.greeting2').innerHTML = GREETING2 + name;
 } 
 //greetUser2(myname);
