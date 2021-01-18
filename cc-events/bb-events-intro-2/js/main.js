@@ -1,4 +1,5 @@
-let naitLink = document.querySelector('a');
+let naitLink = document.querySelector('a#a1');
+
 naitLink.addEventListener('click', linkHandler);
 
 // Event listener functions will be passed the
@@ -17,8 +18,8 @@ function linkHandler(evt) {
 // function are not required as they are not referenced
 // more than once. So, we can rewrite the example as:
 
-// document.querySelector('a').addEventListener('click', function (evt) {
-//     if( confirm('Ok to stay, Cancel to leave') ) {
-//         evt.preventDefault();
-//     }    
-// });
+document.querySelector('a#a2').addEventListener('click', function (evt) {
+    if( confirm('Ok to stay, Cancel to leave') ) {
+        evt.preventDefault();
+    }    
+});
