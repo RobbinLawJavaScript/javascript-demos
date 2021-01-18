@@ -7,6 +7,7 @@ naitLink.addEventListener('click', linkHandler);
 // used to get information about the event and to 
 // call methods/functions on the event as well 
 // e.g. preventDefault()
+
 function linkHandler(evt) {
     if( confirm('Ok to stay on this page, Cancel to leave and go to nait') ) {
         //preventDefault stops the normal operation of the href.
