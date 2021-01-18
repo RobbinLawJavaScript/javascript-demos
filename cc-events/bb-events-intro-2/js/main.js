@@ -9,6 +9,7 @@ naitLink.addEventListener('click', linkHandler);
 // e.g. preventDefault()
 function linkHandler(evt) {
     if( confirm('Ok to stay on this page, Cancel to leave and go to nait') ) {
+        //preventDefault stops the normal operation of the href.
         evt.preventDefault();
     }    
 }
