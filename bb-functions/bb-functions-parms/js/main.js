@@ -30,4 +30,4 @@ let greetUser2 = (name) => {
 	const GREETING2 = 'Good night ';
     document.querySelector('.greeting2').innerHTML = GREETING2 + name;
 } 
-greetUser2(myname);
+//greetUser2(myname);

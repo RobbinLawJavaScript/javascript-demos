@@ -24,7 +24,7 @@ const add = function(numberOne, numberTwo) {
 let result = add(7.0, 5);
 document.querySelector('p#p2').innerHTML = 'the result is ' + result;
 console.log("the result is " + result);
-result = add('7','8');
+result = add('7.0','5');
 document.querySelector('p#p3').innerHTML = 'the result is ' + result;
 console.log('the result is ' + result);
 
