@@ -1,5 +1,4 @@
-const featureLink = document.querySelector('p.city-intro>a');
-console.log(featureLink);
+const featureLink = document.querySelector('p.city-intro a');
 
 featureLink.addEventListener('click', featureLinkHandler);
 
@@ -9,7 +8,7 @@ function linkHandler(evt) {
         evt.preventDefault();
     }    
 }
-
+//Use the debugger in Chrome to see what is happening at each statement.
 function featureLinkHandler(evt) {     
     let featureImage = document.querySelector('img.feature');     
     featureImage.src = featureLink.href;     
