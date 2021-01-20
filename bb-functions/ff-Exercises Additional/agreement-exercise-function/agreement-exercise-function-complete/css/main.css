@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+dd {
+  margin-left: 2em;
+}
+
+dt {
+  float: left;
+}
+
+ol {
+  padding: 0;
+}
+
+ol,
+ol > li {
+  padding-left: 1em;
+}
+
+ol > li {
+  margin-bottom: 1em;
+}
+
+.signature {
+	float: left;
+}
+.signature.disclosing-signature {
+	margin-right: 200px;
+}
