@@ -23,7 +23,8 @@ function linkHandler(evt) {
 // more than once. So, we can rewrite the example as:
 
 document.querySelector('a#a2').addEventListener('click', function (evt) {
-    if( confirm('Ok to stay, Cancel to leave') ) {
+    if( confirm('Ok to stay on this page, Cancel to leave and go to nai') ) {
         evt.preventDefault();
-    }    
+    }
+    console.log(evt);    
 });

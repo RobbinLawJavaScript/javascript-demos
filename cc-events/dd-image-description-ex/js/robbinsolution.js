@@ -1,4 +1,6 @@
 const featureLink = document.querySelector('p.city-intro a');
+console.log(featureLink.outerHTML);
+console.log(featureLink.innerHTML);
 
 featureLink.addEventListener('click', featureLinkHandler);
 
