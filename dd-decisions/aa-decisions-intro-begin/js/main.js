@@ -4,12 +4,12 @@
 //otherwise, add it back!
 	
 // 1. select the target element
-var featureImage = document.querySelector('img.feature');
+let featureImage = document.querySelector('img.feature');
 // 2. add event listener
 featureImage.addEventListener('click', handleFeatureClick);
-// 3. create the event listener function
+// 3. create the event listener function or the event handler.
 function handleFeatureClick() {
-	var desc = document.querySelector('p.feature.description');
+	let desc = document.querySelector('p.feature.description');
 	//TODO: Change the code here
 	desc.classList.remove('hidden');
 }
