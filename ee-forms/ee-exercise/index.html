@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Practicing with Forms</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<main>
+	<section class="gallery">
+		<h1>The Parthenon in Athens</h1>
+		<div class="feature container">
+			<img src="images/athens.png" alt="Athens" title="The Parthenon in Athens"/>
+			<p class="feature tags"></p>
+			<form class="feature frm">
+				<label for="tag">
+					<input type="text" id="tags" name="tag" placeholder="tag"/>
+				</label>
+				<button type="submit">Add Tag</button>
+			</form>
+			<p class="feature error hidden">Tags cannot be empty</p>
+		</div>
+	</section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
