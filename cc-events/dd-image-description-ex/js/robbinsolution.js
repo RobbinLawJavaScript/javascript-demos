@@ -19,8 +19,8 @@ const pCityIntroAHandler2 = function (evt) {
 }
 //reference the p.city-intro>a element and add a click listener to it.
 
-//document.querySelector('p.city-intro a')
-//.addEventListener('click', pCityIntroAHandler1);
+// document.querySelector('p.city-intro a')
+// .addEventListener('click', pCityIntroAHandler1);
 
 // document.querySelector('p.city-intro>a')
 // .addEventListener('click', pCityIntroAHandler2);
