@@ -2,7 +2,7 @@ let ref = document.querySelector('ul.links');
 console.log(ref.outerHTML);
 console.log(ref.innerHTML);
 ref.addEventListener('click', function (evt) {
-    if (evt.target.tagName == 'A') {
+    if (evt.target.tagName === 'A') {
         if (confirm('Do you want to stay?')) {
             evt.preventDefault();
         }

@@ -13,18 +13,17 @@ function linkHandler(evt) {
         //preventDefault stops the normal operation of the href.
         evt.preventDefault();
         
-    }
-    console.log(evt);    
+    }    
 }
 
 
 // In the above example, the explicit variable and 
 // function are not required as they are not referenced
-// more than once. So, we can rewrite the example as:
+// more than once. So, we can rewrite the example all in one statement.
 
-document.querySelector('a#a2').addEventListener('click', function (evt) {
+document.querySelector('a#a2')
+.addEventListener('click', function (evt) {
     if( confirm('Ok to stay on this page, Cancel to leave and go to nai') ) {
         evt.preventDefault();
-    }
-    console.log(evt);    
+    }    
 });
