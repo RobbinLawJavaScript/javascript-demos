@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Form Validation</title>
+    <style>
+        input {
+            display: block;
+        }
+        .error {
+            color: red;
+        }
+
+        input.error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form class="frm-login">
+            <input class="field" data-validate="not-empty" type="text" name="username" placeholder="username">
+            <input class="field" data-validate="length" data-validate-min="6" type="password" name="password" placeholder="password">
+            <input type="checkbox" name="keep" value="true"><label>Keep me signed in</label>
+            <input type="submit" value="Login">
+            <div class="error"></div>
+        </form>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
