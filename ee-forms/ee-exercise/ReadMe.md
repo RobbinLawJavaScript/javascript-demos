@@ -4,7 +4,7 @@
 
 ## Forms and JavaScript
 
-> To follow along with this exercise, you will need to open the [practice/index.html](./practice/index.html) in your browser with Live-Server.
+> To follow along with this exercise, you will need to open the [index.html](./index.html) in your browser with Live-Server.
 
 Forms offer a very simple and effective way to foster user interaction on a web page. There are many fields that can be utilized to create a very rich and meaningful experience, while at the same time all being highly accessible to a developer. In this example, we'll walk through a very simple form setup to allow a user to add tags to an image being displayed. The interface will appear similar to the following:
 
@@ -21,7 +21,7 @@ Form submission is a unique type of event in that the event is triggered not onl
 1. Including an input element with the type attribute value of submit
 2. Including a button element with the type attribute of submit
 
-For this exercise we will use an input element.
+For this exercise we will use a button element.
 
 Type the following code for adding the event listener in the project's main.js file:
 
@@ -70,7 +70,7 @@ In the example above, we've used the `+=` operator. This operator simply concate
 
 ![](images/fig.2.png)
 
-Great! Except that the form still has the value 'history' displayed. It would be good if we removed this after adding the tag:
+Great! Except that the form still has the value that you typed into the input textbox displayed. It would be good if we removed this after adding the tag:
 
 > Example 5. Ensuring the tag field is empty after adding a tag
 
