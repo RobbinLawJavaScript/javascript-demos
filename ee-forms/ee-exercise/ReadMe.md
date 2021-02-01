@@ -10,7 +10,7 @@ Forms offer a very simple and effective way to foster user interaction on a web 
 
 > Figure 1. Sample web page interface
 
-![](images/fig.1.png)
+![](readmeimages/fig1.jpg)
 
 Forms allow for direct access to all elements contained within them. All that is required is that the form fields have a name attribute. This can then be referenced on the form via its elements property. Let's begin by adding an event listener for the form's submit event.
 
@@ -68,7 +68,7 @@ In the example above, we've used the `+=` operator. This operator simply concate
 
 > Figure 2. Tag added to the image
 
-![](images/fig.2.png)
+![](readmeimages/fig2.jpg)
 
 Great! Except that the form still has the value that you typed into the input textbox displayed. It would be good if we removed this after adding the tag:
 
