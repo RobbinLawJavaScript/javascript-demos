@@ -22,7 +22,7 @@ document.querySelector('.frm')
         }
 
         if (evt.target.elements.keep.checked) {
-            if (!confirm('Do you want to stay signed in?')) {
+            if (!confirm('Do you want stay signed in?')) {
                 evt.preventDefault();
             }
         }
