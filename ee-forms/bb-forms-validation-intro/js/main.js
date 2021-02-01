@@ -14,7 +14,8 @@ document.querySelector('.frm')
         }
 
         if (pass.value.length < 6) {
-            errMsg = errMsg + '<p>Password must be 6 or more chars</p>';
+            //errMsg = errMsg + '<p>Password must be 6 or more chars</p>';
+            errMsg += '<p>Password must be 6 or more chars</p>';
             pass.classList.add('error');
             evt.preventDefault(); 
         } else {
