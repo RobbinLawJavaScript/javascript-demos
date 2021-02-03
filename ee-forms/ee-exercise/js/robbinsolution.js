@@ -11,14 +11,25 @@ document.querySelector('.feature.frm ')
           console.log(evt.target.elements.tag);
           var error = document.querySelector('p.feature.error');
           // ensure that there is a value in the tag field before adding a tag
-          if (evt.target.elements.tag.value.trim() != '') {
+          if (evt.target.elements.tag.value.trim() == '') {
+            error.classList.remove('hidden');
+          } else {
             // insert a '# ' before the tag for aesthetics
             document.querySelector('p.feature.tags ')
             .innerHTML += ' #' + evt.target.elements.tag.value;
             evt.target.elements.tag.value = '';
             error.classList.add('hidden');
-          } else {
-            error.classList.remove('hidden');
           }
+
+          // if (evt.target.elements.tag.value.trim() != '') {
+          //   // insert a '# ' before the tag for aesthetics
+          //   document.querySelector('p.feature.tags ')
+          //   .innerHTML += ' #' + evt.target.elements.tag.value;
+          //   evt.target.elements.tag.value = '';
+          //   error.classList.add('hidden');
+          // } else {
+          //   error.classList.remove('hidden');
+          // }
+
           evt.preventDefault();
         });
