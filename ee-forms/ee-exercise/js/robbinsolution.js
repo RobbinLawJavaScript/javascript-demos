@@ -7,29 +7,21 @@
 
 document.querySelector('.feature.frm ')
         .addEventListener('submit', function (evt) {
-          console.log(evt.target);
-          console.log(evt.target.elements.tag);
-          var error = document.querySelector('p.feature.error');
-          // ensure that there is a value in the tag field before adding a tag
-          if (evt.target.elements.tag.value.trim() == '') {
+          let error = document.querySelector('p.feature.error');
+          let textBox = evt.target.elements.tag;
+          //Ensure that there is a value in the tag field before adding a tag.
+          //Use the JavaScript .trim() function to get rid of spaces before
+          //the first character and after the last character.
+          if ( textBox.value.trim() === '') {
+            //Change the error message and unhide it.
+            error.innerHTML = 'Tags cannot be empty';
             error.classList.remove('hidden');
           } else {
             // insert a '# ' before the tag for aesthetics
             document.querySelector('p.feature.tags ')
-            .innerHTML += ' #' + evt.target.elements.tag.value;
-            evt.target.elements.tag.value = '';
+            .innerHTML += ' #' + textBox.value.trim();
+            textBox.value = '';
             error.classList.add('hidden');
           }
-
-          // if (evt.target.elements.tag.value.trim() != '') {
-          //   // insert a '# ' before the tag for aesthetics
-          //   document.querySelector('p.feature.tags ')
-          //   .innerHTML += ' #' + evt.target.elements.tag.value;
-          //   evt.target.elements.tag.value = '';
-          //   error.classList.add('hidden');
-          // } else {
-          //   error.classList.remove('hidden');
-          // }
-
           evt.preventDefault();
         });
