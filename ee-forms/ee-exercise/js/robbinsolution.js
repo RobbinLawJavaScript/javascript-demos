@@ -17,7 +17,7 @@ document.querySelector('.feature.frm ')
             error.innerHTML = 'Tags cannot be empty';
             error.classList.remove('hidden');
           } else {
-            // insert a '# ' before the tag for aesthetics
+            // insert a ' #' before the tag for aesthetics
             document.querySelector('p.feature.tags ')
             .innerHTML += ' #' + textBox.value.trim();
             textBox.value = '';
