@@ -2,24 +2,22 @@
 
 ## Working with Multiple Elements
 
-> To follow along with this exercise, you will need to open the [practice/index.html](./practice/index.html) in your browser with Live-Server.
-
 So far, we have only been focused on accessing a single element at a time, but there are times when access to multiple elements (perhaps even an unknown number) is required. For these cases, we can use loops to iterate over the collection of elements in question.
 
 To illustrate the value of loops, we will complete a simple exercise, which will allow the user to toggle all checkboxes on a page:
 
 > Figure 1. Exercise user interface
 
-![](images/fig.1a.png)
+![](imagesreadme/fig.1a.png)
 
 As you can see, it is a simple interface displaying message subject lines and checkboxes. What we will do in this walkthrough is add the functionality for toggling all checkboxes below the first one whenever it is checked/unchecked.
 
-To begin, we need to add an event listener for checking the box. The first checkbox has a unique name that we can use as its selector and the event we want to listen for is the **change** event *(note: the document. and EventListener portions have been left out to save space)*:
+To begin, we need to add an event listener for checking the box. The first checkbox has a unique name that we can use as its selector and the event we want to listen for is the **change** event.
 
 > Example 1. Adding an event listener for the toggle checkbox
 
 ```js
-...querySelector('[name=toggle]').add...('change', function (evt){
+documet.querySelector('[name=toggle]').addEventListener('change', function (evt){
   console.log('toggle changed...');
 ));
 ```
@@ -38,7 +36,7 @@ For this task we can use the very similar document.querySelectorAll function. Un
 > Example 2. Selecting all elements that match the selector and logging the resultant node list
 
 ```js
-...querySelector('[name=toggle]').add...('change', function (evt){
+document.querySelector('[name=toggle]').addEventListener('change', function (evt){
   var checks = document.querySelectorAll('[name=message]');
   console.log(checks);
 ));
@@ -48,7 +46,7 @@ You should now see a list of all the checkbox elements in the console when the t
 
 > Figure 2. Logging all checkboxes
 
-![](images/fig.2b.png)
+![](imagesreadme/fig.2b.png)
 
 Notice how all the input elements are contained between brackets with commas separating them. The first input in the list is active and you can see the highlighted checkbox it corresponds with in the table above it.
 
@@ -59,7 +57,7 @@ Selecting the list of checkboxes is one thing, iterating over them is another. U
 > Example 3. Iterating over the node list
 
 ```js
-...querySelector('[name=toggle]').add...('change', function (evt){
+document.querySelector('[name=toggle]').addEventListener('change', function (evt){
   var checks = document.querySelectorAll('[name=message]');
   var idx = 0;
   while (idx < checks.length) {
@@ -99,6 +97,6 @@ This search form should allow the user to search for and highlight matches in th
 
 > Figure 1. Complete solution demonstrating search feature
 
-![](images/fig.1b.png)
+![](imagesreadme/fig.1b.png)
 
 Be sure to take some time to really think about this one before you being coding; remember it's not about quantity but quality.
