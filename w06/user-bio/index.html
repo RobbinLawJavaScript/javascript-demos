@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>User Biography</h1>
+    <form method="get">
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" name="fname" />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lname" />
+        
+        <label for="emailAddress">Email Address</label>
+        <input type="text" id="emailAddress" name="email">
+        
+        <label for="personalWebsite">Person Website</label>
+        <input type="text" id="personalWebsite" name="url" />
+
+        <div>
+            <input type="submit" value="Submit Data"
+                   name="btnAction" id="submit">
+            <input type="reset" value="Reset Form"
+                   name="btnAction" id="reset">
+            <input type="button" value="Search Google"
+                   name="btnAction" id="search">
+        </div>
+    </form>
+    <ul id="errorList"></ul>
+    <script src="js/main.js"></script>
+    <section id="fakeServer"></section>
+</body>
+</html>
