@@ -5,15 +5,13 @@
 
 ## Collections of Things
 
-> To follow along with this exercise, you will need to open the [practice/index.html](./practice/index.html) in your browser with Live-Server.
-
 Arrays are very similar to NodeLists. The way in which we can work with them is very similar (if not identical) and the two differ in that they support different methods (more on that can be found [here](https://developer.mozilla.org/en/docs/Web/API/NodeList#Why_is_NodeList_not_an_Array)).
 
 This exercise has us implementing an extremely simple image carousel. The starting interface will appear as follows:
 
 > Figure 1. Exercise starting user interface
 
-![](images/fig.1.png)
+![](imagesreadme/fig.1.png)
 
 In order to get this working, we'll need a list of images (stored in an array perhaps…) that we want to cycle through. The available images are located in the images/ directory of the project folder.
 
@@ -32,19 +30,19 @@ The default interface doesn't load an image as it's dependent on what's in our a
 > Example 2. Displaying the first image on the page
 
 ```js
-...querySelector('.carousel>img').src = 'images/' + images[0];
+document.querySelector('.carousel>img').src = 'images/' + images[0];
 ```
 
 > Figure 2. Much better!
 
-![](images/fig.2.png)
+![](imagesreadme/fig.2.png)
 
-The next step is to assign a click event listener for our carousel controls. Utilize event bubbling and place the event listener on the carousel directly, and then check the event target for .prev or .next. *(note: the document. and EventListener portions have been left out to save space)*:
+The next step is to assign a click event listener for our carousel controls. Utilize event bubbling and place the event listener on the carousel directly, and then check the event target for .prev or .next.
 
 > Example 3. Adding an event listener for the carousel controls
 
 ```js
-...querySelector('.carousel').add...('click', function (evt){
+document.querySelector('.carousel').addEventListener('click', function (evt){
   var target = evt.target;
   if (target.classList.contains('control')) {
     console.log('control clicked...');
@@ -70,7 +68,7 @@ Good. Last step. When one of the controls is clicked, we need to either add one 
 > Example 3. Adding an event listener for the carousel controls
 
 ```js
-...querySelector('.carousel').add...('click', function (evt){
+document.querySelector('.carousel').addEventListener('click', function (evt){
   var target = evt.target;
   if (target.classList.contains('control')) {
     if (target.classList.contains('next')) {
@@ -81,7 +79,7 @@ Good. Last step. When one of the controls is clicked, we need to either add one 
       currentImg -= 1;
     }
     // display the new current image
-    ...querySelector('.carousel>img').src = 'images/'
+    document.querySelector('.carousel>img').src = 'images/'
     + images[currentImg];
   }
 });
