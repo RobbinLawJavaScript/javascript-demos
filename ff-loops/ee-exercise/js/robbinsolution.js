@@ -9,7 +9,9 @@ document.querySelector('[name=toggle]').addEventListener('change', function (evt
         } else {
             checks[idx].checked = false;
         }
+        //The following are all equivalent.
         //idx = idx + 1;
+        //idx += 1;
         idx++;
     }
 });
