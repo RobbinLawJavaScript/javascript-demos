@@ -1,5 +1,6 @@
 document.querySelector('.items').addEventListener('change', function (evt) {
-    let numOfItems = Number(evt.target.value);
+    let numOfItems = evt.target.value;
+    //let numOfItems = Number(evt.target.value);
     let count;
     let list = '<ul>';
 
