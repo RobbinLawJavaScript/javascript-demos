@@ -1,4 +1,3 @@
-let output = document.querySelector('.output');
 let list = '<ul>';
 let count; // count the number of list items
 let items; // access to list items
@@ -12,7 +11,7 @@ for (count = 0; count < 10; count++) {
 list = list + '</ul>';
 
 // display the list
-output.innerHTML = list;
+document.querySelector('.output').innerHTML = list;
 
 items = document.querySelectorAll('li');
 
