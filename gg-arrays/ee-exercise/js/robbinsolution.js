@@ -4,12 +4,11 @@ document.querySelector('.carousel>img').src = 'images/' + images[0];
 
 document.querySelector('.carousel').addEventListener('click', function (evt){
     if (evt.target.classList.contains('control')) {
-        console.log('control clicked...');
+        if (evt.target.classList.contains('next')) {
+            currentImg += 1;
+        } else if (evt.target.classList.contains('prev')){
+            currentImg -= 1;
+        }
+        document.querySelector('.carousel>img').src = 'images/' + images[currentImg];
     }
-    if (evt.target.classList.contains('next')) {
-        currentImg += 1;
-    } else if (evt.target.classList.contains('prev')){
-        currentImg -= 1;
-    }
-    document.querySelector('.carousel>img').src = 'images/' + images[currentImg];
 });
