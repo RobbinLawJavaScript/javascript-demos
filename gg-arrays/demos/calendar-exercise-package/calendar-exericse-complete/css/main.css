@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.display {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.calendar {
+	border-collapse: collapse;
+}
+
+.calendar tr,
+.calendar td,
+.calendar th
+ {
+	border: 1px solid black;
+}
