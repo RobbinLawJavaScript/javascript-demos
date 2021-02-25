@@ -1,11 +1,11 @@
 # Working with Arrays
 
-- [MDN Array Page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) - 
-- [MDN NodeList Page](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) - 
+- [MDN Array Page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 
+- [MDN NodeList Page](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) 
 
 ## Collections of Things
 
-Arrays are very similar to NodeLists. The way in which we can work with them is very similar (if not identical) and the two differ in that they support different methods (more on that can be found [here](https://developer.mozilla.org/en/docs/Web/API/NodeList#Why_is_NodeList_not_an_Array)).
+Arrays are very similar to NodeLists. The way in which we can work with them is very similar (if not identical) and the two differ in that they support different methods.
 
 This exercise has us implementing an extremely simple image carousel. The starting interface will appear as follows:
 
