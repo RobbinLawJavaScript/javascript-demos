@@ -7,6 +7,7 @@ englishDays[3] = 'Wed';
 englishDays[4] = 'Thu';
 englishDays[5] = 'Fri';
 englishDays[6] = 'Sat';
+//englishDays[7] = 'ha';
 
 let frenchDays = ['Dim', 'Lun', 'Mar', 'Mer', 'Jun', 'Ven', 'Sam'];
 
