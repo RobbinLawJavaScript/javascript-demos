@@ -81,5 +81,5 @@ function getCalendar(year, month) {
 }
 
 // display the calendar in the desired element
-document.querySelector('.display').innerHTML = getCalendar(2017, 1);
+document.querySelector('.display').innerHTML = getCalendar(2017, 3);
 document.querySelector('.display').innerHTML += getCalendar((new Date()).getFullYear(), (new Date()).getMonth());
