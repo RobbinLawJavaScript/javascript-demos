@@ -31,7 +31,7 @@ var months = [
 function getCalendar(year, month) {
 	//Variable to hold the completed calendar table
 	var cal;
-	//Setting the month and day to 1
+	//Setting the day to 1
 	//gives the first of this month.
 	var firstDay = new Date(year, month, 1);
 	//Setting the month to the next month and day to 0
@@ -81,5 +81,5 @@ function getCalendar(year, month) {
 }
 
 // display the calendar in the desired element
-document.querySelector('.display').innerHTML = getCalendar(2017, 3);
+document.querySelector('.display').innerHTML = getCalendar(2021, 0);
 document.querySelector('.display').innerHTML += getCalendar((new Date()).getFullYear(), (new Date()).getMonth());
