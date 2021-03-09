@@ -44,6 +44,7 @@ function moveSlide(dir) {
 
 // image fade out function. Incrementally decreases the opacity until
 // it reaches 0
+//https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
 function fadeOut() {
 	if (opacity > 0) {
 		targetImage.style.opacity = opacity = opacity - 0.05;

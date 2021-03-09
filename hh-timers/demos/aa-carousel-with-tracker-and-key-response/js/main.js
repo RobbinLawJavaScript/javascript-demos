@@ -46,8 +46,6 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
 //to operate carousel.
 document.addEventListener('keydown', function (evt) {
     var click;
-    console.log('hi');
-
     switch (evt.key) {
         case "ArrowLeft":
             // left arrow
