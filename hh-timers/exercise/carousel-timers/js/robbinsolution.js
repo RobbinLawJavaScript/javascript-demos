@@ -28,10 +28,9 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
         updateSlide(currentImg);
     }
 });
-
+//Here we add a keydown event listener for the whole document.
 document.addEventListener('keydown', function (evt) {
     var click;
-    console.log('hi');
 
     switch (evt.key) {
         case "ArrowLeft":
@@ -53,7 +52,8 @@ document.addEventListener('keydown', function (evt) {
 
 function updateSlide(index) {
     document.querySelector('.carousel>img').src = 'images/' + images[index];
-    document.querySelector('.image-tracker .active').classList.remove('active');     document.querySelectorAll('[data-idx]')[index].classList.add('active');
+    document.querySelector('.image-tracker .active').classList.remove('active');
+    document.querySelectorAll('[data-idx]')[index].classList.add('active');
 }
 
 let slideshowInterval;
