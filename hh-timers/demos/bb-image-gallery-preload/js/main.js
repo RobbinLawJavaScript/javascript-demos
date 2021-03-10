@@ -15,7 +15,7 @@ document.querySelector('.controls').addEventListener('click', function (evt) {
 			break;
 	}
 });
-
+//https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
 document.addEventListener('keydown', function (evt) {
 	switch (evt.code) {
 		case 'ArrowRight':
@@ -39,11 +39,11 @@ function moveSlide(dir) {
 
 // Preload known images
 // The following is a demonstration of an immediately 
-// invoked function expression (IIFE). See the following
-// link for more:
+// invoked function expression (IIFE).
 // https://developer.mozilla.org/en-US/docs/Glossary/IIFE 
 (function (imgArray) {
 	imgArray.forEach(function (imgUrl) {
+		//https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
 		let img = new Image();
 		img.src = imgUrl;
 	});

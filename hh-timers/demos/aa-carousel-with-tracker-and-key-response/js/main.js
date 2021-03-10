@@ -42,14 +42,14 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
         //imageTracker.querySelectorAll('[data-idx]')[currentImg].classList.add('active');
     }
 });
-//Here we add a keydown event listener for the whole document.
+//Here we add a keydown event listener that targets the whole document.
 //It will respond to left and right arrow key presses
 //to operate carousel.
+//https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
 document.addEventListener('keydown', function (evt) {
     var click;
     switch (evt.key) {
         case "ArrowLeft":
-            // left arrow
             //https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
             click = new MouseEvent('click', {
                 'bubbles': true
@@ -58,7 +58,6 @@ document.addEventListener('keydown', function (evt) {
             document.querySelector('.prev').dispatchEvent(click);
             break;
         case "ArrowRight":
-            // right arrow
             click = new MouseEvent('click', {
                 'bubbles': true
             });
