@@ -1,8 +1,3 @@
-// add the neccessary code to implement the play and pause
-// buttons on the page. Clicking play should start an interval
-// that will advance through the images every 3 seconds and
-// clicking pause should cancel the interval.
-
 var targetImage = document.querySelector('.target-image');
 var controlsDiv = document.querySelector('.controls');
 var currentImage = 0;
@@ -15,7 +10,6 @@ var images = [
 ];
 
 controlsDiv.addEventListener('click', controlsHandler);
-
 document.addEventListener('keydown', documentHandler);
 
 // image fade out function....
@@ -50,6 +44,10 @@ function moveSlide(dir) {
 	fadeOut();
 }
 
+function slideshowProxy() {
+	moveSlide(+1);
+}
+
 function documentHandler(evt) {
 	switch (evt.keyCode) {
 		case 39:
@@ -72,12 +70,14 @@ function controlsHandler(evt) {
 		case 'btn-next':
 			moveSlide(+1);
 			break;
-		// add cases for the play and pause buttons
-
-		// case play: set an interval that will show the next slide
-
-		// case pause: clear the interval set when the play button was clicked
-		
+		case 'btn-play':
+			intervalId = setInterval(slideshowProxy, 3000);
+			evt.target.setAttribute('disabled', 'disabled');
+			break;
+		case 'btn-pause':
+			clearInterval(intervalId);
+			evt.target.previousElementSibling.removeAttribute('disabled');
+			break;
 	}
 }
 
