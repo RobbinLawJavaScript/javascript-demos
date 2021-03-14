@@ -18,10 +18,6 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
     }   
 });
 
-//Here we add a keydown event listener that targets the whole document.
-//It will respond to left and right arrow key presses
-//to operate carousel.
-//https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
 document.addEventListener('keydown', function (evt) {
 	if (evt.code == 'ArrowLeft') {
 		moveSlide(-1);
