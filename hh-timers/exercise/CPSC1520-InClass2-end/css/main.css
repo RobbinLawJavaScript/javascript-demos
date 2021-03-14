@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: #0066ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  height: 100%;
+  margin: auto;
+  padding: 1em;
+  width: 600px;
+}
+
+p.citation {
+  font-size: 75%;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
