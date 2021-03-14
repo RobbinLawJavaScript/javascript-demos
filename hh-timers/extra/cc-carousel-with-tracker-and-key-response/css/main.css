@@ -1,0 +1,49 @@
+body {
+	font-family: sans-serif;
+}
+.carousel {
+	text-align: center;	
+}
+.carousel>img {
+	height: 479px;
+}
+.carousel>.next,
+.carousel>.prev {
+	background-color: #333;
+	border-radius: 50%;
+	color: #ddd;
+	display: inline-block;
+    font-size: 210%;
+    font-weight: bold;
+    margin-top: 30%;
+    width: 40px;
+    padding-bottom: 2px;
+}
+.carousel>.next,
+.carousel>.prev {
+	cursor: pointer;
+}
+.carousel>.next {
+    float: right;
+}
+.carousel>.prev {
+    float: left;
+}
+.image-tracker {
+	color: #ddd;
+	font-size: 36px;
+}
+.image-tracker>span:hover {
+	cursor: pointer;
+}
+.image-tracker>span.active {
+	color: #333;
+}
+.wrapper {
+	margin: auto;
+	width: 740px;
+}
+.wrapper>h1 {
+	border-bottom: 1px solid #333;
+	padding-bottom: 10px;
+}
