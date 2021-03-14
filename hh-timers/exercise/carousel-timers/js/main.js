@@ -21,3 +21,5 @@ function moveSlide(dir) {
 	}
     document.querySelector('.carousel>img').src = 'images/' + images[currentImage];
 }
+
+//Add your code here to start the timer.
