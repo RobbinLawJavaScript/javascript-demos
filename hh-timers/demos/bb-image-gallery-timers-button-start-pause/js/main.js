@@ -9,6 +9,7 @@ document.querySelector('.controls').addEventListener('click', function (evt) {
 	} else if (evt.target.className == 'btn-next') {
 		moveSlide(+1);
 	} else if (evt.target.className == 'btn-play') {
+		//https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
 		slideshowInterval = setInterval(function () {
 			moveSlide(+1);
 		}, 3000);
