@@ -34,7 +34,7 @@ function moveSlide(dir) {
 		currentImage = 0;
 	}
 	//Update the image to be the new one.
-    document.querySelector('.carousel>img').src = 'images/' + images[currentImage];
+	document.querySelector('.carousel>img').src = 'images/' + images[currentImage];
     //Update the old selector bullet to not be active.
     imageTracker.querySelector('span.active').classList.remove('active');
     //Make the new selector bullet to be active.
