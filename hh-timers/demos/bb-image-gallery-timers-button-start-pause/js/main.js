@@ -1,3 +1,4 @@
+//https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#Active_learning_Creating_your_own_stopwatch!
 let images = ['img/beach1.jpg', 'img/beach2.jpg', 'img/beach3.jpg'];
 let currentImage = 0;
 let slideshowInterval;
