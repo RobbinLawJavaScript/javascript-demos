@@ -1,6 +1,7 @@
 //https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#Active_learning_Creating_your_own_stopwatch!
 let images = ['mountain1.jpg', 'mountain2.jpg', 'mountain3.jpg'];
 let currentImage = 0;
+//Add the global variable here.
 let slideshowInterval;
 
 document.querySelector('.carousel>img').src = 'images/' + images[0]; 

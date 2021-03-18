@@ -25,7 +25,7 @@ document.addEventListener('keydown', function (evt) {
 		moveSlide(+1);
 	}
 });
-
+  
 function moveSlide(dir) {
 	currentImage += dir;
 	if (currentImage < 0) {
