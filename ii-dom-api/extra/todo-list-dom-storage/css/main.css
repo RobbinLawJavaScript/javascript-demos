@@ -1,0 +1,14 @@
+body {
+	font-family: sans-serif;
+}
+
+input[type=text], button {
+	border: 1px solid #333;
+	border-radius: 4px;
+	padding: 4px;
+}
+.todo-list {
+	border-top: 1px solid #333;
+	margin-top: 20px;
+	padding-top: 20px;
+}
