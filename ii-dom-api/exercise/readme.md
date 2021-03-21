@@ -143,6 +143,3 @@ Some of you may be thinking "... this seems like a lot of work to just get some 
 
 While innerHTML can be used to quickly add elements to the page, it becomes quite timeconsuming/difficult to locate elements within the HTML string. Using the W3C DOM methods will allow for (in some cases as has been shown in this exercise) quicker and more direct access to a specific element that has been added to a page than innerHTML. That being said, each has an appropriate time and place when it should be used; typically, this is up to the developer.
 
-
-The following link allows you to run some DOM vs. innerHTML tests to compare performance: [DOM vs. innerHTML](http://jsperf.com/dom-vs-innerhtml)
-
