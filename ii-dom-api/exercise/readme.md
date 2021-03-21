@@ -4,8 +4,6 @@
 
 ## DOM API
 
-> To follow along with this exercise, you will need to open the [practice/index.html](./practice/index.html) in your browser with Live-Server.
-
 The Document Object Model (DOM) is a means of viewing a web document as a tree structure with a root from which all elements in the document can be retrieved. The first specification for this model was released by the W3C as DOM Level 1 in 1998. It is from this early version that laid the ground work (APIs, schema, etc.) for Level 2 (released 2000) and the current specification Level 3 (released 2004).
 
 DOM Level 2 added support for advanced event handling, element access, and CSS. DOM Level 3 improved upon Level 2 features and added support for [XPath](http://www.w3.org/TR/xpath/).
@@ -24,7 +22,7 @@ The DOM can be a pleasant thing to work once you are familiar with the applicati
 
 > Figure 1. Todo list application
 
-![](images/fig.1.png)
+![](readmeimages/fig.1.png)
 
 The script needs to be updated so that it displays up/down controls for each todo item added. Use what you have learned about the DOM API to update the parent element for the document fragment for a single todo item (i.e. the div) with the following two elements:
 
@@ -44,7 +42,7 @@ var up = '\u21e7'; // Unicode value of up arrow
 
 > Figure 2. Updated todo items displayed
 
-![](images/fig.2.png)
+![](readmeimages/fig.2.png)
 
 You can read more about Unicode block arrow values [here](http://www.fileformat.info/info/unicode/block/arrows/utf8test.htm).
 
@@ -56,7 +54,7 @@ It is necessary to understand the relationships between elements in order for us
 
 > Figure 3. Elements involved in our todo list
 
-![](images/fig.3.png)
+![](readmeimages/fig.3.png)
 
 As you can see, each todo item displayed shares the same parent (the div.todo-list element), which makes them siblings. The exact same thing can be said for the span.arrow elements within their respective parent elements (which is simply a div). Therefore, each parent element (in this case) has several child elements nested within it. We can take advantage of these relationships to implement the up/down functionality for the application.
 
