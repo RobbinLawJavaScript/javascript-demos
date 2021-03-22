@@ -23,5 +23,5 @@ p5 = document.createElement('p');
 text = document.createTextNode('Paragraph 5');
 p5.appendChild(text);
 
-// insert the new paragraph
+// insert the new paragraph before p4
 div1.insertBefore(p5, p4);
