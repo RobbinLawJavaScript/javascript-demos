@@ -15,7 +15,7 @@ let dn = '\u21e9';
 let up = '\u21e7';
 
 // todo form submit handler, adds a new todo item to the 'list'
-document.querySelector('.todo-frm').addEventListener('submit', function (evt) {
+document.querySelector('.todo-form').addEventListener('submit', function (evt) {
 	// variables for creating the DOM fragment
 	let div,
 		checkbox,
