@@ -67,6 +67,8 @@ document.querySelector('.todo-form').addEventListener('submit', function (evt) {
 	div.appendChild(spanArrowUp);
 	
 	// add the document fragment to the document
+	//by appending the newly created "inner" div as
+	//a child to the "outer" .todo-item div.
 	todos.appendChild(div);
 
 	// clear the input textbox
@@ -76,12 +78,16 @@ document.querySelector('.todo-form').addEventListener('submit', function (evt) {
 	evt.preventDefault();
 });
 
-
+//TODO: Add an eventlistener to apply the action when the dn or up arrows are pressed.
 document.querySelector('.todo-list').addEventListener('click', function (evt) {
-    // check for click on an arrow
-    let targetTodo = evt.target.parentNode;
+	//the targetTodo is the parent div of the arrow span that was pressed.
+	//It will be one of the "inner" divs.
+	let targetTodo = evt.target.parentNode;
+	//the todoList is the parent div or "outer" div that conains all the "inner" child divs
+	//that contain themselves each checkbox, label, and both arrow spans.
     let todoList = targetTodo.parentNode;
-    let siblingTodo;
+	let siblingTodo;
+	// check for click on an arrow. If not jump out and do nothing.
     if (evt.target.classList.contains('arrow')) {
         // identify the type of arrow (i.e. down or up)
         if (evt.target.classList.contains('dn')) {
@@ -93,6 +99,7 @@ document.querySelector('.todo-list').addEventListener('click', function (evt) {
         } else if (evt.target.classList.contains('up')) {
             siblingTodo = targetTodo.previousElementSibling;
 			if(siblingTodo != null){
+				//insert the target before the sibling in effect,
 				// insert the sibling after the target
 				todoList.insertBefore(targetTodo, siblingTodo);
 			}
