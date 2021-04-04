@@ -1,5 +1,5 @@
 export function demo() {
-    console.log('hey man demo4');
+    console.log('demo4');
     // async functions always returns a promise
     const getLocalBones = async () => {
         //the await keyword "stalls" the JS assignment

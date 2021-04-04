@@ -1,5 +1,5 @@
 export function demo() {
-    console.log('hey man demo5');
+    console.log('demo5');
     const getLocalBones = async () => {
         //fetch ill-formed JSON 
         const res = await fetch('./data/bad-bones.json')

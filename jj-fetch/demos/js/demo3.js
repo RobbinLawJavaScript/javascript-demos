@@ -1,5 +1,5 @@
 export function demo() {
-    console.log('hey man demo3');
+    console.log('demo3');
     fetch('./data/bones.json')
         .then((res) => {
             return res.json()

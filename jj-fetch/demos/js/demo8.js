@@ -1,3 +1,3 @@
 export function demo() {
-    console.log('hey man demo8');
+    console.log('demo8');
 }

@@ -1,5 +1,5 @@
 export function demo() {
-    console.log('hey man demo7');
+    console.log('demo7');
     const remoteDataURL = "https://api.jsonbin.io/b/6067aa2a9fc4de52061c936c"
 
         const getRemoteBones = async () => {
