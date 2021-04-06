@@ -1,5 +1,5 @@
 export function demo() {
-    console.log('hey man demo6');
+    console.log('demo6');
     //Define the URL
     const remoteDataURL = "https://api.jsonbin.io/b/6067aa2a9fc4de52061c936c"
 
