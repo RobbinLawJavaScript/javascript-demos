@@ -2,9 +2,10 @@ export function demo() {
     console.log('demo4');
     // async functions always returns a promise
     const getLocalBones = async () => {
+        console.log(5);
         //the await keyword "stalls" the JS assignment
         // until the data is returned (promise resolves or is rejected) 
-        const res = await fetch('./data/bones.json')
+        const res = await fetch('./data/bones.json');
         const data = await res.json();
 
         return data;
