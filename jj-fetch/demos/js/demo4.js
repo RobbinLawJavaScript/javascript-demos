@@ -6,7 +6,10 @@ export function demo() {
         //the await keyword "stalls" the JS assignment
         // until the data is returned (promise resolves or is rejected) 
         const res = await fetch('./data/bones.json');
+        //const res = await fetch('./data/bad-bones.json');
+        console.log('response', res);
         const data = await res.json();
+        console.log('data', data);
 
         return data;
     }
@@ -14,7 +17,8 @@ export function demo() {
     console.log(1);
     console.log(2);
     let retrivedBones = getLocalBones()
-        .then(data => console.log('resolved', data));
+        .then((data) => console.log('resolved', data))
+        .catch((err) => console.log('rejected', err));
     console.log(3);
     console.log(4);
 }

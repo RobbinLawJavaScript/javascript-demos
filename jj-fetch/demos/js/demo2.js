@@ -6,7 +6,8 @@ export function demo() {
            //res.json returns a promise which will
            //be the data object in JSON format
             return res.json()
-        }).then(data => {
+        })
+        .then((data) => {
             console.log('data: ', data)
         });
 }
