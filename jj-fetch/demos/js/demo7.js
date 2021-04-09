@@ -1,7 +1,7 @@
 export function demo() {
     console.log('demo7');
-    
-    const remoteDataURL = "https://api.jsonbin.io/b/6070638aceba85732671b245";
+    const remoteDataURL = "https://api.jsonbin.io/b/6070a88dceba85732671d94c";
+    //const remoteDataURL = "https://api.jsonbin.io/b/6070638aceba85732671b245";
 
 
         const getRemoteBones = async () => {
@@ -11,9 +11,7 @@ export function demo() {
                     'Accept': 'application/json. text/plain, */*',
                     "Content-Type": "application/json",
                 },
-            }
-            )
-            
+            })
             if (res.status ==200 ){
                 const data = await res.json();
                 console.log(res);
