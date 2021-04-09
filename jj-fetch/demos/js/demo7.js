@@ -1,6 +1,8 @@
 export function demo() {
     console.log('demo7');
-    const remoteDataURL = "https://api.jsonbin.io/b/6067aa2a9fc4de52061c936c"
+    
+    const remoteDataURL = "https://api.jsonbin.io/b/6070638aceba85732671b245";
+
 
         const getRemoteBones = async () => {
                 const res = await fetch(remoteDataURL, {
@@ -12,13 +14,16 @@ export function demo() {
             }
             )
             
-            if (res.status >=200 && res.status <=200){
+            if (res.status ==200 ){
                 const data = await res.json();
+                console.log(res);
+                console.log(res.status);
                 return data;
             } 
             else {
                 //Handle Errors and Provide Status code:
                 console.log(res.status, res.statusText);
+                return null;
             }
         }
 
