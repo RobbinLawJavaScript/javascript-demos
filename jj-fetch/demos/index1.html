@@ -39,6 +39,7 @@
       .then((res) => res.text())
       .then((data) => {
         document.getElementById('output').innerHTML = data;
+        console.log('hi');
       })
       .catch((err) => console.log(err))
     }
