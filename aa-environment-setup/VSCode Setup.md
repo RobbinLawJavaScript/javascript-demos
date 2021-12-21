@@ -1,6 +1,5 @@
 # VS Code Setup
 
-
 ### VS Code Out of the Box Features
 
     https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
@@ -41,7 +40,7 @@
         HTML Snippets
         HTML CSS Support
 
-        Css formatter by Martin Aeschlimann
+        CSS Formatter by Martin Aeschlimann
 
 ### CSS
     flexbox
