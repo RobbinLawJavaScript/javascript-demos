@@ -25,6 +25,7 @@
 
 ### VS Code Extensions
         Markdown All in One - preview .md files.
+        https://masteringmarkdown.com/
         Live Server - opens in the default browser.
         Live Preview - opens in a tab in VSCode.
         icon themes - "material icon theme".
@@ -39,3 +40,15 @@
 
         HTML Snippets
         HTML CSS Support
+
+### CSS
+    flexbox
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    https://flexbox.io/
+
+    pixel to rem converter
+    https://nekocalc.com/px-to-rem-converter
+
+    improve your css skills
+    https://www.frontendmentor.io/
+    https://www.frontendpractice.com/
