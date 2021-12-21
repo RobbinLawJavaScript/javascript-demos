@@ -24,7 +24,7 @@
     Use "Ctrl + Space" to get Emmet back.
 
 ### VS Code Extensions
-
+        Markdown All in One - preview .md files.
         Live Server - opens in the default browser.
         Live Preview - opens in a tab in VSCode.
         icon themes - "material icon theme".
