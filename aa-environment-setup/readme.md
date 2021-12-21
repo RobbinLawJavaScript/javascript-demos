@@ -27,7 +27,7 @@
         Markdown All in One - preview .md files.
         https://masteringmarkdown.com/
         Live Server - opens in the default browser.
-        Live Preview - opens in a tab in VSCode.
+        Live Preview (Microsoft) - opens in a tab in VSCode.
         icon themes - "material icon theme".
         color themes - from marketplace "one dark pro" 
 
@@ -41,6 +41,8 @@
         HTML Snippets
         HTML CSS Support
 
+        Css formatter by Martin Aeschlimann
+
 ### CSS
     flexbox
     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -52,3 +54,11 @@
     improve your css skills
     https://www.frontendmentor.io/
     https://www.frontendpractice.com/
+
+    reset code
+    https://jgthms.com/minireset.css/
+
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+    box-sizing: content-box ... old box model
+    box-sizing: border-box  ... new box model
