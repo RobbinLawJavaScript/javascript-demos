@@ -12,7 +12,7 @@ There are several ways to access the console:
 
 > Fig1. Chome Developer Tools Console
 >
-> ![Chrome Console](./images/console.png)
+> ![Chrome Console](./readmeimg/console.png)
 
 ### Exercise Steps
 
@@ -21,7 +21,7 @@ There are several ways to access the console:
 1. Locate the HTML document ([console_exercise.html](./practice/console_exercise.html)) in the *practice/* folder.
 1. Right-click on the file and choose "Open with Live Server".
 
-    ![](./readmeimages/step-1.png)
+    ![](./readmeimg/step-1.png)
 
 1. Open the console using any of the aforementioned methods.
 1. Keep the browser open for the remaining steps.
@@ -44,7 +44,7 @@ explored later). Each of these functions returns the matched element (if any) fr
 
 > Figure 2. Example selecting h2.intro
 >
-> ![](readmeimages/fig.2.png)
+> ![](readmeimg/fig.2.png)
 
 1. Using either of the boldface functions above, select the following in the console:
     1. The main h1 heading
@@ -78,7 +78,7 @@ console.
 
 > Figure 3. Sample output from the above steps
 >
-> ![](readmeimages/fig.3.png)
+> ![](readmeimg/fig.3.png)
 
 1. Type in the first statement to declare the firstName variable
 1. Next, type in the assignment statement that will assign firstName a value
@@ -92,7 +92,7 @@ JavaScript to a variable... including elements!
 
 > Figure 4. Example reading the innerHTML of the main h1 element
 >
-> ![](readmeimages/fig.4.png)
+> ![](readmeimg/fig.4.png)
 
 Elements in the DOM that may contain child content (i.e. parent elements) expose their child content through a property named **innerHTML**. This property can be read (accessed) or manipulated (replaced) through JavaScript. Once an element has been selected, you can access its innerHTML property through the '.' (dot) operator.
 
@@ -102,7 +102,7 @@ As an example, let's change the innerHTML for the h2.intro element to read *Intr
 
 > Figure 5. Final output of previous exercise steps
 >
-> ![](readmeimages/fig.5.png)
+> ![](readmeimg/fig.5.png)
 
 1. Declare a variable identifier to reference the h2.intro element, name the variable **intro**
 1. Combine what you know about the assignment operator and selecting elements to assign the element to the variable
