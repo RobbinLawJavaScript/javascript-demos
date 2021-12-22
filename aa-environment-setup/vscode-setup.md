@@ -44,4 +44,6 @@
         HTML Snippets
         HTML CSS Support
 
+        Prettier Code Formatter
+        
         CSS Formatter by Martin Aeschlimann
