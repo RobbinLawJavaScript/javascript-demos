@@ -13,21 +13,25 @@
 
     Emmet is part of VSCode.
     https://docs.emmet.io/cheat-sheet/
-    !+enter will give html5 template.
+    "! + enter" will give html5 template.
     Some Emmet concepts that use same syntax as CSS:
         + is the sibling selector ex. nav+ul+li gives them as siblings.
         > is the child selector ex. nav>ul>>li*6 gives them as children of the previous.
         ^ is the move up action.
         . class
         # id
-    Use "Ctrl + Space" to get Emmet back.
+    Use "Ctrl + Space" to get Emmet back in play.
 
 ### VS Code Extensions
+
         Markdown All in One - preview .md files.
         https://masteringmarkdown.com/
+
         Live Server - opens in the default browser.
         Live Preview (Microsoft) - opens in a tab in VSCode.
-        icon themes - "material icon theme".
+
+        file icon themes - "material icon theme".
+
         color themes - from marketplace "one dark pro" 
 
         HTMLTagWrap - to markup content that is already in place.
@@ -41,23 +45,3 @@
         HTML CSS Support
 
         CSS Formatter by Martin Aeschlimann
-
-### CSS
-    flexbox
-    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-    https://flexbox.io/
-
-    pixel to rem converter
-    https://nekocalc.com/px-to-rem-converter
-
-    improve your css skills
-    https://www.frontendmentor.io/
-    https://www.frontendpractice.com/
-
-    reset code
-    https://jgthms.com/minireset.css/
-
-
-    https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
-    box-sizing: content-box ... old box model
-    box-sizing: border-box  ... new box model
