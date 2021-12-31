@@ -1,3 +1,5 @@
+export function demo() {
+
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
 
 // Previous to ES6, var was the only way to 
@@ -27,3 +29,4 @@ if (y === 1) {
 console.log(y);
 // expected output: 1
 
+}
