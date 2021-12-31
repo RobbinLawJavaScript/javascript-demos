@@ -1,3 +1,5 @@
+export function demo() {
+
 const num1 = 100;
 const num2 = 50;
 let val;
@@ -25,3 +27,5 @@ val = Math.random();
 val = Math.floor(Math.random() * 20 + 1);
 
 console.log(val);
+
+}

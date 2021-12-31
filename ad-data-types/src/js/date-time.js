@@ -1,3 +1,4 @@
+export function demo() {
 let val;
 
 const today = new Date();
@@ -23,3 +24,4 @@ birthday.setMinutes(30);
 birthday.setSeconds(25);
 
 console.log(birthday);
+}

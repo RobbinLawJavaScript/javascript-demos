@@ -1,3 +1,5 @@
+export function demo() {
+
 const firstName = 'Robbin';
 const lastName = 'Law';
 const age = 46;
@@ -59,3 +61,5 @@ val = str.replace('Robbin', 'Jim');
 val = str.includes('foo');
 
 console.log(val);
+
+}

@@ -1,3 +1,5 @@
+export function demo() {
+
 const person = {
   firstName: 'Steve',
   lastName: 'Smith',
@@ -35,4 +37,6 @@ const people = [
 
 for(let i = 0; i < people.length; i++){
   console.log(people[i].name);
+}
+
 }

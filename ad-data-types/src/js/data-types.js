@@ -1,3 +1,5 @@
+export function demo() {
+
 // PRIMITIVE TYPES
 // String
 const name = 'John Doe';
@@ -20,6 +22,9 @@ const address = {
   city: 'Boston',
   state: 'MA'
 }
+// Date
 const today = new Date();
 console.log(today);
 console.log(typeof today);
+
+}
