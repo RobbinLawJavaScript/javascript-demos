@@ -34,7 +34,7 @@
 
         color themes - from marketplace "one dark pro" 
 
-        HTMLTagWrap - to markup content that is already in place.
+        HTMLTagWrap (Alt + w) - to markup content that is already in place.
             multiple cursors
 
         Auto Rename Tag - to rename an HTML tag faster.
