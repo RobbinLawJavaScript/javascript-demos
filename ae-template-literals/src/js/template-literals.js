@@ -1,3 +1,5 @@
+export function demo() {
+
 const firstName = 'Robbin';
 const age = 61;
 const job = 'IOT Developer';
@@ -35,3 +37,5 @@ html2 =
 ;
 
 document.body.innerHTML = html2;
+
+}
