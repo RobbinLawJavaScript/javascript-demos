@@ -1,3 +1,5 @@
+export function demo() {
+
 //DOM Access techniques
 
 // document.getElementsByTagName(selector) – returns a list of matched elements
@@ -34,3 +36,5 @@ console.log('querySelectorAllById: ' + someElements[0].innerHTML);
 console.log('querySelectorAllById: ' + someElements[1].innerHTML);
 someElements = document.querySelectorAll(".someClass1");
 console.log('querySelectorAllByClass: ' + someElements[0].innerHTML);
+
+}
