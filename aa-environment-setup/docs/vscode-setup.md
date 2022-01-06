@@ -11,7 +11,7 @@
     Lorem is part of VSCode.
     Lorem20 will give 20 random words.
 
-    Emmet is part of VSCode.
+    Emmet is part of VSCode. Used when no content is in place.
     https://docs.emmet.io/cheat-sheet/
     "! + enter" will give html5 template.
     Some Emmet concepts that use same syntax as CSS:
