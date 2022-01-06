@@ -42,6 +42,7 @@
         Bracket Pair Colorizer
 
         HTML Snippets
+        
         HTML CSS Support
 
         JavaScript ES6 Snippets
