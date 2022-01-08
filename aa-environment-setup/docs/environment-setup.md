@@ -14,15 +14,17 @@
 
 - [VS Code Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
   
-        VSCode "Ctrl + /" gives a comment in whatever language you are editing in.
+        "Ctrl + /" gives a comment in whatever language you are editing in.
         
-        VSCode word wrap "on" via settings. Just search "word wrap".
-        
-        In VSCode use "Alt" to highlight multiple lines to operate on.
-        
-        You can use "Alt + Shift" and highlight the paragraph and it will multi highlight each line.
+        "Ctrl + `" brings up a new terminal.
 
-- Lorem is part of VSCode. Lorem20 will give 20 random words.
+        Word Wrap "on" via settings. Just search "word wrap".
+        
+        "Alt" to highlight multiple lines to operate on.
+        
+        "Alt + Shift" and highlight the paragraph and it will multi highlight each line.
+
+- Lorem is part of VSCode. Lorem20 will give 20 random words in one sentence.
 
 - [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
     
