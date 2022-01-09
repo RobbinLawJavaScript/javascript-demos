@@ -5,39 +5,41 @@ export function demo() {
 const myName = 'John Doe';
 console.log(myName);
 console.log(typeof myName);
-// Number
-const age = 45;
-console.log(age);
-console.log(typeof age);
+// Number, integers, whole numbers
+const myAge = 45;
+console.log(myAge);
+console.log(typeof myAge);
 // Boolean
-const hasKids = true;
-console.log(hasKids);
-console.log(typeof hasKids);
-// Null Object
-const car = null;
-console.log(car);
-console.log(typeof car);
+const myBool = true;
+console.log(myBool);
+console.log(typeof myBool);
+// Null
+const myNull = null;
+console.log(myNull);
+// Even though null is a primative type it will show up
+// as an object with typeof.
+console.log(typeof myNull);
 // Undefined
-let test;
-console.log(test);
-console.log(typeof test);
-// Symbol
-const sym = Symbol();
-console.log(sym);
-console.log(typeof sym);
+let myUndefined;
+console.log(myUndefined);
+console.log(typeof myUndefined);
+// Symbol (ES6)
+const mySymbol = Symbol();
+console.log(mySymbol);
+console.log(typeof mySymbol);
 
 // REFERENCE TYPES - Objects
 // Array
-const hobbies = ['movies', 'music'];
-console.log(hobbies);
-console.log(typeof hobbies);
+const myArray = ['Hi', 'Hello'];
+console.log(myArray);
+console.log(typeof myArray);
 // Object literal
-const address = {
-  city: 'Boston',
-  state: 'MA'
+const myObjectLiteral = {
+  city: 'Edmonton',
+  province: 'AB'
 }
-console.log(address);
-console.log(typeof address);
+console.log(myObjectLiteral);
+console.log(typeof myObjectLiteral);
 // Date
 const today = new Date();
 console.log(today);

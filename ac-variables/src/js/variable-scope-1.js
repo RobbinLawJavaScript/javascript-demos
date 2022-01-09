@@ -1,7 +1,5 @@
 export function demo() {
 
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
-
 // Previous to ES6, var was the only way to 
 // declare a variable. Variables declared with var
 // are in the global scope and therefore are 
@@ -16,10 +14,12 @@ if (x === 1) {
   // expected output: 2
 }
 console.log(x);
-// expected output: 2
+// expected output: 1
+// but it has changed to 2
 
 
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+// In ES6 let was introduced to give
+// the same behavior as other languages.
 let y = 1;
 if (y === 1) {
   let y = 2;
