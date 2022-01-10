@@ -13,6 +13,7 @@ export function demo() {
 // var first_name = 'Sara'; // Underscore
 // var FirstName = 'Tom'; // Pascal case
 // var firstname; // not recommended
+// var first-name; // nope
 
 // var, let, const
 
@@ -21,16 +22,16 @@ var myName;
 console.log(myName);
 myName = 'John';
 console.log(myName);
-var myName2 = 'Jane';
-console.log(myName2);
+myName = 123;
+console.log(myName);
 
 // LET
 let myName3;
 console.log(myName3);
 myName3 = 'Jim';
 console.log(myName3);
-let myName4 = 'Jill';
-console.log(myName4);
+myName3 = 123;
+console.log(myName3);
 
 // CONST
 const myName5 = 'James';
@@ -47,9 +48,9 @@ const person = {
 }
 console.log(person);
 // You can reassign but be careful
-// person.name = 'Sara';
-// person.age = 32;
-// console.log(person);
+person.name = 'Sara';
+person.age = 32;
+console.log(person);
 
 // CONST Array
 const numbers = [1,2,3,4,5];
