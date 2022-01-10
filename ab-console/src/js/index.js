@@ -4,6 +4,7 @@ console.log(123);
 console.log(true);
 console.log(false);
 console.log("Robbin");
+console.log("Robbin2");
 var myString = 'Hey';
 console.log(myString);
 console.log([1,2,3,4]);
