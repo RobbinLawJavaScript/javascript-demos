@@ -47,7 +47,11 @@ const person = {
   age: 30
 }
 console.log(person);
-// You can reassign but be careful
+// person = {
+//   name: 'Jim',
+//   age: 35
+// }
+// You can reassign the value of a key
 person.name = 'Sara';
 person.age = 32;
 console.log(person);

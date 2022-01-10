@@ -1,11 +1,11 @@
 export function demo() {
 
-// PRIMITIVE TYPES
+// PRIMITIVE TYPES are stored on the stack
 // String
 const myName = 'John Doe';
 console.log(myName);
 console.log(typeof myName);
-// Number, integers, whole numbers
+// Number, (integers and radical numbers)
 const myAge = 45;
 console.log(myAge);
 console.log(typeof myAge);
@@ -28,7 +28,7 @@ const mySymbol = Symbol();
 console.log(mySymbol);
 console.log(typeof mySymbol);
 
-// REFERENCE TYPES - Objects
+// REFERENCE TYPES - Objects are stored on the heap
 // Array
 const myArray = ['Hi', 'Hello'];
 console.log(myArray);
