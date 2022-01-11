@@ -6,7 +6,7 @@ export function demo() {
 let someElements = document.getElementsByTagName("p");
 console.log('ElementsByTagName: ' + someElements[0].innerHTML);
 console.log('ElementsByTagName: ' + someElements[1].innerHTML);
-//console.log('ElementsByTagName: ' + someElements[2].innerHTML);
+console.log('ElementsByTagName: ' + someElements[2].innerHTML);
 someElements = document.getElementsByTagName("h1");
 console.log('ElementsByTagName: ' + someElements[0].innerHTML);
 

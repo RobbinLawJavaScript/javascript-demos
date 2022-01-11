@@ -1,7 +1,7 @@
 export function demo() {
 
 const firstName = 'Robbin';
-const age = 61;
+const age = 29;
 const job = 'IOT Developer';
 const city = 'Edmonton';
 let html1;
@@ -14,11 +14,11 @@ html1 = '<ul>' +
        '<li>Job: ' + job + '</li>' +
        '<li>City: ' + city + '</li>' +
        '</ul>';
-document.body.innerHTML = html1;
+//document.body.innerHTML = html1;
 
 
 function hello(){
-  return 'hello';
+  return 'hello world';
 }
 
 // With template literal strings (es6)
@@ -36,6 +36,6 @@ html2 =
   `
 ;
 
-//document.body.innerHTML = html2;
+document.body.innerHTML = html2;
 
 }
