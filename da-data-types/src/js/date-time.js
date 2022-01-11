@@ -2,26 +2,26 @@ export function demo() {
 let val;
 
 const today = new Date();
-let birthday = new Date('9-10-1981 11:25:00');
-birthday = new Date('September 10 1981');
-birthday = new Date('9/10/1981');
+let myDate = new Date('9-10-1981 11:25:00');
+myDate = new Date('September 10 1981');
+myDate = new Date('9/10/1981');
 
-val = today.getMonth();
-val = today.getDate();
-val = today.getDay();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getSeconds();
-val = today.getMilliseconds();
-val = today.getTime();
+//val = today.getMonth();
+//val = today.getDate();
+//val = today.getDay();
+//val = today.getFullYear();
+//val = today.getHours();
+//val = today.getMinutes();
+//val = today.getSeconds();
+//val = today.getMilliseconds();
+//val = today.getTime();
 
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setFullYear(1985);
-birthday.setHours(3);
-birthday.setMinutes(30);
-birthday.setSeconds(25);
+//myDate.setMonth(2);
+//myDate.setDate(12);
+//myDate.setFullYear(1985);
+//myDate.setHours(3);
+//myDate.setMinutes(30);
+//myDate.setSeconds(25);
 
-console.log(birthday);
+console.log(myDate);
 }
