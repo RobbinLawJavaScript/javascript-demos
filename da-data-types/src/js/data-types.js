@@ -1,5 +1,7 @@
 export function demo() {
 
+// Intro to all major data-types in JavaScript
+
 // PRIMITIVE TYPES are stored on the stack
 // String
 const myName = 'John Doe';
@@ -30,13 +32,14 @@ console.log(typeof mySymbol);
 
 // REFERENCE TYPES - Objects are stored on the heap
 // Array
-const myArray = ['Hi', 'Hello'];
+const myArray = ['Hi', 'Hello', 55];
 console.log(myArray);
 console.log(typeof myArray);
-// Object literal
+// Object literal (map)
 const myObjectLiteral = {
   city: 'Edmonton',
-  province: 'AB'
+  province: 'AB',
+  age: 55
 }
 console.log(myObjectLiteral);
 console.log(typeof myObjectLiteral);

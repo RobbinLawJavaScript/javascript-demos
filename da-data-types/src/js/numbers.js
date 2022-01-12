@@ -1,7 +1,7 @@
 export function demo() {
 
 const num1 = 100;
-const num2 = 50;
+const num2 = 60;
 let val;
 
 // Simple math with numbers
@@ -14,7 +14,7 @@ val = num1 % num2;
 // Math Object
 val = Math.PI;
 val = Math.E;
-val = Math.round(2.5);
+val = Math.round(2.4);
 val = Math.ceil(2.4);
 val = Math.floor(2.8);
 val = Math.sqrt(64);
