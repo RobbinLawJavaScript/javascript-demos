@@ -44,14 +44,17 @@ let val;
 // val = ref.innerHTML;
 
 // ref = document.querySelectorAll("p");
+// val = ref;
 // val = ref[0].innerHTML;
+// val = ref[0].innerText;
 
-// ref = document.querySelectorAll("#someId1");
-// val = ref[0].innerHTML;
+// // ref = document.querySelectorAll("#someId1");
+// // val = ref[0].innerHTML;
 
 // ref = document.querySelectorAll(".someClass1");
+// val = ref;
 // val = ref[0].innerHTML;
-// val = ref[1].innerHTML;
+//val = ref[1].innerHTML;
 
 console.log(val);
 }
