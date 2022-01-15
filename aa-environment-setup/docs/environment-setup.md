@@ -69,5 +69,7 @@
 - JavaScript ES6 Snippets
 - Live Server - opens in the default browser
 - Live Preview (Microsoft) - opens in a tab in VSCode
+- Auto Import by steotes
+- DartJs Sass by CodeLios
 
 ----
