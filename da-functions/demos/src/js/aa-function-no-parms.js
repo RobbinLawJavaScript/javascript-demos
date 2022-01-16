@@ -5,7 +5,7 @@ export function demo() {
 
 //Calling a basic function with no arguments and no statements does not accomplish anything.
 fun();
-//Calling a function with no arguments, 
+//Calling a basic function with no arguments, 
 //and no return value, but with statements.
 greetUser();
 
@@ -18,8 +18,7 @@ function greetUser() {
     const GREETING = 'Good afternoon ';
     myName = prompt('Enter name:');
     console.log('after prompt but before alert');
-    //DelayNode();
-    window.alert(GREETING + myName);
+    alert(GREETING + myName);
     console.log('after alert');
 }
 

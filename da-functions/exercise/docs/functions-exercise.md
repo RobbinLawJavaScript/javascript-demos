@@ -49,7 +49,7 @@ it a try.
 
 #### Exercise Steps
 
-1. Locate the HTML document ([console_exercise.html](./practice/functions_exercise.html)) in the *practice/* folder.
+1. Locate the HTML document `console-exercise.html` in the *exercise/* folder.
 1. Right-click on the file and choose "Open with Live Server".
 
     ![](./images/step-1.png)
@@ -96,7 +96,8 @@ As a final example, we will use this newly declared function to update the inner
 1. Declare the strong function in the console
 1. Declare a variable to hold the current innerHTML value from p.important (name this variable appropriately)
 1. Assign this variable the strong string value by using the strong function and passing in this same variable in as the argument
-1. Finally, update the p.important innerHTML using the updateInnerHTML function
+1. Finally, update the p.important innerHTML using the updateInnerHTML function.
+1. Now do all the steps over again but in a script file so the program runs each time you reload the page.
 
 > Figure 2. Sample output from the above steps
 >

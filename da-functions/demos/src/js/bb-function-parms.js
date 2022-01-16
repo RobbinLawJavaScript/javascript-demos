@@ -29,7 +29,7 @@ let greetUser2 = function (name) {
 greetUser2(myName);
 
 // Arrow functions are an ES6 update to the language that allows for a more
-// elegant syntax of defining functions. The function reserved
+// elegant syntax of defining function expressions. The function reserved
 // word is dropped in favour of the 'arrow' (=>). Arrow functions also have
 // a syntax that implicitly returns a value, something that will be explored
 // later on. Otherwise, the function can be used as shown previously. 

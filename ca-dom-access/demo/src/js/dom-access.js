@@ -59,4 +59,5 @@ let val;
 //val = ref[1].innerHTML;
 
 console.log(val);
+
 }

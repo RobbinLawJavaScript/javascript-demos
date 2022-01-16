@@ -1,5 +1,6 @@
 export function demo() {
 
+//Function Scope variables.
 let firstName = prompt("What's your first name there stranger?");
 let hobby = prompt("What's your favorite hobby");
 
