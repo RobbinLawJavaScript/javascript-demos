@@ -72,17 +72,14 @@ const reportEvent = function(evt){ // opening curly brace before the "body" of t
     bubbles.innerHTML = evt.bubbles;
     tag.innerHTML = evt.target.tagName;
     type.innerHTML= evt.type;
-} // closing curly brace denotes the end of the function
+}
 
-let refSection = document.querySelector('section'); 
+let refSection = document.querySelector('section.mouse-tricks'); 
 refSection.addEventListener('mouseover', reportEvent); 
 refSection.addEventListener('mouseout', reportEvent);
 refSection.addEventListener('mousedown', reportEvent);
 refSection.addEventListener('mouseup', reportEvent);
 refSection.addEventListener('click', reportEvent);
 refSection.addEventListener('dblclick', reportEvent);
-
-// Add an event listener for the dblclick event on the <header> element of this form
-//document.querySelector('header').addEventListener('dblclick', reportEvent);
 
 }

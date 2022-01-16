@@ -1,11 +1,13 @@
-html {
+body {
 	font-family: sans-serif;
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
 }
-
-body {
+a, a:visited {
+	color: #0066ff;
+}
+main {
 	background-color: #efefef;
 	height: 100%;
 	margin: auto;

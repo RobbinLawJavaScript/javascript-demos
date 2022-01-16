@@ -1,3 +1,6 @@
+export function demo() {
+//TODO: Put your solution in this file
+
 //We make this function a const so that it can never be accidentally changed.
 const pCityIntroAHandler1 = function (evt) {
     if( confirm('Ok to stay on this page, Cancel to go to img page') ) {
@@ -19,17 +22,13 @@ const pCityIntroAHandler2 = function (evt) {
 }
 //reference the p.city-intro>a element and add a click listener to it.
 
-// document.querySelector('p.city-intro a')
-// .addEventListener('click', pCityIntroAHandler1);
+const refAnchor = document.querySelector('p.city-intro>a');
 
-// document.querySelector('p.city-intro>a')
-// .addEventListener('click', pCityIntroAHandler2);
+refAnchor.addEventListener('click', pCityIntroAHandler1);
+//refAnchor.addEventListener('click', pCityIntroAHandler2);
 
 //There are many different events to listen to.
+//refAnchor.addEventListener('mouseover', pCityIntroAHandler2);
+//refAnchor.addEventListener('mouseout', pCityIntroAHandler2);
 
-// document.querySelector('p.city-intro>a')
-// .addEventListener('mouseover', pCityIntroAHandler2);
-
-// document.querySelector('p.city-intro>a')
-// .addEventListener('mouseout', pCityIntroAHandler2);
-
+}

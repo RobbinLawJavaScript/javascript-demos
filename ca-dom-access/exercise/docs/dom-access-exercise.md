@@ -2,7 +2,7 @@
 
 ## Intro
 
-The console is a great tool for learning JavaScript, you can read all about it [here](https://developer.chrome.com/devtools/docs/console). It allows us direct access to the JavaScript event loop so that we may execute statements in real time! This course will rely heavily on the console to test out new techniques and skills; it is expected that students will familiarize themselves with how to use the console (access and execute statements) before the end of the first week of class.
+The console is a great tool for learning JavaScript, you can read all about it [here](https://developer.chrome.com/devtools/docs/console). It allows us direct access to the JavaScript event loop so that we may execute statements in real time! This course will rely heavily on the console to test out new techniques and skills; it is expected that students will familiarize themselves with how to use the console (access and execute statements).
 
 There are several ways to access the console:
 
@@ -18,8 +18,7 @@ There are several ways to access the console:
 
 > The demos and practice exercises in this folder assume that you are using [Visual Studio Code] and have the [Live Server] extension installed.
 
-1. Locate the HTML document ([console_exercise.html](../src/dom-access-exercise.html)) in the *src/* folder.
-1. Right-click on the file and choose "Open with Live Server".
+1. To follow along with this exercise, you will need to open the [src/index.html](../src/index.html) in your browser with Live-Server.
 1. Open the console using any of the aforementioned methods.
 1. Keep the browser open for the remaining steps.
 
@@ -54,12 +53,12 @@ explored later). Each of these functions returns the matched element (if any) fr
 Often you will want to store a reference to these elements (and other needed values) so that you can
 perform some work on or with them. Variables allow us to do just that.
 
-We will use the reserved word **var** to declare any variables we will need. Simply put, a variable is made
+We will use the reserved word **let** to declare any variables we will need. Simply put, a variable is made
 up of two parts: an identifier (name) and a value. For example, to declare a variable to hold someone's
 first name you might use the following statement:
 
 ```js
-var firstName;
+let firstName;
 ```
 
 This only declares an identifier that we can reference, it currently has no associated value. To assign a value to the variable we use the '=' (assignment) operator. For example, to assign the string 'Jane Doe' to the firstName variable you would do the following:
@@ -104,4 +103,5 @@ As an example, let's change the innerHTML for the h2.intro element to read *Intr
 1. Declare a variable identifier to reference the h2.intro element, name the variable **intro**
 1. Combine what you know about the assignment operator and selecting elements to assign the element to the variable
 1. Once assigned, use the variable name followed by the '.' operator to access the innerHTML property
-1. Just as you can 'get' the innerHTML from the element (see Figure 4) you can also 'set' the value as well by using the assignment operator and the new string value; in this case, "Introduction"
+1. Just as you can 'get' the innerHTML from the element (see Figure 4) you can also 'set' the value as well by using the assignment operator and the new string value; in this case, "Introduction".
+1. Once you have completed the above steps achieve the same using a script file that runs every time the page is reloaded.

@@ -49,11 +49,7 @@ it a try.
 
 #### Exercise Steps
 
-1. Locate the HTML document `console-exercise.html` in the *exercise/* folder.
-1. Right-click on the file and choose "Open with Live Server".
-
-    ![](./images/step-1.png)
-
+1. To follow along with this exercise, you will need to open the [src/index.html](../src/index.html) in your browser with Live-Server.
 1. Open the console
 1. Copy the function from the example above into the console and press [enter]
     - This is will declare the function for use

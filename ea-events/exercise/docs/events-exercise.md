@@ -2,7 +2,7 @@
 
 ## JavaScript Events
 
-> To follow along with this exercise, you will need to open the [practice/index.html](./practice/index.html) in your browser with Live-Server.
+> To follow along with this exercise, you will need to open the [src/index.html](../src/index.html) in your browser with Live-Server.
 
 Much of what has made JavaScript so popular has to do with how simple it is to listen for events in the browser. Tracking and acting on user interaction with the browser is what makes a web page interactive and allows us to create a variety of meaningful experiences for the user. That being said, there are essentially three steps to remember when implementing event listeners:
 
