@@ -43,12 +43,12 @@ document.querySelector('a#a2')
     }    
 });
 
-let ref = document.querySelector('ul.links');
+let refUl = document.querySelector('ul.links');
 let clickMessage = document.querySelector('p#p2');
-console.log(ref.outerHTML);
-console.log(ref.innerHTML);
+console.log(refUl.outerHTML);
+console.log(refUl.innerHTML);
 
-ref.addEventListener('click', clickHandler);
+refUl.addEventListener('click', clickHandler);
 
 function clickHandler(evt) {
     evt.preventDefault();
@@ -58,11 +58,31 @@ function clickHandler(evt) {
         clickMessage.innerHTML = `you clicked the NHL link`;
     else if (evt.target.id === 'h1')
         clickMessage.innerHTML = `you clicked the h1`;
-
-        
-
-    
-
 }
+
+// Declaring a constant variable to refer to a particular function.
+// The function takes a single value (that is, the function has a single parameter)
+const reportEvent = function(evt){ // opening curly brace before the "body" of the function
+    // it's a good practice nowadays to use the let keyword instead of the var keyword
+    // The let keyword makes sure the variable declared exists for this function's block scope only.
+    let bubbles = document.querySelector('#evtBubbles');
+    let tag = document.querySelector('#evtTag');
+    let type = document.querySelector('#evtType');
+    // Taking information about the event and putting it inside the labels
+    bubbles.innerHTML = evt.bubbles;
+    tag.innerHTML = evt.target.tagName;
+    type.innerHTML= evt.type;
+} // closing curly brace denotes the end of the function
+
+let refSection = document.querySelector('section'); 
+refSection.addEventListener('mouseover', reportEvent); 
+refSection.addEventListener('mouseout', reportEvent);
+refSection.addEventListener('mousedown', reportEvent);
+refSection.addEventListener('mouseup', reportEvent);
+refSection.addEventListener('click', reportEvent);
+refSection.addEventListener('dblclick', reportEvent);
+
+// Add an event listener for the dblclick event on the <header> element of this form
+//document.querySelector('header').addEventListener('dblclick', reportEvent);
 
 }

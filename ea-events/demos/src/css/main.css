@@ -1,11 +1,11 @@
-body {
+html {
 	font-family: sans-serif;
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
 }
 
-main {
+body {
 	background-color: #efefef;
 	height: 100%;
 	margin: auto;
