@@ -9,14 +9,14 @@ fun();
 //and no return value, but with statements.
 greetUser();
 
-//This is a basic function declaration with no parameters and no statements.
+//This is a basic function declaration/definition with no parameters and no statements.
 function fun() {}
 
-//Basic function declaration with no parameters but with statements.
+//Basic function declaration/definition with no parameters but with statements.
 function greetUser() {
     let myName;
     const GREETING = 'Good afternoon ';
-    myName = prompt('Enter name:');
+    myName = window.prompt('Enter name:');
     console.log('after prompt but before alert');
     alert(GREETING + myName);
     console.log('after alert');
