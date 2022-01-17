@@ -18,7 +18,7 @@ We will implement some very basic interaction together that relies on a link to 
 
 > Figure 1. Starting project output
 
-![](./readmeimages/fig.1.png)
+![](./img/fig.1.png)
 
 The tasks we need to take care of are the following:
 
@@ -70,7 +70,7 @@ The important thing to note from the example is that the featureLinkHandler is n
 
 ##### Testing: It's broken!?
 
-You should now reload the web page and test your code. Remember to first look in the console for any errors you may have made (e.g. typos, syntax errors, etc.) and fix those first. Once you can load the page without any errors, click the link and … it doesn't work! Or more specifically, the `<a>` tag did its default behavour of navigating to another page.
+You should now reload the web page and test your code. Remember to first look in the console for any errors you may have made (e.g. typos, syntax errors, etc.) and fix those first. Once you can load the page without any errors, click the link and … it doesn't work! Or more specifically, the `<a>` tag did its default behaviour of navigating to another page.
 
 What should happen at this time is that the image actually loads in the page, replacing our index.html page. Didn't we take all the necessary steps? Well yes and no. Our approach is good but we overlooked one thing: clicking hyperlinks is already handled by a default behaviour in the browser, and it's still being used. What we need to do is prevent this from happening.
 
@@ -111,4 +111,4 @@ Reload the page in the browser (again checking for errors first) and now click t
 
 > Figure 2. The final result
 
-![](readmeimages/fig.2.png)
+![](img/fig.2.png)
