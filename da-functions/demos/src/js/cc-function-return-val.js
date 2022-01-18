@@ -29,6 +29,9 @@ console.log("the result is " + result);
 result = add('7.0','5');
 document.querySelector('p#p3').innerHTML = 'the result is ' + result;
 console.log('the result is ' + result);
+result = add('7.0', 5);
+document.querySelector('p#p4').innerHTML = 'the result is ' + result;
+console.log('the result is ' + result);
 
 }
 

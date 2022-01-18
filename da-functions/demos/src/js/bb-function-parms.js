@@ -14,6 +14,8 @@ function greetUser1(name) {
     document.querySelector('p.greeting1').innerHTML = GREETING + name;
 }
 
+
+//greetUser2(myName);
 // Functions can be defined in several ways, each with different
 // implications.
 
