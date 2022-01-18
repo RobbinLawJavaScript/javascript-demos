@@ -134,4 +134,4 @@ function featureLinkHandler(evt) {
 ## Exercise
 
 1. Update the example so that the text for the link changes to 'Hide Barcelona' when the image is visible and then back to 'View Barcelona' when the image is not visible.
-2. With this change made, update the condition for whether to display the image or not to be based on the current text being displayed for the link (e.g. if the link currently shows 'View Barcelona', then clicking the link should display the image).
+1. With this change made, update the condition for whether to display the image or not to be based on the current text being displayed for the link (e.g. if the link currently shows 'View Barcelona', then clicking the link should display the image).
