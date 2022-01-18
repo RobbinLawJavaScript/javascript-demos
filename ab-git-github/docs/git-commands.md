@@ -1,5 +1,14 @@
 # Git on the Command Line
 
+**Resources** :
+
+- [git integration with VSCode](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support)
+
+
+----
+
+
+
 We can use the git version control application directly from the command line. Here are some useful commands to get started.
 
 - `git init` - This command will create a git repository in the current folder
