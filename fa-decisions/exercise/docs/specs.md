@@ -5,7 +5,7 @@
 
 ## Decisions (Introduction)
 
-> To follow along with this exercise, you will need to open the [practice/index.html](./practice/index.html) in your browser with Live-Server.
+> To follow along with this exercise, you will need to open the [src/index.html](../src/index.html) in your browser with Live-Server.
 
 Often, an interaction with the user may yield more than one result. In these cases, a decision must be made to determine which action should be executed based on the current state of the page. This can be done by associating specific conditions to desired actions.
 Conditions are essentially Boolean values (true or false) that form the basis for whether a code block is executed or not. They can be built as expressions (for example using relational or equality operators) or could be based on the returned value from a function.
