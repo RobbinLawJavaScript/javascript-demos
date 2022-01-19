@@ -25,7 +25,7 @@ function greetUser2(varName) {
 // Below, the first call will pass the 'myName' variable's value
 // (i.e. whatever was entered in the prompt box) to the greetUser1
 // functions 'myName' parameter.
-greetUser1("John");
+greetUser1(myName);
 greetUser2("Jimmy");
 
 }
