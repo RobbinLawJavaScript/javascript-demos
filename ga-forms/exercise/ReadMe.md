@@ -87,7 +87,7 @@ document.querySelector('.feature.frm ')
         });
 ```
 
-Fantastic! Except that if we add additional tags they are going to be placed right beside the previous one (i.e. there is not space between individual tags). Make an update to your code to ensure there is a space between each tag when they are added *(use what you alreadyknow to make this happen)*.
+Fantastic! Except that if we add additional tags they are going to be placed right beside the previous one (i.e. there is not space between individual tags). Make an update to your code to ensure there is a space between each tag when they are added *(use what you already know to make this happen)*.
 
 ## Form Validation
 
