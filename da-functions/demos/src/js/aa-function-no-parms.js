@@ -15,10 +15,9 @@ function fun() {}
 //Basic function declaration/definition with no parameters but with statements.
 function greetUser() {
     let myName;
-    const GREETING = 'Good afternoon ';
     myName = window.prompt('Enter name:');
     console.log('after prompt but before alert');
-    alert(GREETING + myName);
+    alert(`Good morning ${myName}`);
     console.log('after alert');
 }
 

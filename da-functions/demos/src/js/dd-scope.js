@@ -10,15 +10,16 @@ myName = prompt('Enter name:');
 //is not the same memory location as the variable
 //'myName' declared in the function scope. 
 function greetUser1(myName) {
-    const GREETING = 'Good morning ';
-    document.querySelector('.greeting1').innerHTML = GREETING + myName;
+    document.querySelector('.greeting1')
+        .innerHTML = `Good morning ${myName}`;
 }
 
 //Here we can access both the function scope variable and the local parameter.
 function greetUser2(varName) {
-    const GREETING = 'Good afternoon ';
-    document.querySelector('.greeting2').innerHTML = GREETING + myName;
-    document.querySelector('.greeting3').innerHTML = GREETING + varName;
+    document.querySelector('.greeting2')
+        .innerHTML = `Good afternoon ${varName}`;
+    document.querySelector('.greeting3')
+        .innerHTML = `Good afternoon ${myName}`;
 }
 
 // Functions that define parameters are passed arguments when called.

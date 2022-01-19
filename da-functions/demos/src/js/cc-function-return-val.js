@@ -7,8 +7,7 @@ let hobby = prompt("What's your favorite hobby");
 //this function takes two parameters but returns nothing
 //to the caller of the function.
 const displayPerson = function(name, favoriteHobby) {
-  let introString = " Hello " + name + ", ";
-  introString += favoriteHobby + " is your favorite hobby";
+  let introString = `Hello ${name}, ${favoriteHobby} is your fav hobby`;
   let paragraph = document.querySelector('p#p1');
   paragraph.innerHTML = introString;
 }
@@ -24,14 +23,11 @@ const add = function(numberOne, numberTwo) {
 
 //calling the function twice with different data types.
 let result = add(7.0, 5);
-document.querySelector('p#p2').innerHTML = 'the result is ' + result;
-console.log("the result is " + result);
+document.querySelector('p#p2').innerHTML = `the result is ${result}`;
 result = add('7.0','5');
-document.querySelector('p#p3').innerHTML = 'the result is ' + result;
-console.log('the result is ' + result);
+document.querySelector('p#p3').innerHTML = `the result is ${result}`;
 result = add('7.0', 5);
-document.querySelector('p#p4').innerHTML = 'the result is ' + result;
-console.log('the result is ' + result);
+document.querySelector('p#p4').innerHTML = `the result is ${result}`;
 
 }
 
