@@ -2,7 +2,7 @@ export function demo() {
 
 let counter = 0;
 
-const ButtonClickHandler = () => {
+function ButtonClickHandler(){
     counter++;
     let message = document.querySelector('p#p1');
     message.innerHTML = `Button was clicked a ${counter} time.`;
@@ -15,7 +15,7 @@ button.addEventListener('click', ButtonClickHandler);
 // used to get information about the event and to 
 // call methods/functions on the event as well 
 // e.g. preventDefault()
-const LinkHandler = (evt) => {
+function LinkHandler(evt) {
     if( confirm('Ok to stay on this page, Cancel to leave and go to nait') ) {
         //preventDefault stops the normal operation of the href.
         evt.preventDefault();
@@ -28,7 +28,7 @@ naitLink.addEventListener('click', LinkHandler);
 // In the above example, the explicit variable and 
 // function are not required as they are not referenced
 // more than once. So, we can rewrite the example all in one statement
-// using an anonymous function.
+// using an anonymous arrow function.
 
 document.querySelector('a#a2')
 .addEventListener('click', (evt) => {
@@ -37,7 +37,7 @@ document.querySelector('a#a2')
     }    
 });
 
-const ClickHandler = (evt) => {
+function ClickHandler(evt) {
     let clickMessage = document.querySelector('p#p2');
     evt.preventDefault();
     if (evt.target.id === 'a3') 
@@ -52,7 +52,7 @@ console.log(refUl.outerHTML);
 console.log(refUl.innerHTML);
 refUl.addEventListener('click', ClickHandler);
 
-const reportEvent = (evt) => { 
+function ReportEvent(evt) { 
     let bubbles = document.querySelector('#evtBubbles');
     let tag = document.querySelector('#evtTag');
     let type = document.querySelector('#evtType');
@@ -61,11 +61,11 @@ const reportEvent = (evt) => {
     type.innerHTML= evt.type;
 }
 let refSection = document.querySelector('section.mouse-tricks'); 
-refSection.addEventListener('mouseover', reportEvent); 
-refSection.addEventListener('mouseout', reportEvent);
-refSection.addEventListener('mousedown', reportEvent);
-refSection.addEventListener('mouseup', reportEvent);
-refSection.addEventListener('click', reportEvent);
-refSection.addEventListener('dblclick', reportEvent);
+refSection.addEventListener('mouseover', ReportEvent); 
+refSection.addEventListener('mouseout', ReportEvent);
+refSection.addEventListener('mousedown', ReportEvent);
+refSection.addEventListener('mouseup', ReportEvent);
+refSection.addEventListener('click', ReportEvent);
+refSection.addEventListener('dblclick', ReportEvent);
 
 }

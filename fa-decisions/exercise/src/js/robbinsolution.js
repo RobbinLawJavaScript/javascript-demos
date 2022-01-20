@@ -1,6 +1,6 @@
 export function demo() {
 let featureLink = document.querySelector('a.feature');
-const FeatureLinkHandler = (evt) => {
+function FeatureLinkHandler(evt) {
     let featureImage = document.querySelector('img.feature');
     //TODO: 
     //Change this code to include decision by adding an if and else

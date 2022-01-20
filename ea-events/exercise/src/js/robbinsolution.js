@@ -3,7 +3,7 @@ export function demo() {
 
 //We make this function a const so that it can never be accidentally changed.
 //We also use ES6 arrow functions.
-const CityIntroAHandler1 = (evt) => {
+function CityIntroAHandler1(evt) {
     if( confirm('Ok to stay on this page, Cancel to go to img page') ) {
         //preventDefault stops the normal operation of the href.
         evt.preventDefault();
@@ -11,7 +11,7 @@ const CityIntroAHandler1 = (evt) => {
 }
 
 //Use the debugger in Chrome to see what is happening at each statement.
-const CityIntroAHandler2 = (evt) => {
+function CityIntroAHandler2(evt) {
     //get a reference to the img.feature element.    
     let imgFeature = document.querySelector('img.feature');
     //change the src of the img.feature element to be the href of the target element (p.city-intro>a element).     

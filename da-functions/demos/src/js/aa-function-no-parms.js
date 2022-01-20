@@ -5,12 +5,13 @@ export function demo() {
 
 //Calling a basic function with no arguments and no statements does not accomplish anything.
 fun();
-//Calling a basic function with no arguments, 
-//and no return value, but with statements.
-greetUser();
 
 //This is a basic function declaration/definition with no parameters and no statements.
 function fun() {}
+
+//Calling a basic function with no arguments, 
+//and no return value, but with statements.
+greetUser();
 
 //Basic function declaration/definition with no parameters but with statements.
 function greetUser() {

@@ -6,7 +6,7 @@ let hobby = prompt("What's your favorite hobby");
 
 //this function takes two parameters but returns nothing
 //to the caller of the function.
-const displayPerson = function(name, favoriteHobby) {
+function displayPerson(name, favoriteHobby) {
   let introString = `Hello ${name}, ${favoriteHobby} is your fav hobby`;
   let paragraph = document.querySelector('p#p1');
   paragraph.innerHTML = introString;
@@ -17,7 +17,7 @@ displayPerson(firstName, hobby);
 
 //this function takes two parameters and returns
 //data to the caller of the function.
-const add = function(numberOne, numberTwo) {
+function add(numberOne, numberTwo) {
   return numberOne + numberTwo;
 }
 

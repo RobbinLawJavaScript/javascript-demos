@@ -1,3 +1,5 @@
+export function demo() {
+//TODO:
 //When a gallery thumbnail size button is clicked, 
 //the corresponding size class
 //should be added to the div.thumbnails element.
@@ -36,5 +38,7 @@ function thumbnailSizeHandler(evt) {
 			thumbnails.classList.add('lg');
 		}
 	}
+
+}
 
 }
