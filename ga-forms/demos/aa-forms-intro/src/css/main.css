@@ -15,10 +15,14 @@ main {
 	width: 800px;
 }
 
-.feature.description {
-	font-style: italic;
-}
-
 .hidden {
 	display: none;
+}
+
+.error-message {
+	color: lightsalmon;
+}
+
+.success-message {
+	color: lightseagreen;
 }
