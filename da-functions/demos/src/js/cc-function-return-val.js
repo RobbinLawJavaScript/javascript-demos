@@ -22,6 +22,7 @@ function add(numberOne, numberTwo) {
 }
 
 //calling the function twice with different data types.
+//Also demonstrating coersion.
 let result = add(7.0, 5);
 document.querySelector('p#p2').innerHTML = `the result is ${result}`;
 result = add('7.0','5');
