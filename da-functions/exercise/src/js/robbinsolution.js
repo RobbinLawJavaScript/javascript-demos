@@ -13,6 +13,8 @@ function strong(value) {
 let spanRef = document.querySelector('span.note');
 let textToBold = spanRef.innerHTML;
 
+//let textToBold = document.querySelector('span.note').innerHTML;
+
 let textBolded = strong(textToBold);
 updateInnerHTML(spanRef, textBolded);
 
