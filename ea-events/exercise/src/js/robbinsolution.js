@@ -1,8 +1,7 @@
 export function demo() {
+
 //TODO: Put your solution here.
 
-//We make this function a const so that it can never be accidentally changed.
-//We also use ES6 arrow functions.
 function CityIntroAHandler1(evt) {
     if( confirm('Ok to stay on this page, Cancel to go to img page') ) {
         //preventDefault stops the normal operation of the href.
