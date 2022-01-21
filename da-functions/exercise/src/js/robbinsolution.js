@@ -1,8 +1,8 @@
 export function demo() {
-//This code is provided to you. Do not alter it.
 
-function updateInnerHTML(selector, newValue) {
-    selector.innerHTML = newValue;
+//This code is provided to you. Do not alter it.
+function updateInnerHTML(elementReference, newValue) {
+    elementReference.innerHTML = newValue;
 }
 
 //TODO: Put your code here.
@@ -12,8 +12,6 @@ function strong(value) {
 }
 let spanRef = document.querySelector('span.note');
 let textToBold = spanRef.innerHTML;
-
-//let textToBold = document.querySelector('span.note').innerHTML;
 
 let textBolded = strong(textToBold);
 updateInnerHTML(spanRef, textBolded);
