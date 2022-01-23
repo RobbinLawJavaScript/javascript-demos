@@ -1,6 +1,5 @@
-//import * as myDemo from './main.js';
-import * as myDemo from './robbinsolution.js';
+import * as controller from './controller.js';
+//import * as controller from './robbincontroller.js';
 
-//myDemo.demo();
-const ui = new myDemo.UI();
-ui.ListenForClick();
+const app = new controller.Controller();
+app.run();
