@@ -2,28 +2,30 @@ export function demo() {
 
 let counter = 0;
 
+const button = document.querySelector('button');
+button.addEventListener('click', ButtonClickHandler);
 function ButtonClickHandler(){
     counter++;
-    let message = document.querySelector('p#p1');
+    const message = document.querySelector('p#p1');
     message.innerHTML = `Button was clicked a ${counter} time.`;
 }
-let button = document.querySelector('button');
-button.addEventListener('click', ButtonClickHandler);
+
 
 // Event listener functions will be passed the
 // event object for the event. This object can be
 // used to get information about the event and to 
 // call methods/functions on the event as well 
 // e.g. preventDefault()
+
+const naitLink = document.querySelector('a#a1');
+naitLink.addEventListener('click', LinkHandler);
 function LinkHandler(evt) {
     if( confirm('Ok to stay on this page, Cancel to leave and go to nait') ) {
         //preventDefault stops the normal operation of the href.
-        evt.preventDefault();
-        
+        evt.preventDefault();   
     }    
 }
-let naitLink = document.querySelector('a#a1');
-naitLink.addEventListener('click', LinkHandler);
+
 
 // In the above example, the explicit variable and 
 // function are not required as they are not referenced
@@ -37,8 +39,13 @@ document.querySelector('a#a2')
     }    
 });
 
+
+ const refUl = document.querySelector('ul.links');
+console.log(refUl.outerHTML);
+console.log(refUl.innerHTML);
+refUl.addEventListener('click', ClickHandler);
 function ClickHandler(evt) {
-    let clickMessage = document.querySelector('p#p2');
+    const clickMessage = document.querySelector('p#p2');
     evt.preventDefault();
     if (evt.target.id === 'a3') 
         clickMessage.innerHTML = `you clicked the NAIT link`;
@@ -47,11 +54,14 @@ function ClickHandler(evt) {
     else if (evt.target.id === 'h1')
         clickMessage.innerHTML = `you clicked the h1`;
 }
-let refUl = document.querySelector('ul.links');
-console.log(refUl.outerHTML);
-console.log(refUl.innerHTML);
-refUl.addEventListener('click', ClickHandler);
 
+let refSection = document.querySelector('section.mouse-tricks'); 
+refSection.addEventListener('mouseover', ReportEvent); 
+refSection.addEventListener('mouseout', ReportEvent);
+refSection.addEventListener('mousedown', ReportEvent);
+refSection.addEventListener('mouseup', ReportEvent);
+refSection.addEventListener('click', ReportEvent);
+refSection.addEventListener('dblclick', ReportEvent);
 function ReportEvent(evt) { 
     let bubbles = document.querySelector('#evtBubbles');
     let tag = document.querySelector('#evtTag');
@@ -60,12 +70,6 @@ function ReportEvent(evt) {
     tag.innerHTML = evt.target.tagName;
     type.innerHTML= evt.type;
 }
-let refSection = document.querySelector('section.mouse-tricks'); 
-refSection.addEventListener('mouseover', ReportEvent); 
-refSection.addEventListener('mouseout', ReportEvent);
-refSection.addEventListener('mousedown', ReportEvent);
-refSection.addEventListener('mouseup', ReportEvent);
-refSection.addEventListener('click', ReportEvent);
-refSection.addEventListener('dblclick', ReportEvent);
+
 
 }
