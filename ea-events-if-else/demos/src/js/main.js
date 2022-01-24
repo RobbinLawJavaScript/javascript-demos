@@ -40,7 +40,7 @@ document.querySelector('a#a2')
 });
 
 
- const refUl = document.querySelector('ul.links');
+const refUl = document.querySelector('ul.links');
 console.log(refUl.outerHTML);
 console.log(refUl.innerHTML);
 refUl.addEventListener('click', ClickHandler);
