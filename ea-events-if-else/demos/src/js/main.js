@@ -7,9 +7,8 @@ button.addEventListener('click', ButtonClickHandler);
 function ButtonClickHandler(){
     counter++;
     const message = document.querySelector('p#p1');
-    message.innerHTML = `Button was clicked a ${counter} time.`;
+    message.innerHTML = `Button was clicked ${counter} times.`;
 }
-
 
 // Event listener functions will be passed the
 // event object for the event. This object can be
@@ -25,7 +24,6 @@ function LinkHandler(evt) {
         evt.preventDefault();   
     }    
 }
-
 
 // In the above example, the explicit variable and 
 // function are not required as they are not referenced
@@ -73,6 +71,5 @@ function ReportEvent(evt) {
     tag.innerHTML = evt.target.tagName;
     type.innerHTML= evt.type;
 }
-
 
 }
