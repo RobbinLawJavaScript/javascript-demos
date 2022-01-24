@@ -51,8 +51,11 @@ function ClickHandler(evt) {
         clickMessage.innerHTML = `you clicked the NAIT link`;
     else if (evt.target.id === 'a4')
         clickMessage.innerHTML = `you clicked the NHL link`;
-    else if (evt.target.id === 'h1')
-        clickMessage.innerHTML = `you clicked the h1`;
+    else if (evt.target.id === 'h4')
+        clickMessage.innerHTML = `you clicked the h4`;
+    else if (evt.target.id === 'p2')
+        clickMessage.innerHTML = `you clicked the p2`;
+    else clickMessage.innerHTML = `you clicked the parent ul`;
 }
 
 let refSection = document.querySelector('section.mouse-tricks'); 
@@ -60,7 +63,7 @@ refSection.addEventListener('mouseover', ReportEvent);
 refSection.addEventListener('mouseout', ReportEvent);
 refSection.addEventListener('mousedown', ReportEvent);
 refSection.addEventListener('mouseup', ReportEvent);
-refSection.addEventListener('click', ReportEvent);
+//refSection.addEventListener('click', ReportEvent);
 refSection.addEventListener('dblclick', ReportEvent);
 function ReportEvent(evt) { 
     let bubbles = document.querySelector('#evtBubbles');
