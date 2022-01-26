@@ -1,5 +1,4 @@
-import * as controller from './controller.js';
-//import * as controller from './robbincontroller.js';
+import * as myApp from './begin.js';
+//import * as controller from './end.js';
 
-const app = new controller.Controller();
-app.run();
+myApp.run();

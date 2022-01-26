@@ -1,8 +1,5 @@
 # Decisions
 
-- [MDN - String API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) - The API documentation allows you to see what exactly you can do with strings and how to use the code through examples.  Explore some of the string methods; it will prepare for you more complex work in the near future.
-
-
 ## Decisions (Introduction)
 
 > To follow along with this exercise, you will need to open the [src/index.html](../src/index.html).
