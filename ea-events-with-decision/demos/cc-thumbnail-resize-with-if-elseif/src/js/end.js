@@ -8,27 +8,27 @@ export function demo() {
 //In addition to this, the clicked button should be 
 //made active (i.e. add the active class).
 
-var liSm = document.querySelector('.thumbnails-sm');
-var liMd = document.querySelector('.thumbnails-md');
-var liLg = document.querySelector('.thumbnails-lg');
+const liSm = document.querySelector('.thumbnails-sm');
+const liMd = document.querySelector('.thumbnails-md');
+const liLg = document.querySelector('.thumbnails-lg');
 
 liSm.addEventListener('click', thumbnailSizeHandler);
 liMd.addEventListener('click', thumbnailSizeHandler);
 liLg.addEventListener('click', thumbnailSizeHandler);
 
-function thumbnailSizeHandler(evt) {
-	var thumbnails = document.querySelector('div.thumbnails');
+function thumbnailSizeHandler(e) {
+	const thumbnails = document.querySelector('div.thumbnails');
 
 	// if (evt.target.classList.contains('active') != true)
-	if (!evt.target.classList.contains('active')) {
+	if (!e.target.classList.contains('active')) {
 		// update the active li
 		document.querySelector('li.active').classList.remove('active');
-		evt.target.classList.add('active');
-		if (evt.target.classList.contains('thumbnails-sm')) {
+		e.target.classList.add('active');
+		if (e.target.classList.contains('thumbnails-sm')) {
 			thumbnails.classList.remove('md');
 			thumbnails.classList.remove('lg');
 			thumbnails.classList.add('sm');
-		} else if (evt.target.classList.contains('thumbnails-md')) {
+		} else if (e.target.classList.contains('thumbnails-md')) {
 			thumbnails.classList.remove('sm');
 			thumbnails.classList.remove('lg');
 			thumbnails.classList.add('md');
@@ -38,7 +38,6 @@ function thumbnailSizeHandler(evt) {
 			thumbnails.classList.add('lg');
 		}
 	}
-
 }
 
 }
