@@ -19,10 +19,14 @@ main {
 	display: none;
 }
 
-.error-message {
-	color: lightsalmon;
+.error, .success {
+	color: white;
 }
 
-.success-message {
-	color: lightseagreen;
+.error {
+	background: lightsalmon;
+}
+
+.success {
+	background: lightseagreen;
 }
