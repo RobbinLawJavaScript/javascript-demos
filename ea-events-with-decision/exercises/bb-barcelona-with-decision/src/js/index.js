@@ -1,4 +1,4 @@
-import * as myApp from './begin.js';
-//import * as controller from './end.js';
+//import * as myApp from './begin.js';
+import * as myApp from './end.js';
 
 myApp.run();

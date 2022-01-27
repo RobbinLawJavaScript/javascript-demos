@@ -19,8 +19,7 @@ liLg.addEventListener('click', thumbnailSizeHandler);
 function thumbnailSizeHandler(e) {
 	const thumbnails = document.querySelector('div.thumbnails');
 
-	// if (evt.target.classList.contains('active') != true)
-	if (!e.target.classList.contains('active')) {
+	if (e.target.classList.contains('active') != true) {
 		// update the active li
 		document.querySelector('li.active').classList.remove('active');
 		e.target.classList.add('active');

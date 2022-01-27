@@ -17,10 +17,10 @@ function featureLinkHandler(e) {
     featureImage.classList.remove('hidden');
 }
 
-featureLink.addEventListener('click', featureLinkHandler);
+//featureLink.addEventListener('click', featureLinkHandler);
 
 //There are many different events to listen to.
-//refAnchor.addEventListener('mouseover', featureLinkHandler);
-//refAnchor.addEventListener('mouseout', featureLinkHandler);
+//featureLink.addEventListener('mouseover', featureLinkHandler);
+featureLink.addEventListener('mouseout', featureLinkHandler);
 
 }
