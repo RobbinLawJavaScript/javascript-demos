@@ -26,7 +26,7 @@ nav>ul>li {
 	padding: 10px
 }
 nav>ul>li:hover {
-	color: #fff !important;
+	color: #fff;
 	cursor: pointer;
 }
 
