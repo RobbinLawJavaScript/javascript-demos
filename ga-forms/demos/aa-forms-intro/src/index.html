@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forms Intro</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Forms Intro</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<script type="module" src="./js/index.js" defer></script>
 </head>
+
 <body>
-    <main>
-        <form class="frm" method="post">
-            <div class="row">
-              <div class="six columns">
-                <label for="firstName">Your Name</label>
-                <input class="u-full-width" type="text" placeholder="first name" id="firstNameId" name="firstName">
-              </div>
-              <div class="six columns">
-                <label for="dropDown">Reason for Contacting Me</label>
-                <select class="u-full-width" id="dropDown" name="dropDown">
-                  <option value="Option 0">Select...</option>
-                  <option value="Option 1">Questions</option>
-                  <option value="Option 2">Job</option>
-                  <option value="Option 3">Can I get your number?</option>
-                </select>
-              </div>
-            </div>
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
-              <span class="label-body">Send a copy to yourself</span>
-            </label>
-            <input class="button-primary" type="submit" value="Submit">
-          </form>
-          <div class="success-message"></div>
-          <div class="error-message"></div>
-    </main>
+	<main>
+		<form id="frm" method="get">
+			<div class="row">
+				<div class="mb-1 col-7 alert">
+				</div>
+			</div>
+			<div class="row">
+				<div class="mb-3 col-7">
+					<input class="form-control" type="text" placeholder="first name" id="firstNameId" name="firstName">
+				</div>
+				<div class="mb-3 col-3">
+					<select class="form-select" id="dropDown" name="dropDown">
+						<option value="">Select a Contact Reason...</option>
+						<option value="Option 1">Questions</option>
+						<option value="Option 2">Job</option>
+						<option value="Option 3">Can I get your number?</option>
+					</select>
+				</div>
+				<div class="col-2">
+					<button type="submit" class="btn btn-primary w-100">Add Item</button>
+				</div>
+			</div>
+		</form>
+		<div class="success-message"></div>
+		<div class="error-message"></div>
+		<div class="item-list">
+
+		</div>
+	</main>
 </body>
+
 </html>
