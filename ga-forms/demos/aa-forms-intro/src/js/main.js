@@ -1,9 +1,22 @@
+// The target of the submit event is the 'form'
+// element itself (you can submit the form by
+// either pressing <enter> or clicking the submit
+// button).
+// e.g. evt.target will give access to the form
+
+// The elements property of a form element gives access
+// to the form control elements in the form (e.g. input and button)
+// You can use either .validName access to the name (if it's a valid name)
+// or ['invalid-name'] for names that do not 
+// adhere to JavaScript naming conventions. In JavaScript an invalid name
+// would have a - in it. Don't use a - in any name but css classes.
+
 export function demo(){
 
 const form = document.querySelector("#frm")
 
 form.addEventListener("submit", e => {
-    e.preventDefault();
+    e.preventDefault();    
     let {text, select} = getUserValues(e);
     let {message, isNotValid} = validateUserValues(text, select);
     if(isNotValid){

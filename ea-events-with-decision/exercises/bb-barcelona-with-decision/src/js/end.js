@@ -1,7 +1,7 @@
 export function run(){
     
   document.querySelector('a.feature')
-          .addEventListener('click', (e) => {
+          .addEventListener('click', e => {
     const featureImage = document.querySelector('img.feature');
     e.preventDefault();
     //TODO: 
