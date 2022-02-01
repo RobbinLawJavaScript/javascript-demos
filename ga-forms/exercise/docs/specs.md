@@ -1,6 +1,6 @@
 # Exercise - Form Validation
 
-Using what you have learned via the demos, make the following updates to the given code:
+Using what you have learned make the following updates to the given code:
 
 1. Take the text that is entered and `trim` off any spaces at the beginning and end of the entered text.
 1. In the given code when you enter empty text and submit, it will be accepted.  Update the given code so that it rejects empty text and displays the message `Invalid Data: | Text Empty |`.   

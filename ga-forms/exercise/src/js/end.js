@@ -5,6 +5,7 @@ export function Run(){
 	form.addEventListener("submit", e => {
 		e.preventDefault();    
 		let text = getUserValues(e);
+		//TODO: Add code here to trim the entered text.
 		text = text.trim();
 		let {message, isNotValid} = validateUserValues(text);
 		if(isNotValid){
@@ -24,6 +25,8 @@ export function Run(){
 	function validateUserValues(text){
 		let message = '';
 		let isNotValid = true;
+		//TODO: Add code here to validate the entered text
+		//as per the specs request.
 		if(text === '')
 			message += `| Text Empty |`;
 		if(message != '')
