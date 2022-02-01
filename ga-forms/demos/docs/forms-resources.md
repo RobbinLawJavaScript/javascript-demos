@@ -2,9 +2,7 @@
 
 **Resources** :
 
-- [skeleton css](http://getskeleton.com/)
-- [skeleton css by Brad Traversy on youtube](https://www.youtube.com/watch?v=nVANwdryGVc)
-
 - [bootstrap](https://getbootstrap.com/docs/5.0/utilities/spacing/)
+- [bootstrap 5 crash course by Brad Traversy on youtube](https://www.youtube.com/watch?v=4sosXZsdy-s&list=RDCMUC29ju8bIPH5as8OGnQzwJyA&index=2)
 
 ----
