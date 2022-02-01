@@ -12,7 +12,7 @@ export function Run(){
 			showAlert(message, 'error');
 		} else {
 			AddItemToList(text);
-			showAlert('Item Added to List!', 'success');
+			showAlert('Tag Added to List!', 'success');
 			clearUserValues(e);
 		}
 	});
