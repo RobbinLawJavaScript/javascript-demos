@@ -48,7 +48,7 @@ function validateUserValues(text, select){
 
 function showAlert(message, className) {
     if(message != ''){
-        const parentDiv = document.querySelector('.alert');
+        const parentDiv = document.querySelector('#alert');
         const alertElement = 
         `
         <div class='${className} form-control'>
@@ -60,7 +60,7 @@ function showAlert(message, className) {
 }
 
 function AddItemToList(text, select) {
-    let list = document.querySelector(".item-list")
+    let list = document.querySelector("#list")
     let newItem = 
     `
     <div class="mb-3">

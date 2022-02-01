@@ -3,7 +3,8 @@
 Using what you have learned make the following updates to the given code:
 
 1. Take the text that is entered and `trim` off any spaces at the beginning and end of the entered text.
-1. In the given code when you enter empty text and submit, it will be accepted.  Update the given code so that it rejects empty text and displays the message `Invalid Data: | Text Empty |`.   
+1. In the given code when you enter empty text and submit, it will be accepted.  Update the given code so that it rejects empty text and displays the message `Invalid Data: | Text Empty |`.
+1. Update the given code so that it rejects text that is longer than 10 characters and displays the message `Invalid Data: | Text > 10 |`.   
 
 Only change the begin.js file. Do not change the given html, css, or other js files.
 
