@@ -29,6 +29,8 @@ export function Run(){
 		//as per the specs request.
 		if(text === '')
 			message += `| Text Empty |`;
+		if(text.length > 10)
+			message += `| Text > 10 |`;
 		if(message != '')
 			message = `Invalid Data: ` + message;
 		else isNotValid = false;

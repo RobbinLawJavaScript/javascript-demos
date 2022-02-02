@@ -23,7 +23,7 @@ form.addEventListener("submit", e => {
         showAlert(message, 'error');
     } else {
         AddItemToList(text, select);
-        showAlert('Item Added to List!', 'success')
+        showAlert('Item Added to List!', 'success');
     }
 });
 
