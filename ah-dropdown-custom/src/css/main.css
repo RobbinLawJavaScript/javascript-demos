@@ -1,3 +1,18 @@
+:root {
+  /* --bs-primary: #6c757d; */
+  --rem-font-size: 16px;
+  --body-width: 80rem;
+  --body-margin: 60px;
+  --bg-color: #b5b5b5;
+  --bg-color-success: seagreen;
+  --bg-color-error: salmon;
+  --text-color-error: #fff;
+  --text-color-success: #fff;
+  --box-shadow: 0px 0px 0px 0.25rem rgba(66, 70, 73, 0.5);
+  --border-color: #212529;
+  --background-color: #212529;
+}
+
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
@@ -113,17 +128,17 @@ html body form fieldset#custom div.select datalist div.option {
 }
 
 html body form fieldset#custom div.select datalist div.option:hover {
-  background-color: blue;
+  background-color: var(--background-color);
   color: white;
 }
 
 html body form fieldset#custom div.select datalist div.option:focus {
-  background-color: blue;
+  background-color: var(--background-color);
   color: white;
 }
 
 html body form fieldset#custom div.select datalist div.option:checked {
-  background-color: blue;
+  background-color: var(--background-color);
   color: white;
 }
 
