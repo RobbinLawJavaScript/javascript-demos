@@ -48,7 +48,12 @@ val = tags.split(',');
 
 val = str.replace('Robbin', 'Jim');
 
-val = str.includes('Hey');
+//includes
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
+val = 'Hey there Robbin'.includes('here');
+val = 'Hey there Robbin'.includes('Hey th');
+//val = 'Hey there Robbin'.includes('Hey Rob');
+//val = str.includes('Hey');
 
 console.log(val);
 
