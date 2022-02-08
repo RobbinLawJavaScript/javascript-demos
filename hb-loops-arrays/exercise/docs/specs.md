@@ -11,7 +11,7 @@ This exercise has us implementing an extremely simple image carousel. The starti
 
 > Figure 1. Exercise starting user interface
 
-![](imagesreadme/fig.1.png)
+![](./img/fig.1.png)
 
 In order to get this working, we'll need a list of images (stored in an array perhaps…) that we want to cycle through. The available images are located in the images/ directory of the project folder.
 
@@ -35,7 +35,7 @@ document.querySelector('.carousel>img').src = 'images/' + images[0];
 
 > Figure 2. Much better!
 
-![](imagesreadme/fig.2.png)
+![](./img/fig.2.png)
 
 The next step is to assign a click event listener for our carousel controls. Utilize event bubbling and place the event listener on the carousel directly, and then check the event target for .prev or .next.
 

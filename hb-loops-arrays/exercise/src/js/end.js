@@ -1,3 +1,5 @@
+function End(){
+
 let images = ['mountain1.jpg', 'mountain2.jpg', 'mountain3.jpg'];
 let currentImg = 0;
 document.querySelector('.carousel>img').src = 'images/' + images[0];
@@ -12,3 +14,7 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
         document.querySelector('.carousel>img').src = 'images/' + images[currentImg];
     }
 });
+
+}
+
+export default End;
