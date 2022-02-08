@@ -1,6 +1,6 @@
 function End(){
 
-document.querySelector('.items').addEventListener('change', function (evt) {
+document.querySelector('.items').addEventListener('change', evt => {
     let numOfItems = evt.target.value;
     //let numOfItems = Number(evt.target.value);
     let count;
