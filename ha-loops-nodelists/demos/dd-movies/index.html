@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  
+  <meta charset="utf-8">
+  <title>Arrays</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/cover.css">
+  <script type="module" src="./js/index.js" defer></script>
+  
+</head>
+  
+<body class="d-flex h-100  text-white bg-dark">
+    
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main class="px-3 container">
+      <h1 id="title" class="text-center">Top 100 Movies on IMDB</h1>
+      <form id="movie-filter-form">
+        <div class="row">
+          <div class="mb-3 col-9">
+           <input
+              name="filter-query"
+              type="text"
+              class="form-control"
+              id="movie-filter"
+            >
+          </div>
+          <div class="mb-3 col-3">
+            <button type="submit" class="w-100 btn btn-primary">Filter</button>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <ol class="top-movies-list list-group">
+          <li class="list-group-item">The Shawshank Redemption (1994)</li>
+          <li class="list-group-item">The Godfather (1972)</li>
+          <li class="list-group-item">The Dark Knight (2008)</li>
+          <li class="list-group-item">The Godfather: Part II (1974)</li>
+          <li class="list-group-item">The Lord of the Rings: The Return of the King (2003)</li>
+          <li class="list-group-item">Pulp Fiction (1994)</li>
+          <li class="list-group-item">Schindler's List (1993)</li>
+          <li class="list-group-item">12 Angry Men (1957)</li>
+          <li class="list-group-item">Inception (2010)</li>
+          <li class="list-group-item">Fight Club (1999)</li>
+          <li class="list-group-item">The Lord of the Rings: The Fellowship of the Ring (2001)</li>
+          <li class="list-group-item">Forrest Gump (1994)</li>
+          <li class="list-group-item">The Good, the Bad and the Ugly (1966)</li>
+          <li class="list-group-item">Hamilton (2020)</li>
+          <li class="list-group-item">The Lord of the Rings: The Two Towers (2002)</li>
+          <li class="list-group-item">The Matrix (1999)</li>
+          <li class="list-group-item">Goodfellas (1990)</li>
+          <li class="list-group-item">Star Wars: Episode V - The Empire Strikes Back (1980)</li>
+          <li class="list-group-item">One Flew Over the Cuckoo's Nest (1975)</li>
+          <li class="list-group-item">Parasite (2019)</li>
+          <li class="list-group-item">Interstellar (2014)</li>
+          <li class="list-group-item">City of God (2002)</li>
+          <li class="list-group-item">Spirited Away (2001)</li>
+          <li class="list-group-item">Saving Private Ryan (1998)</li>
+          <li class="list-group-item">The Green Mile (1999)</li>
+          <li class="list-group-item">Life Is Beautiful (1997)</li>
+          <li class="list-group-item">Se7en (1995)</li>
+          <li class="list-group-item">The Silence of the Lambs (1991)</li>
+          <li class="list-group-item">Star Wars: Episode IV - A New Hope (1977)</li>
+          <li class="list-group-item">Harakiri (1962)</li>
+          <li class="list-group-item">Seven Samurai (1954)</li>
+          <li class="list-group-item">It's a Wonderful Life (1946)</li>
+          <li class="list-group-item">Joker (2019)</li>
+          <li class="list-group-item">Whiplash (2014)</li>
+          <li class="list-group-item">The Intouchables (2011)</li>
+          <li class="list-group-item">The Prestige (2006)</li>
+          <li class="list-group-item">The Departed (2006)</li>
+          <li class="list-group-item">The Pianist (2002)</li>
+          <li class="list-group-item">Gladiator (2000)</li>
+          <li class="list-group-item">American History X (1998)</li>
+          <li class="list-group-item">The Usual Suspects (1995)</li>
+          <li class="list-group-item">LÃ©on: The Professional (1994)</li>
+          <li class="list-group-item">The Lion King (1994)</li>
+          <li class="list-group-item">Terminator 2: Judgment Day (1991)</li>
+          <li class="list-group-item">Cinema Paradiso (1988)</li>
+          <li class="list-group-item">Grave of the Fireflies (1988)</li>
+          <li class="list-group-item">Back to the Future (1985)</li>
+          <li class="list-group-item">Anand (1971)</li>
+          <li class="list-group-item">Once Upon a Time in the West (1968)</li>
+          <li class="list-group-item">Psycho (1960)</li>
+          <li class="list-group-item">Casablanca (1942)</li>
+          <li class="list-group-item">Modern Times (1936)</li>
+          <li class="list-group-item">City Lights (1931)</li>
+          <li class="list-group-item">Capernaum (2018)</li>
+          <li class="list-group-item">Ayla: The Daughter of War (2017)</li>
+          <li class="list-group-item">Your Name. (2016)</li>
+          <li class="list-group-item">Dangal (2016)</li>
+          <li class="list-group-item">Spider-Man: Into the Spider-Verse (2018)</li>
+          <li class="list-group-item">Avengers: Endgame (2019)</li>
+          <li class="list-group-item">Avengers: Infinity War (2018)</li>
+          <li class="list-group-item">Coco (I) (2017)</li>
+          <li class="list-group-item">Django Unchained (2012)</li>
+          <li class="list-group-item">The Dark Knight Rises (2012)</li>
+          <li class="list-group-item">3 Idiots (2009)</li>
+          <li class="list-group-item">Like Stars on Earth (2007)</li>
+          <li class="list-group-item">WALLÂ·E (2008)</li>
+          <li class="list-group-item">The Lives of Others (2006)</li>
+          <li class="list-group-item">Oldboy (2003)</li>
+          <li class="list-group-item">Memento (2000)</li>
+          <li class="list-group-item">Princess Mononoke (1997)</li>
+          <li class="list-group-item">Once Upon a Time in America (1984)</li>
+          <li class="list-group-item">Raiders of the Lost Ark (1981)</li>
+          <li class="list-group-item">The Shining (1980)</li>
+          <li class="list-group-item">Apocalypse Now (1979)</li>
+          <li class="list-group-item">Alien (1979)</li>
+          <li class="list-group-item">High and Low (1963)</li>
+          <li class="list-group-item">Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)</li>
+          <li class="list-group-item">Witness for the Prosecution (1957)</li>
+          <li class="list-group-item">Paths of Glory (1957)</li>
+          <li class="list-group-item">Rear Window (1954)</li>
+          <li class="list-group-item">Sunset Blvd. (1950)</li>
+          <li class="list-group-item">The Great Dictator (1940)</li>
+          <li class="list-group-item">1917 (2019)</li>
+          <li class="list-group-item">Uri: The Surgical Strike (2019)</li>
+          <li class="list-group-item">Tumbbad (2018)</li>
+          <li class="list-group-item">Andhadhun (2018)</li>
+          <li class="list-group-item">Drishyam (2013)</li>
+          <li class="list-group-item">The Hunt (2012)</li>
+          <li class="list-group-item">A Separation (2011)</li>
+          <li class="list-group-item">Incendies (2010)</li>
+          <li class="list-group-item">7 Kogustaki Mucize (2019)</li>
+          <li class="list-group-item">My Father and My Son (2005)</li>
+          <li class="list-group-item">Toy Story 3 (2010)</li>
+          <li class="list-group-item">Inglourious Basterds (2009)</li>
+          <li class="list-group-item">Eternal Sunshine of the Spotless Mind (2004)</li>
+          <li class="list-group-item">AmÃ©lie (2001)</li>
+          <li class="list-group-item">Snatch (2000)</li>
+          <li class="list-group-item">Requiem for a Dream (2000)</li>
+          <li class="list-group-item">American Beauty (1999)</li>
+          <li class="list-group-item">Good Will Hunting (1997)</li>
+        </ol>
+      </div>
+    </main>
+  </div>
+  <!-- 
+    Source for movies data:
+    https://www.kaggle.com/omarhanyy/imdb-top-1000
+  -->
+</body>
+
+</html>
