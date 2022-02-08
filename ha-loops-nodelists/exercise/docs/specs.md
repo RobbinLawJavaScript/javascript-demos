@@ -8,7 +8,7 @@ To illustrate the value of loops, we will complete a simple exercise, which will
 
 > Figure 1. Exercise user interface
 
-![](imagesreadme/fig.1a.png)
+![](./img/fig.1a.png)
 
 As you can see, it is a simple interface displaying message subject lines and checkboxes. What we will do in this walkthrough is add the functionality for toggling all checkboxes below the first one whenever it is checked/unchecked.
 
@@ -46,7 +46,7 @@ You should now see a list of all the checkbox elements in the console when the t
 
 > Figure 2. Logging all checkboxes
 
-![](imagesreadme/fig.2b.png)
+![](./img/fig.2b.png)
 
 Notice how all the input elements are contained between brackets with commas separating them. The first input in the list is active and you can see the highlighted checkbox it corresponds with in the table above it.
 
@@ -97,6 +97,6 @@ This search form should allow the user to search for and highlight matches in th
 
 > Figure 1. Complete solution demonstrating search feature
 
-![](imagesreadme/fig.1b.png)
+![](./img/fig.1b.png)
 
 Be sure to take some time to really think about this one before you being coding; remember it's not about quantity but quality.

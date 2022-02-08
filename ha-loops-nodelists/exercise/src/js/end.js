@@ -1,3 +1,5 @@
+function End(){
+
 document.querySelector('[name=toggle]').addEventListener('change', function (evt) {
     console.log('toggle changed...');
     let checks = document.querySelectorAll('[name=message]');
@@ -15,3 +17,7 @@ document.querySelector('[name=toggle]').addEventListener('change', function (evt
         idx++;
     }
 });
+
+}
+
+export default End;
