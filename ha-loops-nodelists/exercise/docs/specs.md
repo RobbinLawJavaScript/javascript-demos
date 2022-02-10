@@ -17,9 +17,9 @@ To begin, we need to add an event listener for checking the box. The first check
 > Example 1. Adding an event listener for the toggle checkbox
 
 ```js
-documet.querySelector('[name=toggle]').addEventListener('change', function (evt){
+documet.querySelector('[name=toggle]').addEventListener('change', evt => {
   console.log('toggle changed...');
-));
+});
 ```
 
 Test that you have your event listener properly added and that checking/unchecking the first checkbox displays the output in the console.
@@ -36,10 +36,10 @@ For this task we can use the very similar document.querySelectorAll function. Un
 > Example 2. Selecting all elements that match the selector and logging the resultant node list
 
 ```js
-document.querySelector('[name=toggle]').addEventListener('change', function (evt){
+document.querySelector('[name=toggle]').addEventListener('change', evt => {
   var checks = document.querySelectorAll('[name=message]');
   console.log(checks);
-));
+});
 ```
 
 You should now see a list of all the checkbox elements in the console when the toggle is changed:
@@ -57,7 +57,7 @@ Selecting the list of checkboxes is one thing, iterating over them is another. U
 > Example 3. Iterating over the node list
 
 ```js
-document.querySelector('[name=toggle]').addEventListener('change', function (evt){
+document.querySelector('[name=toggle]').addEventListener('change', evt => {
   var checks = document.querySelectorAll('[name=message]');
   var idx = 0;
   while (idx < checks.length) {
@@ -66,9 +66,9 @@ document.querySelector('[name=toggle]').addEventListener('change', function (evt
     } else {
       checks[idx].checked = false;
     }
-    idx = idx + 1;
+    idx++;
   }
-));
+});
 ```
 
 ### Example Explained
@@ -84,19 +84,3 @@ Lastly, the index variable must be incremented in order to ensure that a) we loo
 You should be able to toggle all checkboxes on the page now that you're done.
 
 ----
-
-
-## Supplement
-
-To give you a challenge, update the HTML of this exercise with a search form. *(You will also need to add any additional CSS classes/styling to make it look it good.)* The form should include the following:
-
-- Input type of text
-- Submit button
-
-This search form should allow the user to search for and highlight matches in the subject lines of the displayed messages (partial matches included). The following image shows an example of a search:
-
-> Figure 1. Complete solution demonstrating search feature
-
-![](./img/fig.1b.png)
-
-Be sure to take some time to really think about this one before you being coding; remember it's not about quantity but quality.
