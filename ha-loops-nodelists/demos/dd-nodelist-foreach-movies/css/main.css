@@ -1,4 +1,6 @@
-/* our custom CSS file*/ 
+/* our custom CSS file*/
+
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -14,7 +16,7 @@
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 40em;
 }
 
 .hidden-item {
