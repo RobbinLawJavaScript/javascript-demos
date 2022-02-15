@@ -10,7 +10,7 @@ To demonstrate how these functions can be used to automate actions on the page, 
 
 > Figure 1. Image carousel from previous exercise
 
-![](readmeimages/fig.1.png)
+![](./img/fig.1.png)
 
 We will implement a timer for the carousel that will progress onto the next image in the slideshow every 3 seconds.
 
