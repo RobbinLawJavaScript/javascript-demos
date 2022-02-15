@@ -1,5 +1,5 @@
 function Begin(){
-  // your js here...
+  // js code here...
   
 }
 

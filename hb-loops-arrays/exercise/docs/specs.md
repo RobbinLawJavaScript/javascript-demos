@@ -30,7 +30,7 @@ The default interface doesn't load an image as it's dependent on what's in our a
 > Example 2. Displaying the first image on the page
 
 ```js
-document.querySelector('.carousel>img').src = 'images/' + images[0];
+document.querySelector('.carousel>img').src = `./img/${images[0]}`;
 ```
 
 > Figure 2. Much better!
@@ -79,10 +79,9 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
       currentImg -= 1;
     }
     // display the new current image
-    document.querySelector('.carousel>img').src = 'images/'
-    + images[currentImg];
+    document.querySelector('.carousel>img').src = `./img/${images[currentImg]}`;
   }
 });
 ```
 
-You should now have a basic working carousel, with a huge flaw… what happens when you try view the next image and there is no next image, or previous image?
+You should now have a basic working carousel, with a huge flaw… what happens when you try to view the next image and there is no next image, or previous image?

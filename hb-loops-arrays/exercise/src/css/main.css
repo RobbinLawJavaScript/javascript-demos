@@ -1,8 +1,17 @@
 body {
 	font-family: sans-serif;
 }
+.wrapper {
+	margin: auto;
+	width: 740px;
+	text-align: center;
+}
+.wrapper>h1 {
+	border-bottom: 1px solid #333;
+	padding-bottom: 10px;
+}
 .carousel {
-	text-align: center;	
+	display: flex;	
 }
 .carousel>img {
 	height: 479px;
@@ -12,22 +21,11 @@ body {
 	background-color: #333;
 	border-radius: 50%;
 	color: #ddd;
-	display: inline-block;
-    font-size: 210%;
-    font-weight: bold;
-    margin-top: 30%;
-    width: 40px;
-    padding-bottom: 2px;
-}
-.carousel>.next,
-.carousel>.prev {
+	font-size: 210%;
+	font-weight: bold;
+	margin: 30% 1%;
+	width: 50px;
 	cursor: pointer;
-}
-.carousel>.next {
-    float: right;
-}
-.carousel>.prev {
-    float: left;
 }
 .image-tracker {
 	color: #ddd;
@@ -35,12 +33,4 @@ body {
 }
 .image-tracker>span.active {
 	color: #333;
-}
-.wrapper {
-	margin: auto;
-	width: 740px;
-}
-.wrapper>h1 {
-	border-bottom: 1px solid #333;
-	padding-bottom: 10px;
 }

@@ -2,7 +2,7 @@ function End(){
 
 let images = ['mountain1.jpg', 'mountain2.jpg', 'mountain3.jpg'];
 let currentImg = 0;
-document.querySelector('.carousel>img').src = './img/' + images[0];
+document.querySelector('.carousel>img').src = `./img/${images[0]}`;
 
 document.querySelector('.carousel').addEventListener('click', function (evt){
     if (evt.target.classList.contains('control')) {
@@ -11,7 +11,7 @@ document.querySelector('.carousel').addEventListener('click', function (evt){
         } else if (evt.target.classList.contains('prev')){
             currentImg -= 1;
         }
-        document.querySelector('.carousel>img').src = './img/' + images[currentImg];
+        document.querySelector('.carousel>img').src = `./img/${images[currentImg]}`;
     }
 });
 
