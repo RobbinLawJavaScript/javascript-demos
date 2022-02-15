@@ -1,4 +1,4 @@
-# Working with Arrays
+# Working with Arrays - Part1 - Carousel with major flaw
 
 - [MDN Array Page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 
 - [MDN NodeList Page](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) 
