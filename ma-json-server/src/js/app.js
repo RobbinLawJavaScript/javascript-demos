@@ -1,11 +1,14 @@
-import { http } from './http.js';
-import { ui } from './ui.js';
+import EasyHTTP from './http.js';
+import UI from './ui.js';
+
+const http = new EasyHTTP();
+const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getPosts);
-document.querySelector('.post-submit').addEventListener('click', submitPost);
-document.querySelector('#posts').addEventListener('click', deletePost);
+document.querySelector('.card-form').addEventListener('click', submitPost);
 document.querySelector('#posts').addEventListener('click', enableEdit);
-document.querySelector('.card-form').addEventListener('click', cancelEdit);
+
+ui.changeFormState('add');
 
 function getPosts() {
   http.get('http://localhost:3000/posts')
@@ -13,22 +16,17 @@ function getPosts() {
     .catch(err => console.log(err));
 }
 
-function submitPost() {
-  const title = document.querySelector('#title').value;
-  const body = document.querySelector('#body').value;
-  const id = document.querySelector('#id').value;
-
+function submitPost(e) {
+  const {title, body, id} = ui.getFormData();
   const data = {
     title,
     body
   }
-
-  if(title === '' || body === '') {
-    ui.showAlert('Please fill in all fields', 'alert alert-danger');
-  } else {
-    // Check for ID
-    if(id === '') {
-      // Create Post
+  if(e.target.classList.contains('post-submit')) {
+    if(title === '' || body === '') {
+      ui.showAlert('Please fill in all fields', 'alert alert-danger');
+    } 
+    else {
       http.post('http://localhost:3000/posts', data)
       .then(data => {
         ui.showAlert('Post added', 'alert alert-success');
@@ -36,57 +34,50 @@ function submitPost() {
         getPosts();
       })
       .catch(err => console.log(err));
-    } else {
-      // Update Post
-      http.put(`http://localhost:3000/posts/${id}`, data)
-      .then(data => {
-        ui.showAlert('Post updated', 'alert alert-success');
-        ui.changeFormState('add');
-        getPosts();
-      })
-      .catch(err => console.log(err));
-    }
-
-  }
-}
-
-function deletePost(e) {
-  if(e.target.parentElement.classList.contains('delete')) {
-    const id = e.target.parentElement.dataset.id;
-    if(confirm('Are you sure?')) {
-      http.delete(`http://localhost:3000/posts/${id}`)
+    } 
+  } 
+  else if(e.target.classList.contains('post-edit')) {
+    http.put(`http://localhost:3000/posts/${id}`, data)
+    .then(data => {
+      ui.showAlert('Post updated', 'alert alert-success');
+      ui.changeFormState('add');
+      ui.clearFields();
+      getPosts();
+    })
+    .catch(err => console.log(err));
+  } 
+  else if(e.target.classList.contains('post-delete')) {
+    http.delete(`http://localhost:3000/posts/${id}`)
         .then(data => {
           ui.showAlert('Post removed', 'alert alert-success');
+          ui.changeFormState('add');
+          ui.clearFields();
           getPosts();
         })
         .catch(err => console.log(err));
-    }
   }
-  e.preventDefault();
+  else if(e.target.classList.contains('cancel')) {
+    ui.changeFormState('add');
+    ui.clearFields();
+  }
 }
 
 function enableEdit(e) {
+  const id = e.target.parentElement.dataset.id;
+  const title = e.target.parentElement.parentElement.children[0].textContent;
+  console.log(title);
+  const body = e.target.parentElement.parentElement.children[1].textContent;
+  const data = {
+    id,
+    title,
+    body
+  }
+  ui.fillFormData(data);
   if(e.target.parentElement.classList.contains('edit')) {
-    const id = e.target.parentElement.dataset.id;
-    const title = e.target.parentElement.previousElementSibling.previousElementSibling.textContent;
-    const body = e.target.parentElement.previousElementSibling.textContent;
-    
-    const data = {
-      id,
-      title,
-      body
-    }
-
-    ui.fillForm(data);
+    ui.changeFormState('edit');
   }
-  
-  e.preventDefault();
-}
-
-function cancelEdit(e) {
-  if(e.target.classList.contains('post-cancel')) {
-    ui.changeFormState('add');
+  else if (e.target.parentElement.classList.contains('delete')) {
+    ui.changeFormState('delete');
   }
-
   e.preventDefault();
 }

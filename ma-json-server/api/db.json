@@ -1,23 +1,12 @@
 {
   "posts": [
     {
-      "title": "Post 1",
-      "body": "This is post 1 too much",
+      "title": "vvv",
+      "body": "vvvqqqq",
       "id": 1
-    },
-    {
-      "title": "Hey",
-      "body": "hi there",
-      "id": 2
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

@@ -12,20 +12,23 @@
 <body>
   <nav class="navbar navbar-dark bg-dark mb-3">
     <div class="container">
-      <a href="#" class="navbar-brand">ToDo List</a>
+      <a href="#" class="navbar-brand">Job Jar</a>
     </div>
   </nav>
   <div class="container postsContainer">
     <div class="card card-body card-form">
-      <h1>ToDo</h1>
       <div class="form-group">
-        <input type="text" id="title" class="form-control" placeholder="ToDo Title">
+        <input type="text" id="title" class="form-control" placeholder="Job Title">
       </div>
       <div class="form-group">
-        <textarea id="body" class="form-control" placeholder="ToDo Body"></textarea>
+        <textarea id="body" class="form-control" placeholder="Job Description"></textarea>
       </div>
       <input type="hidden" id="id" value="">
-      <button class="post-submit btn btn-dark btn-block">Post ToDo</button>
+      <button class="post-submit btn btn-dark btn-block">Add Job</button>
+      <button class="post-edit btn btn-dark btn-block">Edit Job</button>
+      <button class="post-delete btn btn-dark btn-block">Delete Job</button>
+      <button class="post-edit-cancel cancel btn btn-dark btn-block">Cancel Edit</button>
+      <button class="post-delete-cancel cancel btn btn-dark btn-block">Cancel Delete</button>
       <span class="form-end"></span>
     </div>
     <br>
