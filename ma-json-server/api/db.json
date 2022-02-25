@@ -1,9 +1,29 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "title": "Post 1",
+      "body": "This is post 1 too much",
+      "id": 1
+    },
+    {
+      "title": "Post Two",
+      "body": "This is post two wow\n",
+      "id": 2
+    },
+    {
+      "title": "Post Three",
+      "body": "This is post three",
+      "id": 3
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
