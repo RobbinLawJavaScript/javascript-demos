@@ -1,0 +1,57 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+.messages {
+	margin: auto;
+	padding: 1em;
+	width: 800px;
+}
+.messages>table {
+	background-color: transparent;
+	border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.messages>table>thead {
+	display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.messages>table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+}
+.messages>table>thead:first-child>tr:first-child>th:first-child {
+    width: 20px;
+}
+.messages>table>thead>tr>th {
+	vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+    font-weight: bold;
+}
+.messages>table>tbody {
+	display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.messages>table tr {
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.messages>table>tbody>tr:hover {
+	background-color: #d9edf7 !important;
+}
+.messages>table tr>td,
+.messages>table tr>th {
+	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.messages>table>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
