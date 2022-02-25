@@ -6,14 +6,9 @@
       "id": 1
     },
     {
-      "title": "Post Two",
-      "body": "This is post two wow\n",
+      "title": "Hey",
+      "body": "hi there",
       "id": 2
-    },
-    {
-      "title": "Post Three",
-      "body": "This is post three",
-      "id": 3
     }
   ],
   "comments": [
