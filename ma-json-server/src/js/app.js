@@ -1,7 +1,7 @@
-import MyHTTP from './http.js';
+import HTTPServices from './http.js';
 import UI from './ui.js';
 
-const http = new MyHTTP();
+const httpServices = new HTTPServices();
 const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getItems);
@@ -11,7 +11,7 @@ document.querySelector('#list').addEventListener('click', setupForEditOrDelete);
 ui.changeFormState('add');
 
 function getItems() {
-  http.get('http://localhost:3000/posts')
+  httpServices.get('http://localhost:3000/posts')
     .then(data => ui.showPosts(data))
     .catch(err => console.log(err));
 }
@@ -27,7 +27,7 @@ function submit(e) {
       ui.showAlert('Please fill in all fields', 'alert alert-danger');
     } 
     else {
-      http.post('http://localhost:3000/posts', data)
+      httpServices.post('http://localhost:3000/posts', data)
       .then(data => {
         ui.showAlert('Post added', 'alert alert-success');
         ui.clearFields();
@@ -37,7 +37,7 @@ function submit(e) {
     } 
   } 
   else if(e.target.classList.contains('edit')) {
-    http.put(`http://localhost:3000/posts/${id}`, data)
+    httpServices.put(`http://localhost:3000/posts/${id}`, data)
     .then(data => {
       ui.showAlert('Post updated', 'alert alert-success');
       ui.changeFormState('add');
@@ -47,7 +47,7 @@ function submit(e) {
     .catch(err => console.log(err));
   } 
   else if(e.target.classList.contains('delete')) {
-    http.delete(`http://localhost:3000/posts/${id}`)
+    httpServices.delete(`http://localhost:3000/posts/${id}`)
         .then(data => {
           ui.showAlert('Post removed', 'alert alert-success');
           ui.changeFormState('add');

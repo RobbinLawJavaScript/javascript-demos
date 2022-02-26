@@ -1,8 +1,9 @@
-class MyHTTP { 
+class HTTPServices {
+
   async get(url) {
     const response = await fetch(url);
-    const resData = await response.json();
-    return resData;
+    const responseData = await response.json();
+    return responseData;
   }
 
   async post(url, data) {
@@ -13,12 +14,11 @@ class MyHTTP {
       },
       body: JSON.stringify(data)
     });
-    const resData = await response.json();
-    return resData;
-   
+    const responseData = await response.json();
+    return responseData;
   }
 
-   async put(url, data) {
+  async put(url, data) {
     const response = await fetch(url, {
       method: 'PUT',
       headers: {
@@ -26,9 +26,8 @@ class MyHTTP {
       },
       body: JSON.stringify(data)
     });
-    
-    const resData = await response.json();
-    return resData;
+    const responseData = await response.json();
+    return responseData;
   }
 
   async delete(url) {
@@ -38,12 +37,10 @@ class MyHTTP {
         'Content-type': 'application/json'
       }
     });
-    const resData = await 'Resource Deleted...';
-    return resData;
+    const responseData = await 'Resource Deleted';
+    return responseData;
   }
 
  }
 
- export default MyHTTP;
-
- 
+ export default HTTPServices;
