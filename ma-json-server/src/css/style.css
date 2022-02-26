@@ -1,5 +1,9 @@
-.delete {
+a.delete {
   color: red;
+}
+
+a.edit {
+  color: green
 }
 
 .hidden {

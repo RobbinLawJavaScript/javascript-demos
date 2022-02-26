@@ -1,28 +1,28 @@
-import EasyHTTP from './http.js';
+import MyHTTP from './http.js';
 import UI from './ui.js';
 
-const http = new EasyHTTP();
+const http = new MyHTTP();
 const ui = new UI();
 
-document.addEventListener('DOMContentLoaded', getPosts);
-document.querySelector('.card-form').addEventListener('click', submitPost);
-document.querySelector('#posts').addEventListener('click', enableEdit);
+document.addEventListener('DOMContentLoaded', getItems);
+document.querySelector('#form').addEventListener('click', submit);
+document.querySelector('#list').addEventListener('click', setupForEditOrDelete);
 
 ui.changeFormState('add');
 
-function getPosts() {
+function getItems() {
   http.get('http://localhost:3000/posts')
     .then(data => ui.showPosts(data))
     .catch(err => console.log(err));
 }
 
-function submitPost(e) {
+function submit(e) {
   const {title, body, id} = ui.getFormData();
   const data = {
     title,
     body
   }
-  if(e.target.classList.contains('post-submit')) {
+  if(e.target.classList.contains('submit')) {
     if(title === '' || body === '') {
       ui.showAlert('Please fill in all fields', 'alert alert-danger');
     } 
@@ -36,7 +36,7 @@ function submitPost(e) {
       .catch(err => console.log(err));
     } 
   } 
-  else if(e.target.classList.contains('post-edit')) {
+  else if(e.target.classList.contains('edit')) {
     http.put(`http://localhost:3000/posts/${id}`, data)
     .then(data => {
       ui.showAlert('Post updated', 'alert alert-success');
@@ -46,7 +46,7 @@ function submitPost(e) {
     })
     .catch(err => console.log(err));
   } 
-  else if(e.target.classList.contains('post-delete')) {
+  else if(e.target.classList.contains('delete')) {
     http.delete(`http://localhost:3000/posts/${id}`)
         .then(data => {
           ui.showAlert('Post removed', 'alert alert-success');
@@ -62,10 +62,9 @@ function submitPost(e) {
   }
 }
 
-function enableEdit(e) {
+function setupForEditOrDelete(e) {
   const id = e.target.parentElement.dataset.id;
   const title = e.target.parentElement.parentElement.children[0].textContent;
-  console.log(title);
   const body = e.target.parentElement.parentElement.children[1].textContent;
   const data = {
     id,

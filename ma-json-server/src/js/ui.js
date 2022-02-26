@@ -1,14 +1,14 @@
 class UI {
   constructor() {
-    this.post = document.querySelector('#posts');
+    this.list = document.querySelector('#list');
     this.titleInput = document.querySelector('#title');
     this.bodyInput = document.querySelector('#body');
     this.idInput = document.querySelector('#id');
-    this.postSubmit = document.querySelector('.post-submit');
-    this.postEdit = document.querySelector('.post-edit');
-    this.postDelete = document.querySelector('.post-delete');
-    this.postEditCancel = document.querySelector('.post-edit-cancel');
-    this.postDeleteCancel = document.querySelector('.post-delete-cancel');
+    this.submit = document.querySelector('.submit');
+    this.edit = document.querySelector('.edit');
+    this.delete = document.querySelector('.delete');
+    this.editCancel = document.querySelector('.edit-cancel');
+    this.deleteCancel = document.querySelector('.delete-cancel');
     this.formState = 'add';
   }
 
@@ -20,8 +20,8 @@ class UI {
       output += `
         <div class="card mb-3">
           <div class="card-body">
-            <h4 name="h4" class="card-title">${post.title}</h4>
-            <p name="p" class="card-text">${post.body}</p>
+            <h4 class="card-title">${post.title}</h4>
+            <p class="card-text">${post.body}</p>
             <a href="#" class="edit card-link" data-id="${post.id}">
               <i class="fa fa-pencil"></i>
             </a>
@@ -33,7 +33,7 @@ class UI {
       `;
     });
 
-    this.post.innerHTML = output;
+    this.list.innerHTML = output;
   }
 
   // Show alert message
@@ -90,24 +90,24 @@ class UI {
   }
 
   changeFormState(type) {
-    this.postSubmit.classList.add('hidden');
-    this.postEdit.classList.add('hidden');
-    this.postDelete.classList.add('hidden');
-    this.postEditCancel.classList.add('hidden');
-    this.postDeleteCancel.classList.add('hidden');
+    this.submit.classList.add('hidden');
+    this.edit.classList.add('hidden');
+    this.delete.classList.add('hidden');
+    this.editCancel.classList.add('hidden');
+    this.deleteCancel.classList.add('hidden');
     if(type === 'add') {
       this.formState = 'add';
-      this.postSubmit.classList.remove('hidden');
+      this.submit.classList.remove('hidden');
     }
     else if (type === 'edit') {
       this.formState = 'edit';
-      this.postEdit.classList.remove('hidden');
-      this.postEditCancel.classList.remove('hidden');
+      this.edit.classList.remove('hidden');
+      this.editCancel.classList.remove('hidden');
     }
     else if (type === 'delete') {
       this.formState === 'delete';
-      this.postDelete.classList.remove('hidden');
-      this.postDeleteCancel.classList.remove('hidden');
+      this.delete.classList.remove('hidden');
+      this.deleteCancel.classList.remove('hidden');
     }
   }
 }

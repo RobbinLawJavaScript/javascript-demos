@@ -16,7 +16,7 @@
     </div>
   </nav>
   <div class="container postsContainer">
-    <div class="card card-body card-form">
+    <div id="form" class="card card-body">
       <div class="form-group">
         <input type="text" id="title" class="form-control" placeholder="Job Title">
       </div>
@@ -24,15 +24,15 @@
         <textarea id="body" class="form-control" placeholder="Job Description"></textarea>
       </div>
       <input type="hidden" id="id" value="">
-      <button class="post-submit btn btn-dark btn-block">Add Job</button>
-      <button class="post-edit btn btn-dark btn-block">Edit Job</button>
-      <button class="post-delete btn btn-dark btn-block">Delete Job</button>
-      <button class="post-edit-cancel cancel btn btn-dark btn-block">Cancel Edit</button>
-      <button class="post-delete-cancel cancel btn btn-dark btn-block">Cancel Delete</button>
+      <button class="submit btn btn-dark btn-block">Add Job</button>
+      <button class="edit btn btn-dark btn-block">Edit Job</button>
+      <button class="delete btn btn-dark btn-block">Delete Job</button>
+      <button class="edit-cancel cancel btn btn-dark btn-block">Cancel Edit</button>
+      <button class="delete-cancel cancel btn btn-dark btn-block">Cancel Delete</button>
       <span class="form-end"></span>
     </div>
     <br>
-    <div id="posts"></div>
+    <div id="list"></div>
   </div>
 </body>
 </html>
