@@ -1,15 +1,18 @@
+function End() {
+
 let images = ['img/beach1.jpg', 'img/beach2.jpg', 'img/beach3.jpg'];
 let currentImage = 0;
 
-document.querySelector('.controls').addEventListener('click', function (evt) {
+document.querySelector('.controls').addEventListener('click', evt => {
 	if (evt.target.className == 'btn-prev') {
 		moveSlide(-1);
 	} else if (evt.target.className == 'btn-next') {
 		moveSlide(+1);
 	}
 });
+
 //https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
-document.addEventListener('keydown', function (evt) {
+document.addEventListener('keydown', evt => {
 	if (evt.code == 'ArrowLeft') {
 		moveSlide(-1);
 	} else if (evt.code == 'ArrowRight') {
@@ -46,3 +49,7 @@ function moveSlide(dir) {
 	// 	img.src = imgArray[idx];
 	// }
 }(images));
+
+}
+
+export default End;
