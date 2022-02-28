@@ -1,6 +1,6 @@
 function End(){
 
-let images = ['mountain1.jpg', 'mountain2.jpg', 'mountain3.jpg'];
+let images = ['mountain1.jpg', 'mountain2.jpg', 'mountain3.jpg', 'favicon.png'];
 let currentImg = 0;
 document.querySelector('.carousel>img').src = `./img/${images[currentImg]}`;
 

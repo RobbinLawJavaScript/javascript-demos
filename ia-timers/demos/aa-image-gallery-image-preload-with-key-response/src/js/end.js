@@ -35,7 +35,7 @@ function moveSlide(dir) {
 // The following is a demonstration of an immediately 
 // invoked function expression (IIFE).
 // https://developer.mozilla.org/en-US/docs/Glossary/IIFE
- 
+
 (function (imgArray) {
 	imgArray.forEach(function (imgUrl) {
 		//https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image

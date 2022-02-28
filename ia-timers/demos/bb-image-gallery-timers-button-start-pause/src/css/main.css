@@ -4,6 +4,13 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.wrapper {
+	margin: auto;
+	width: 750px;
+	text-align: center;
+}
+
 .messages {
 	margin: auto;
 	padding: 1em;
