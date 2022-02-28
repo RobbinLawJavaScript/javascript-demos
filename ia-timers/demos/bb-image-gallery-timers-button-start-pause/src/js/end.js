@@ -7,14 +7,14 @@ let currentImage = 0;
 let slideshowInterval;
 let playButton;
 
-document.querySelector('.controls').addEventListener('click', function (evt) {
+document.querySelector('.controls').addEventListener('click', evt => {
 	if (evt.target.className == 'btn-prev') {
 		moveSlide(-1);
 	} else if (evt.target.className == 'btn-next') {
 		moveSlide(+1);
 	} else if (evt.target.className == 'btn-play') {
 		//https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
-		slideshowInterval = setInterval(function () {
+		slideshowInterval = setInterval(() => {
 			moveSlide(+1);
 		}, 3000);
 		playButton = evt.target;
