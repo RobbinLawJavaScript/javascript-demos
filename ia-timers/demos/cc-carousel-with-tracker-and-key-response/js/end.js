@@ -6,8 +6,8 @@ document.querySelector('.carousel>img').src = `./img/${images[0]}`;
 
 //Add the appropriate number of selector bullets to the image-tracker
 let imageTracker = document.querySelector('.image-tracker');
-for (let idx = 0; idx < images.length; idx += 1) {
-    imageTracker.innerHTML += '<span class="control">&bull;</span>';
+for (let idx = 0; idx < images.length; idx++) {
+    imageTracker.innerHTML += `<span class="control">&bull;</span>`;
 }
 //Highlight the first selector bullet as 'active'
 imageTracker.querySelector('span').classList.add('active');
