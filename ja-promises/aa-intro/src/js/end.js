@@ -1,57 +1,36 @@
-function End() {
+const posts = [
+  {title: 'Post One', body:'This is post one'},
+  {title: 'Post Two', body: 'This is post two'}
+];
 
-let images = ['./img/beach1.jpg', './img/beach2.jpg', './img/beach3.jpg'];
-let currentImage = 0;
+function createPost(post) {
+  return new Promise((resolve, reject) => {
+    setTimeout(function() {
+      posts.push(post);
 
-document.querySelector('.controls').addEventListener('click', evt => {
-	if (evt.target.className == 'btn-prev') {
-		moveSlide(-1);
-	} else if (evt.target.className == 'btn-next') {
-		moveSlide(+1);
-	}
-});
+      const error = false;
 
-//https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
-
-document.addEventListener('keydown', evt => {
-	if (evt.code == 'ArrowLeft') {
-		moveSlide(-1);
-	} else if (evt.code == 'ArrowRight') {
-		moveSlide(+1);
-	}
-});
-
-function moveSlide(dir) {
-	currentImage += dir;
-	if (currentImage < 0) {
-		currentImage = images.length - 1;
-	} else if (currentImage === images.length) {
-		currentImage = 0;
-	}
-	document.querySelector('.target-image').src = images[currentImage];
+      if(!error) {
+        resolve();
+      } else {
+        reject('Error: Something went wrong');
+      }
+    }, 2000);
+  });
 }
 
-// Preload known images
-// The following is a demonstration of an immediately 
-// invoked function expression (IIFE).
-// https://developer.mozilla.org/en-US/docs/Glossary/IIFE
-
-(function (imgArray) {
-	imgArray.forEach(function (imgUrl) {
-		//https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
-		let img = new Image();
-		img.src = imgUrl;
-	});
-	// The previous [].forEach() call effectively replaces this,
-	// see the following link for more:
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach 
-
-	// for(let idx = 0; idx < imgArray.length; idx++) {
-	// 	let img = new Image();
-	// 	img.src = imgArray[idx];
-	// }
-}(images));
-
+function getPosts() {
+  setTimeout(function() {
+    let output = '';
+    posts.forEach(function(post){
+      output += `<li>${post.title}</li>`;
+    });
+    document.body.innerHTML = output;
+  }, 1000);
 }
 
-export default End;
+createPost({title: 'Post Three', body: 'This is post three'})
+.then(getPosts)
+.catch(function(err) {
+  console.log(err);
+});
