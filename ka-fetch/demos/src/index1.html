@@ -50,8 +50,6 @@
       .then((data) => {
         let output = '<h2>Users</h2>';
         data.forEach((user) => {
-          //Use the back tick (up from tab key) to create
-          //a template string.
           output += `
             <ul>
               <li>ID: ${user.id}</li>
