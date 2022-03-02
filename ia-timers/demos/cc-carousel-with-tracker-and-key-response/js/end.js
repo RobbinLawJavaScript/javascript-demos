@@ -2,7 +2,7 @@ function End(){
 
 let images = ['mountain1.jpg', 'mountain2.jpg', 'mountain3.jpg'];
 let currentImage = 0;
-document.querySelector('.carousel>img').src = `./img/${images[0]}`; 
+document.querySelector('.carousel>img').src = `./img/${images[currentImage]}`; 
 
 //Add the appropriate number of selector bullets to the image-tracker
 let imageTracker = document.querySelector('.image-tracker');
@@ -37,10 +37,10 @@ function moveSlide(dir) {
 	}
 	//Update the image to be the new one.
 	document.querySelector('.carousel>img').src = `./img/${images[currentImage]}`;
-    //Update the old selector bullet to not be active.
-    imageTracker.querySelector('span.active').classList.remove('active');
-    //Make the new selector bullet to be active.
-    imageTracker.querySelectorAll('span')[currentImage].classList.add('active');
+	//Update the old selector bullet to not be active.
+	imageTracker.querySelector('span.active').classList.remove('active');
+	//Make the new selector bullet to be active.
+	imageTracker.querySelectorAll('span')[currentImage].classList.add('active');
 }
 
 }
