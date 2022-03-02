@@ -1,4 +1,4 @@
-function End(){
+function Demo2(){
 
 const posts = [
   {title: 'Post One', body:'This is post one'},
@@ -42,4 +42,4 @@ createPost({title: 'Post Three', body: 'This is post three'})
 
 }
 
-export default End;
+export default Demo2;

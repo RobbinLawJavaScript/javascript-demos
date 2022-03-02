@@ -1,3 +1,5 @@
-import End from './end.js';
+import Demo1 from './demo1.js';
+import Demo2 from './demo2.js';
 
-End();
+Demo1();
+//Demo2();
