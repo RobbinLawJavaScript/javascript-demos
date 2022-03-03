@@ -6,7 +6,9 @@ function createPromise() {
       const error = false;
       //const error = true;
       if(error === false) {
-        resolve('Success: We got some data');
+        //reject('Error: Something went wrong');
+        resolve(['Success: We got some data', 'hi there']);
+        //reject('Error: Something went wrong');
       } else {
         reject('Error: Something went wrong');
       }
@@ -16,9 +18,11 @@ function createPromise() {
 
 createPromise()
 .then(data => {
+  console.log('then is running')
   console.log(data);
 })
 .catch(err => {
+  console.log('catch is running')
   console.log(err);
 });
 
