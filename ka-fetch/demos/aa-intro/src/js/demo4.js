@@ -1,4 +1,4 @@
-export function demo() {
+function Demo4() {
     console.log('demo4');
     // async functions always returns a promise
     const getLocalBones = async () => {
@@ -22,3 +22,5 @@ export function demo() {
     console.log(3);
     console.log(4);
 }
+
+export default Demo4;
