@@ -3,15 +3,9 @@ function Demo1(){
 function createPromise() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const error = false;
-      //const error = true;
-      if(error === false) {
-        //reject('Error: Something went wrong');
-        resolve(['Success: We got some data', 'hi there']);
-        //reject('Error: Something went wrong');
-      } else {
-        reject('Error: Something went wrong');
-      }
+      resolve(['Success:', 'We got an array of strings', 'hi there']);
+      reject('Error: Something went wrong');
+      resolve('Success: We did it');
     }, 3000);
   });
 }
