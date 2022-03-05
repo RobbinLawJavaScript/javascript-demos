@@ -4,8 +4,8 @@ import Demo3 from './demo3.js';
 import Demo4 from './demo4.js';
 import Demo5 from './demo5.js';
 
-Demo1();
+//Demo1();
 //Demo2();
 //Demo3();
-//Demo4();
+Demo4();
 //Demo5();

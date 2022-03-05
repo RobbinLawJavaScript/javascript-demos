@@ -1,5 +1,5 @@
 function Demo4() {
-    console.log('demo4');
+
     // async functions always returns a promise
     const getLocalBones = async () => {
         console.log(5);

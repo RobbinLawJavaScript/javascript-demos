@@ -12,8 +12,8 @@ ui.changeFormState('add');
 
 function getItems() {
   httpServices.get('http://localhost:3000/posts')
-    .then(data => ui.showPosts(data))
-    .catch(err => console.log(err));
+  .then(data => ui.showPosts(data))
+  .catch(err => console.log(err));
 }
 
 function submit(e) {
@@ -48,13 +48,13 @@ function submit(e) {
   } 
   else if(e.target.classList.contains('delete')) {
     httpServices.delete(`http://localhost:3000/posts/${id}`)
-        .then(data => {
-          ui.showAlert('Post removed', 'alert alert-success');
-          ui.changeFormState('add');
-          ui.clearFields();
-          getPosts();
-        })
-        .catch(err => console.log(err));
+    .then(data => {
+      ui.showAlert('Post removed', 'alert alert-success');
+      ui.changeFormState('add');
+      ui.clearFields();
+      getPosts();
+    })
+    .catch(err => console.log(err));
   }
   else if(e.target.classList.contains('cancel')) {
     ui.changeFormState('add');
