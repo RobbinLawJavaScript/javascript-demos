@@ -3,9 +3,9 @@ function Demo1(){
 function createPromise() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      //resolve(['Success:', 'We got an array of strings', 'hi there']);
-      //reject('Error: Something went wrong');
-      //resolve({Name: 'Robbin', Age: 62});
+      resolve(['Success:', 'We got an array of strings', 'hi there']);
+      reject('Error: Something went wrong');
+      resolve({Name: 'Robbin', Age: 62});
       reject('Error: one more time');
     }, 3000);
   });

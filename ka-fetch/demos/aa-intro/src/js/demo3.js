@@ -1,6 +1,6 @@
 function Demo3() {
 	
-	fetch('./data/bad-bones.json')
+	fetch('./data/bones.json')
 	.then((res) => {
 		console.log('response: ', res);
 		return res.json();

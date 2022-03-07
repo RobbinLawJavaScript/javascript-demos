@@ -31,6 +31,7 @@ function outputPosts() {
 }
 
 outputPosts();
+
 createPost({title: 'Post Three', body: 'This is post three'})
 .then(data => {
   console.log(data);
