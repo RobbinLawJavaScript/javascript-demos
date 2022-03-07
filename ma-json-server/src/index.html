@@ -6,7 +6,8 @@
   <link rel="icon" href="./img/favicon.png"  type="image/png">
   <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <script type="module" src="./js/app.js" defer></script>
 </head>
 <body>
@@ -16,21 +17,28 @@
     </div>
   </nav>
   <div class="container postsContainer">
-    <div id="form" class="card card-body">
+    
+    <div class="card card-body">
       <div class="form-group">
         <input type="text" id="title" class="form-control" placeholder="Job Title">
       </div>
       <div class="form-group">
-        <textarea id="body" class="form-control" placeholder="Job Description"></textarea>
+        <textarea id="description" class="form-control" placeholder="Job Description"></textarea>
       </div>
       <input type="hidden" id="id" value="">
-      <button class="submit btn btn-dark btn-block">Add Job</button>
-      <button class="edit btn btn-dark btn-block">Edit Job</button>
-      <button class="delete btn btn-dark btn-block">Delete Job</button>
-      <button class="edit-cancel cancel btn btn-dark btn-block">Cancel Edit</button>
-      <button class="delete-cancel cancel btn btn-dark btn-block">Cancel Delete</button>
-      <span class="form-end"></span>
+      <div class="" id="form">
+        <button type="submit" class="submit btn btn-dark btn-block">Add Job</button>
+        <button type="submit" class="edit btn btn-dark btn-block">Edit Job</button>
+        <button type="submit" class="delete btn btn-dark btn-block">Delete Job</button>
+        <button type="submit" class="edit-cancel cancel btn btn-dark btn-block">Cancel Edit</button>
+        <button type="submit" class="delete-cancel cancel btn btn-dark btn-block">Cancel Delete</button>
+        <span class="form-end"></span>
+      </div>
     </div>
+    <div class="row">
+      <div id="alert" class="mb-3 col"></div>
+    </div>
+    
     <br>
     <div id="list"></div>
   </div>

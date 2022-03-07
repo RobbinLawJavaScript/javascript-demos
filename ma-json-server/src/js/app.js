@@ -5,71 +5,75 @@ const httpServices = new HTTPServices();
 const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getItems);
-document.querySelector('#form').addEventListener('click', submit);
+document.querySelector('#form').addEventListener('click', submitForm);
 document.querySelector('#list').addEventListener('click', setupForEditOrDelete);
 
 ui.changeFormState('add');
 
 function getItems() {
-  httpServices.get('http://localhost:3000/posts')
-  .then(data => ui.showPosts(data))
+  httpServices.get('http://localhost:3000/items')
+  .then(data => {
+    ui.dumby();
+    ui.showItems(data);
+  })
   .catch(err => console.log(err));
 }
 
-function submit(e) {
-  const {title, body, id} = ui.getFormData();
+function submitForm(e) {
+  e.preventDefault();
+  const {title, description, id} = ui.getFormData();
   const data = {
     title,
-    body
+    description
   }
   if(e.target.classList.contains('submit')) {
-    if(title === '' || body === '') {
-      ui.showAlert('Please fill in all fields', 'alert alert-danger');
+    if(title === '' || description === '') {
+      ui.showAlert('Please fill in all fields', 'error-message');
     } 
     else {
-      httpServices.post('http://localhost:3000/posts', data)
+      httpServices.post('http://localhost:3000/items', data)
       .then(data => {
-        ui.showAlert('Post added', 'alert alert-success');
-        ui.clearFields();
-        getPosts();
+        ui.showAlert('Item added', 'success-message');
+        ui.clearFormData();
+        getItems();
       })
       .catch(err => console.log(err));
     } 
   } 
   else if(e.target.classList.contains('edit')) {
-    httpServices.put(`http://localhost:3000/posts/${id}`, data)
+    httpServices.put(`http://localhost:3000/items/${id}`, data)
     .then(data => {
-      ui.showAlert('Post updated', 'alert alert-success');
+      ui.showAlert('Item updated', 'success-message');
       ui.changeFormState('add');
-      ui.clearFields();
-      getPosts();
+      ui.clearFormData();
+      getItems();
     })
     .catch(err => console.log(err));
   } 
   else if(e.target.classList.contains('delete')) {
-    httpServices.delete(`http://localhost:3000/posts/${id}`)
+    httpServices.delete(`http://localhost:3000/items/${id}`)
     .then(data => {
-      ui.showAlert('Post removed', 'alert alert-success');
+      ui.showAlert('Item removed', 'success-message');
       ui.changeFormState('add');
-      ui.clearFields();
-      getPosts();
+      ui.clearFormData();
+      getItems();
     })
     .catch(err => console.log(err));
   }
   else if(e.target.classList.contains('cancel')) {
     ui.changeFormState('add');
-    ui.clearFields();
+    ui.clearFormData();
   }
 }
 
 function setupForEditOrDelete(e) {
   const id = e.target.parentElement.dataset.id;
   const title = e.target.parentElement.parentElement.children[0].textContent;
-  const body = e.target.parentElement.parentElement.children[1].textContent;
+  const description = e.target.parentElement.parentElement.children[1].textContent;
   const data = {
-    id,
     title,
-    body
+    description,
+    id
   }
   ui.fillFormData(data);
   if(e.target.parentElement.classList.contains('edit')) {

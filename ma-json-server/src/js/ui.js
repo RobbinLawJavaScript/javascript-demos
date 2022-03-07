@@ -2,7 +2,7 @@ class UI {
   constructor() {
     this.list = document.querySelector('#list');
     this.titleInput = document.querySelector('#title');
-    this.bodyInput = document.querySelector('#body');
+    this.descriptionInput = document.querySelector('#description');
     this.idInput = document.querySelector('#id');
     this.submit = document.querySelector('.submit');
     this.edit = document.querySelector('.edit');
@@ -12,20 +12,24 @@ class UI {
     this.formState = 'add';
   }
 
-  // Show all posts
-  showPosts(posts) {
+
+  dumby() {
+    console.log('hi');
+  }
+  
+  showItems(items) {
     let output = '';
 
-    posts.forEach((post) => {
+    items.forEach((item) => {
       output += `
         <div class="card mb-3">
           <div class="card-body">
-            <h4 class="card-title">${post.title}</h4>
-            <p class="card-text">${post.body}</p>
-            <a href="#" class="edit card-link" data-id="${post.id}">
+            <h4 class="card-title">${item.title}</h4>
+            <p class="card-text">${item.description}</p>
+            <a href="#" class="edit card-link" data-id="${item.id}">
               <i class="fa fa-pencil"></i>
             </a>
-            <a href="#" class="delete card-link" data-id="${post.id}">
+            <a href="#" class="delete card-link" data-id="${item.id}">
               <i class="fa fa-remove"></i>
             </a>
           </div>
@@ -36,8 +40,19 @@ class UI {
     this.list.innerHTML = output;
   }
 
-  // Show alert message
+
   showAlert(message, className) {
+    const parentDiv = document.querySelector('#alert');
+    const alertElement = 
+    `
+    <div class='${className} form-control'>
+      ${message}
+    </div>
+    `
+    parentDiv.innerHTML = alertElement;
+  }
+
+  showAlerts(message, className) {
     this.clearAlert();
 
     // Create div
@@ -49,9 +64,9 @@ class UI {
     // Get parent
     const container = document.querySelector('.postsContainer');
     // Get posts
-    const posts = document.querySelector('#posts');
+    const items = document.querySelector('#items');
     // Insert alert div
-    container.insertBefore(div, posts);
+    container.insertBefore(div, items);
 
     // Timeout
     setTimeout(() => {
@@ -66,22 +81,22 @@ class UI {
     }
   }
 
-  clearFields() {
+  clearFormData() {
     this.titleInput.value = '';
-    this.bodyInput.value = '';
+    this.descriptionInput.value = '';
   }
 
 
   getFormData() {
     const title = document.querySelector('#title').value;
-    const body = document.querySelector('#body').value;
+    const description = document.querySelector('#description').value;
     const id = document.querySelector('#id').value;
-    return {title, body, id};
+    return {title, description, id};
   }
 
   fillFormData(data) {
     this.titleInput.value = data.title;
-    this.bodyInput.value = data.body;
+    this.descriptionInput.value = data.description;
     this.idInput.value = data.id;
   }
 

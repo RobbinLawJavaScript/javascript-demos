@@ -1,57 +1,98 @@
+:root {
+  --rem-font-size: 16px;
+  --body-width: 80rem;
+  --body-margin: 60px;
+  --bg-color: #b5b5b5;
+  --bg-color-success: seagreen;
+  --bg-color-error: salmon;
+  --text-color-error: #fff;
+  --text-color-success: #fff;
+  --box-shadow: 0px 0px 0px 0.25rem rgba(66, 70, 73, 0.5);
+  --border-color: #212529;
+  --background-color: #212529;
+}
+
+.error-message {
+  color: var(--bg-color-error);
+  font-weight: bold;
+}
+
+.success-message {
+  color: var(--bg-color-success);
+  font-weight: bold;
+}
+
+button.link {
+background: none;
+border: none;
+padding: 0;
+}
+
+button.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.form-control:focus {
+    border-color: var(--border-color);
+    box-shadow:  var(--box-shadow);
+}
+	
+.form-select:focus {
+  border-color: var(--border-color);
+  box-shadow:  var(--box-shadow);
+}
+
+.dropdown-item:active {
+  color: #fff;
+  background-color: var(--background-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+.form-check-input:focus {
+  border-color: var(--border-color);
+  outline: 0;
+  box-shadow:  var(--box-shadow);
+}
+
+html {
+  font-size: var(--rem-font-size);
+}
+
+body {
+  margin-bottom: var(--body-margin);
+}
+
 body {
 	font-family: sans-serif;
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
 }
-.messages {
-	margin: auto;
-	padding: 1em;
-	width: 800px;
+
+.hidden {
+	display: none;
 }
-.messages>table {
-	background-color: transparent;
-	border-spacing: 0;
-    border-collapse: collapse;
-    width: 100%;
+
+.error, .success {
+	color: white;
 }
-.messages>table>thead {
-	display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
+
+.error {
+	background: lightsalmon;
 }
-.messages>table>thead:first-child>tr:first-child>th {
-    border-top: 0;
+
+.success {
+	background: lightseagreen;
 }
-.messages>table>thead:first-child>tr:first-child>th:first-child {
-    width: 20px;
+
+a.delete {
+	color: red;
 }
-.messages>table>thead>tr>th {
-	vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
-    text-align: left;
-    font-weight: bold;
-}
-.messages>table>tbody {
-	display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-.messages>table tr {
-	display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-.messages>table>tbody>tr:hover {
-	background-color: #d9edf7 !important;
-}
-.messages>table tr>td,
-.messages>table tr>th {
-	padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-}
-.messages>table>tbody>tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
+  
+a.edit {
+	color: green
 }
