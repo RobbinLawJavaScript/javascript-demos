@@ -5,7 +5,7 @@ function createPromise() {
     setTimeout(() => {
       //resolve(['Success:', 'We got an array of strings', 'hi there']);
       //reject('Error: Something went wrong');
-      resolve({Name: 'Robbin', Age: 62});
+      //resolve({Name: 'Robbin', Age: 62});
       reject('Error: one more time');
     }, 3000);
   });

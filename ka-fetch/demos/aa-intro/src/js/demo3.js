@@ -1,14 +1,15 @@
 function Demo3() {
 	
-	fetch('./data/bones.json')
+	fetch('./data/bad-bones.json')
 	.then((res) => {
-		return res.json()
+		console.log('response: ', res);
+		return res.json();
 	})
 	.then(data => {
-		console.log('data: ', data)
+		console.log('data: ', data);
 	})
 	.catch((err) => {
-		console.log('error: ', err)
+		console.log('error: ', err);
 	});
 
 }

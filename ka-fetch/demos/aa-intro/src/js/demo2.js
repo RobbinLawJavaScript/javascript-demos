@@ -2,7 +2,7 @@ function Demo2() {
 
 	fetch('./data/bones.json')
 	.then((res)=>{
-		console.log('resolved: ', res) 
+		console.log('response: ', res) 
 		//res.json returns a promise which will
 		//be the data object in JSON format
 		return res.json()
