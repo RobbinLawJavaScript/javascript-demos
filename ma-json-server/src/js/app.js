@@ -10,6 +10,14 @@ document.querySelector('#list').addEventListener('click', setupForEditOrDelete);
 
 ui.changeFormState('add');
 
+function syncDelay(milliseconds){
+  var start = new Date().getTime();
+  var end=0;
+  while( (end-start) < milliseconds){
+      end = new Date().getTime();
+  }
+ }
+
 function getItems() {
   httpServices.get('http://localhost:3000/items')
   .then(data => {
@@ -35,7 +43,7 @@ function submitForm(e) {
       .then(data => {
         ui.showAlert('Item added', 'success-message');
         ui.clearFormData();
-        getItems();
+        //getItems();
       })
       .catch(err => console.log(err));
     } 
@@ -46,7 +54,7 @@ function submitForm(e) {
       ui.showAlert('Item updated', 'success-message');
       ui.changeFormState('add');
       ui.clearFormData();
-      getItems();
+      //getItems();
     })
     .catch(err => console.log(err));
   } 
@@ -56,7 +64,7 @@ function submitForm(e) {
       ui.showAlert('Item removed', 'success-message');
       ui.changeFormState('add');
       ui.clearFormData();
-      getItems();
+      //getItems();
     })
     .catch(err => console.log(err));
   }
