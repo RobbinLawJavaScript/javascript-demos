@@ -43,6 +43,8 @@ function submitForm(e) {
       .then(data => {
         ui.showAlert('Item added', 'success-message');
         ui.clearFormData();
+        syncDelay(3000);
+        console.log('after syncDelay')
         //getItems();
       })
       .catch(err => console.log(err));

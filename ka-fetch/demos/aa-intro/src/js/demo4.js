@@ -1,8 +1,8 @@
 function Demo4() {
 
-	const localDataURL = './data/bones.json';
+	//const localDataURL = './data/bones.json';
 	//const localDataURL = './data/bones2.json';
-	//const localDataURL = './data/bad-bones.json';
+	const localDataURL = './data/bad-bones.json';
 
 
 	// async and await are part of the ES7 spec
@@ -14,7 +14,7 @@ function Demo4() {
 		const res = await fetch(localDataURL);
 		console.log('resolved response:', res);
 		if (!res.ok) {
-			throw new Error(res.error);
+			throw new Error('OPPS ERROR');
 	 	}
 		const data = await res.json();
 		console.log('resolved data:', data);
