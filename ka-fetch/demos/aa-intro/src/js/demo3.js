@@ -1,15 +1,22 @@
 function Demo3() {
 	
+	const localDataURL = './data/bones.json';
+	//const localDataURL = './data/bones2.json';
+	//const localDataURL = './data/bad-bones.json';
+
 	fetch('./data/bones.json')
 	.then((res) => {
-		console.log('response: ', res);
+		console.log('then response: ', res);
+		if (!res.ok) {
+			throw new Error(res.error);
+	 	}
 		return res.json();
 	})
 	.then(data => {
-		console.log('data: ', data);
+		console.log('then data: ', data);
 	})
 	.catch((err) => {
-		console.log('error: ', err);
+		console.log('catch error: ', err);
 	});
 
 }

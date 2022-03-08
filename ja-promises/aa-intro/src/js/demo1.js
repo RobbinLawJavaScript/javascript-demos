@@ -1,6 +1,6 @@
 function Demo1(){
 
-function createPromise() {
+function getPromise() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(['Success:', 'We got an array of strings', 'hi there']);
@@ -11,7 +11,7 @@ function createPromise() {
   });
 }
 
-createPromise()
+getPromise()
 .then(data => {
   console.log('then is running')
   console.log(data);
