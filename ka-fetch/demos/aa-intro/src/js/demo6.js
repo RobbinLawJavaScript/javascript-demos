@@ -1,6 +1,6 @@
 function Demo5() {
 
-	const remoteDataURL = "https://api.jsonbin.io/b/6070a88dceba85732671d94c/2/";
+	const remoteDataURL = "https://api.jsonbin.io/b/6070a88dceba85732671d94c";
 	//const remoteDataURL = "https://api.jsonbin.io/b/6070638aceba85732671b245";
 	//const remoteDataURL = "https://api.jsonbin.io/b/6070a88d";
 
@@ -10,7 +10,6 @@ function Demo5() {
 			headers: {
 				'Accept': 'application/json. text/plain, */*',
 				"Content-Type": "application/json",
-				'X-JSON-Path': "items"
 			},
 		})
 		console.log('resolved response:', res);
