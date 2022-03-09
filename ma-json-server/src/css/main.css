@@ -5,11 +5,14 @@
   --bg-color: #b5b5b5;
   --bg-color-success: seagreen;
   --bg-color-error: salmon;
-  --text-color-error: #fff;
-  --text-color-success: #fff;
+  --text-color-error-success: #fff;
   --box-shadow: 0px 0px 0px 0.25rem rgba(66, 70, 73, 0.5);
   --border-color: #212529;
   --background-color: #212529;
+}
+
+.no-vis {
+  visibility: hidden;
 }
 
 .error-message {
@@ -78,15 +81,15 @@ body {
 }
 
 .error, .success {
-	color: white;
+	color: var(--text-color-error-success);
 }
 
 .error {
-	background: lightsalmon;
+	background: var(--bg-color-error);
 }
 
 .success {
-	background: lightseagreen;
+	background: var(--bg-color-success);
 }
 
 a.delete {

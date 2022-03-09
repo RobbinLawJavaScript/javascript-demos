@@ -10,14 +10,6 @@ document.querySelector('#list').addEventListener('click', setupForEditOrDelete);
 
 ui.changeFormState('add');
 
-function syncDelay(milliseconds){
-  var start = new Date().getTime();
-  var end=0;
-  while( (end-start) < milliseconds){
-      end = new Date().getTime();
-  }
- }
-
 function getItems() {
   httpServices.get('http://localhost:3000/items')
   .then(data => {
@@ -33,21 +25,16 @@ function submitForm(e) {
     title,
     description
   }
-  if(e.target.classList.contains('submit')) {
+  if(e.target.classList.contains('add')) {
     if(title === '' || description === '') {
-      ui.showAlert('Please fill in all fields', 'error-message');
+      ui.showAlert('Please fill in all fields', 'error');
     } 
     else {
       httpServices.post('http://localhost:3000/items', data)
       .then(data => {
-        console.log('before showAlert')
-        ui.showAlert('Item added', 'success-message');
-        console.log('before clearFormData')
+        ui.showAlert('Item added', 'success');
         ui.clearFormData();
-        console.log('before syncDelay')
-        //syncDelay(3000);
-        console.log('after syncDelay')
-        //getItems();
+        getItems();
       })
       .catch(err => console.log(err));
     } 
@@ -55,20 +42,20 @@ function submitForm(e) {
   else if(e.target.classList.contains('edit')) {
     httpServices.put(`http://localhost:3000/items/${id}`, data)
     .then(data => {
-      ui.showAlert('Item updated', 'success-message');
+      ui.showAlert('Item updated', 'success');
       ui.changeFormState('add');
       ui.clearFormData();
-      //getItems();
+      getItems();
     })
     .catch(err => console.log(err));
   } 
   else if(e.target.classList.contains('delete')) {
     httpServices.delete(`http://localhost:3000/items/${id}`)
     .then(data => {
-      ui.showAlert('Item removed', 'success-message');
+      ui.showAlert('Item removed', 'success');
       ui.changeFormState('add');
       ui.clearFormData();
-      //getItems();
+      getItems();
     })
     .catch(err => console.log(err));
   }
@@ -88,11 +75,12 @@ function setupForEditOrDelete(e) {
     id
   }
   ui.fillFormData(data);
+  ui.clearAlert();
   if(e.target.parentElement.classList.contains('edit')) {
     ui.changeFormState('edit');
   }
   else if (e.target.parentElement.classList.contains('delete')) {
     ui.changeFormState('delete');
   }
-  e.preventDefault();
+  //e.preventDefault();
 }

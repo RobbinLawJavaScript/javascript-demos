@@ -4,7 +4,7 @@ class UI {
     this.titleInput = document.querySelector('#title');
     this.descriptionInput = document.querySelector('#description');
     this.idInput = document.querySelector('#id');
-    this.submit = document.querySelector('.submit');
+    this.add = document.querySelector('.add');
     this.edit = document.querySelector('.edit');
     this.delete = document.querySelector('.delete');
     this.editCancel = document.querySelector('.edit-cancel');
@@ -24,12 +24,12 @@ class UI {
       output += `
         <div class="card mb-3">
           <div class="card-body">
-            <h4 class="card-title">${item.title}</h4>
-            <p class="card-text">${item.description}</p>
-            <a href="#" class="edit card-link" data-id="${item.id}">
+            <h1 class="card-title"><strong>${item.title}</strong></h1>
+            <h4 class="card-title">${item.description}</h4>
+            <a href="#" class="card-link edit" data-id="${item.id}">
               <i class="fa fa-pencil"></i>
             </a>
-            <a href="#" class="delete card-link" data-id="${item.id}">
+            <a href="#" class="card-link delete" data-id="${item.id}">
               <i class="fa fa-remove"></i>
             </a>
           </div>
@@ -42,14 +42,14 @@ class UI {
 
 
   showAlert(message, className) {
-    const parentDiv = document.querySelector('#alert');
+    const alert = document.querySelector('#alert');
     const alertElement = 
     `
-    <div class='${className} form-control'>
-      ${message}
+    <div class='card ${className} mb-3'>
+    <p class="card-text pl-4 pt-1 pb-1">${message}</p> 
     </div>
     `
-    parentDiv.innerHTML = alertElement;
+    alert.innerHTML = alertElement;
   }
 
   showAlerts(message, className) {
@@ -75,10 +75,14 @@ class UI {
   }
 
   clearAlert() {
-    const currentAlert = document.querySelector('.alert');
-    if(currentAlert) {
-      currentAlert.remove();
-    }
+    const alert = document.querySelector('#alert');
+    const alertElement = 
+    `
+    <div class='card no-vis mb-3'>
+      <p class="card-text pl-4 pt-1 pb-1">...</p>
+    </div>
+    `
+    alert.innerHTML = alertElement;
   }
 
   clearFormData() {
@@ -105,14 +109,14 @@ class UI {
   }
 
   changeFormState(type) {
-    this.submit.classList.add('hidden');
+    this.add.classList.add('hidden');
     this.edit.classList.add('hidden');
     this.delete.classList.add('hidden');
     this.editCancel.classList.add('hidden');
     this.deleteCancel.classList.add('hidden');
     if(type === 'add') {
       this.formState = 'add';
-      this.submit.classList.remove('hidden');
+      this.add.classList.remove('hidden');
     }
     else if (type === 'edit') {
       this.formState = 'edit';
