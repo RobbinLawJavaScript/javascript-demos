@@ -21,7 +21,6 @@ function syncDelay(milliseconds){
 function getItems() {
   httpServices.get('http://localhost:3000/items')
   .then(data => {
-    ui.dumby();
     ui.showItems(data);
   })
   .catch(err => console.log(err));
@@ -41,9 +40,12 @@ function submitForm(e) {
     else {
       httpServices.post('http://localhost:3000/items', data)
       .then(data => {
+        console.log('before showAlert')
         ui.showAlert('Item added', 'success-message');
+        console.log('before clearFormData')
         ui.clearFormData();
-        syncDelay(3000);
+        console.log('before syncDelay')
+        //syncDelay(3000);
         console.log('after syncDelay')
         //getItems();
       })
