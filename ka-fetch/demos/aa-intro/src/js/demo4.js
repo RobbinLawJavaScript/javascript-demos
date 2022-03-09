@@ -1,8 +1,8 @@
 function Demo4() {
 
-	//const localDataURL = './data/bones.json';
+	const localDataURL = './data/bones.json';
 	//const localDataURL = './data/bones2.json';
-	const localDataURL = './data/bad-bones.json';
+	//const localDataURL = './data/bad-bones.json';
 
 
 	// async and await are part of the ES7 spec

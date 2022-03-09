@@ -1,8 +1,8 @@
 function Demo3() {
 	
-	//const localDataURL = './data/bones.json';
+	const localDataURL = './data/bones.json';
 	//const localDataURL = './data/bones2.json';
-	const localDataURL = './data/bad-bones.json';
+	//const localDataURL = './data/bad-bones.json';
 
 	fetch(localDataURL)
 	.then((res) => {
