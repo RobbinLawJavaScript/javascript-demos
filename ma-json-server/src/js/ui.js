@@ -45,8 +45,8 @@ class UI {
     const alert = document.querySelector('#alert');
     const alertElement = 
     `
-    <div class='card ${className} mb-3'>
-    <p class="card-text pl-4 pt-1 pb-1">${message}</p> 
+    <div class="col">
+    <p class="${className} btn btn-block">${message}</p> 
     </div>
     `
     alert.innerHTML = alertElement;
@@ -78,8 +78,8 @@ class UI {
     const alert = document.querySelector('#alert');
     const alertElement = 
     `
-    <div class='card no-vis mb-3'>
-      <p class="card-text pl-4 pt-1 pb-1">...</p>
+    <div class="col no-vis">
+      <p class="btn btn-block"></p> 
     </div>
     `
     alert.innerHTML = alertElement;

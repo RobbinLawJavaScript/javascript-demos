@@ -19,7 +19,6 @@ function getItems() {
 }
 
 function submitForm(e) {
-  e.preventDefault();
   const {title, description, id} = ui.getFormData();
   const data = {
     title,
@@ -27,12 +26,12 @@ function submitForm(e) {
   }
   if(e.target.classList.contains('add')) {
     if(title === '' || description === '') {
-      ui.showAlert('Please fill in all fields', 'error');
+      ui.showAlert('Please fill in all fields', 'error-message');
     } 
     else {
       httpServices.post('http://localhost:3000/items', data)
       .then(data => {
-        ui.showAlert('Item added', 'success');
+        ui.showAlert('Job Added', 'success-message');
         ui.clearFormData();
         getItems();
       })
@@ -42,7 +41,7 @@ function submitForm(e) {
   else if(e.target.classList.contains('edit')) {
     httpServices.put(`http://localhost:3000/items/${id}`, data)
     .then(data => {
-      ui.showAlert('Item updated', 'success');
+      ui.showAlert('Job Updated', 'success-message');
       ui.changeFormState('add');
       ui.clearFormData();
       getItems();
@@ -52,7 +51,7 @@ function submitForm(e) {
   else if(e.target.classList.contains('delete')) {
     httpServices.delete(`http://localhost:3000/items/${id}`)
     .then(data => {
-      ui.showAlert('Item removed', 'success');
+      ui.showAlert('Job Removed', 'success-message');
       ui.changeFormState('add');
       ui.clearFormData();
       getItems();
@@ -82,5 +81,4 @@ function setupForEditOrDelete(e) {
   else if (e.target.parentElement.classList.contains('delete')) {
     ui.changeFormState('delete');
   }
-  //e.preventDefault();
 }

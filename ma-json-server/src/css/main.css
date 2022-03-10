@@ -15,14 +15,14 @@
   visibility: hidden;
 }
 
-.error-message {
-  color: var(--bg-color-error);
-  font-weight: bold;
+.error-message, .error-message:hover {
+  background: var(--bg-color-error);
+  color: var(--text-color-error-success);
 }
 
-.success-message {
-  color: var(--bg-color-success);
-  font-weight: bold;
+.success-message, .success-message:hover {
+  background: var(--bg-color-success);
+  color: var(--text-color-error-success);
 }
 
 button.link {
