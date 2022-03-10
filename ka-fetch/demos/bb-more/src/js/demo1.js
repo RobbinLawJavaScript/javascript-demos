@@ -15,9 +15,9 @@ function Demo1() {
 
 		fetch('./data/text.txt')
 		.then((res) => res.text())
-		.then((data) => {
-			document.querySelector('#output').innerHTML = data;
-		})
+		.then((data) => 
+			document.querySelector('#output').innerHTML = data
+		)
 		.catch((err) => console.log(err));
 	}
 	
