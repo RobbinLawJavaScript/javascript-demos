@@ -1,29 +1,42 @@
-function Demo5() {
+function Demo6() {
 
 	const remoteDataURL = "https://api.jsonbin.io/b/6070a88dceba85732671d94c";
 	//const remoteDataURL = "https://api.jsonbin.io/b/6070638aceba85732671b245";
 	//const remoteDataURL = "https://api.jsonbin.io/b/6070a88d";
 
-	const getPromise = async () => {
-			const res = await fetch(remoteDataURL, {
-			method: 'GET',
-			headers: {
-				'Accept': 'application/json. text/plain, */*',
-				"Content-Type": "application/json",
-			},
-		})
-		console.log('resolved response:', res);
-		if (!res.ok) {
-			throw new Error(res.error);
-	 	}
-		const data = await res.json();
-		console.log('resolved data:', data);
-		return data;
+	const getPromise = () => {
+		return new Promise((resolve, reject) => {
+			console.log(2);
+			fetch(remoteDataURL, {
+				method: 'GET',
+				headers: {
+					'Accept': 'application/json. text/plain, */*',
+					"Content-Type": "application/json",
+				},
+			})
+			.then((res) => {
+				console.log('first then in getPromise response: ', res);
+				if (!res.ok) {
+					throw new Error('OOPS');
+				}
+				return res.json();
+			})
+			.then(data => {
+				console.log('second then in getPromise data: ', data);
+				resolve(data);
+			})
+			.catch((err) => {
+				console.log('catch in getPromise error: ', err);
+				reject(err);
+			});
+			console.log(3);
+		});
 	}
 
 	getPromise()
 		.then(data => console.log('then data:', data))
 		.catch((err) => console.log('catch error:', err))
 }
+console.log(1);
 
-export default Demo5;
+export default Demo6;
