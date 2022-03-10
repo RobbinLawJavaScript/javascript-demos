@@ -6,7 +6,7 @@ function Demo6() {
 
 	const getPromise = () => {
 		return new Promise((resolve, reject) => {
-			console.log(2);
+			console.log(1);
 			fetch(remoteDataURL, {
 				method: 'GET',
 				headers: {
@@ -17,7 +17,7 @@ function Demo6() {
 			.then((res) => {
 				console.log('first then in getPromise response: ', res);
 				if (!res.ok) {
-					throw new Error('OOPS');
+					throw new Error('OOPS BAD RESPONSE');
 				}
 				return res.json();
 			})
@@ -29,14 +29,15 @@ function Demo6() {
 				console.log('catch in getPromise error: ', err);
 				reject(err);
 			});
-			console.log(3);
+			console.log(2);
 		});
 	}
 
 	getPromise()
-		.then(data => console.log('then data:', data))
-		.catch((err) => console.log('catch error:', err))
+	.then(data => console.log('then data:', data))
+	.catch((err) => console.log('catch error:', err))
+	console.log(3);
 }
-console.log(1);
+
 
 export default Demo6;
