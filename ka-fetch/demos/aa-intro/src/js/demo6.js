@@ -7,6 +7,7 @@ function Demo6() {
 	const getPromise = () => {
 		return new Promise((resolve, reject) => {
 			console.log(1);
+			//resolve("hey man");
 			fetch(remoteDataURL, {
 				method: 'GET',
 				headers: {
@@ -21,7 +22,7 @@ function Demo6() {
 				}
 				return res.json();
 			})
-			.then(data => {
+			.then((data) => {
 				console.log('second then in getPromise data: ', data);
 				resolve(data);
 			})
