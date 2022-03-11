@@ -50,8 +50,8 @@ function Demo1() {
 				output += 
 				`
 					<div>
-						<h3>${post.title}</h3>
-						<p>${post.body}</p>
+						<h3>TITLE: ${post.title}</h3>
+						<p class="mb-3">BODY: ${post.body}</p>
 					</div>
 				`;
 			});
