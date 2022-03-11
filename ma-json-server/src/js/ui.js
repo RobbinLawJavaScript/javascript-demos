@@ -9,17 +9,10 @@ class UI {
     this.delete = document.querySelector('.delete');
     this.editCancel = document.querySelector('.edit-cancel');
     this.deleteCancel = document.querySelector('.delete-cancel');
-    this.formState = 'add';
   }
 
-
-  dumby() {
-    console.log('hi');
-  }
-  
   showItems(items) {
     let output = '';
-
     items.forEach((item) => {
       output += `
         <div class="card mb-3">
@@ -36,10 +29,8 @@ class UI {
         </div>
       `;
     });
-
     this.list.innerHTML = output;
   }
-
 
   showAlert(message, className) {
     const alert = document.querySelector('#alert');
@@ -52,50 +43,37 @@ class UI {
     alert.innerHTML = alertElement;
   }
 
-  showAlerts(message, className) {
-    this.clearAlert();
-
-    // Create div
-    const div = document.createElement('div');
-    // Add classes
-    div.className = className;
-    // Add text
-    div.appendChild(document.createTextNode(message));
-    // Get parent
-    const container = document.querySelector('.postsContainer');
-    // Get posts
-    const items = document.querySelector('#items');
-    // Insert alert div
-    container.insertBefore(div, items);
-
-    // Timeout
-    setTimeout(() => {
-      this.clearAlert();
-    }, 5000);
-  }
-
   clearAlert() {
     const alert = document.querySelector('#alert');
     const alertElement = 
     `
     <div class="col no-vis">
-      <p class="btn btn-block"></p> 
+      <p class="btn btn-block">...</p> 
     </div>
     `
     alert.innerHTML = alertElement;
   }
 
-  clearFormData() {
-    this.titleInput.value = '';
-    this.descriptionInput.value = '';
+  getFormData() {
+    const title = this.titleInput.value;
+    const description = this.descriptionInput.value;
+    const id = this.idInput.value;
+    return {title, description, id};
   }
 
-
-  getFormData() {
-    const title = document.querySelector('#title').value;
-    const description = document.querySelector('#description').value;
-    const id = document.querySelector('#id').value;
-    return {title, description, id};
+  validateFormData(title, description){
+    let message = '';
+    let isNotValid = true;
+    if(title == '')
+      message += `| Title |`;
+    if(title.length > 50)
+      message += `| Title > 50 |`;
+    if(description == '')
+      message += `| Description |`;
+    if(message != '')
+      message = `Invalid Data: ` + message;
+    else isNotValid = false;
+    return {message, isNotValid};
   }
 
   fillFormData(data) {
@@ -104,7 +82,9 @@ class UI {
     this.idInput.value = data.id;
   }
 
-  clearIdInput() {
+  clearFormData() {
+    this.titleInput.value = '';
+    this.descriptionInput.value = '';
     this.idInput.value = '';
   }
 
@@ -115,16 +95,13 @@ class UI {
     this.editCancel.classList.add('hidden');
     this.deleteCancel.classList.add('hidden');
     if(type === 'add') {
-      this.formState = 'add';
       this.add.classList.remove('hidden');
     }
     else if (type === 'edit') {
-      this.formState = 'edit';
       this.edit.classList.remove('hidden');
       this.editCancel.classList.remove('hidden');
     }
     else if (type === 'delete') {
-      this.formState === 'delete';
       this.delete.classList.remove('hidden');
       this.deleteCancel.classList.remove('hidden');
     }

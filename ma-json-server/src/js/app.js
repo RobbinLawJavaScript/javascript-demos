@@ -25,9 +25,13 @@ function submitForm(e) {
     description
   }
   if(e.target.classList.contains('add')) {
-    if(title === '' || description === '') {
-      ui.showAlert('Please fill in all fields', 'error-message');
-    } 
+    let {message, isNotValid} = ui.validateFormData(title, description);
+    if(isNotValid){
+      ui.showAlert(message, 'error-message');
+    }
+    // if(title === '' || description === '') {
+    //   ui.showAlert('Please fill in all fields', 'error-message');
+    // } 
     else {
       httpServices.post('http://localhost:3000/items', data)
       .then(data => {
@@ -51,7 +55,7 @@ function submitForm(e) {
   else if(e.target.classList.contains('delete')) {
     httpServices.delete(`http://localhost:3000/items/${id}`)
     .then(data => {
-      ui.showAlert('Job Removed', 'success-message');
+      ui.showAlert('Job Deleted', 'success-message');
       ui.changeFormState('add');
       ui.clearFormData();
       getItems();
