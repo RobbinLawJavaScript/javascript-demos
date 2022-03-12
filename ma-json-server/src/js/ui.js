@@ -1,14 +1,15 @@
 class UI {
   constructor() {
-    this.list = document.querySelector('#list');
+    this.items = document.querySelector('#items');
     this.titleInput = document.querySelector('#title');
     this.descriptionInput = document.querySelector('#description');
     this.idInput = document.querySelector('#id');
-    this.add = document.querySelector('.add');
-    this.edit = document.querySelector('.edit');
-    this.delete = document.querySelector('.delete');
-    this.editCancel = document.querySelector('.edit-cancel');
-    this.deleteCancel = document.querySelector('.delete-cancel');
+    this.add = document.querySelector('#add');
+    this.edit = document.querySelector('#edit');
+    this.editCancel = document.querySelector('#edit-cancel');
+    this.delete = document.querySelector('#delete');
+    this.deleteCancel = document.querySelector('#delete-cancel');
+    this.alert = document.querySelector('#alert');
   }
 
   showItems(items) {
@@ -29,29 +30,27 @@ class UI {
         </div>
       `;
     });
-    this.list.innerHTML = output;
+    this.items.innerHTML = output;
   }
 
   showAlert(message, className) {
-    const alert = document.querySelector('#alert');
     const alertElement = 
     `
     <div class="col">
     <p class="${className} btn btn-block">${message}</p> 
     </div>
     `
-    alert.innerHTML = alertElement;
+    this.alert.innerHTML = alertElement;
   }
 
   clearAlert() {
-    const alert = document.querySelector('#alert');
     const alertElement = 
     `
     <div class="col no-vis">
       <p class="btn btn-block">...</p> 
     </div>
     `
-    alert.innerHTML = alertElement;
+    this.alert.innerHTML = alertElement;
   }
 
   getFormData() {
@@ -88,20 +87,20 @@ class UI {
     this.idInput.value = '';
   }
 
-  changeFormState(type) {
+  changeFormState(state) {
     this.add.classList.add('hidden');
     this.edit.classList.add('hidden');
-    this.delete.classList.add('hidden');
     this.editCancel.classList.add('hidden');
+    this.delete.classList.add('hidden');
     this.deleteCancel.classList.add('hidden');
-    if(type === 'add') {
+    if(state === 'add') {
       this.add.classList.remove('hidden');
     }
-    else if (type === 'edit') {
+    else if (state === 'edit') {
       this.edit.classList.remove('hidden');
       this.editCancel.classList.remove('hidden');
     }
-    else if (type === 'delete') {
+    else if (state === 'delete') {
       this.delete.classList.remove('hidden');
       this.deleteCancel.classList.remove('hidden');
     }

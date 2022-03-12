@@ -6,7 +6,7 @@ const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getItems);
 document.querySelector('#form').addEventListener('click', submitForm);
-document.querySelector('#list').addEventListener('click', setupForEditOrDelete);
+document.querySelector('#items').addEventListener('click', setupForEditOrDelete);
 
 ui.changeFormState('add');
 
@@ -29,9 +29,6 @@ function submitForm(e) {
     if(isNotValid){
       ui.showAlert(message, 'error-message');
     }
-    // if(title === '' || description === '') {
-    //   ui.showAlert('Please fill in all fields', 'error-message');
-    // } 
     else {
       httpServices.post('http://localhost:3000/items', data)
       .then(data => {
@@ -43,14 +40,20 @@ function submitForm(e) {
     } 
   } 
   else if(e.target.classList.contains('edit')) {
-    httpServices.put(`http://localhost:3000/items/${id}`, data)
-    .then(data => {
-      ui.showAlert('Job Updated', 'success-message');
-      ui.changeFormState('add');
-      ui.clearFormData();
-      getItems();
-    })
-    .catch(err => console.log(err));
+    let {message, isNotValid} = ui.validateFormData(title, description);
+    if(isNotValid){
+      ui.showAlert(message, 'error-message');
+    }
+    else {
+      httpServices.put(`http://localhost:3000/items/${id}`, data)
+      .then(data => {
+        ui.showAlert('Job Updated', 'success-message');
+        ui.changeFormState('add');
+        ui.clearFormData();
+        getItems();
+      })
+      .catch(err => console.log(err));
+    }
   } 
   else if(e.target.classList.contains('delete')) {
     httpServices.delete(`http://localhost:3000/items/${id}`)
