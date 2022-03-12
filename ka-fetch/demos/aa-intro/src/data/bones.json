@@ -1,5 +1,5 @@
 [
     {"id":"1", "boneType":"t-bone"},
-    {"id":"2", "boneType": "porterhouse"},
-    {"id":"3", "boneType": "elk Horn"}
+    {"id":"2", "boneType": "rib-bone"},
+    {"id":"3", "boneType": "ham-bone"}
 ]
