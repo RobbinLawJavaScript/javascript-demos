@@ -1,4 +1,5 @@
 class UI {
+  
   constructor() {
     this.items = document.querySelector('#items');
     this.titleInput = document.querySelector('#title');
