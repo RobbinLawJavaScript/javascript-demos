@@ -8,11 +8,16 @@ class HTTPServices {
 				'Content-Type': 'application/json'
 			},
     });
+    console.log(`response: ${response}`);
     const responseData = await response.json();
+    console.log(`responseData: ${responseData}`);
     return responseData;
   }
 
   async post(url, data) {
+    console.log(`raw data: ${data}`);
+    const tempData = JSON.stringify(data);
+    console.log(`stringified data: ${tempData}`);
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -20,7 +25,9 @@ class HTTPServices {
       },
       body: JSON.stringify(data)
     });
+    console.log(`response: ${response}`);
     const responseData = await response.json();
+    console.log(`responseData: ${responseData}`);
     return responseData;
   }
 
