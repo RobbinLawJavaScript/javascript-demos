@@ -5,8 +5,7 @@ class HTTPServices {
     const response = await fetch(url, {
       method: 'GET',
       headers: {
-				'Accept': 'application/json. text/plain, */*',
-				"Content-Type": "application/json",
+				'Content-Type': 'application/json'
 			},
     });
     const responseData = await response.json();

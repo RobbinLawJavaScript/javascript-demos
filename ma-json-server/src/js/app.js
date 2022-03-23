@@ -32,6 +32,7 @@ function submitForm(e) {
     else {
       httpServices.post('http://localhost:3000/items', data)
       .then(data => {
+        console.log(`Post Data returned: ${data}`);
         ui.showAlert('Job Added', 'success-message');
         ui.clearFormData();
         getItems();
