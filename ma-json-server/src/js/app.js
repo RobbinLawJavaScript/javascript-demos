@@ -13,9 +13,11 @@ ui.changeFormState('add');
 function getItems() {
   httpServices.get('http://localhost:3000/items')
   .then(data => {
+    console.log(`.then now running`);
     ui.showItems(data);
   })
   .catch(err => console.log(err));
+  console.log(`keep running asyncronously`);
 }
 
 function submitForm(e) {
