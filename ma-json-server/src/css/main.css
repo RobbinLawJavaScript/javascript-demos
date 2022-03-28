@@ -15,6 +15,10 @@
   visibility: hidden;
 }
 
+.hidden {
+	display: none;
+}
+
 .error-message, .error-message:hover {
   background: var(--bg-color-error);
   color: var(--text-color-error-success);
@@ -74,10 +78,6 @@ body {
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
-}
-
-.hidden {
-	display: none;
 }
 
 .error, .success {

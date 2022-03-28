@@ -62,18 +62,19 @@ class UI {
   }
 
   validateFormData(title, description){
-    let message = '';
-    let isNotValid = true;
+    let errorMessage = '';
+    let dataIsValid = false;
     if(title == '')
-      message += `| Title |`;
+      errorMessage += `| Title |`;
     if(title.length > 50)
-      message += `| Title > 50 |`;
+      errorMessage += `| Title > 50 |`;
     if(description == '')
-      message += `| Description |`;
-    if(message != '')
-      message = `Invalid Data: ` + message;
-    else isNotValid = false;
-    return {message, isNotValid};
+      errorMessage += `| Description |`;
+    if(errorMessage == '')
+      dataIsValid = true;
+    else
+      errorMessage = `Invalid Data: ` + errorMessage;
+    return {errorMessage, dataIsValid};
   }
 
   fillFormData(data) {

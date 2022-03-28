@@ -27,11 +27,8 @@ function submitForm(e) {
     description
   }
   if(e.target.classList.contains('add')) {
-    let {message, isNotValid} = ui.validateFormData(title, description);
-    if(isNotValid){
-      ui.showAlert(message, 'error-message');
-    }
-    else {
+    let {errorMessage, dataIsValid} = ui.validateFormData(title, description);
+    if(dataIsValid) {
       httpServices.post('http://localhost:3000/items', data)
       .then(data => {
         console.log(`Post Data returned: ${data}`);
@@ -41,13 +38,14 @@ function submitForm(e) {
       })
       .catch(err => console.log(err));
     } 
+    else
+    {
+      ui.showAlert(errorMessage, 'error-message');
+    }
   } 
   else if(e.target.classList.contains('edit')) {
-    let {message, isNotValid} = ui.validateFormData(title, description);
-    if(isNotValid){
-      ui.showAlert(message, 'error-message');
-    }
-    else {
+    let {errorMessage, dataIsValid} = ui.validateFormData(title, description);
+    if(dataIsValid) {
       httpServices.put(`http://localhost:3000/items/${id}`, data)
       .then(data => {
         ui.showAlert('Job Updated', 'success-message');
@@ -56,6 +54,10 @@ function submitForm(e) {
         getItems();
       })
       .catch(err => console.log(err));
+    }
+    else 
+    {
+      ui.showAlert(errorMessage, 'error-message');
     }
   } 
   else if(e.target.classList.contains('delete')) {
