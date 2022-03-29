@@ -77,20 +77,22 @@ function submitForm(e) {
 }
 
 function setupForEditOrDelete(e) {
-  const id = e.target.parentElement.dataset.id;
-  const title = e.target.parentElement.parentElement.children[0].textContent;
-  const description = e.target.parentElement.parentElement.children[1].textContent;
-  const data = {
-    title,
-    description,
-    id
-  }
-  ui.fillFormData(data);
-  ui.clearAlert();
-  if(e.target.parentElement.classList.contains('edit')) {
-    ui.changeFormState('edit');
-  }
-  else if (e.target.parentElement.classList.contains('delete')) {
-    ui.changeFormState('delete');
+  if(e.target.parentElement.classList.contains('edit') || e.target.parentElement.classList.contains('delete')){
+    const id = e.target.parentElement.dataset.id;
+    const title = e.target.parentElement.parentElement.children[0].textContent;
+    const description = e.target.parentElement.parentElement.children[1].textContent;
+    const data = {
+      title,
+      description,
+      id
+    }
+    ui.fillFormData(data);
+    ui.clearAlert();
+    if(e.target.parentElement.classList.contains('edit')) {
+      ui.changeFormState('edit');
+    }
+    else if (e.target.parentElement.classList.contains('delete')) {
+      ui.changeFormState('delete');
+    }
   }
 }
