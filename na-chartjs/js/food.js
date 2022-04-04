@@ -32,7 +32,7 @@ const FOOD_THOUGHTS = {
   'bingsu': 3
 }
 
-const getFoodThoughtKeys = ()=> {
+const getFoodThoughtKeys = () => {
   return Object.keys(FOOD_THOUGHTS)
 }
 
@@ -40,7 +40,7 @@ const getFoodThoughtsValues = () => {
   return Object.values(FOOD_THOUGHTS)
 }
 
-const getFoodTimesKeys = ()=> {
+const getFoodTimesKeys = () => {
   return Object.keys(FOOD_TIMES)
 }
 
