@@ -32,11 +32,18 @@ const FOOD_TIMES = {
 }
 
 const getFoodThoughtsKeys = () => {
-  return Object.keys(FOOD_THOUGHTS)
+  const keys = Object.keys(FOOD_THOUGHTS);
+  console.log (`Food Thought Keys = ${keys}`);
+  console.log (`typeof = ${typeof(keys)}`);
+  return keys;
+
 }
 
 const getFoodThoughtsValues = () => {
-  return Object.values(FOOD_THOUGHTS)
+  const values = Object.values(FOOD_THOUGHTS);
+  console.log (`Food Thought values = ${values}`);
+  console.log (`typeof = ${typeof(values)}`);
+  return values;
 }
 
 const getFoodTimesKeys = () => {
@@ -50,6 +57,6 @@ const getFoodTimesValues = () => {
 
 
 
-// this is how you make your functions and other piece available
+// this is how you make your functions and other pieces available
 // to other files.
 export {getFoodThoughtsKeys, getFoodThoughtsValues, getFoodTimesKeys, getFoodTimesValues}
