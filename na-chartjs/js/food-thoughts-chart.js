@@ -19,7 +19,7 @@ Chart.register(DoughnutController,
   SubTitle)
 
 // how you import files locally
-import {getFoodThoughtKeys, getFoodThoughtsValues} from './food.js'
+import {getFoodThoughtsKeys, getFoodThoughtsValues} from './food.js'
 
 
 const renderFoodThoughtsChart= () => {
@@ -29,7 +29,7 @@ const renderFoodThoughtsChart= () => {
   // let's take a look at the data and let's make a 
   // donut chart... I know right
   const data = {
-    labels: getFoodThoughtKeys(),
+    labels: getFoodThoughtsKeys(),
     datasets: [{
       label: 'Food Thoughts',
       data: getFoodThoughtsValues(),

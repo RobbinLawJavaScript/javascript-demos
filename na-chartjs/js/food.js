@@ -1,5 +1,16 @@
 // observe the bottom of the file.
 
+const FOOD_THOUGHTS = {
+  'sushi': 30,
+  'chicken tikka masala': 13,
+  'ice cream': 8,
+  'delicious tacos': 10,
+  'thai curries': 5,
+  'healthy food': 35,
+  'ramen': 12,
+  'bingsu': 3
+}
+
 const FOOD_TIMES = {
   '8am':1,
   '9am':9,
@@ -20,19 +31,7 @@ const FOOD_TIMES = {
   '12am':1,
 }
 
-
-const FOOD_THOUGHTS = {
-  'sushi': 30,
-  'chicken tikka masala': 13,
-  'ice cream': 8,
-  'delicious tacos': 10,
-  'thai curries': 5,
-  'healthy food': 35,
-  'ramen': 12,
-  'bingsu': 3
-}
-
-const getFoodThoughtKeys = () => {
+const getFoodThoughtsKeys = () => {
   return Object.keys(FOOD_THOUGHTS)
 }
 
@@ -53,4 +52,4 @@ const getFoodTimesValues = () => {
 
 // this is how you make your functions and other piece available
 // to other files.
-export {getFoodThoughtKeys, getFoodThoughtsValues, getFoodTimesKeys, getFoodTimesValues}
+export {getFoodThoughtsKeys, getFoodThoughtsValues, getFoodTimesKeys, getFoodTimesValues}
