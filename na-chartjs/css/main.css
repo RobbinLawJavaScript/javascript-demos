@@ -1,0 +1,9 @@
+canvas {
+	max-width:350px!important;
+	min-width: 350px!important;
+}
+
+.container {
+	max-width: 600px;
+	background-color: lightblue;
+}
