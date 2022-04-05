@@ -9,6 +9,9 @@ import { Chart,
   Tooltip,
   SubTitle} from 'chart.js'
 
+  // how you import files locally
+import {getFoodThoughtsKeys, getFoodThoughtsValues} from './food.js'
+
 // looking at the integration we need to register the
 // doughnut controller with the chart
 Chart.register(DoughnutController,
@@ -17,10 +20,6 @@ Chart.register(DoughnutController,
   Title,
   Tooltip,
   SubTitle)
-
-// how you import files locally
-import {getFoodThoughtsKeys, getFoodThoughtsValues} from './food.js'
-
 
 const renderFoodThoughtsChart= () => {
   // get the chart element

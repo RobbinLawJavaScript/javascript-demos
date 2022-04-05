@@ -47,11 +47,18 @@ const getFoodThoughtsValues = () => {
 }
 
 const getFoodTimesKeys = () => {
-  return Object.keys(FOOD_TIMES)
+  const keys = Object.keys(FOOD_TIMES);
+  console.log (`Food Times Keys = ${keys}`);
+  console.log (`typeof = ${typeof(keys)}`);
+  return keys;
 }
 
 const getFoodTimesValues = () => {
-  return Object.values(FOOD_TIMES)
+  const values = Object.values(FOOD_TIMES);
+  //const values = [5,3,8,9,10,2];
+  console.log (`Food Times values = ${values}`);
+  console.log (`typeof = ${typeof(values)}`);
+  return values;
 }
 
 
