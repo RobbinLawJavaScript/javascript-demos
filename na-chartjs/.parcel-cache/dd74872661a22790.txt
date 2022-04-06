@@ -17,7 +17,7 @@
 96C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\posthtml\node_modules\posthtml-parser132935733563519573 1
 106C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts132935733575014602 0
 106C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\@parcel\transformer-json\lib\JSONTransformer.js132935733558792278 0
-50C:\CPSC1520\repos\javascript-demos\na-chartjs\dist132936500169566151 1
+50C:\CPSC1520\repos\javascript-demos\na-chartjs\dist132937372370502924 1
 93C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\caniuse-lite\data\features\opus.js132935733647993738 0
 95C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\cosmiconfig\dist\ExplorerSync.js.map132935733570716083 0
 87C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\type-fest\source\except.d.ts132935733569100468 0
@@ -58,7 +58,7 @@
 106C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\@parcel\watcher\src\shared\BruteForceBackend.hh132935733570775932 0
 48C:\CPSC1520\repos\javascript-demos\na-chartjs\js132935557988977790 1
 76C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\bootstrap\LICENSE132935733557301164 0
-63C:\CPSC1520\repos\javascript-demos\na-chartjs\package-lock.json132936488206013933 0
+63C:\CPSC1520\repos\javascript-demos\na-chartjs\package-lock.json132937352968923365 0
 72C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\@trysound\sax132935733561549018 1
 84C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\@parcel\core\src\requests132935733637084497 1
 74C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\xxhash-wasm\esm132935733564168623 1
@@ -87,7 +87,7 @@
 63C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\.bin132935733652950519 1
 80C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\bootstrap\scss\mixins132935733644031393 1
 67C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\css-tree132935733634750770 1
-77C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\.package-lock.json132936488206113673 0
+77C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\.package-lock.json132937352969058145 0
 86C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\svgo\plugins\mergeStyles.js132935733574196773 0
 86C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\postcss-normalize-url\types132935733562483090 1
 90C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\postcss-normalize-url\README.md132935733561153846 0
@@ -5216,11 +5216,11 @@
 68C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\.bin\svgo132935733652960502 0
 72C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\.bin\svgo.cmd132935733652960502 0
 72C:\CPSC1520\repos\javascript-demos\na-chartjs\node_modules\.bin\svgo.ps1132935733652960502 0
-68C:\CPSC1520\repos\javascript-demos\na-chartjs\js\food-times-chart.js132936492172673440 0
+68C:\CPSC1520\repos\javascript-demos\na-chartjs\js\food-times-chart.js132937372368238962 0
 56C:\CPSC1520\repos\javascript-demos\na-chartjs\js\food.js132936498666962088 0
 57C:\CPSC1520\repos\javascript-demos\na-chartjs\js\index.js132935745450487555 0
-68C:\CPSC1520\repos\javascript-demos\na-chartjs\dist\index.5d9dacde.js132936500169486359 0
-72C:\CPSC1520\repos\javascript-demos\na-chartjs\dist\index.5d9dacde.js.map132936500169546208 0
+68C:\CPSC1520\repos\javascript-demos\na-chartjs\dist\index.5d9dacde.js132937372370273518 0
+72C:\CPSC1520\repos\javascript-demos\na-chartjs\dist\index.5d9dacde.js.map132937372370333352 0
 69C:\CPSC1520\repos\javascript-demos\na-chartjs\dist\index.ab0485ab.css132936498561702940 0
 61C:\CPSC1520\repos\javascript-demos\na-chartjs\dist\index.html132936498561692869 0
 58C:\CPSC1520\repos\javascript-demos\na-chartjs\css\main.css132932287568731871 0
