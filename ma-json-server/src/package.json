@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "jsrv": "json-server --watch api/db.json"
+    "start": "json-server --watch api/db.json"
   },
   "dependencies": {
     "json-server": "^0.17.0"
