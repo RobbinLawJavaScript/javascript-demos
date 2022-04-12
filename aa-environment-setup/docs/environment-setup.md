@@ -73,3 +73,9 @@
 - DartJs Sass by CodeLios
 
 ----
+
+- Auto Import configuration settings:
+  - Go to File/Preferences/Settings in VSCode
+  - In the settings search type "auto import"
+  - In the "Auto Import Configuration"
+  - change the "Files to Scan" to {js, jsx, ts, tsx}
