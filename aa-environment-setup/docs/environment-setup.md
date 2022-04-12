@@ -46,7 +46,7 @@
 
     Use "Ctrl + Space" to get Emmet back in play.
 
-- [Code faster with Custom VSCode Snippets by Brad Traversy](https://www.youtube.com/watch?v=JIqk9UxgKEc)
+- [Code faster with Custom VSCode Snippets by Brad Traversy](https://www.youtube.com/watch?v=JIqk9UxgKEc) runtime 21 min
 - [Code Snippets Generator for VSCode, Sublime, and Atom](https://snippet-generator.app/)
 
 ----
