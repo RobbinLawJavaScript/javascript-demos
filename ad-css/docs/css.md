@@ -2,6 +2,7 @@
 
 **Resources** :
 
+- [state of css](https://2021.stateofcss.com/en-US/)
 - [flexbox](https://flexbox.io)
 - [grid](https://cssgrid.io)
 - [css-tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
