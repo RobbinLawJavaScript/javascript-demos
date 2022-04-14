@@ -7,6 +7,7 @@
 - [Git](https://git-scm.com/) (*Command-Line Interface*)
 - [GitHub CLI](https://cli.github.com/) (*Command-Line Interface*)
 - [Visual Studio Code](https://code.visualstudio.com) (see [Notes](#vs-code-extensions) on VS Code Extensions)
+- [Node](https://nodejs.org/en/)
 
 ----
 

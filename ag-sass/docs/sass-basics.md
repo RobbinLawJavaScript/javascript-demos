@@ -35,9 +35,7 @@ sass -v
 Install DartSass
 
 ```
-npm
 npm install -g sass
-
 ```
 
  #### 3. Configure The Dart SASS Compiler Extension 
