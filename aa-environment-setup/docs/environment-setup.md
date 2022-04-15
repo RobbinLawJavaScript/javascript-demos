@@ -56,22 +56,24 @@
 
 **Download from Extensions Market Place**
 
-- Markdown All in One - preview .md files
-- PDF Preview
-- Material Icon Theme - Icon Theme
-- One Dark Pro - Color Theme
-- Bracket Pair Colorizer
-- Prettier Code Formatter 
-- htmltagwrap (Alt + w) - to markup content that is already in place
+- Markdown All in One by Yu Zhang - preview .md files
+- PDF Preview by Analytic Signal Limited
+- Material Icon Theme by Philipp Kief - Icon Theme
+- One Dark Pro by binaryify - Color Theme
+- Bracket Pair Colorizer by CoenraadS
+- Prettier-Code Formatter by Prettier
+- htmltagwrap by Brad Gashler (Alt + w) - to markup content that is already in place
     - multiple cursors
-- Auto Rename Tag - to rename an HTML tag faster
+- Auto Rename Tag by Jun Han - to rename an HTML tag faster
+- REST Client by Huachao Mao
 - HTML Snippets
 - HTML CSS Support
 - JavaScript ES6 Snippets
-- Live Server - opens in the default browser
-- Live Preview (Microsoft) - opens in a tab in VSCode
+- Live Server by Ritwick Dey - opens in the default browser
+- Live Preview by Microsoft - opens in a tab in VSCode
 - Auto Import by steotes
-- DartJs Sass by CodeLios
+- DartJs Sass Compiler and Sass Watcher by CodeLios
+- ES 7 React/Redux/ GraphQL/React-Native snippets extension by dsznajder
 
 ----
 
