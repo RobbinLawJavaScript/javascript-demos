@@ -6,7 +6,7 @@
 
 - [Git](https://git-scm.com/) (*Command-Line Interface*)
 - [GitHub CLI](https://cli.github.com/) (*Command-Line Interface*)
-- [Visual Studio Code](https://code.visualstudio.com) (see [Notes](#vs-code-extensions) on VS Code Extensions)
+- [Visual Studio Code](https://code.visualstudio.com) (see [Notes](#vs-code-extensions-to-download) on VS Code Extensions)
 - [Node](https://nodejs.org/en/)
 
 ----
@@ -52,7 +52,7 @@
 
 ----
 
-## VS Code Extensions
+## VS Code Extensions to Download
 
 **Download from Extensions Market Place**
 
@@ -76,6 +76,8 @@
 - ES 7 React/Redux/ GraphQL/React-Native snippets extension by dsznajder
 
 ----
+
+## VS Code Extension Config settings
 
 - Auto Import configuration settings:
   - Go to File/Preferences/Settings in VSCode
