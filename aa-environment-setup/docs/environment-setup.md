@@ -13,6 +13,7 @@
 
 ## VS Code Out of the Box Features
 
+- [VS Code Shortcuts by Traversy Media](https://www.youtube.com/watch?v=4xA5JePvCJc&list=RDCMUC29ju8bIPH5as8OGnQzwJyA&index=19) runtime 17 min
 - [VS Code Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
   
         "Ctrl + /" gives a comment in whatever language you are editing in.
@@ -79,6 +80,14 @@
 
 ## VS Code Extension Config settings
 
+- VS Code Files: 
+  - Auto Save: afterdelay
+  - Auto Save Delay: 1000 ms
+- VS Code Editor:
+  - Format on Save: check
+  - Format on Save Mode: file
+- Prettier configuration settings:
+  - see my video on my settings, too many to list here
 - Auto Import configuration settings:
   - Go to File/Preferences/Settings in VSCode
   - In the settings search type "auto import"
