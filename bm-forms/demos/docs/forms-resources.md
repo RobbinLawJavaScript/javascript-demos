@@ -1,8 +1,8 @@
-# Bootstrap Resources
+# Forms Resources
 
 **Resources** :
 
-- [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [bootstrap 5 crash course by Brad Traversy on youtube](https://www.youtube.com/watch?v=4sosXZsdy-s&list=RDCMUC29ju8bIPH5as8OGnQzwJyA&index=2)
+- [input form element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+- [forms by mdn](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 
 ----
