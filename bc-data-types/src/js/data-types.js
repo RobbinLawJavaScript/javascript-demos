@@ -18,7 +18,7 @@ console.log(typeof myBool);
 // Null
 const myNull = null;
 console.log(myNull);
-// Even though null is a primative type it will show up
+// Even though null is a primitive type it will show up
 // as an object with typeof.
 console.log(typeof myNull);
 // Undefined

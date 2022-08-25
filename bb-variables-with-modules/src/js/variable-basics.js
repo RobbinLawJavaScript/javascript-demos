@@ -10,8 +10,8 @@ export function demo() {
 
 // Multi word variables
 // var firstName = 'John'; // Camel case
-// var first_name = 'Sara'; // Underscore
 // var FirstName = 'Tom'; // Pascal case
+// var first_name = 'Sara'; // Underscore
 // var firstname; // not recommended
 // var first-name; // nope
 
@@ -36,9 +36,9 @@ console.log(myName3);
 // CONST
 const myName5 = 'James';
 console.log(myName5);
-// Can not reassign
+// Can not reassign a constant
 //myName5 = 'Sara';
-// Have to assign a value at declaration
+// You have to assign a value to a constant at declaration
 //const myName6;
 
 // CONST Literal Object
@@ -47,10 +47,13 @@ const person = {
   age: 30
 }
 console.log(person);
+
+// You cannot reassign the whole literal object
 // person = {
 //   name: 'Jim',
 //   age: 35
 // }
+
 // You can reassign the value of a key
 person.name = 'Sara';
 person.age = 32;

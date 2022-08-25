@@ -8,7 +8,7 @@ console.log(false);
 console.log(null);
 console.log(NaN);
 console.log(undefined);
-var myString = 'Hey';
+let myString = 'Hey';
 console.log(myString);
 console.log([1,2,3,4]);
 console.log({name:'bob', age:32});
