@@ -42,3 +42,9 @@
 - [Node Website](https://nodejs.org/en/)
 
 ----
+
+## Create a Netlify Account
+
+- [Netlify Website](https://netlify.com)
+
+----

@@ -2,18 +2,25 @@
 
 ## Assessments
 
-|Assessment Name|Description|Weight|Due Date|
+|Assessment Name|Description|Weight in %|Due 11:59 PM Friday of Week|
 |:-:|:-:|:-:|:-:|
-|Labs-1-2-3-4|web app that demonstrates 1-DOM Access; 2-Functions; 3-Events; 4-Decisions|20|11:59 PM [Day09](#day09)|
-|Quiz-1||6|11:59 PM [Day09](#day09)|
-|Labs-5-6-7-8|web app that demonstrates 5-Forms; 6-Loops; 7-NodeLists; 8-Arrays|20|11:59 PM [Day17](#day17)|
-|Quiz-2||6|11:59 PM [Day17](#day17)|
-|Practical Assessment-1|web app to add, edit, and remove content|10|11:59 PM [Day26](#day26)|
-|Quiz-3||6|11:59 PM [Day26](#day26)|
-|Practical Assessment-2|web app that displays external data|10|11:59 PM [Day34](#day34)|
-|Quiz-4||6|11:59 PM [Day34](#day34)|
-|Practical Assessment-3|web app that uses ES modules|10|4:59 PM [Day43](#day43)|
-|Quiz-5||6|4:59 PM [Day43](#day43)|
+|InClass 1||5||
+|InClass 2||5||
+|InClass 3||5||
+|InClass 4||5||
+|InClass 5||5||
+|InClass 6||5||
+|InClass 7||5||
+|InClass 8||5||
+|Quiz 1||5||
+|Quiz 2||5||
+|Quiz 3||5||
+|Quiz 4||5||
+|Quiz 5||5||
+|Quiz 6||5||
+|Practical Assessment 1|web app to add, edit, and remove content|10||
+|Practical Assessment 2|web app that displays external data|10||
+|Practical Assessment 3|web app that uses ES modules|10||
 ||Total|100||
 
 ## Calendar
@@ -23,19 +30,19 @@
 |0||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
 |1|Sep05|Sep06|Sep07-[Day02](#day02)-Variables-Primitive-Data-Types|Sep08-[Day03](#day03)-Reference-Data-Types|Sep09|
 |2|Sep12-[Day04](#day04)-DOM-Access-Functions|Sep13|Sep14-[Day05](#day05)-Functions|Sep15-[Day06](#day06)-Events-Decisions|Sep16|
-|3|Sep19-[Day07](#day07)-Events-Decisions|Sep20|Sep21-[Day08](#day08)-Events-Decisions|<span style="color:red">Sep22</span>-[Day09](#day09)-Labs-1-2-3-4|Sep23|
+|3|Sep19-[Day07](#day07)-Events-Decisions|Sep20|Sep21-[Day08](#day08)-Events-Decisions|Sep22-[Day09](#day09)-Events-Decisions|Sep23|
 |4|Sep26-[Day10](#day10)-Forms|Sep27|Sep28-[Day11](#day11)-Forms|Sep29-[Day12](#day12)-Forms|Sep30|
 |5|Oct03-[Day13](#day13)-Loops-NodeLists|Oct04|Oct05-[Day14](#day14)-Loops-NodeLists|Oct06-[Day15](#day15)-Loops-Arrays|Oct07|
-|6|Oct10|Oct11|Oct12-[Day16](#day16)-Loops-Arrays|<span style="color:red">Oct13</span>-[Day17](#day17)-Labs-5-6-7-8|Oct14|
+|6|Oct10|Oct11|Oct12-[Day16](#day16)-Loops-Arrays|Oct13-[Day17](#day17)|Oct14|
 |7|Oct17-[Day18](#day18)|Oct18|Oct19-[Day19](#day19)|Oct20-[Day20](#day20)|Oct21|
 |8|Oct24-[Day21](#day21)|Oct25|Oct26-[Day22](#day22)|Oct27-[Day23](#day23)|Oct28|
-|9|Oct31-[Day24](#day24)|Nov01|Nov02-[Day25](#day25)|<span style="color:red">Nov03</span>-[Day26](#day26)-Practical-Assessment-1|Nov04|
+|9|Oct31-[Day24](#day24)|Nov01|Nov02-[Day25](#day25)|Nov03-[Day26](#day26)|Nov04|
 |10|Nov07-[Day27](#day27)|Nov08|Nov09-[Day28](#day28)|Nov10|Nov11|
 |11|Nov14-[Day29](#day29)|Nov15|Nov16-[Day30](#day30)|Nov17-[Day31](#day31)|Nov18|
-|12|Nov21-[Day32](#day32)|Nov22|Nov23-[Day33](#day33)|<span style="color:red">Nov24</span>-[Day34](#day34)-Practical-Assessment-2|Nov25|
+|12|Nov21-[Day32](#day32)|Nov22|Nov23-[Day33](#day33)|Nov24-[Day34](#day34)|Nov25|
 |13|Nov28-[Day35](#day35)|Nov29|Nov30-[Day36](#day36)|Dec01-[Day37](#day37)|Dec02|
 |14|Dec05-[Day38](#day38)|Dec06|Dec07-[Day39](#day39)|Dec08-[Day40](#day40)|Dec09|
-|15|Dec12-[Day41](#day41)|Dec13|Dec14-[Day42](#day42)|<span style="color:red">Dec15</span>-[Day43](#day43)-Practical-Assessment-3||
+|15|Dec12-[Day41](#day41)|Dec13|Dec14-[Day42](#day42)|Dec15-[Day43](#day43)||
 
 
 ## Day01
@@ -163,8 +170,6 @@ Barcelona
 
 Events with Decisions
 -	previous exercise review
-
-Labs-1-2-3-4 Work Period due 11:59
 
 [Back to Top](#calendar)
 
