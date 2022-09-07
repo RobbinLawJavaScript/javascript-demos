@@ -48,11 +48,12 @@ const person = {
 }
 console.log(person);
 
-// You cannot reassign the whole literal object
+// You cannot reassign the whole literal object when it is a const
 // person = {
 //   name: 'Jim',
 //   age: 35
 // }
+// console.log(person);
 
 // You can reassign the value of a key
 person.name = 'Sara';
@@ -63,7 +64,8 @@ console.log(person);
 const numbers = [1,2,3,4,5];
 console.log(numbers);
 // You can't do this
-//numbers = [1,2,3,4,5,6]
+// numbers = [1,2,3,4,5,6];
+// console.log(numbers);
 // but you can mutate it with
 numbers.push(6);
 console.log(numbers);
