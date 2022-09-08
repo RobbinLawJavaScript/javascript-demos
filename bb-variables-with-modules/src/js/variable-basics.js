@@ -20,7 +20,7 @@ export function demo() {
 // VAR
 var myName;
 console.log(myName);
-myName = 'John';
+myName = 'Johnny';
 console.log(myName);
 myName = 123;
 console.log(myName);
