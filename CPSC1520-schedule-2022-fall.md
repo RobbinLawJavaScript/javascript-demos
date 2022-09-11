@@ -25,6 +25,9 @@
 
 ## Calendar
 
+- [my demos link](https://github.com)
+- [Link to Github Classroom](https://github.com)
+
 |Week|Mon|Tue|Wed|Thu|Fri|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |0||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
@@ -50,24 +53,28 @@
 Intro to Course
 - Outline, Calendar & Assessments
 
-Setup of Development Environment.
-- download git
-- download Visual Studio Code (VSCode)
--	create dirs. C:/CPSC1520/repos
--	clone public demos repo
--	vs code out of the box
--	Emmet & Lorem
--	download vscode extensions
--	Live Server & Live Preview
--	HTMLTagWrap
--	AutoRenameTag
--	reset.css
--	GitHub Account
-
+Setup of Development Environment
+- Go to my github repo with the link above
+- Doc: environment-setup-test-drive
+  - Setup Folder Structure
+  - GitHub Account
+  - Download Git to computer
+  - Download GetHub CLI
+  - Visual Studio Code (VSCode)
+  - Download Node
+  - Netlify Account
 
 [Back to Top](#calendar)
 
 ## Day02
+
+Setup of Development Environment
+- Clone my Demos from Github with link above
+- Doc: environment-setup-test-drive
+  - Review setup steps from previous day
+  - Test drive the tool chain by running code in the src folder
+- Doc: vscode_features_extensions
+- Doc: git-github-with-VSCode
 
 Variables & Primitive Data Types
 -	chrome dev tools
@@ -99,6 +106,9 @@ Literal Strings
 [Back to Top](#calendar)
 
 ## Day04
+
+Setup of Assessment Repo via Github Classroom
+- Use the link above to join Classroom, create an assessment repo, and clone it
 
 DOM Access & Functions
 -	creation/clone of assessments repo
