@@ -4,34 +4,34 @@
 
 |Assessment Name|Description|Weight in %|Due 11:59 PM Friday of Week|
 |:-:|:-:|:-:|:-:|
-|InClass 1||5||
-|InClass 2||5||
-|InClass 3||5||
-|InClass 4||5||
-|InClass 5||5||
-|InClass 6||5||
-|InClass 7||5||
-|InClass 8||5||
+|Lab 1||5||
+|Lab 2||5||
+|Lab 3||5||
+|Lab 4||5||
+|Lab 5||5||
+|Lab 6||5||
+|Lab 7||5||
+|Lab 8||5||
 |Quiz 1||5||
 |Quiz 2||5||
 |Quiz 3||5||
 |Quiz 4||5||
 |Quiz 5||5||
 |Quiz 6||5||
-|Practical Assessment 1|web app to add, edit, and remove content|10||
-|Practical Assessment 2|web app that displays external data|10||
-|Practical Assessment 3|web app that uses ES modules|10||
+|Assignment 1|web app to add, edit, and remove content|10||
+|Assignment 2|web app that displays external data|10||
+|Assignment 3|web app that uses ES modules|10||
 ||Total|100||
 
 ## Calendar
 
-- [my demos link](https://github.com)
+- [my Github demos link](https://github.com)
 - [Link to Github Classroom](https://github.com)
 
 |Week|Mon|Tue|Wed|Thu|Fri|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |0||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
-|1|Sep05|Sep06|Sep07-[Day02](#day02)-Variables-Primitive-Data-Types|Sep08-[Day03](#day03)-Reference-Data-Types|Sep09|
+|1|Sep05|Sep06|Sep07-[Day02](#day02)-Environment-Setup|Sep08-[Day03](#day03)-Console-Variables|Sep09|
 |2|Sep12-[Day04](#day04)-DOM-Access-Functions|Sep13|Sep14-[Day05](#day05)-Functions|Sep15-[Day06](#day06)-Events-Decisions|Sep16|
 |3|Sep19-[Day07](#day07)-Events-Decisions|Sep20|Sep21-[Day08](#day08)-Events-Decisions|Sep22-[Day09](#day09)-Events-Decisions|Sep23|
 |4|Sep26-[Day10](#day10)-Forms|Sep27|Sep28-[Day11](#day11)-Forms|Sep29-[Day12](#day12)-Forms|Sep30|
@@ -54,13 +54,14 @@ Intro to Course
 - Outline, Calendar & Assessments
 
 Setup of Development Environment
-- Go to my github repo with the link above
+- Go to my github demos repo with the link above
 - Doc: environment-setup-test-drive
   - Setup Folder Structure
   - GitHub Account
   - Download Git to computer
   - Download GetHub CLI
   - Visual Studio Code (VSCode)
+    - Download `live server` extension
   - Download Node
   - Netlify Account
 
@@ -73,35 +74,23 @@ Setup of Development Environment
 - Doc: environment-setup-test-drive
   - Review setup steps from previous day
   - Test drive the tool chain by running code in the src folder
-- Doc: vscode_features_extensions
+- Doc: vscode-features-extensions
 - Doc: git-github-with-VSCode
-
-Variables & Primitive Data Types
--	chrome dev tools
--	console repl
--	window object & document object
--	console.log
--	var, let, const
--	primitive data types
--	string, number data types
--	boolean, undefined, null data types
--	string manipulation
--	number manipulation
 
 [Back to Top](#calendar)
 
 ## Day03
 
-Reference Data Types
--	reference data types
--	arrays
--	array manipulation
--	object literals
--	object literal manipulation
--	date data type
+Console
+- Demo: console
 
-Literal Strings
--	template literal strings
+Variables
+- Demo: variables-with-modules
+-	chrome dev tools
+-	console repl
+-	window object & document object
+-	console.log
+-	var, let, const
 
 [Back to Top](#calendar)
 
@@ -109,6 +98,27 @@ Literal Strings
 
 Setup of Assessment Repo via Github Classroom
 - Use the link above to join Classroom, create an assessment repo, and clone it
+
+Data Types
+- Demo: data-types
+  -	primitive data types
+  -	string, number data types
+  -	boolean, undefined, null data types
+  -	reference data types
+  -	arrays
+  -	object literals
+  -	date data type
+  -	string manipulation
+  -	number manipulation
+  -	array manipulation
+  -	object literal manipulation
+
+[Back to Top](#calendar)
+
+## Day05
+
+Literal Strings
+-	template literal strings
 
 DOM Access & Functions
 -	creation/clone of assessments repo
@@ -119,10 +129,6 @@ DOM Access & Functions
 -	exercise intro
 
 Exercise - DOM Access
-
-[Back to Top](#calendar)
-
-## Day05
 
 Functions
 -	previous exercise review
