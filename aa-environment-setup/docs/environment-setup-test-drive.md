@@ -4,7 +4,7 @@
 
 - Create the following folders in the C drive:
   - C:\JavaScriptDev
-  - C:\JavaScriptDev/repos
+  - C:\JavaScriptDev\repos
 ---
 
 ## Create a GitHub Account
