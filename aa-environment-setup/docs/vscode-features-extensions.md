@@ -44,6 +44,8 @@
 
 ## VS Code Extensions to Download
 
+[Vs Code 15 most important extensions by Brad Traversy](https://www.youtube.com/watch?v=LdF2RcelRg0)
+
 **Download from Extensions Market Place**
 
 - Markdown All in One by Yu Zhang - preview .md files

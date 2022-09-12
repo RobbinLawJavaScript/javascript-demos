@@ -25,8 +25,8 @@
 
 ## Calendar
 
-- [my Github demos link](https://github.com)
-- [Link to Github Classroom](https://github.com)
+- [my Github demos link](https://github.com/RobbinLawJavaScript/javascript-demos.git)
+- [Link to Github Classroom](https://classroom.github.com/a/u2Ckpenw)
 
 |Week|Mon|Tue|Wed|Thu|Fri|
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -108,20 +108,26 @@ Data Types
   -	arrays
   -	object literals
   -	date data type
-  -	string manipulation
-  -	number manipulation
-  -	array manipulation
-  -	object literal manipulation
 
 [Back to Top](#calendar)
 
 ## Day05
 
+Data Types
+- Demo: data-types
+  -	string manipulation
+  -	number manipulation
+  -	array manipulation
+  -	object literal manipulation
+
 Literal Strings
 -	template literal strings
 
+[Back to Top](#calendar)
+
+## Day06
+
 DOM Access & Functions
--	creation/clone of assessments repo
 -	querySelector
 -	basic functions 
 -	no parms no return val
@@ -129,6 +135,10 @@ DOM Access & Functions
 -	exercise intro
 
 Exercise - DOM Access
+
+[Back to Top](#calendar)
+
+## Day07
 
 Functions
 -	previous exercise review
@@ -144,7 +154,7 @@ Exercise - Functions
 
 [Back to Top](#calendar)
 
-## Day06
+## Day08
 
 Events with Decisions
 -	demo: events-without-decision
@@ -156,7 +166,7 @@ Events with Decisions
 
 [Back to Top](#calendar)
 
-## Day07
+## Day09
 
 Events with Decisions
 -	demo: oak-tree-with-if-else
@@ -169,7 +179,7 @@ Barcelona
 
 [Back to Top](#calendar)
 
-## Day08
+## Day10
 
 Events with Decisions
 -	previous exercise review
@@ -182,57 +192,38 @@ Barcelona
 
 [Back to Top](#calendar)
 
-## Day09
-
-Events with Decisions
--	previous exercise review
-
-[Back to Top](#calendar)
-
-## Day10
-
-Forms
-
-[Back to Top](#calendar)
-
 ## Day11
 
-Forms
 
 [Back to Top](#calendar)
 
 ## Day12
 
-Forms
+
 [Back to Top](#calendar)
 
 ## Day13
 
-Loops with NodeLists
 
 [Back to Top](#calendar)
 
 ## Day14
 
-Loops with NodeLists
 
 [Back to Top](#calendar)
 
 ## Day15
 
-Loops with Arrays
 
 [Back to Top](#calendar)
 
 ## Day16
 
-Loops with Arrays
 
 [Back to Top](#calendar)
 
 ## Day17
 
-Loops with Arrays
 
 [Back to Top](#calendar)
 
