@@ -10,50 +10,50 @@ let val;
 
 val = firstName + lastName;
 
-val = firstName + 56;
+//val = firstName + 56;
 
-val = firstName + ' ' + lastName;
+//val = firstName + ' ' + lastName;
 
-val = 'Robbin ';
+//val = 'Robbin ';
 //val = val + 'Law';
-val += 'Law';
+//val += 'Law';
 
-val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+//val = 'Hello, my name is ' + firstName + ' and I am ' + age;
 
-val =  "That's awesome, I can't wait";
+//val =  "That's awesome, I can't wait";
 
-val = firstName.length;
+//val = firstName.length;
 
-val = firstName.concat(' ', lastName);
+//val = firstName.concat(' ', lastName);
 
-val = firstName.toUpperCase();
-val = firstName.toLowerCase();
+//val = firstName.toUpperCase();
+//val = firstName.toLowerCase();
 
-val = firstName[2];
+//val = firstName[2];
 
-val = firstName.indexOf('b');
-val = firstName.lastIndexOf('b');
+//val = firstName.indexOf('b');
+//val = firstName.lastIndexOf('b');
 
-val = firstName.charAt('2');
+//val = firstName.charAt('2');
 
-val = firstName.charAt(firstName.length - 1);
+//val = firstName.charAt(firstName.length - 1);
 
-val = firstName.substring(1, 4);
+//val = firstName.substring(1, 4);
 
-val = firstName.slice(0,4);
-val = firstName.slice(-3);
+//val = firstName.slice(0,4);
+//val = firstName.slice(-3);
 
-val = str.split(' ');
-val = tags.split(',');
+//val = str.split(' ');
+//val = tags.split(',');
 
-val = str.replace('Robbin', 'Jim');
+//val = str.replace('Robbin', 'Jim');
 
 //includes
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
-val = 'Hey there Robbin'.includes('here');
-val = 'Hey there Robbin'.includes('Hey th');
-val = 'Hey there Robbin'.includes('Hey Rob');
-val = str.includes('Hey');
+//val = 'Hey there Robbin'.includes('here');
+//val = 'Hey there Robbin'.includes('Hey th');
+//val = 'Hey there Robbin'.includes('Hey Rob');
+//val = str.includes('Hey');
 
 console.log(val);
 

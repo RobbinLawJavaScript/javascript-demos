@@ -10,41 +10,35 @@ let val;
 
 
 val = numbers.length;
-val = Array.isArray(numbers);
-val = numbers[3];
-val = numbers[0];
-numbers[2] = 100;
-val = numbers.indexOf(36);
-val = numbers.indexOf(40);
+//val = Array.isArray(numbers);
+//val = numbers[3];
+//val = numbers[0];
+//numbers[2] = 100;
+//val = numbers.indexOf(36);
+//val = numbers.indexOf(40);
 
-numbers.push(250);
-numbers.unshift(120);
-numbers.pop();
-numbers.shift();
+//numbers.push(250);
+//numbers.unshift(120);
+//numbers.pop();
+//numbers.shift();
 //numbers.splice(1,3);
 //numbers.reverse();
 
 //val = numbers.concat(numbers2);
-val = fruit.sort();
+//val = fruit.sort();
 //val = numbers.sort(); //This does NOT work on numbers
 
 // // Use the "compare function"
-val = numbers.sort(function(x, y){
-   return x - y;
-});
+// val = numbers.sort(function(x, y){
+//    return x - y;
+// });
 
 // // Reverse sort
-val = numbers.sort(function(x, y){
-  return y - x;
-});
+// val = numbers.sort(function(x, y){
+//   return y - x;
+// });
 
-// Find
-function over50(num){
-  return num > 50;
-}
-
-val = numbers.find(over50);
-val = mixed;
+//val = mixed;
 
 console.log(numbers);
 console.log(val);
