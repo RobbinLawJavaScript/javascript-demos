@@ -1,7 +1,7 @@
 export function demo() {
 
 const firstName = 'Robbin';
-const age = 31;
+const age = 21;
 const job = 'IOT Developer';
 const city = 'Edmonton';
 let html1;
