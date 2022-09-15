@@ -19,7 +19,7 @@ let val;
 // ref = document.getElementById("someId");
 // val = ref;
 // val = ref.innerHTML;
-// //val = ref.innerHTML.innerHTML;
+//val = ref.innerHTML.innerHTML;
 // val = ref.innerText;
 
 // ref = document.getElementsByTagName("p");

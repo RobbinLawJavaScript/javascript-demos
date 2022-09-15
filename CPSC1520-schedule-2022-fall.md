@@ -25,18 +25,18 @@
 
 ## Calendar
 
-- [my Github demos link](https://github.com/RobbinLawJavaScript/javascript-demos.git)
+- [Link to my demos](https://github.com/RobbinLawJavaScript/javascript-demos.git)
 - [Link to Github Classroom](https://classroom.github.com/a/u2Ckpenw)
 
 |Week|Mon|Tue|Wed|Thu|Fri|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |0||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
 |1|Sep05|Sep06|Sep07-[Day02](#day02)-Environment-Setup|Sep08-[Day03](#day03)-Console-Variables|Sep09|
-|2|Sep12-[Day04](#day04)-DOM-Access-Functions|Sep13|Sep14-[Day05](#day05)-Functions|Sep15-[Day06](#day06)-Events-Decisions|Sep16|
-|3|Sep19-[Day07](#day07)-Events-Decisions|Sep20|Sep21-[Day08](#day08)-Events-Decisions|Sep22-[Day09](#day09)-Events-Decisions|Sep23|
-|4|Sep26-[Day10](#day10)-Forms|Sep27|Sep28-[Day11](#day11)-Forms|Sep29-[Day12](#day12)-Forms|Sep30|
-|5|Oct03-[Day13](#day13)-Loops-NodeLists|Oct04|Oct05-[Day14](#day14)-Loops-NodeLists|Oct06-[Day15](#day15)-Loops-Arrays|Oct07|
-|6|Oct10|Oct11|Oct12-[Day16](#day16)-Loops-Arrays|Oct13-[Day17](#day17)|Oct14|
+|2|Sep12-[Day04](#day04)-Assessments-Repo-Data-Types|Sep13|Sep14-[Day05](#day05)-Data-Types-Literal-Strings|Sep15-[Day06](#day06)-DOM Access|Sep16|
+|3|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-|Sep23|
+|4|Sep26-[Day10](#day10)-|Sep27|Sep28-[Day11](#day11)-|Sep29-[Day12](#day12)-|Sep30|
+|5|Oct03-[Day13](#day13)-|Oct04|Oct05-[Day14](#day14)-|Oct06-[Day15](#day15)-|Oct07|
+|6|Oct10|Oct11|Oct12-[Day16](#day16)-|Oct13-[Day17](#day17)|Oct14|
 |7|Oct17-[Day18](#day18)|Oct18|Oct19-[Day19](#day19)|Oct20-[Day20](#day20)|Oct21|
 |8|Oct24-[Day21](#day21)|Oct25|Oct26-[Day22](#day22)|Oct27-[Day23](#day23)|Oct28|
 |9|Oct31-[Day24](#day24)|Nov01|Nov02-[Day25](#day25)|Nov03-[Day26](#day26)|Nov04|
@@ -100,7 +100,7 @@ Setup of Assessment Repo via Github Classroom
 - Use the link above to join Classroom, create an assessment repo, and clone it
 
 Data Types
-- Demo: data-types
+- Demo: data-types | data-types.js
   -	primitive data types
   -	string, number data types
   -	boolean, undefined, null data types
@@ -108,30 +108,29 @@ Data Types
   -	arrays
   -	object literals
   -	date data type
+- Demo: data-types | data-type-conversion.js
 
 [Back to Top](#calendar)
 
 ## Day05
 
 Data Types
-- Demo: data-types
+- Demo: data-types | strings.js | numbers.js | arrays.js | object-literals.js | date-time.js
   -	string manipulation
   -	number manipulation
   -	array manipulation
   -	object literal manipulation
 
-Literal Strings
--	template literal strings
+Template Literal Strings
+-	Demo: template-literal-strings
 
 [Back to Top](#calendar)
 
 ## Day06
 
-DOM Access & Functions
--	querySelector
--	basic functions 
--	no parms no return val
--	one parm no return val
+DOM Access
+- Demo: dom-access
+  -	querySelector
 -	exercise intro
 
 Exercise - DOM Access
@@ -142,12 +141,18 @@ Exercise - DOM Access
 
 Functions
 -	previous exercise review
--	function expressions
--	anonymous functions
--	arrow functions
--	multiple parms return val
--	variable and parm scope
--	coercion
+- Demo: functions | function-no-parms.js
+  -	no parms no return val
+- Demo: functions | fuction-parms.js
+  -	one parm no return val
+  -	function expressions
+  -	anonymous functions
+  -	arrow functions
+- Demo: functions | function-return-val.js
+  -	multiple parms return val
+- Demo: functions | scope.js
+  -	variable and parm scope
+  -	coercion
 -	exercise intro
 
 Exercise - Functions
@@ -155,6 +160,19 @@ Exercise - Functions
 [Back to Top](#calendar)
 
 ## Day08
+
+Functions
+- previous day review
+- Demo: functions | scope.js
+  -	variable and parm scope
+  -	coercion
+-	exercise discussion
+
+Exercise - Functions
+
+[Back to Top](#calendar)
+
+## Day09
 
 Events with Decisions
 -	demo: events-without-decision
@@ -166,7 +184,7 @@ Events with Decisions
 
 [Back to Top](#calendar)
 
-## Day09
+## Day10
 
 Events with Decisions
 -	demo: oak-tree-with-if-else
@@ -179,7 +197,7 @@ Barcelona
 
 [Back to Top](#calendar)
 
-## Day10
+## Day11
 
 Events with Decisions
 -	previous exercise review
@@ -189,11 +207,6 @@ Events with Decisions
 
 Exercise – Events with Decisions
 Barcelona
-
-[Back to Top](#calendar)
-
-## Day11
-
 
 [Back to Top](#calendar)
 
