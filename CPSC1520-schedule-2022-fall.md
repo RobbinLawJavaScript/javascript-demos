@@ -1,4 +1,4 @@
-# CPSC1520 2022 Fall
+# CPSC1520 Fall 2022
 
 ## Assessments
 
