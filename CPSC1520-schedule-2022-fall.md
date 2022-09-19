@@ -2,9 +2,9 @@
 
 ## Assessments
 
-|Assessment Name|Description|Weight in %|Due 11:59 PM Friday of Week|
+|Assessment Name|Description|Weight in %|Due 11:59 PM Friday|
 |:-:|:-:|:-:|:-:|
-|Lab 1||5||
+|Lab 1||5|Sep23|
 |Lab 2||5||
 |Lab 3||5||
 |Lab 4||5||
