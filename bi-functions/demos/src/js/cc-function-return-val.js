@@ -9,7 +9,11 @@ let hobby = prompt("What's your favorite hobby");
 function displayPerson(name, favoriteHobby) {
   let introString = `Hello ${name}, ${favoriteHobby} is your fav hobby`;
   let paragraph = document.querySelector('p#p1');
-  paragraph.innerHTML = introString;
+  //console.log() will not necessarily log the value the variable had at the time you tried to log it.
+  //If you run the code with the debugger it works as expected.
+  console.log(paragraph);
+  paragraph.innerText = introString;
+  console.log(paragraph);
 }
 
 //Calling the function that does not return anything.
