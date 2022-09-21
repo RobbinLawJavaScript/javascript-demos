@@ -6,7 +6,7 @@
 |:-:|:-:|:-:|:-:|
 |Lab 1|Console & DOM Access & Netlify|5|Sep23|
 |Lab 2|Functions|5|Sep 30|
-|Lab 3|Events|5||
+|Lab 3|Events|5|Oct 7|
 |Lab 4||5||
 |Lab 5||5||
 |Lab 6||5||
@@ -33,7 +33,7 @@
 |0||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
 |1|Sep05|Sep06|Sep07-[Day02](#day02)-Environment-Setup|Sep08-[Day03](#day03)-Console-Variables|Sep09|
 |2|Sep12-[Day04](#day04)-Assessments-Repo-Data-Types|Sep13|Sep14-[Day05](#day05)-Data-Types-Literal-Strings|Sep15-[Day06](#day06)-DOM Access|Sep16|
-|3|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-|Sep23|
+|3|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-Events-with-Decisions|Sep23|
 |4|Sep26-[Day10](#day10)-|Sep27|Sep28-[Day11](#day11)-|Sep29-[Day12](#day12)-|Sep30|
 |5|Oct03-[Day13](#day13)-|Oct04|Oct05-[Day14](#day14)-|Oct06-[Day15](#day15)-|Oct07|
 |6|Oct10|Oct11|Oct12-[Day16](#day16)-|Oct13-[Day17](#day17)|Oct14|
@@ -53,7 +53,7 @@
 Intro to Course
 - Outline, Calendar & Assessments
 
-Setup of Development Environment
+Development Environment Setup
 - Go to my github demos repo with the link above
 - Doc: environment-setup-test-drive
   - Setup Folder Structure
@@ -62,14 +62,14 @@ Setup of Development Environment
   - Download GetHub CLI
   - Visual Studio Code (VSCode)
     - Download `live server` extension
-  - Download Node
+  - Download Node.js
   - Netlify Account
 
 [Back to Top](#calendar)
 
 ## Day02
 
-Setup of Development Environment
+Development Environment Setup
 - Clone my Demos from Github with link above
 - Doc: environment-setup-test-drive
   - Review setup steps from previous day
@@ -90,7 +90,7 @@ Variables
 -	console repl
 -	window object & document object
 -	console.log
--	var, let, const
+-	let, const, be aware of var but we do not use it (old school)
 
 [Back to Top](#calendar)
 
@@ -148,11 +148,7 @@ Functions
   -	function expressions
   -	anonymous functions
   -	arrow functions
-- Demo: functions | function-return-val.js
-  -	multiple parms return val
-- Demo: functions | scope.js
-  -	variable and parm scope
-  -	coercion
+
 -	exercise intro
 
 Exercise - Functions
@@ -163,6 +159,8 @@ Exercise - Functions
 
 Functions
 - previous day review
+- Demo: functions | function-return-val.js
+  -	multiple parms return val
 - Demo: functions | scope.js
   -	variable and parm scope
   -	coercion
