@@ -6,7 +6,7 @@
 |:-:|:-:|:-:|:-:|
 |Lab 1|Console & DOM Access & Netlify|5|Sep23|
 |Lab 2|Functions|5|Sep 30|
-|Lab 3|Events|5|Oct 7|
+|Lab 3|Events & Decisions|5|Oct 7|
 |Lab 4||5||
 |Lab 5||5||
 |Lab 6||5||
@@ -30,22 +30,22 @@
 
 |Week|Mon|Tue|Wed|Thu|Fri|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|0||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
-|1|Sep05|Sep06|Sep07-[Day02](#day02)-Environment-Setup|Sep08-[Day03](#day03)-Console-Variables|Sep09|
-|2|Sep12-[Day04](#day04)-Assessments-Repo-Data-Types|Sep13|Sep14-[Day05](#day05)-Data-Types-Literal-Strings|Sep15-[Day06](#day06)-DOM Access|Sep16|
-|3|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-Events-with-Decisions|Sep23|
-|4|Sep26-[Day10](#day10)-|Sep27|Sep28-[Day11](#day11)-|Sep29-[Day12](#day12)-|Sep30|
-|5|Oct03-[Day13](#day13)-|Oct04|Oct05-[Day14](#day14)-|Oct06-[Day15](#day15)-|Oct07|
-|6|Oct10|Oct11|Oct12-[Day16](#day16)-|Oct13-[Day17](#day17)|Oct14|
-|7|Oct17-[Day18](#day18)|Oct18|Oct19-[Day19](#day19)|Oct20-[Day20](#day20)|Oct21|
-|8|Oct24-[Day21](#day21)|Oct25|Oct26-[Day22](#day22)|Oct27-[Day23](#day23)|Oct28|
-|9|Oct31-[Day24](#day24)|Nov01|Nov02-[Day25](#day25)|Nov03-[Day26](#day26)|Nov04|
-|10|Nov07-[Day27](#day27)|Nov08|Nov09-[Day28](#day28)|Nov10|Nov11|
-|11|Nov14-[Day29](#day29)|Nov15|Nov16-[Day30](#day30)|Nov17-[Day31](#day31)|Nov18|
-|12|Nov21-[Day32](#day32)|Nov22|Nov23-[Day33](#day33)|Nov24-[Day34](#day34)|Nov25|
-|13|Nov28-[Day35](#day35)|Nov29|Nov30-[Day36](#day36)|Dec01-[Day37](#day37)|Dec02|
-|14|Dec05-[Day38](#day38)|Dec06|Dec07-[Day39](#day39)|Dec08-[Day40](#day40)|Dec09|
-|15|Dec12-[Day41](#day41)|Dec13|Dec14-[Day42](#day42)|Dec15-[Day43](#day43)||
+|1||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
+|2|Sep05|Sep06|Sep07-[Day02](#day02)-Environment-Setup|Sep08-[Day03](#day03)-Console-Variables|Sep09|
+|3|Sep12-[Day04](#day04)-Assessments-Repo-Data-Types|Sep13|Sep14-[Day05](#day05)-Data-Types-Literal-Strings|Sep15-[Day06](#day06)-DOM Access|Sep16|
+|4|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-Work Period|Sep23|
+|5|Sep26-[Day10](#day10)-Events-with-Decisions|Sep27|Sep28-[Day11](#day11)-Events-with-Decisions|Sep29-[Day12](#day12)-Work Period|Sep30|
+|6|Oct03-[Day13](#day13)-|Oct04|Oct05-[Day14](#day14)-|Oct06-[Day15](#day15)-|Oct07|
+|7|Oct10|Oct11|Oct12-[Day16](#day16)-|Oct13-[Day17](#day17)|Oct14|
+|8|Oct17-[Day18](#day18)|Oct18|Oct19-[Day19](#day19)|Oct20-[Day20](#day20)|Oct21|
+|9|Oct24-[Day21](#day21)|Oct25|Oct26-[Day22](#day22)|Oct27-[Day23](#day23)|Oct28|
+|10|Oct31-[Day24](#day24)|Nov01|Nov02-[Day25](#day25)|Nov03-[Day26](#day26)|Nov04|
+|11|Nov07-[Day27](#day27)|Nov08|Nov09-[Day28](#day28)|Nov10|Nov11|
+|12|Nov14-[Day29](#day29)|Nov15|Nov16-[Day30](#day30)|Nov17-[Day31](#day31)|Nov18|
+|13|Nov21-[Day32](#day32)|Nov22|Nov23-[Day33](#day33)|Nov24-[Day34](#day34)|Nov25|
+|14|Nov28-[Day35](#day35)|Nov29|Nov30-[Day36](#day36)|Dec01-[Day37](#day37)|Dec02|
+|15|Dec05-[Day38](#day38)|Dec06|Dec07-[Day39](#day39)|Dec08-[Day40](#day40)|Dec09|
+|16|Dec12-[Day41](#day41)|Dec13|Dec14-[Day42](#day42)|Dec15-[Day43](#day43)||
 
 
 ## Day01
@@ -172,6 +172,14 @@ Exercise - Functions
 
 ## Day09
 
+Work Period
+- Lab 1 Console & DOM Access & Netlify
+- Lab 2 Functions
+
+[Back to Top](#calendar)
+
+## Day10
+
 Events with Decisions
 -	demo: events-without-decision
 -	review: dom-access
@@ -182,7 +190,7 @@ Events with Decisions
 
 [Back to Top](#calendar)
 
-## Day10
+## Day11
 
 Events with Decisions
 -	demo: oak-tree-with-if-else
@@ -195,7 +203,15 @@ Barcelona
 
 [Back to Top](#calendar)
 
-## Day11
+## Day12
+
+Work Period
+- Lab2 Functions
+- Lab3 Events
+
+[Back to Top](#calendar)
+
+## Day13
 
 Events with Decisions
 -	previous exercise review
@@ -205,16 +221,6 @@ Events with Decisions
 
 Exercise – Events with Decisions
 Barcelona
-
-[Back to Top](#calendar)
-
-## Day12
-
-
-[Back to Top](#calendar)
-
-## Day13
-
 
 [Back to Top](#calendar)
 
