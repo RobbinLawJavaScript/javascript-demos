@@ -6,21 +6,21 @@
 |:-:|:-:|:-:|:-:|
 |Lab 1|Console & DOM Access & Netlify|5|Sep23|
 |Lab 2|Functions|5|Sep 30|
-|Lab 3|Events & Decisions|5|Oct 7|
-|Lab 4||5||
-|Lab 5||5||
-|Lab 6||5||
-|Lab 7||5||
-|Lab 8||5||
-|Quiz 1||5|Sep 30|
-|Quiz 2||5||
-|Quiz 3||5||
-|Quiz 4||5||
-|Quiz 5||5||
-|Quiz 6||5||
-|Assignment 1|web app to add, edit, and remove content|10||
-|Assignment 2|web app that displays external data|10||
-|Assignment 3|web app that uses ES modules|10||
+|Lab 3|Events|5|Oct 7|
+|Lab 4|Decisions|5||
+|Lab 5|Arrays|5||
+|Lab 6|Fetch API|5||
+|Lab 7|ES Modules|5||
+|Lab 8|Classes & Objects|5||
+|Quiz 1|JavaScript Basics|5|Sep 30|
+|Quiz 2|Functions & Events|5|Oct 7|
+|Quiz 3|Decisions & Forms|5||
+|Quiz 4|Loops & Arrays|5||
+|Quiz 5|Timers & DOM API|5||
+|Quiz 6|Fetch API|5||
+|Assignment 1|Cheeper|10||
+|Assignment 2|Ted Talks Search Filter|10||
+|Assignment 3|Dictionary App|10||
 ||Total|100||
 
 ## Calendar
