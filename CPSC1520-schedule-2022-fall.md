@@ -4,15 +4,15 @@
 
 |Assessment Name|Description|Weight in %|Due 11:59 PM Friday|
 |:-:|:-:|:-:|:-:|
-|Lab 1||5|Sep23|
-|Lab 2||5||
-|Lab 3||5||
+|Lab 1|Console & DOM Access & Netlify|5|Sep23|
+|Lab 2|Functions|5|Sep 30|
+|Lab 3|Events|5||
 |Lab 4||5||
 |Lab 5||5||
 |Lab 6||5||
 |Lab 7||5||
 |Lab 8||5||
-|Quiz 1||5||
+|Quiz 1||5|Sep 30|
 |Quiz 2||5||
 |Quiz 3||5||
 |Quiz 4||5||
