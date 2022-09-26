@@ -16,6 +16,7 @@ function greetUser1(myName) {
 
 //Here we can access both the function scope variable and the local parameter.
 function greetUser2(varName) {
+    //let myName = "Bon Levi";
     document.querySelector('.greeting2')
         .innerHTML = `Good afternoon ${varName}`;
     document.querySelector('.greeting3')
