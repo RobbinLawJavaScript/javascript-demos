@@ -20,7 +20,7 @@ const naitLink = document.querySelector('a#a1');
 naitLink.addEventListener('click', LinkHandler);
 function LinkHandler(e) {
     //preventDefault stops the normal operation of the href.
-    //e.preventDefault();   
+    e.preventDefault();   
 }
 
 // In the above example, the explicit variable and 

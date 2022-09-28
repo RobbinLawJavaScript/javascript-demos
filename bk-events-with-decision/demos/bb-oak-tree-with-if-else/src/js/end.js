@@ -9,11 +9,10 @@ featureImage.addEventListener('click', handleFeatureClick);
 function handleFeatureClick() {
 	const desc = document.querySelector('p.feature.description');
 	//TODO: Change the code here
-	if (desc.classList.contains('hidden')) {
+	if (desc.classList.contains('hidden')) 
 		desc.classList.remove('hidden');
-	} else {
+	 else 
 		desc.classList.add('hidden');
-	}
 }
 
 }
