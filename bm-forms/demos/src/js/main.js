@@ -13,66 +13,58 @@
 
 export function demo(){
 
-const form = document.querySelector("#frm")
+const form = document.querySelector("#frm");
 
 form.addEventListener("submit", e => {
-    e.preventDefault();    
-    let {text, select} = getUserValues(e);
-    let {message, isNotValid} = validateUserValues(text, select);
-    if(isNotValid){
-        showAlert(message, 'error');
-    } else {
-        AddItemToList(text, select);
-        showAlert('Item Added to List!', 'success');
-    }
+	e.preventDefault();
+	let textElement = e.target.elements["first-name"];
+	let selectElement = e.target.elements["drop-down"];
+	let text = textElement.value;
+	let select = selectElement.value;    
+
+	let isFormValid = true;
+	// validate the first name element
+	if (!hasWhiteSpace(text) && isValueNotEmpty(text)) {
+		textElement.classList.remove("is-invalid");
+	} else {
+		isFormValid = false;
+		textElement.classList.add("is-invalid");
+	}
+	// validate the contact reason element
+	if (isValueNotEmpty(select)) {
+		selectElement.classList.remove("is-invalid");
+	} else {
+		isFormValid = false;
+		selectElement.classList.add("is-invalid");
+	}
+
+	if (isFormValid) {
+		addItemToList(text, select);
+		// reset the values
+		textElement.value = "";
+		selectElement.value = "";
+	}
 });
 
-function getUserValues(e){
-    let text = e.target.elements["firstName"].value;
-    let select = e.target.elements["dropDown"].value;
-    return {text, select}
+const isValueNotEmpty = (value) => {
+	if (value !== "") {
+		return true;
+	}
+	return false;
 }
 
-function validateUserValues(text, select){
-    let message = '';
-    let isNotValid = true;
-    if(text == '')
-        message += `| Text |`;
-    if(select == '')
-        message += `| Select |`;
-    if(message != '')
-        message = `Invalid Data: ` + message;
-    else isNotValid = false;
-    return {message, isNotValid};
+function hasWhiteSpace(s) {
+	return (/\s/).test(s);
 }
 
-function showAlert(message, className) {
-    if(message != ''){
-        const parentDiv = document.querySelector('#alert');
-        const alertElement = 
-        `
-        <div class='${className} form-control'>
-            ${message}
-        </div>
-        `
-        parentDiv.innerHTML = alertElement;
-    }
+function addItemToList(text, select) {
+	let list = document.querySelector("#list");
+	let newItem = 
+	`
+	<div class="mb-3">
+		<p>Hey ${text}, your reason is: ${select}</p>
+	</div>
+	`;
+	list.innerHTML =  newItem + list.innerHTML;
 }
-
-function AddItemToList(text, select) {
-    let list = document.querySelector("#list")
-    let newItem = 
-    `
-    <div class="mb-3">
-        <p>Hey ${text}, your reason is: ${select}</p>
-    </div>
-    `
-    list.innerHTML =  newItem + list.innerHTML;
-}
-
-function clearUserValues(e) {
-    e.target.elements["firstName"].value = '';
-    e.target.elements["dropDown"].value = '';
-}
-
 }
