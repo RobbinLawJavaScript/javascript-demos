@@ -4,15 +4,25 @@ body {
 	margin: 0;
 	padding: 0;
 }
-a, a:visited {
-	color: #0066ff;
-}
+
 main {
 	background-color: #efefef;
 	height: 100%;
 	margin: auto;
 	padding: 1em;
 	width: 800px;
+	text-align: center;
+}
+
+.container {
+	width: 200px;
+	height: 150px;
+	margin: auto;
+}
+
+.container img {
+	width: 100%;
+	height: auto;
 }
 
 .feature.description {
