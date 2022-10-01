@@ -17,9 +17,27 @@
 <body>
   <div class="px-4 py-5 my-5 container text-center">
     <h1 class="display-5 fw-bold">Food Favorites</h1>
+    <form id="form">
+      <div class="row"> 
+        <div class="mb-3 col-9">
+          <select 
+            name="form-dropdown"
+            class="form-select">
+            <option value="">All</option>
+            <option value="Meat">Meat</option>
+            <option value="Starch">Starch</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Desert">Desert</option>
+          </select>
+        </div>
+        <div class="mb-3 col-3">
+          <button type="submit" class="w-100 btn btn-primary">Filter</button>
+        </div>
+      </div>
+    </form>
     <div class="row">
       <div class="col">
-        <h5>Foods to Choose From</h5>
+        <h5>Foods</h5>
         <ul id="list-one" class="list-group text-start">
           <li class="list-group-item">Orzo, (Starch)</li>
           <li class="list-group-item">Fruit, (Desert)</li>
@@ -42,10 +60,6 @@
           <li class="list-group-item">Pork Tenderloin, (Meat)</li>
           <li class="list-group-item">Beef Tenderloin, (Meat)</li>
         </ul>
-      </div>
-      <div class="col">
-        <h5>Favorite Foods</h5>
-        <ul id="list-two"></ul>
       </div>
     </div>
   </div>
