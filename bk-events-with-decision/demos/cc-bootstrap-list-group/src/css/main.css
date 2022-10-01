@@ -4,9 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-a, a:visited {
-	color: #0066ff;
-}
+
 main {
 	background-color: #efefef;
 	height: 100%;
@@ -15,21 +13,6 @@ main {
 	width: 800px;
 }
 
-.my-image-container {
-	width: 200px;
-	height: 200px;
-}
-
-/* Resize images */
-.my-image-container img {
-	width: 100%;
-	height: 100%;
-}
-
-.feature.description {
-	font-style: italic;
-}
-
-.hidden {
-	display: none;
+a, a:visited {
+	color: black;
 }
