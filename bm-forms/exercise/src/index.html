@@ -14,11 +14,11 @@
 		<img class='mb-3' src="./img/athens.png" alt="Athens" title="The Parthenon in Athens"/>
 		<form id="form" method="post">
 			<div class="row">
-				<div id='alert' class="mb-3 col-7"></div>
-			</div>
-			<div class="row">
 				<div class="mb-3 col-7">
-					<input class="form-control" type="text" placeholder="type a tag" id="textId" name="textName">
+					<input class="form-control" type="text" placeholder="type a tag" id="text-id" name="text-name">
+					<div class="invalid-feedback">
+						Text must have more than 1 char but less than 11.
+					</div>
 				</div>
 				<div class="col-2">
 					<button type="submit" class="btn btn-primary w-100">Add Tag</button>

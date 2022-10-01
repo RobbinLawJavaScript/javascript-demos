@@ -9,11 +9,11 @@
 // You can use either .validName access to the name (if it's a valid name)
 // or ['invalid-name'] for names that do not 
 // adhere to JavaScript naming conventions. In JavaScript an invalid name
-// would have a - in it. Don't use a - in any name but css classes.
+// would have a - in it.
 
 export function demo(){
 
-const form = document.querySelector("#frm");
+const form = document.querySelector("#form");
 
 form.addEventListener("submit", e => {
 	e.preventDefault();
@@ -40,7 +40,6 @@ form.addEventListener("submit", e => {
 
 	if (isFormValid) {
 		addItemToList(text, select);
-		// reset the values
 		textElement.value = "";
 		selectElement.value = "";
 	}

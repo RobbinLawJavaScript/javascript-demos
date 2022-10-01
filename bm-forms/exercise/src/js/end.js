@@ -3,64 +3,39 @@ export function Run(){
 	const form = document.querySelector("#form")
 	
 	form.addEventListener("submit", e => {
-		e.preventDefault();    
-		let text = getUserValues(e);
+		e.preventDefault();
+		let textElement = e.target.elements["text-name"];
+		let text = textElement.value;
 		//TODO: Add code here to trim the entered text.
 		text = text.trim();
-		let {message, isNotValid} = validateUserValues(text);
-		if(isNotValid){
-			showAlert(message, 'error');
+		let isFormValid = true;
+		//TODO: validate the text name element as per specs
+		if (isValueNotEmpty(text) && (text.length <= 10)) {
+			textElement.classList.remove("is-invalid");
 		} else {
-			AddItemToList(text);
-			showAlert('Tag Added to List!', 'success');
-			clearUserValues(e);
+			isFormValid = false;
+			textElement.classList.add("is-invalid");
+		}
+		if (isFormValid) {
+			addItemToList(text);
+			textElement.value = "";
 		}
 	});
 	
-	function getUserValues(e){
-		let text = e.target.elements["textName"].value;
-		return text;
-	}
-	
-	function validateUserValues(text){
-		let message = '';
-		let isNotValid = true;
-		//TODO: Add code here to validate the entered text
-		//as per the specs request.
-		if(text === '')
-			message += `| Text Empty |`;
-		if(text.length > 10)
-			message += `| Text > 10 |`;
-		if(message != '')
-			message = `Invalid Data: ` + message;
-		else isNotValid = false;
-		return {message, isNotValid};
-	}
-	
-	function showAlert(message, className) {
-		if(message != ''){
-			const parentDiv = document.querySelector('#alert');
-			const alertElement = 
-			`
-			<div class='${className} form-control'>
-				${message}
-			</div>
-			`
-			parentDiv.innerHTML = alertElement;
+	const isValueNotEmpty = (value) => {
+		if (value !== "") {
+			return true;
 		}
+		return false;
 	}
-	
-	function AddItemToList(text) {
+
+	function addItemToList(text) {
 		let list = document.querySelector("#list")
 		let newItem = 
 		`
 			<p>#${text}</p>
 		`
 		list.innerHTML =  newItem + list.innerHTML;
-	}
-	
-	function clearUserValues(e) {
-		e.target.elements["textName"].value = '';
 	}
 	
 	}

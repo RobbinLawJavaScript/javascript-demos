@@ -3,51 +3,28 @@ export function Run(){
 	const form = document.querySelector("#form")
 	
 	form.addEventListener("submit", e => {
-		e.preventDefault();    
-		let text = getUserValues(e);
+		e.preventDefault();
+		let textElement = e.target.elements["text-name"];
+		let text = textElement.value;
 		//TODO: Add code here to trim the entered text.
-
-		let {message, isNotValid} = validateUserValues(text);
-		if(isNotValid){
-			showAlert(message, 'error');
-		} else {
-			AddItemToList(text);
-			showAlert('Tag Added to List!', 'success');
-			clearUserValues(e);
+		
+		let isFormValid = true;
+		//TODO: validate the text name element as per specs
+		
+		if (isFormValid) {
+			addItemToList(text);
+			textElement.value = "";
 		}
 	});
 	
-	function getUserValues(e){
-		let text = e.target.elements["textName"].value;
-		return text;
-	}
-	
-	function validateUserValues(text){
-		let message = '';
-		let isNotValid = true;
-		//TODO: Add code here to validate the entered text
-		//as per the specs request.
-		
-		if(message != '')
-			message = `Invalid Data: ` + message;
-		else isNotValid = false;
-		return {message, isNotValid};
-	}
-	
-	function showAlert(message, className) {
-		if(message != ''){
-			const parentDiv = document.querySelector('#alert');
-			const alertElement = 
-			`
-			<div class='${className} form-control'>
-				${message}
-			</div>
-			`
-			parentDiv.innerHTML = alertElement;
+	const isValueNotEmpty = (value) => {
+		if (value !== "") {
+			return true;
 		}
+		return false;
 	}
-	
-	function AddItemToList(text) {
+
+	function addItemToList(text) {
 		let list = document.querySelector("#list")
 		let newItem = 
 		`
@@ -55,9 +32,4 @@ export function Run(){
 		`
 		list.innerHTML =  newItem + list.innerHTML;
 	}
-	
-	function clearUserValues(e) {
-		e.target.elements["textName"].value = '';
-	}
-	
 	}
