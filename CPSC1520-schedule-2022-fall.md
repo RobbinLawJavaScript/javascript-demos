@@ -35,7 +35,7 @@
 |2|Sep12-[Day04](#day04)-Assessments-Repo-Data-Types|Sep13|Sep14-[Day05](#day05)-Data-Types-Literal-Strings|Sep15-[Day06](#day06)-DOM Access|Sep16|
 |3|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-Work Period-Lab 1-DOM Access|Sep23|
 |4|Sep26-[Day10](#day10)-Events & Decisions|Sep27|Sep28-[Day11](#day11)-Events & Decisions|Sep29-[Day12](#day12)-Work Period-Lab 2-Functions|Sep30|
-|5|Oct03-[Day13](#day13)-Forms with Validation|Oct04|Oct05-[Day14](#day14)-Forms with Validation|Oct06-[Day15](#day15)-Work Period-Lab 3-Events|Oct07|
+|5|Oct03-[Day13](#day13)-Events & Decisions Review|Oct04|Oct05-[Day14](#day14)-Forms with Validation|Oct06-[Day15](#day15)-Work Period-Lab 3-Events-Quiz 2-Functions & Events|Oct07|
 |6|Oct10|Oct11|Oct12-[Day16](#day16)-Forms with Validation|Oct13-[Day17](#day17)-Work Period-Lab 4-Forms|Oct14|
 |7|Oct17-[Day18](#day18)-Arrays & Loops|Oct18|Oct19-[Day19](#day19)-Work Period-Assign 1|Oct20-[Day20](#day20)-Work Period-Assign 1|Oct21|
 |8|Oct24-[Day21](#day21)-Arrays & Loops|Oct25|Oct26-[Day22](#day22)-Arrays & Loops|Oct27-[Day23](#day23)-Work Period-Lab 5-Arrays & Loops|Oct28|
