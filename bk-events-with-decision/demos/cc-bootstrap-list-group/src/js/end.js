@@ -17,4 +17,13 @@ listGroup.addEventListener("mouseout", (event)=> {
 	// remove active from the class.
 	event.target.classList.remove("active")
 });
+
+// add an event listener that will get the href.
+// and open it using window.open(link). 
+listGroup.addEventListener("click", (event)=> {
+	event.preventDefault()
+	let link = event.target.href
+	window.open(link)
+});
+
 }
