@@ -15,7 +15,7 @@ export function demo(){
 
 const form = document.querySelector("#form");
 
-form.addEventListener("submit", e => {
+form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	let textElement = e.target.elements["first-name"];
 	let selectElement = e.target.elements["drop-down"];
@@ -24,18 +24,20 @@ form.addEventListener("submit", e => {
 
 	let isFormValid = true;
 	// validate the first name element
-	if (!hasWhiteSpace(text) && isValueNotEmpty(text)) {
-		textElement.classList.remove("is-invalid");
-	} else {
+	if (isValueEmpty(text)) {
 		isFormValid = false;
 		textElement.classList.add("is-invalid");
+	} else {
+		textElement.classList.remove("is-invalid");
+		
 	}
 	// validate the contact reason element
-	if (isValueNotEmpty(select)) {
-		selectElement.classList.remove("is-invalid");
-	} else {
+	if (isValueEmpty(select)) {
 		isFormValid = false;
 		selectElement.classList.add("is-invalid");
+	} else {
+		selectElement.classList.remove("is-invalid");
+		
 	}
 
 	if (isFormValid) {
@@ -45,15 +47,11 @@ form.addEventListener("submit", e => {
 	}
 });
 
-const isValueNotEmpty = (value) => {
-	if (value !== "") {
+const isValueEmpty = (value) => {
+	if (value == "") {
 		return true;
 	}
 	return false;
-}
-
-function hasWhiteSpace(s) {
-	return (/\s/).test(s);
 }
 
 function addItemToList(text, select) {
