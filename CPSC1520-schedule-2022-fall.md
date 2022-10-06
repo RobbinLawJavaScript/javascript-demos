@@ -15,7 +15,7 @@
 |Quiz 1|JavaScript Basics|5|Week 4-Sep 30|
 |Quiz 2|Functions & Events|5|Week 5-Oct 7|
 |Quiz 3|Forms & Decisions|5|Week 6-Oct 14|
-|Quiz 4|Arrays & Loops|5|Week 8-Oct 21|
+|Quiz 4|Arrays & Loops|5|Week 8-Oct 28|
 |Quiz 5|Timers & DOM API|5|Week 10-Nov 11|
 |Quiz 6|Fetch API|5|Week 12-Nov 25|
 |Assignment 1|Dom Access, Functions, Events, Decisions, Forms: Cheeper App|10|Week 7-Oct 21|
