@@ -33,19 +33,19 @@
 |0||||Sep01-[Day01](#day01)-Intro-Environment-Setup|Sep02|
 |1|Sep05|Sep06|Sep07-[Day02](#day02)-Environment-Setup|Sep08-[Day03](#day03)-Console-Variables|Sep09|
 |2|Sep12-[Day04](#day04)-Assessments-Repo-Data-Types|Sep13|Sep14-[Day05](#day05)-Data-Types-Literal-Strings|Sep15-[Day06](#day06)-DOM Access|Sep16|
-|3|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-Work Period-Lab 1-DOM Access|Sep23|
-|4|Sep26-[Day10](#day10)-Events & Decisions|Sep27|Sep28-[Day11](#day11)-Events & Decisions|Sep29-[Day12](#day12)-Work Period-Lab 2-Functions|Sep30|
-|5|Oct03-[Day13](#day13)-Events & Decisions Review|Oct04|Oct05-[Day14](#day14)-Forms with Validation|Oct06-[Day15](#day15)-Work Period-Lab 3-Events-Quiz 2-Functions & Events|Oct07|
-|6|Oct10|Oct11|Oct12-[Day16](#day16)-Forms with Validation|Oct13-[Day17](#day17)-Work Period-Lab 4-Forms|Oct14|
-|7|Oct17-[Day18](#day18)-Arrays & Loops|Oct18|Oct19-[Day19](#day19)-Work Period-Assign 1|Oct20-[Day20](#day20)-Work Period-Assign 1|Oct21|
-|8|Oct24-[Day21](#day21)-Arrays & Loops|Oct25|Oct26-[Day22](#day22)-Arrays & Loops|Oct27-[Day23](#day23)-Work Period-Lab 5-Arrays & Loops|Oct28|
+|3|Sep19-[Day07](#day07)-Functions|Sep20|Sep21-[Day08](#day08)-Functions|Sep22-[Day09](#day09)-WP-Lab1-DOM Access|Sep23|
+|4|Sep26-[Day10](#day10)-Events & Decisions|Sep27|Sep28-[Day11](#day11)-Events & Decisions|Sep29-[Day12](#day12)-WP-Lab2-Functions|Sep30|
+|5|Oct03-[Day13](#day13)-Events & Decisions Review|Oct04|Oct05-[Day14](#day14)-Forms with Validation|Oct06-[Day15](#day15)-WP-Lab3-Events-Quiz2-Functions & Events|Oct07|
+|6|Oct10|Oct11|Oct12-[Day16](#day16)-Forms with Validation|Oct13-[Day17](#day17)-WP-Lab4-Forms-Quiz3-Forms & Decisions|Oct14|
+|7|Oct17-[Day18](#day18)-Assign1 Intro-Arrays & Loops|Oct18|Oct19-[Day19](#day19)-Arrays & Loops|Oct20-[Day20](#day20)-WP-Assign1|Oct21|
+|8|Oct24-[Day21](#day21)-Arrays & Loops|Oct25|Oct26-[Day22](#day22)-Arrays & Loops|Oct27-[Day23](#day23)-WP-Lab5-Arrays & Loops|Oct28|
 |9|Oct31-[Day24](#day24)-Fetch API|Nov01|Nov02-[Day25](#day25)-Fetch API|Nov03-[Day26](#day26)-Fetch API|Nov04|
-|10|Nov07-[Day27](#day27)-Fetch API|Nov08|Nov09-[Day28](#day28)-Work Period-Lab 6-Fetch API|Nov10|Nov11|
-|11|Nov14-[Day29](#day29)-ES Modules|Nov15|Nov16-[Day30](#day30)-Work Period-Assign 2|Nov17-[Day31](#day31)-Work Period-Assign 2|Nov18|
+|10|Nov07-[Day27](#day27)-Fetch API|Nov08|Nov09-[Day28](#day28)-WP-Lab6-Fetch API|Nov10|Nov11|
+|11|Nov14-[Day29](#day29)-ES Modules|Nov15|Nov16-[Day30](#day30)-WP-Assign2|Nov17-[Day31](#day31)-WP-Assign2|Nov18|
 |12|Nov21-[Day32](#day32)-ES Modules|Nov22|Nov23-[Day33](#day33)-ES Modules|Nov24-[Day34](#day34)-ES Modules|Nov25|
-|13|Nov28-[Day35](#day35)-Classes & Objects|Nov29|Nov30-[Day36](#day36)-Classes & Objects|Dec01-[Day37](#day37)-Work Period-Lab 7-ES Modules|Dec02|
-|14|Dec05-[Day38](#day38)-Classes & Objects|Dec06|Dec07-[Day39](#day39)-Classes & Objects|Dec08-[Day40](#day40)-Work Period-Lab 8-Classes & Objects|Dec09|
-|15|Dec12-[Day41](#day41)-Work Period-Assign 3|Dec13|Dec14-[Day42](#day42)-Work Period-Assign 3|Dec15-[Day43](#day43)-Work Period-Assign 3||
+|13|Nov28-[Day35](#day35)-Classes & Objects|Nov29|Nov30-[Day36](#day36)-Classes & Objects|Dec01-[Day37](#day37)-WP-Lab7-ES Modules|Dec02|
+|14|Dec05-[Day38](#day38)-Classes & Objects|Dec06|Dec07-[Day39](#day39)-Classes & Objects|Dec08-[Day40](#day40)-WP-Lab8-Classes & Objects|Dec09|
+|15|Dec12-[Day41](#day41)-WP-Assign3|Dec13|Dec14-[Day42](#day42)-WP-Assign3|Dec15-[Day43](#day43)-WorkP-Assign3||
 
 
 ## Day01
