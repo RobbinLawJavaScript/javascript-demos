@@ -8,7 +8,7 @@
 |Lab 2|Functions|5|Week 4-Sep 30|
 |Lab 3|Events|5|Week 5-Oct 7|
 |Lab 4|Forms with Validation & Decisions|5|Week 6-Oct 14|
-|Lab 5|Arrays & Loops|5|Week 8-Oct 21|
+|Lab 5|Arrays & Loops|5|Week 8-Oct 28|
 |Lab 6|Fetch API with .map()|5|Week 10-Nov 11|
 |Lab 7|ES Modules & npm & json & 3 party packages|5|Week 13-Dec 2|
 |Lab 8|Classes & Objects|5|Week 14-Dec 9|
