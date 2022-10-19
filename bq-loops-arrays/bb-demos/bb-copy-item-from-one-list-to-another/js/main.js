@@ -1,3 +1,7 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
 export function demo(){
   let listOne = document.querySelector("#list-one");
   let listTwo = document.querySelector("#list-two");
