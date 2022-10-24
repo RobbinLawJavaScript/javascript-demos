@@ -38,7 +38,7 @@
 |5|Oct03-[Day13](#day13)-Events & Decisions Review|Oct04|Oct05-[Day14](#day14)-Forms with Validation|Oct06-[Day15](#day15)-WP-Lab3-Events-Quiz2-Functions & Events|Oct07|
 |6|Oct10|Oct11|Oct12-[Day16](#day16)-Forms with Validation|Oct13-[Day17](#day17)-WP-Lab4-Forms-Quiz3-Forms & Decisions|Oct14|
 |7|Oct17-[Day18](#day18)-Assign1 Intro-Arrays & Loops|Oct18|Oct19-[Day19](#day19)-Arrays & Loops|Oct20-[Day20](#day20)-WP-Assign1|Oct21|
-|8|Oct24-[Day21](#day21)-Arrays & Loops|Oct25|Oct26-[Day22](#day22)-Arrays & Loops|Oct27-[Day23](#day23)-WP-Lab5-Arrays & Loops|Oct28|
+|8|Oct24-[Day21](#day21)-Arrays & Loops|Oct25|Oct26-[Day22](#day22)-Arrays & Loops|Oct27-[Day23](#day23)-WP-Lab5-Arrays & Loops-Quiz4-Arrays & Loops|Oct28|
 |9|Oct31-[Day24](#day24)-Fetch API|Nov01|Nov02-[Day25](#day25)-Fetch API|Nov03-[Day26](#day26)-Fetch API|Nov04|
 |10|Nov07-[Day27](#day27)-Fetch API|Nov08|Nov09-[Day28](#day28)-WP-Lab6-Fetch API|Nov10|Nov11|
 |11|Nov14-[Day29](#day29)-ES Modules|Nov15|Nov16-[Day30](#day30)-WP-Assign2|Nov17-[Day31](#day31)-WP-Assign2|Nov18|
