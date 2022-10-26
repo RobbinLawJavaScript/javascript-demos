@@ -10,7 +10,7 @@
 |Lab 4|Forms with Validation & Decisions|5|Week 6-Oct 14|
 |Lab 5|Arrays & Loops|5|Week 8-Oct 28|
 |Lab 6|Fetch API with .map()|5|Week 10-Nov 11|
-|Lab 7|ES Modules & npm & json & 3 party packages|5|Week 13-Dec 2|
+|Lab 7|ES Modules & npm & json & 3d party packages|5|Week 13-Dec 2|
 |Lab 8|Classes & Objects|5|Week 14-Dec 9|
 |Quiz 1|JavaScript Basics|5|Week 4-Sep 30|
 |Quiz 2|Functions & Events|5|Week 5-Oct 7|
@@ -45,7 +45,7 @@
 |12|Nov21-[Day32](#day32)-ES Modules|Nov22|Nov23-[Day33](#day33)-ES Modules|Nov24-[Day34](#day34)-ES Modules|Nov25|
 |13|Nov28-[Day35](#day35)-Classes & Objects|Nov29|Nov30-[Day36](#day36)-Classes & Objects|Dec01-[Day37](#day37)-WP-Lab7-ES Modules|Dec02|
 |14|Dec05-[Day38](#day38)-Classes & Objects|Dec06|Dec07-[Day39](#day39)-Classes & Objects|Dec08-[Day40](#day40)-WP-Lab8-Classes & Objects|Dec09|
-|15|Dec12-[Day41](#day41)-WP-Assign3|Dec13|Dec14-[Day42](#day42)-WP-Assign3|Dec15-[Day43](#day43)-WorkP-Assign3||
+|15|Dec12-[Day41](#day41)-WP-Assign3|Dec13|Dec14-[Day42](#day42)-WP-Assign3|Dec15-[Day43](#day43)-WP-Assign3||
 
 
 ## Day01
