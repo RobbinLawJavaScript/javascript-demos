@@ -40,4 +40,4 @@ function Demo4() {
 	console.log(5);
 }
 
-export default Demo7;
+export default Demo4;
