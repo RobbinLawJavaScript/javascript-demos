@@ -1,7 +1,7 @@
 function Demo1(){
 
 function getPromise() {
-  console.log('create and return a promise state is pending');
+  console.log('inside getPromise: create and return a promise');
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log('timer has timed out');
@@ -13,6 +13,7 @@ function getPromise() {
   });
 }
 
+console.log('begin of program');
 getPromise()
 .then(data => {
   console.log('then is running')
@@ -22,7 +23,7 @@ getPromise()
   console.log('catch is running')
   console.log(err);
 });
-
+console.log('promise returned to caller with state pending');
 }
 
 export default Demo1;

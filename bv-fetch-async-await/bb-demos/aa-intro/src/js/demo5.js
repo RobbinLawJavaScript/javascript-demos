@@ -1,14 +1,19 @@
-function Demo5() {
+function Demo7() {
 
-	const localDataURL = './data/bones.json';
-	//const localDataURL = './data/bones2.json';
-	//const localDataURL = './data/bad-bones.json';
+	const remoteDataURL = "https://api.jsonbin.io/b/6070a88dceba85732671d94c";
+	//const remoteDataURL = "https://api.jsonbin.io/b/6070a88d";
 
 	const getPromise = () => {
 		console.log(2);
 		return new Promise((resolve, reject) => {
 			console.log(3);
-			fetch(localDataURL)
+			fetch(remoteDataURL, {
+				method: 'GET',
+				headers: {
+					'Accept': 'application/json. text/plain, */*',
+					"Content-Type": "application/json",
+				},
+			})
 			.then((res) => {
 				console.log('first then in getPromise response: ', res);
 				if (!res.ok) {
@@ -35,5 +40,4 @@ function Demo5() {
 	console.log(5);
 }
 
-
-export default Demo5;
+export default Demo7;

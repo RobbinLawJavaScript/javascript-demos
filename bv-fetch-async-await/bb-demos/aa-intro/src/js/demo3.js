@@ -1,25 +1,39 @@
-function Demo3() {
+function Demo5() {
 
 	const localDataURL = './data/bones.json';
 	//const localDataURL = './data/bones2.json';
 	//const localDataURL = './data/bad-bones.json';
 
+	const getPromise = () => {
+		console.log(2);
+		return new Promise((resolve, reject) => {
+			console.log(3);
+			fetch(localDataURL)
+			.then((res) => {
+				console.log('first then in getPromise response: ', res);
+				if (!res.ok) {
+					throw new Error('OOPS BAD RESPONSE');
+				}
+				return res.json();
+			})
+			.then((data) => {
+				console.log('second then in getPromise data: ', data);
+				resolve(data);
+			})
+			.catch((err) => {
+				console.log('catch in getPromise error: ', err);
+				reject(err);
+			});
+			console.log(4);
+		});
+	}
+
 	console.log(1);
-	fetch(localDataURL)
-	.then((res)=>{
-		console.log('then response: ', res);
-		if (!res.ok) {
-			throw new Error(res.error);
-	 	}
-		//res.json returns a promise which will
-		//be the data object in JSON format
-		return res.json();
-	})
-	.then((data) => {
-		console.log('then data: ', data)
-	});
-	console.log(2);
-	
+	getPromise()
+	.then(data => console.log('then data:', data))
+	.catch((err) => console.log('catch error:', err))
+	console.log(5);
 }
 
-export default Demo3;
+
+export default Demo5;

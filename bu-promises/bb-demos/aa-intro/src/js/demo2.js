@@ -6,6 +6,7 @@ const posts = [
 ];
 
 function createPost(post) {
+  console.log('inside createPost: create and return a promise');
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       posts.push(post);
@@ -14,9 +15,9 @@ function createPost(post) {
       //const error = true;
 
       if(error === false) {
-        resolve('hi there');
+        resolve('SUCCESS: hi there');
       } else {
-        reject('Error: Something went wrong');
+        reject('ERROR: Something went wrong');
       }
     }, 3000);
   });
@@ -30,6 +31,7 @@ function outputPosts() {
     document.body.innerHTML = output;
 }
 
+console.log('begin of program');
 outputPosts();
 
 createPost({title: 'Post Three', body: 'This is post three'})
@@ -40,7 +42,7 @@ createPost({title: 'Post Three', body: 'This is post three'})
 .catch(err => {
   console.log(err);
 });
-
+console.log('promise returned to caller with state pending');
 }
 
 export default Demo2;
