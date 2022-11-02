@@ -1,8 +1,8 @@
 function Demo1() {
 	
-	const localDataURL = './data/bones.json';
+	//const localDataURL = './data/bones.json';
 	//const localDataURL = './data/bones2.json';
-	//const localDataURL = './data/bad-bones.json';
+	const localDataURL = './data/bad-bones.json';
 
 	console.log('begin of program');
 	fetch(localDataURL)
@@ -20,7 +20,6 @@ function Demo1() {
 		console.log('catch error: ', err);
 	});
 	console.log('promise from fetch returned to caller with state pending');
-
 }
 
 export default Demo1;

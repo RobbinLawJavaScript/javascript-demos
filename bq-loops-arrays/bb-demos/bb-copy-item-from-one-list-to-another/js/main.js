@@ -19,6 +19,7 @@ export function demo(){
   
   const renderListTwo = () => {
     listTwo.innerHTML = "";
+    console.log(typeof(myArray))
     myArray.forEach((element) => {
       listTwo.innerHTML += `<li class="list-group-item">${element}</li>`
     });
