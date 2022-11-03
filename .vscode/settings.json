@@ -8,5 +8,10 @@
 		"**/*.sass",
 		"**/*.json"
 	],
-	"cSpell.ignoreWords": ["contenteditable"]
+	"cSpell.ignoreWords": [
+		"contenteditable"
+	],
+	"cSpell.words": [
+		"OPPS"
+	]
 }
