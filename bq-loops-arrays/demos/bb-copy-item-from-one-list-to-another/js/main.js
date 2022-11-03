@@ -19,8 +19,9 @@ export function demo(){
   
   const renderListTwo = () => {
     listTwo.innerHTML = "";
-    console.log(typeof(myArray))
+    console.log('typeof myArray', typeof(myArray));
     myArray.forEach((element) => {
+      console.log('typeof element: ', typeof(element));
       listTwo.innerHTML += `<li class="list-group-item">${element}</li>`
     });
   }

@@ -27,17 +27,18 @@ export function demo() {
   const renderStringData = (arrayOfStrings) => {
     let stringList = document.querySelector("#strings");
     stringList.innerHTML = "";
-    console.log('arrayOfStrings type of each data element: ', typeof(arrayOfStrings));
+    console.log('typeof arrayOfStrings: ', typeof(arrayOfStrings));
     // obj is a datatype "object" which we cannot use with .foreach()
     // here we must use .map()
-    arrayOfStrings.foreach(str => {
+    arrayOfStrings.forEach(element => {
+      console.log('typeof element: ', typeof(element));
       stringList.innerHTML += 
       `
       <div class="list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">${str}</h5>
+          <h5 class="mb-1">${element}</h5>
         </div>
-        <small>${str}</small>
+        <small>${element}</small>
       </div>
       `
     });
@@ -46,17 +47,18 @@ export function demo() {
   const renderObjectData = (arrayOfObjects) => {
     let objectsList = document.querySelector("#objects");
     objectsList.innerHTML = "";
-    console.log('arrayOfObjects type of each data element: ', typeof(arrayOfObjects));
+    console.log('typeof arrayOfObjects: ', typeof(arrayOfObjects));
     // obj is a datatype "object" which we cannot use with .foreach()
     // here we must use .map()
-    arrayOfObjects.map(obj => {
+    arrayOfObjects.forEach(element => {
+      console.log('typeof element: ', typeof(element));
       objectsList.innerHTML += 
       `
       <div class="list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">${obj.name}</h5>
+          <h5 class="mb-1">${element.name}</h5>
         </div>
-        <small>${obj.email}</small>
+        <small>${element.email}</small>
       </div>
       `
     });
