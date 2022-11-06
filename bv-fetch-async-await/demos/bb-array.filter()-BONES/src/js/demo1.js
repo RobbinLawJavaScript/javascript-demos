@@ -10,15 +10,15 @@ let currentData = [];
 const getData = () => {
 	fetch(localDataURL)
 	.then((res)=> {
+		console.log('fetch.then response: ', res);
 		if (!res.ok) {
 			throw new Error('OOPS');
 		}
 		return res.json();
 	})
 	.then((data)=> {
-		console.log('fetch.then resolved', data);
+		console.log('fetch.then data: ', data);
 		allData = data;
-		currentData = allData;
 		renderData(allData);
 	})
 	.catch((err) => {
@@ -53,12 +53,8 @@ const filterData = (searchString, list)=> {
 form.addEventListener("submit", (event)=> {
 	event.preventDefault();
 	let searchString = event.target.elements["partial-search-string"].value;
-	let talkSubset = allData;
-	if (searchString!==""){
-		talkSubset = filterData(searchString, talkSubset);
-	}
-	currentData = talkSubset;
-	renderData(talkSubset);
+	currentData = filterData(searchString, allData);
+	renderData(currentData);
 });
 
 }
