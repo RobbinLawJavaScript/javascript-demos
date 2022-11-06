@@ -14,11 +14,11 @@
 <body>
   <div class="container">
     <h2 class="mb-3">Bones</h2>
-    <form id="ted-talk-filter">
+    <form id="form">
       <div class="row">
         <div class="mb-3 col-5">
          <input
-            name="search-query"
+            name="partial-search-string"
             type="text"
             class="form-control"
             placeholder="partial search string"
@@ -29,7 +29,19 @@
         </div>
       </div>
     </form>
-    <div id="output"></div>
+    <div class="table-responsive-lg"></div>
+        <table class="table">
+          <thead>
+            <tr id="ted-talk-columns">
+              <th scope="col">id</th>
+              <th scope="col">bone Type</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+
+          </tbody>
+        </table>
+      </div>
   </div>
 </body>
 </html>

@@ -28,12 +28,12 @@ function Demo3() {
 	.then((data) => {
 		console.log('getData.then data:', data)
 		let output = '';
-		data.items.forEach((user) => {
+		data.items.forEach((item) => {
 			output += 
 			`
 				<div class="mb-3">
-					<p>Id: ${user.id}</p>
-					<p>Bone Type: ${user.boneType}</p>
+					<p>Id: ${item.id}</p>
+					<p>Bone Type: ${item.boneType}</p>
 				</div>
 			`;
 		});
