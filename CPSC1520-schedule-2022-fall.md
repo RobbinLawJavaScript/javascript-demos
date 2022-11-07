@@ -9,7 +9,7 @@
 |Lab 3|Events|5|Week 5-Oct 7|
 |Lab 4|Forms with Validation & Decisions|5|Week 6-Oct 14|
 |Lab 5|Arrays & Loops|5|Week 8-Oct 28|
-|Lab 6|Fetch API with .map()|5|Week 10-Nov 11|
+|Lab 6|Fetch API with .forEach() and .map() .filter()|5|Week 10-Nov 11|
 |Lab 7|ES Modules & npm & json & 3d party packages|5|Week 13-Dec 2|
 |Lab 8|Classes & Objects|5|Week 14-Dec 9|
 |Quiz 1|JavaScript Basics|5|Week 4-Sep 30|
@@ -40,7 +40,7 @@
 |7|Oct17-[Day18](#day18)-Assign1 Intro-Arrays & Loops|Oct18|Oct19-[Day19](#day19)-Arrays & Loops|Oct20-[Day20](#day20)-WP-Assign1|Oct21|
 |8|Oct24-[Day21](#day21)-Arrays & Loops|Oct25|Oct26-[Day22](#day22)-Arrays & Loops|Oct27-[Day23](#day23)-WP-Lab5-Arrays & Loops-Quiz4-Arrays & Loops|Oct28|
 |9|Oct31-[Day24](#day24)-Fetch API|Nov01|Nov02-[Day25](#day25)-Fetch API|Nov03-[Day26](#day26)-Fetch API|Nov04|
-|10|Nov07-[Day27](#day27)-Fetch API|Nov08|Nov09-[Day28](#day28)-WP-Lab6-Fetch API|Nov10|Nov11|
+|10|Nov07-[Day27](#day27)-Fetch API|Nov08|Nov09-[Day28](#day28)-WP-Lab6-Fetch API-Quiz5-Timers & DOM API|Nov10|Nov11|
 |11|Nov14-[Day29](#day29)-ES Modules|Nov15|Nov16-[Day30](#day30)-WP-Assign2|Nov17-[Day31](#day31)-WP-Assign2|Nov18|
 |12|Nov21-[Day32](#day32)-ES Modules|Nov22|Nov23-[Day33](#day33)-ES Modules|Nov24-[Day34](#day34)-ES Modules|Nov25|
 |13|Nov28-[Day35](#day35)-Classes & Objects|Nov29|Nov30-[Day36](#day36)-Classes & Objects|Dec01-[Day37](#day37)-WP-Lab7-ES Modules|Dec02|

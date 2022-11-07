@@ -19,6 +19,7 @@ function Demo2() {
 		// res.json() also returns a promise to data.
 		const data = await res.json();
 		console.log('resolved data:', data);
+		console.log(4);
 		return data;
 	}
 
