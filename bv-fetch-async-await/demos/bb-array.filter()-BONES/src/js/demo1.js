@@ -29,12 +29,14 @@ const getData = () => {
 const renderData = (list) => {
 	let rows = document.querySelector("#rows");
 	rows.innerHTML = "";
-	list.forEach((item)=> {
-		rows.innerHTML += `
+	list.map((item)=> {
+		rows.innerHTML += 
+		`
 		<tr>
 			<td>${item.id}</td>
 			<td>${item.boneType}</td>
-		</tr>`
+		</tr>
+		`
 	});
 }
 
@@ -43,9 +45,9 @@ getData()
 let form = document.querySelector("#form")
 
 const filterData = (searchString, list)=> {
-	searchString = searchString.toLowerCase()
+	searchString = searchString.toLowerCase();
 	let filteredData = list.filter((item)=> {
-		return item.boneType.toLowerCase().includes(searchString)
+		return item.boneType.toLowerCase().includes(searchString);
 	})
 	return filteredData
 }

@@ -9,7 +9,7 @@
 |Lab 3|Events|5|Week 5-Oct 7|
 |Lab 4|Forms with Validation & Decisions|5|Week 6-Oct 14|
 |Lab 5|Arrays & Loops|5|Week 8-Oct 28|
-|Lab 6|Fetch API with .forEach() and .map() .filter()|5|Week 10-Nov 11|
+|Lab 6|Fetch API with .forEach() and .map()|5|Week 10-Nov 11|
 |Lab 7|ES Modules & npm & json & 3d party packages|5|Week 13-Dec 2|
 |Lab 8|Classes & Objects|5|Week 14-Dec 9|
 |Quiz 1|JavaScript Basics|5|Week 4-Sep 30|
@@ -19,7 +19,7 @@
 |Quiz 5|Timers & DOM API|5|Week 10-Nov 11|
 |Quiz 6|Fetch API|5|Week 12-Nov 25|
 |Assignment 1|Dom Access, Functions, Events, Decisions, Forms: Cheeper App|10|Week 7-Oct 21|
-|Assignment 2|Ted Talks Search Filter|10|Week 11-Nov 18|
+|Assignment 2|Ted Talks Search Filter array.filter()|10|Week 11-Nov 18|
 |Assignment 3|Dictionary App|10|Week 15-Dec 15|
 ||Total|100||
 
