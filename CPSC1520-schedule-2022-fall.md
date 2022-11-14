@@ -19,7 +19,7 @@
 |Quiz 5|Timers & DOM API|5|Week 10-Nov 11|
 |Quiz 6|Fetch API|5|Week 12-Nov 25|
 |Assignment 1|Dom Access, Functions, Events, Decisions, Forms: Cheeper App|10|Week 7-Oct 21|
-|Assignment 2|Ted Talks Search Filter array.filter()|10|Week 11-Nov 18|
+|Assignment 2|Loops, Arrays with array.forEach() & array.map() & array.filter(), Fetch API: Ted Talks Search Filter App|10|Week 11-Nov 18|
 |Assignment 3|Dictionary App|10|Week 15-Dec 15|
 ||Total|100||
 
@@ -41,7 +41,7 @@
 |8|Oct24-[Day21](#day21)-Arrays & Loops|Oct25|Oct26-[Day22](#day22)-Arrays & Loops|Oct27-[Day23](#day23)-WP-Lab5-Arrays & Loops-Quiz4-Arrays & Loops|Oct28|
 |9|Oct31-[Day24](#day24)-Fetch API|Nov01|Nov02-[Day25](#day25)-Fetch API|Nov03-[Day26](#day26)-Fetch API|Nov04|
 |10|Nov07-[Day27](#day27)-Fetch API|Nov08|Nov09-[Day28](#day28)-WP-Lab6-Fetch API-Quiz5-Timers & DOM API|Nov10|Nov11|
-|11|Nov14-[Day29](#day29)-ES Modules|Nov15|Nov16-[Day30](#day30)-WP-Assign2|Nov17-[Day31](#day31)-WP-Assign2|Nov18|
+|11|Nov14-[Day29](#day29)-WP-Assign2|Nov15|Nov16-[Day30](#day30)-WP-Assign2|Nov17-[Day31](#day31)-WP-Assign2|Nov18|
 |12|Nov21-[Day32](#day32)-ES Modules|Nov22|Nov23-[Day33](#day33)-ES Modules|Nov24-[Day34](#day34)-ES Modules|Nov25|
 |13|Nov28-[Day35](#day35)-Classes & Objects|Nov29|Nov30-[Day36](#day36)-Classes & Objects|Dec01-[Day37](#day37)-WP-Lab7-ES Modules|Dec02|
 |14|Dec05-[Day38](#day38)-Classes & Objects|Dec06|Dec07-[Day39](#day39)-Classes & Objects|Dec08-[Day40](#day40)-WP-Lab8-Classes & Objects|Dec09|
