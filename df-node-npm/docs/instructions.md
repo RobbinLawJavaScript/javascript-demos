@@ -9,7 +9,7 @@ Note: You need to see this in your dependencies for your package.json file.
 
 ```javaScript
 {
-  "name": "npm-fundamentals-start",
+  "name": "robbin-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,12 +20,12 @@ Note: You need to see this in your dependencies for your package.json file.
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.7.0"
-  },
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "chart.js": "^3.7.1"
+    "bootstrap": "^5.2.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0"
   }
 }
 
