@@ -1,11 +1,14 @@
-- Open your command line at your src folder.
-- In your terminal (in the same folder as your index.html) run the command “npm init” and just press enter until a “package.json” file is in the same folder as your index.html file.
-- Install the required packages that we’ll need for this project. In the terminal run the following commands.
-  - npm install validator
-  - npm install bootstrap
-  - npm install parcel -- save-dev
-Note: You need to see this in your dependencies for your package.json file.
-- In your package.json replace the scripts from what’s there to the following.
+# Instructions to Create a NODE Project
+
+- Open an Integrated Terminal at the `src` folder.
+- In the terminal (in the same folder as your index.html) run the following command:
+  - `npm init`
+  - just keep pressing enter until a “package.json” file is in the same folder as your index.html file.
+- Install the required packages that we’ll need for this project (lab7). In the terminal run the following commands.
+  - `npm install validator`
+  - `npm install bootstrap`
+  - `npm install parcel --save-dev`
+- In your package.json file replace the `scripts` from what’s there to the following.
 
 ```javaScript
 {
@@ -31,8 +34,9 @@ Note: You need to see this in your dependencies for your package.json file.
 
 ```
 
-# Instructions to Run Project
+# Instructions to Run a NODE Project
 
-Initialize this project with "npm install" in this folder.
-
-Run the project with "npm run start"
+- Open an Integrated Terminal at the `src` folder.
+- In the terminal (in the same folder as your index.html) run the following commands:
+  - `npm install`
+  - `npm run start`
