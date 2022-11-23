@@ -42,7 +42,7 @@
 |9|Oct31-[Day24](#day24)-Fetch API|Nov01|Nov02-[Day25](#day25)-Fetch API|Nov03-[Day26](#day26)-Fetch API|Nov04|
 |10|Nov07-[Day27](#day27)-Fetch API|Nov08|Nov09-[Day28](#day28)-WP-Lab6-Fetch API-Quiz5-Timers & DOM API|Nov10|Nov11|
 |11|Nov14-[Day29](#day29)-WP-Assign2|Nov15|Nov16-[Day30](#day30)-WP-Assign2|Nov17-[Day31](#day31)-WP-Assign2|Nov18|
-|12|Nov21-[Day32](#day32)-ES Modules|Nov22|Nov23-[Day33](#day33)-ES Modules|Nov24-[Day34](#day34)-ES Modules|Nov25|
+|12|Nov21-[Day32](#day32)-ES Modules|Nov22|Nov23-[Day33](#day33)-ES Modules|Nov24-[Day34](#day34)-WP-Lab7-ES Modules-Quiz6-Fetch API|Nov25|
 |13|Nov28-[Day35](#day35)-Classes & Objects|Nov29|Nov30-[Day36](#day36)-Classes & Objects|Dec01-[Day37](#day37)-WP-Lab7-ES Modules|Dec02|
 |14|Dec05-[Day38](#day38)-Classes & Objects|Dec06|Dec07-[Day39](#day39)-Classes & Objects|Dec08-[Day40](#day40)-WP-Lab8-Classes & Objects|Dec09|
 |15|Dec12-[Day41](#day41)-WP-Assign3|Dec13|Dec14-[Day42](#day42)-WP-Assign3|Dec15-[Day43](#day43)-WP-Assign3||
