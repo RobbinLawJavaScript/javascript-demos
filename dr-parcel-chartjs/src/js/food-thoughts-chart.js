@@ -42,7 +42,7 @@ const renderFoodThoughtsChart= () => {
          'black',
          'gray'
       ],
-      hoverOffset: 4
+      hoverOffset: 14
     }]
   };
 
