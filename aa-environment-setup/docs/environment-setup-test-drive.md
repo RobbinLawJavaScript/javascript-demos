@@ -3,8 +3,8 @@
 ## Setup Folder Structure
 
 - Create the following folders in the C drive:
-  - C:\JavaScriptDev
-  - C:\JavaScriptDev\repos
+  - C:\DevJavaScript
+  - C:\DevJavaScript\repos
 ---
 
 ## Create a GitHub Account
