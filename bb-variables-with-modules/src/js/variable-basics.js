@@ -41,6 +41,16 @@ console.log(myName5);
 // You have to assign a value to a constant at declaration
 //const myName6;
 
+// CONST Array
+const numbers = [1,2,3,4,5];
+console.log(numbers);
+// You can't do this
+// numbers = [1,2,3,4,5,6];
+// console.log(numbers);
+// but you can mutate it with
+numbers.push(6);
+console.log(numbers);
+
 // CONST Literal Object
 const person = {
   name: 'John',
@@ -59,15 +69,5 @@ console.log(person);
 person.name = 'Sara';
 person.age = 32;
 console.log(person);
-
-// CONST Array
-const numbers = [1,2,3,4,5];
-console.log(numbers);
-// You can't do this
-// numbers = [1,2,3,4,5,6];
-// console.log(numbers);
-// but you can mutate it with
-numbers.push(6);
-console.log(numbers);
 
 }

@@ -8,7 +8,7 @@ const myName = 'John Doe';
 console.log(myName);
 console.log(typeof myName);
 // Number, (integers and radical numbers)
-const myAge = 45;
+const myAge = 45.0;
 console.log(myAge);
 console.log(typeof myAge);
 // Boolean
@@ -31,7 +31,7 @@ console.log(mySymbol);
 console.log(typeof mySymbol);
 
 // REFERENCE TYPES - Objects are stored on the heap
-// Array
+// Array but really a list from C language perspective.
 const myArray = ['Hi', 'Hello', 55];
 console.log(myArray);
 console.log(typeof myArray);
