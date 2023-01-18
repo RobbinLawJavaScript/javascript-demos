@@ -4,11 +4,11 @@ const person = {
   firstName: 'Steve',
   lastName: 'Smith',
   age: 36,
-  email: 'steve@aol.com',
+  email: 'steve@gmail.com',
   hobbies: ['music', 'sports'],
   address: {
-    city: 'Miami',
-    state: 'FL'
+    city: 'Edmonton',
+    province: 'AB'
   }
 }
 
@@ -20,7 +20,7 @@ val = person;
 //val = person['lastName'];
 //val = person.age;
 //val = person.hobbies[1];
-//val = person.address.state;
+//val = person.address.province;
 //val = person.address['city'];
 
 console.log(val);

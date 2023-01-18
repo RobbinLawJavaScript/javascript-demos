@@ -19,7 +19,7 @@ funcReturnVal = numbers[3];
 funcReturnVal = numbers[0];
 funcReturnVal = numbers.indexOf(36);
 funcReturnVal = numbers.indexOf(40);
-funcReturnVal = numbers.concat(numbersForConcat); //returns a new array not mutating numbers.
+funcReturnVal = numbers.concat(numbersForConcat); //returns a new array not mutating numbers array.
 funcReturnVal = null;
 numbers[2] = 100; // mutates numbers array.
 numbers[2] = 33; // mutates numbers array.
@@ -30,7 +30,7 @@ funcReturnVal = numbers.shift(); // mutates numbers array.
 funcReturnVal = numbers.reverse(); // mutates numbers array reversing elements.
 funcReturnVal = numbers.reverse();
 funcReturnVal = numbers.slice(1,4); // returns a section, without mutating original.
-funcReturnVal = numbers.splice(1,4); // removes elements of numbers array, returns deleted elements.
+//funcReturnVal = numbers.splice(1,4); // removes elements of numbers array, thus mutating it and returns the deleted elements from the numbers array as a new array.
 
 
 
@@ -47,14 +47,15 @@ console.log('mutated numbers array: ', mutatedArray, 'function return value: ', 
 
 // SORTING ARRAYS
 
-//stringSorted = fruit.sort();
-//console.log(stringSorted);
+const stringSorted = fruit.sort();
+console.log(stringSorted);
 
 
 // This does NOT work on numbers as it changes 
 // the numbers to strings and then sorts.
-//numbersNotSortedProperly = numbers.sort();
-//console.log(numbersNotSortedProperly); 
+const numbers1 = [43,56,33,23,44,36,5];
+const numbersNotSortedProperly = numbers1.sort();
+console.log(numbersNotSortedProperly); 
 
 // Use this "compare function" to sort numbers properly.
 // Don't worry about the "function" here, we will learn later.
@@ -100,19 +101,19 @@ function showHowSortWorks(inputNumberArray){
 		return a - b;
 	});
 	let sortedArray = copy.slice();
-	let p = 0;
+	let j = 0;
 	for (let i = 0; i < inc; i++) {
 		copy = arr.slice();
 		copy.sort((a, b) => {
-			p += 1;
-			if (p <= i ) {
+			j += 1;
+			if (j <= i ) {
 				return a - b;
 			}
 			else{
 				return false;
 			}
 		});
-		p = 0;
+		j = 0;
 		console.log('iteration' + i +'\t\t' + copy +' \t a: '+ sortRes[i][0] +' \tb: '+ sortRes[i][1] +'\tTotal: '+ sortRes[i][2]);
 	}
 	console.log('Sorted Ascending Array: ', sortedArray);
