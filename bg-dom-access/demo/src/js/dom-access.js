@@ -31,7 +31,7 @@ val = ref;
 //val = ref[1].innerHTML;
 //val = ref[1].innerText;
 
-// ref = document.getElementsByClassName("someClass");
+//ref = document.getElementsByClassName("someClass");
 //val = ref;
 //val = ref[0];
 //val = ref[0].innerHTML;
@@ -39,12 +39,15 @@ val = ref;
 //val = ref[1].innerHTML;
 
 //ref = document.querySelector("p");
+//val = ref;
 //val = ref.innerHTML;
 
 //ref = document.querySelector("#someId1");
+//val = ref;
 //val = ref.innerHTML;
 
 //ref = document.querySelector(".someClass");
+//val = ref;
 //val = ref.innerHTML;
 
 //ref = document.querySelectorAll("p");
@@ -53,9 +56,10 @@ val = ref;
 //val = ref[0].innerText;
 
 //ref = document.querySelectorAll("#someId1");
+//val = ref;
 //val = ref[0].innerHTML;
 
-//ref = document.querySelectorAll(".someClass1");
+//ref = document.querySelectorAll(".someClass");
 //val = ref;
 //val = ref[0].innerHTML;
 //val = ref[1].innerHTML;
