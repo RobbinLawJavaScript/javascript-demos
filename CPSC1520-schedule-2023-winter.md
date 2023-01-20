@@ -10,8 +10,8 @@
 |Assessment|Submit via|Due 11:59 PM Friday|Mark|
 |:-:|:-:|:-:|:-:|
 |Lab 1 Console & DOM Access & Netlify|GitHub|Week 3|5
-|Quiz 1 JavaScript Basics|Moodle|Week 4|5
 |Lab 2 Functions|GitHub|Week 4|5
+|Quiz 1 JavaScript Basics|Moodle|Week 4|5
 |Lab 3 Events|GitHub|Week 5|5
 |Quiz 2 Functions & Events|Moodle|Week 5|5
 |Lab 4 Forms with Validation & Decisions|GitHub|Week 6|5
@@ -26,7 +26,7 @@
 |Lab 7 ES Modules & npm & json & 3d party packages|GitHub|Week 13|5
 |Lab 8 Classes & Objects|GitHub|Week 14|5
 |Assignment 3 Dictionary App|GitHub|Week 15|10
-||Total|100||
+||Total||100|
 
 ## Calendar
 

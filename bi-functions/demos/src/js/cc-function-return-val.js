@@ -32,7 +32,7 @@ let result = add(7.0, 5.0);
 document.querySelector('p#p2').innerHTML = `the result is ${result}`;
 result = add('7.0','5');
 document.querySelector('p#p3').innerHTML = `the result is ${result}`;
-result = add('7.0', 5);
+result = add('7.0', 8.0);
 document.querySelector('p#p4').innerHTML = `the result is ${result}`;
 
 }

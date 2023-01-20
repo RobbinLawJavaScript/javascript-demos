@@ -29,5 +29,7 @@ function greetUser2(varName) {
 // functions 'myName' parameter.
 greetUser1(myName);
 greetUser2("Jimmy");
+//greetUser2(myName);
+
 
 }
