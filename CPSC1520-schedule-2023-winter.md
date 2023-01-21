@@ -3,7 +3,10 @@
 ## Links
 
 - [Link to my demos repo](https://github.com/RobbinLawJavaScript/javascript-demos.git)
-- [Link to Github Classroom and your assessments repo]()
+- [Link to Github Classroom and your assessments repo](#)
+- [CPSC 1520 Student Website](https://cpsc-1520.github.io/cpsc1520/)
+
+---
 
 ## Assessments
 
