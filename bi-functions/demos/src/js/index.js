@@ -1,6 +1,6 @@
-//import * as myDemo from './aa-function-no-parms.js';
-//import * as myDemo from './bb-function-parms.js';
-//import * as myDemo from './cc-function-return-val.js';
-import * as myDemo from './dd-scope.js';
+//import Demo from './aa-function-no-parms.js';
+//import Demo from './bb-function-parms.js';
+//import Demo from './cc-function-return-val.js';
+import Demo from './dd-scope.js';
 
-myDemo.demo();
+Demo();

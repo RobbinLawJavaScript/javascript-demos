@@ -1,4 +1,4 @@
-export function demo() {
+export default function Demo() {
 //In JavaScript we can have functions declared and used within a function.
 //Notice that for "basic functions" the function can be called
 //before it is declared, the declaration will be auto hoisted.

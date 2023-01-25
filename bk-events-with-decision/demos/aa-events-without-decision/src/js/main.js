@@ -1,4 +1,4 @@
-export function demo() {
+export default function Demo() {
 
 let counter = 0;
 

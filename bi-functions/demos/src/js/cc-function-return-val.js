@@ -1,4 +1,4 @@
-export function demo() {
+export default function Demo() {
 
 //Function Scope variables.
 let firstName = prompt("What's your first name there stranger?");

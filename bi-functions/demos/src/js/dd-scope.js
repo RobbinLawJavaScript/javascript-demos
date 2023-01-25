@@ -1,4 +1,4 @@
-export function demo() {
+export default function Demo() {
 
 //Function Scope variable.
 let myName;

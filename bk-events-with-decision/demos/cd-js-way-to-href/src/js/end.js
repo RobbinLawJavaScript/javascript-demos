@@ -2,7 +2,7 @@
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Window/open
 
-export function demo() {
+export default function Demo() {
 
 const listGroup = document.querySelector('.list-group');
 
