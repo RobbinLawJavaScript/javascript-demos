@@ -37,7 +37,7 @@
 |:-:|:-:|:-:|:-:|:-:|
 |1-Jan9|Environment-Setup|Environment-Setup|Console-Variables|
 |2-Jan16|Data-Types|Data-Types-Literal-Strings|DOM Access|
-|3-Jan23|Functions|Functions|WP-Lab1-DOM Access|Lab 1|
+|3-Jan23|Functions|Events-Decisions|WP-Lab1-DOM Access|Lab 1|
 |4-Jan30|Events-Decisions|Events-Decisions|WP-Lab2-Functions-Quiz1-Basics|Lab 2 & Quiz 1|
 |5-Feb6|Forms|Forms|WP-Lab3-Events-Quiz2-Functions & Events|Lab 3 & Quiz 2|
 |6-Feb13|Forms|Forms|WP-Lab4-Forms-Quiz3-Forms & Decisions|Lab 4 & Quiz 3|
