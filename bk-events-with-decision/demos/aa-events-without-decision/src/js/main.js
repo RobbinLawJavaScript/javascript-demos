@@ -30,7 +30,7 @@ function LinkHandler(e) {
 
 document.querySelector('a#a2').addEventListener('click', (e) => {
     //preventDefault stops the normal operation of the href.
-    //e.preventDefault();
+    e.preventDefault();
 });
 
 
@@ -47,7 +47,7 @@ refSection.addEventListener('mouseover', ReportEvent);
 refSection.addEventListener('mouseout', ReportEvent);
 refSection.addEventListener('mousedown', ReportEvent);
 refSection.addEventListener('mouseup', ReportEvent);
-//refSection.addEventListener('click', ReportEvent);
+refSection.addEventListener('click', ReportEvent);
 refSection.addEventListener('dblclick', ReportEvent);
 function ReportEvent(e) { 
     const bubbles = document.querySelector('#evtBubbles');
