@@ -1,4 +1,4 @@
-export default function Demo() {
+export function Demo() {
 
 const featureImage = document.querySelector('img.feature');
 featureImage.addEventListener('click', handleFeatureClick);

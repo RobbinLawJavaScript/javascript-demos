@@ -1,3 +1,3 @@
-import Demo from './end.js';
+import {Demo} from './end.js';
 
 Demo();
