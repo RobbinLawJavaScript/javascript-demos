@@ -17,11 +17,11 @@ nav>ul {
 	height: 44px;
 	list-style: none;
 	padding: 0;
+	display: flex;
 }
 nav>ul>li {
+	color: #000;
 	background-color: #b6b6b6;
-	float: left;
-
 	margin-right: 10px;
 	padding: 10px
 }

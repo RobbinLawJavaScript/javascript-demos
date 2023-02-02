@@ -8,9 +8,9 @@ export function demo() {
 //In addition to this, the clicked button should be 
 //made active (i.e. add the active class).
 
-const liSm = document.querySelector('.thumbnails-sm');
-const liMd = document.querySelector('.thumbnails-md');
-const liLg = document.querySelector('.thumbnails-lg');
+const liSm = document.querySelector('.list-item-thumbnails-sm');
+const liMd = document.querySelector('.list-item-thumbnails-md');
+const liLg = document.querySelector('.list-item-thumbnails-lg');
 
 liSm.addEventListener('click', thumbnailSizeHandler);
 liMd.addEventListener('click', thumbnailSizeHandler);
@@ -23,11 +23,11 @@ function thumbnailSizeHandler(e) {
 		// update the active li
 		document.querySelector('li.active').classList.remove('active');
 		e.target.classList.add('active');
-		if (e.target.classList.contains('thumbnails-sm')) {
+		if (e.target.classList.contains('list-item-thumbnails-sm')) {
 			thumbnails.classList.remove('md');
 			thumbnails.classList.remove('lg');
 			thumbnails.classList.add('sm');
-		} else if (e.target.classList.contains('thumbnails-md')) {
+		} else if (e.target.classList.contains('list-item-thumbnails-md')) {
 			thumbnails.classList.remove('sm');
 			thumbnails.classList.remove('lg');
 			thumbnails.classList.add('md');
