@@ -1,0 +1,25 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "vitest --run --reporter verbose",
+    "test:watch": "vitest",
+    "start:http": "http-server -c-1"
+  },
+  "author": "robbin law",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "parcel": "^2.8.3",
+    "vitest": "^0.28.4"
+  }
+}
