@@ -1,17 +1,18 @@
 // The target of the submit event is the 'form'
-// element itself (you can submit the form by
+// element itself and its children.
+// You can submit the form by
 // either pressing <enter> or clicking the submit
-// button).
-// e.g. evt.target will give access to the form
+// button.
+// e.target will give access to the form.
 
-// The elements property of a form element gives access
-// to the form control elements in the form (e.g. input and button)
+// The elements property of e.target gives access
+// to the form control elements in the form (e.g. input and button).
 // You can use either .validName access to the name (if it's a valid name)
 // or ['invalid-name'] for names that do not 
 // adhere to JavaScript naming conventions. In JavaScript an invalid name
 // would have a - in it.
 
-export function demo(){
+export function Demo(){
 
 const form = document.querySelector("#form");
 
@@ -19,29 +20,27 @@ form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	let textElement = e.target.elements["first-name"];
 	let selectElement = e.target.elements["drop-down"];
-	let text = textElement.value;
-	let select = selectElement.value;    
+	let textValue = textElement.value;
+	let selectValue = selectElement.value;    
 
 	let isFormValid = true;
 	// validate the first name element
-	if (isValueEmpty(text)) {
+	if (isValueEmpty(textValue)) {
 		isFormValid = false;
 		textElement.classList.add("is-invalid");
 	} else {
-		textElement.classList.remove("is-invalid");
-		
+		textElement.classList.remove("is-invalid");	
 	}
 	// validate the contact reason element
-	if (isValueEmpty(select)) {
+	if (isValueEmpty(selectValue)) {
 		isFormValid = false;
 		selectElement.classList.add("is-invalid");
 	} else {
-		selectElement.classList.remove("is-invalid");
-		
+		selectElement.classList.remove("is-invalid");	
 	}
 
 	if (isFormValid) {
-		addItemToList(text, select);
+		addItemToList(textValue, selectValue);
 		textElement.value = "";
 		selectElement.value = "";
 	}
