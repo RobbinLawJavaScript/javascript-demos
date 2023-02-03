@@ -5,7 +5,7 @@
   "main": "index.js",
   "source": "index.html",
   "scripts": {
-    "start": "parcel",
+    "dev": "parcel",
     "build": "parcel build",
     "test": "vitest --run --reporter verbose",
     "test:watch": "vitest",

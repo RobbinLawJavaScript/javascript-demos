@@ -28,7 +28,7 @@ npm install vitest --save-dev
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel",
+    "dev": "parcel",
     "build": "parcel build",
     "test": "vitest --run --reporter verbose",
     "test:watch": "vitest",
@@ -60,5 +60,5 @@ dist/
 - In the `src` folder run the following commands:
 ```npm
 npm install
-npm run start
+npm run dev
 ```
