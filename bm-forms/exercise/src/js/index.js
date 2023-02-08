@@ -1,4 +1,4 @@
-//import * as myApp from './begin.js';
-import * as myApp from './end.js';
+import Run from './begin.js';
+//import Run from './end.js';
 
-myApp.Run();
+Run();

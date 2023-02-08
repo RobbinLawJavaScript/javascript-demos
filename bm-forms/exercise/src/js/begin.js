@@ -1,4 +1,4 @@
-export function Run(){
+export default function Run(){
 
 	const form = document.querySelector("#form")
 	
