@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
 });
 
 const isValueEmpty = (value) => {
-	if (value == "") {
+	if (value.trim() === "") {
 		return true;
 	}
 	return false;
@@ -62,5 +62,6 @@ function addItemToList(text, select) {
 	</div>
 	`;
 	list.innerHTML =  newItem + list.innerHTML;
+	//list.innerHTML =  list.innerHTML + newItem;
 }
 }
