@@ -1,4 +1,4 @@
-import Run from './begin.js';
-//import Run from './end.js';
+//import Run from './begin.js';
+import Run from './end.js';
 
 Run();

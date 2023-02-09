@@ -2,7 +2,7 @@ export default function Run(){
 
 	const form = document.querySelector("#form")
 	
-	form.addEventListener("submit", e => {
+	form.addEventListener("submit", (e) => {
 		e.preventDefault();
 		let textElement = e.target.elements["text-name"];
 		let text = textElement.value;
@@ -10,7 +10,7 @@ export default function Run(){
 		text = text.trim();
 		let isFormValid = true;
 		//TODO: validate the text name element as per specs
-		if (isValueNotEmpty(text) && (text.length <= 10)) {
+		if ((text != "") && (text.length <= 10)) {
 			textElement.classList.remove("is-invalid");
 		} else {
 			isFormValid = false;
@@ -21,13 +21,6 @@ export default function Run(){
 			textElement.value = "";
 		}
 	});
-	
-	const isValueNotEmpty = (value) => {
-		if (value !== "") {
-			return true;
-		}
-		return false;
-	}
 
 	function addItemToList(text) {
 		let list = document.querySelector("#list")
