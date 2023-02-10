@@ -12,58 +12,72 @@
 // adhere to JavaScript naming conventions. In JavaScript an invalid name
 // would have a dash (e.g. -) in it.
 
+// https://javascript.plainenglish.io/how-to-append-html-to-a-container-element-without-setting-innerhtml-with-javascript-21ecc9adf3d4
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+
 export function Demo(){
 
-const form = document.querySelector("#form");
+const form = document.querySelector("#form")
+const list = document.querySelector("#list")
 
 form.addEventListener("submit", (e) => {
-	e.preventDefault();
-	let textElement = e.target.elements["first-name"];
-	let selectElement = e.target.elements["drop-down"];
-	let textValue = textElement.value;
-	let selectValue = selectElement.value;    
+	e.preventDefault()
+	let textElement = e.target.elements["first-name"]
+	let selectElement = e.target.elements["drop-down"]
+	let textValue = textElement.value
+	let selectValue = selectElement.value    
 
-	let isFormValid = true;
+	let isFormValid = true
 	// validate the first name element
 	if (isValueEmpty(textValue)) {
-		isFormValid = false;
-		textElement.classList.add("is-invalid");
+		isFormValid = false
+		textElement.classList.add("is-invalid")
 	} else {
-		textElement.classList.remove("is-invalid");	
+		textElement.classList.remove("is-invalid")	
 	}
 	// validate the contact reason element
 	if (isValueEmpty(selectValue)) {
-		isFormValid = false;
-		selectElement.classList.add("is-invalid");
+		isFormValid = false
+		selectElement.classList.add("is-invalid")
 	} else {
-		selectElement.classList.remove("is-invalid");	
+		selectElement.classList.remove("is-invalid")	
 	}
 	// if both are valid then add to the list
 	if (isFormValid) {
-		addItemToList(textValue, selectValue);
-		textElement.value = "";
-		selectElement.value = "";
+		addItemToList(textValue, selectValue, list)
+		textElement.value = ""
+		selectElement.value = ""
 	}
 });
 
 const isValueEmpty = (value) => {
 	if (value.trim() === "") {
-		return true;
+		return true
 	}
-	return false;
+	return false
 }
 
-function addItemToList(text, select) {
-	let list = document.querySelector("#list");
+function addItemToList(text, select, list) {
 	let newItem = 
 	`
 	<div class="mb-3">
 		<p>Hey ${text}, your reason is: ${select}</p>
 	</div>
-	`;
+	`
+	// .insertAdjacentHTML has two parms:
+	// a position (four possible, see docs),
+	// and a text string that is parsed into html.
+	// list.insertAdjacentHTML('beforeend', '<div>hello world</div>');
+	
 	// Add newItem to the beginning of the list.
-	list.innerHTML =  newItem + list.innerHTML;
+	list.insertAdjacentHTML('afterbegin', newItem);
+	// Alternative way but has bad consequences, and is slow, don't use.
+	//list.innerHTML =  newItem + list.innerHTML;
+
 	// Add newItem to the end of the list.
+	//list.insertAdjacentHTML('beforeend', newItem);
+	// Alternative way but has bad consequences, and is slow, don't use.
 	//list.innerHTML =  list.innerHTML + newItem;
 }
 }
