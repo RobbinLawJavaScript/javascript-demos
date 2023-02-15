@@ -21,16 +21,16 @@ form.addEventListener("submit", (event)=> {
 	// see docs above on regular expressions
 	// This checks for spaces between letters.
 	if (!(/\s/).test(username) && username !== '') {
-		
+		// This is the valid part.
 	} else {
-		
+		// This is the invalid part.
 	}
 
 	// validate the city
 	if (!(/\s/).test(city) && city !== '') {
-		
+		// This is the valid part.
 	} else {
-		
+		// This is the invalid part.
 	}
 
 	// validate the province
