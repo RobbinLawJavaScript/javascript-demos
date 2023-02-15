@@ -11,11 +11,13 @@ export default function Run(){
 		text = text.trim()
 		let isFormValid = true
 		//TODO: validate the text name element as per specs
-		if ((text != "") && (text.length <= 10)) {
-			textElement.classList.remove("is-invalid")
-		} else {
+		if ((text === "") || (text.length > 10)) {
+			// text is invalid
 			isFormValid = false
 			textElement.classList.add("is-invalid")
+		} else {
+			// text is valid
+			textElement.classList.remove("is-invalid")
 		}
 		if (isFormValid) {
 			addItemToList(text, list)
