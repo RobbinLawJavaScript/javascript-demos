@@ -31,19 +31,24 @@ export function Demo(){
 		let isFormValid = true
 		// validate the first name element
 		if (textValue === '') {
+			// textValue is invalid
 			isFormValid = false
 			textElement.classList.add("is-invalid")
 		} else {
+			// textValue is valid
 			textElement.classList.remove("is-invalid")	
 		}
 		// validate the contact reason element
 		if (selectValue === '') {
+			// selectValue is invalid
 			isFormValid = false
 			selectElement.classList.add("is-invalid")
 		} else {
+			// selectValue is valid
 			selectElement.classList.remove("is-invalid")	
 		}
 		// if both are valid then add to the list
+		// otherwise do NOT add to the list
 		if (isFormValid) {
 			addItemToList(textValue, selectValue, list)
 			textElement.value = ""
