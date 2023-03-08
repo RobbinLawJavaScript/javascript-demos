@@ -1,6 +1,7 @@
-function End(){
+export default function End(){
 
-document.querySelector('.items').addEventListener('change', evt => {
+const items = document.querySelector('#items');
+items.addEventListener('change', evt => {
     let numOfItems = evt.target.value;
     //let numOfItems = Number(evt.target.value);
     let count;
@@ -26,9 +27,8 @@ document.querySelector('.items').addEventListener('change', evt => {
 
     list += `</ul>`;
 
-    document.querySelector('.todo-list').innerHTML = list;
+    const output = document.querySelector('#todo-list');
+    output.insertAdjacentHTML('beforeend', list);
 });
 
 }
-
-export default End;

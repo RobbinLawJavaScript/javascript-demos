@@ -1,4 +1,4 @@
-function End(){
+export default function End(){
 
 let count;
 let list = `<ul>`;
@@ -24,8 +24,7 @@ do {
 
 list += `</ul>`;
 
-document.querySelector('.output').innerHTML = list;
+const output = document.querySelector('#output');
+output.insertAdjacentHTML('beforeend', list);
 
 }
-
-export default End;
