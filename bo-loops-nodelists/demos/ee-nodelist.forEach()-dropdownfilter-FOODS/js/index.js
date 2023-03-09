@@ -1,3 +1,3 @@
-import * as myDemo from './main.js';
+import End from './end.js';
 
-myDemo.demo();
+End();

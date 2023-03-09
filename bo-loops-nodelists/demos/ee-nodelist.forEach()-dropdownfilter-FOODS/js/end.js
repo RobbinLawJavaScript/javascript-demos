@@ -1,4 +1,4 @@
-export function demo(){
+export default function End(){
   let form = document.querySelector("#form");
   let listOne = document.querySelector("#list-one");
   let listOneItems = document.querySelectorAll("#list-one li");

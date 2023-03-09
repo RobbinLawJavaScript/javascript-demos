@@ -1,6 +1,6 @@
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
-function End(){
+export default function End(){
 
 	let movieFilterForm = document.querySelector("#movie-filter-form");
 	movieFilterForm.elements["filter-query"].focus();
@@ -10,7 +10,7 @@ function End(){
 
 	movieFilterForm.addEventListener("submit", (evt) => {
 		evt.preventDefault();
-		let filter = movieFilterForm.elements["filter-query"].value;
+		let filter = evt.target.elements["filter-query"].value;
 		console.log(filter);
 		filterItems(filter);
 	});
@@ -26,5 +26,3 @@ function End(){
 	}
 
 }
-
-export default End;
