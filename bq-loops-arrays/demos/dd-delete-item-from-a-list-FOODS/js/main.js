@@ -4,23 +4,28 @@
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 
-export function demo(){
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+
+export default function Demo(){
   let listOne = document.querySelector("#list-one");
   let listOneItems = document.querySelectorAll("#list-one li");
   let myArray = [];
 
   listOneItems.forEach((element) => {
-    // Add the element.innerText to the end of the array.
-    myArray.push(element.innerText);
+    // Add the element to the end of the array.
+    myArray.push(element);
   });
 
   listOne.addEventListener("click", (event) => {
-    let listOneItem = event.target.innerText
+    let listOneItem = event.target
     removeFromList(listOneItem);
   })
   
   const removeFromList = (listOneItem) => {
-    // Find the first occurrence of the item (in this case a string)
+    // Find the first occurrence of the 
+    // item (in this case a html li element)
     // in the array and return its index location in the array.
     let index = myArray.indexOf(listOneItem);
     console.log(index);
@@ -30,9 +35,9 @@ export function demo(){
   }
   
   const renderList = () => {
-    listOne.innerHTML = "";
+    listOne.replaceChildren()
     myArray.forEach((element)=> {
-      listOne.innerHTML += `<li class="list-group-item">${element}</li>`
+      listOne.appendChild(element)
     });
   }
 }

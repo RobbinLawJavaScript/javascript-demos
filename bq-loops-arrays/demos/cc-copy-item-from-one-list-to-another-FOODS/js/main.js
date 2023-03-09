@@ -2,27 +2,36 @@
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
-export function demo(){
-  let listOne = document.querySelector("#list-one");
-  let listTwo = document.querySelector("#list-two");
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+
+export default function Demo(){
+  let listOne = document.querySelector("#list-one")
+  let listTwo = document.querySelector("#list-two")
   let myArray = [];
 
+  console.log(`typeof myArray:`, typeof(myArray))
   listOne.addEventListener("click", (event) => {
-    let item = event.target.innerText;
-    addToListTwo(item);    
+    let item = event.target
+    addToArrayAndThenRenderToListTwo(item)    
   });
 
-  const addToListTwo = (item) => {
-    myArray.push(item);
-    renderListTwo();
+  const addToArrayAndThenRenderToListTwo = (item) => {
+    myArray.push(item)
+    console.log(`myArray elements: ${myArray}`)
+    renderListTwo()
   }
   
   const renderListTwo = () => {
-    listTwo.innerHTML = "";
-    console.log('typeof myArray', typeof(myArray));
+    // Delete all the children of the list-two div.
+    listTwo.replaceChildren()
     myArray.forEach((element) => {
-      console.log('typeof element: ', typeof(element));
-      listTwo.innerHTML += `<li class="list-group-item">${element}</li>`
-    });
+      console.log(`typeof element:`, typeof(element))
+      console.log(`html li element contents:, ${element.innerText}`)
+      // Append element to the end of the list-two div.
+      // The element is an html object.
+      listTwo.appendChild(element)
+    })
   }
 }

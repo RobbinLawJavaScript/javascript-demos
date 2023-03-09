@@ -1,6 +1,6 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
-export function demo(){
+export default function Demo(){
 	let days = [
 		'Sun',
 		'Mon',
@@ -11,13 +11,16 @@ export function demo(){
 		'Sat'
 	];
 
+	const calendar = document.querySelector('#calendar');
+	const calendar2 = document.querySelector('#calendar2');
+
 	let cal = `<table border="1"><tr>`;
 	for (let idx = 0; idx < days.length; idx++) {
 		cal += `<th>${days[idx]}</th>`;
 	}
 	cal += `</tr></table>`;
 
-	document.querySelector('.calendar').innerHTML = cal;
+	calendar.insertAdjacentHTML('beforeend', cal);
 
 	let cal2 = `<table border="1"><tr>`;
 	days.forEach((element)=> {
@@ -25,5 +28,5 @@ export function demo(){
 	});
 	cal2 += `</tr></table>`;
 
-	document.querySelector('.calendar2').innerHTML = cal2;
+	calendar2.insertAdjacentHTML('beforeend', cal2);
 }

@@ -1,38 +1,28 @@
 # Destructuring
-Destructuring is a convenient way of extracting multiple values from and array's and objects. 
+Destructuring is a convenient way of extracting multiple values from array's and objects. 
 
-
-
-### __1. Array Destructuring__  
+### Array Destructuring 
 You can use array destructuing to create variables.
 ```javascript
-
-    //index.js
-
      const  name = ['Nikola', 'Tesla']
      const [firstName, lastName] = name;
      console.log(firstName, lastName)
 
 ```
+--- 
 
-<br><br><br><br><br><br> 
-
-### __2. Swapping Variables__  
+### Swapping Variables  
 You can use array destructuing to swap variable values.
 ```javascript
-
-    //index.js
-
     let width = '200px';
     let height = '150px';
     [height, width] = [width, height];
 
 ```
+--- 
 
-<br><br><br><br><br><br> 
-
-### __3. Destructuring Array Values from an Object__  
-You can use   destructuing to access the value of an array inside an object.
+### Destructuring Array Values from an Object  
+You can use destructuring to access the value of an array inside an object.
 ```javascript
 
     //index.js
@@ -58,33 +48,25 @@ You can use   destructuing to access the value of an array inside an object.
 
     // Output Inugami Clan Three Coffins
     let [firstBook, secondBook] = library.titles;
-
-
 ```
+---
 
-<br><br><br><br><br><br> 
-
- 
-
-### __4. Destructuring Arrays By Position__  
+### Destructuring Arrays By Position 
 You can destructure arrays by extracting values by position
  
 ```javascript
 
     const departmentExpenses = [451258,986541,456932,986987,658741,854752]
 
-
     const  [humanResours,,,marketing] = departmentExpenses
       
     console.log(humanResours, marketing)
 
 ```  
+--- 
 
-<br><br><br><br><br><br> 
-
-
-### __9. Nested Array Destructuring__  
-You can use destructur nested arrays.
+### Nested Array Destructuring  
+You can destructure nested arrays.
  
 ```javascript
 
@@ -101,11 +83,9 @@ You can use destructur nested arrays.
 
 
 ``` 
+--- 
  
-<br><br><br><br><br><br> 
- 
-
-### __7. Default  Values__  
+### Default  Values 
 You can assign default values to variables while destructuring an array.
  
 ```javascript
@@ -117,14 +97,11 @@ You can assign default values to variables while destructuring an array.
 
     // R: 200, G: undefined, B: 255
      console.log(`R: ${red}, G: ${green}, B: ${blue}`); 
-
-
-
 ```  
-<br><br><br><br><br><br> 
+--- 
 
 
-### __8. Multiple Return Values__  
+### Multiple Return Values  
 You can use array destructuring to cleanly return multiple values from a function!
  
 ```javascript
@@ -139,11 +116,8 @@ You can use array destructuring to cleanly return multiple values from a functio
       return [coordinates.lon, coordinates.lat];
 
     }
-
-
-
 ```  
-<br><br><br><br><br><br> 
+--- 
 
 
  
