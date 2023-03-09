@@ -33,21 +33,21 @@
 
 ## Calendar
 
-|Week|Day1|Day2|Day3|Assessments Due|
+|Week|Day1|Day2|Day3|Due|
 |:-:|:-:|:-:|:-:|:-:|
-|1-Jan9|Environment-Setup|Environment-Setup|Console-Variables|
-|2-Jan16|Data-Types|Data-Types-Literal-Strings|DOM Access|
-|3-Jan23|Functions|Events-Decisions|WP-Lab1-DOM Access|Lab 1|
-|4-Jan30|Events-Decisions|Events-Decisions|WP-Lab2-Functions-Quiz1-Basics|Lab 2 & Quiz 1|
-|5-Feb6|Forms|Forms|WP-Lab3-Events-Quiz2-Functions & Events|Lab 3 & Quiz 2|
-|6-Feb13|Forms|Forms|WP-Lab4-Forms-Quiz3-Forms & Decisions|Lab 4 & Quiz 3|
-|Break-Feb20||||
-|7-Feb27|WP-Assign1|WP-Assign1|WP-Assign1|Assign1|
-|8-Mar6|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|WP-Lab5-Arrays-Loops|
-|9-Mar13|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|WP-Lab5-Arrays-Loops-Quiz4-Arrays-Loops|Lab 5 & Quiz 4|
-|10-Mar20|Timers|Fetch API|Fetch API|
-|11-Mar27|Fetch API|Fetch API|WP-Lab6-Fetch API-Quiz5-Timers-DOM API|Lab 6 & Quiz 5|
-|12-Apr3|WP-Assign2|WP-Assign2|WP-Assign2|Assign2|
-|13-Apr10|ES Modules|ES Modules|WP-Lab7-ES Modules-Quiz6-Fetch API|Lab 7 & Quiz 6|
-|14-Apr17|Classes & Objects|Classes & Objects|WP-Lab8-Classes & Objects|Lab 8|
-|15-Apr24|WP-Assign3|WP-Assign3|WP-Assign3|Assign 3|
+|1-J09|Environment-Setup|Environment-Setup|Console-Variables|
+|2-J16|Data-Types|Literal-Strings|DOM-Access|
+|3-J23|Functions|Events-Decisions|WP L1-DOM-Access|L1|
+|4-J30|Events-Decisions|Events-Decisions|WP L2-Funcs Q1-Basic|L2 Q1|
+|5-F06|Forms|Forms|WP L3-Events Q2-Funcs-Events|L3 Q2|
+|6-F13|Forms|Forms|WP L4-Forms Q3-Forms-Deci|L4 Q3|
+|F20||||
+|7-F27|WP-Assign1|WP-Assign1|WP-Assign1|A1|
+|8-M06|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|
+|9-M13|Timers|Promises|WP L5-Arrays-Loops-Q4-Dido|L5 Q4|
+|10-M20|Fetch API|Fetch API|Fetch API|
+|11-M27|Fetch API|Fetch API|WP L6-Fetch Q5-Timers|L6 Q5|
+|12-A03|WP-Assign2|WP-Assign2|WP-Assign2|A2|
+|13-A10|ES Modules|ES Modules|WP L7-ES Modules Q6-Fetch|L7 Q6|
+|14-A17|Classes-Objects|Classes-Objects|WP L8-Classes-Objects|L8|
+|15-A24|WP-Assign3|WP-Assign3|WP-Assign3|A3|
