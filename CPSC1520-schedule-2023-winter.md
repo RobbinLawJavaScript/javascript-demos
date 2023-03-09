@@ -43,7 +43,7 @@
 |6-Feb13|Forms|Forms|WP-Lab4-Forms-Quiz3-Forms & Decisions|Lab 4 & Quiz 3|
 |Break-Feb20||||
 |7-Feb27|WP-Assign1|WP-Assign1|WP-Assign1|Assign1|
-|8-Mar6|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|
+|8-Mar6|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|WP-Lab5-Arrays-Loops-Quiz4-Arrays-Loops|
 |9-Mar13|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|WP-Lab5-Arrays-Loops-Quiz4-Arrays-Loops|Lab 5 & Quiz 4|
 |10-Mar20|Timers|Fetch API|Fetch API|
 |11-Mar27|Fetch API|Fetch API|WP-Lab6-Fetch API-Quiz5-Timers-DOM API|Lab 6 & Quiz 5|

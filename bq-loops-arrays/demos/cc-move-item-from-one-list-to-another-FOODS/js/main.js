@@ -24,12 +24,13 @@ export default function Demo(){
   }
   
   const renderListTwo = () => {
-    // Delete all the children of the list-two div.
+    // Delete all the children of the list-two ul.
     listTwo.replaceChildren()
     myArray.forEach((element) => {
       console.log(`typeof element:`, typeof(element))
       console.log(`html li element contents:, ${element.innerText}`)
-      // Append element to the end of the list-two div.
+      // Append element to the end of the list-two ul,
+      // also delete it from its previous list-one ul.
       // The element is an html object.
       listTwo.appendChild(element)
     })
