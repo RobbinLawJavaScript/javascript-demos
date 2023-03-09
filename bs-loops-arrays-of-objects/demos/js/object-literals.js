@@ -1,4 +1,4 @@
-export function demo() {
+export default function Demo() {
 
   const myArrayOfStrings =
   [
@@ -25,14 +25,12 @@ export function demo() {
 
 
   const renderStringData = (arrayOfStrings) => {
-    let stringList = document.querySelector("#strings");
-    stringList.innerHTML = "";
-    console.log('typeof arrayOfStrings: ', typeof(arrayOfStrings));
-    // obj is a datatype "object" which we cannot use with .foreach()
-    // here we must use .map()
+    let stringList = document.querySelector("#strings")
+    stringList.replaceChildren()
+    console.log('typeof arrayOfStrings: ', typeof(arrayOfStrings))
     arrayOfStrings.forEach(element => {
-      console.log('typeof element: ', typeof(element));
-      stringList.innerHTML += 
+      console.log('typeof element: ', typeof(element))
+      let htmlItem = 
       `
       <div class="list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-between">
@@ -41,18 +39,17 @@ export function demo() {
         <small>${element}</small>
       </div>
       `
+      stringList.insertAdjacentHTML('beforeend', htmlItem)
     });
   }
 
   const renderObjectData = (arrayOfObjects) => {
     let objectsList = document.querySelector("#objects");
-    objectsList.innerHTML = "";
+    objectsList.replaceChildren()
     console.log('typeof arrayOfObjects: ', typeof(arrayOfObjects));
-    // obj is a datatype "object" which we cannot use with .foreach()
-    // here we must use .map()
     arrayOfObjects.forEach(element => {
       console.log('typeof element: ', typeof(element));
-      objectsList.innerHTML += 
+      let htmlItem =  
       `
       <div class="list-group-item list-group-item-action">
         <div class="d-flex w-100 justify-content-between">
@@ -61,6 +58,7 @@ export function demo() {
         <small>${element.email}</small>
       </div>
       `
+      objectsList.insertAdjacentHTML('beforeend', htmlItem)
     });
   }
 

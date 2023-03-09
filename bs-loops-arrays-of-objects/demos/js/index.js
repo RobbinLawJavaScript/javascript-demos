@@ -1,3 +1,3 @@
-import * as myDemo from './object-literals.js';
+import Demo from './object-literals.js';
 
-myDemo.demo();
+Demo();
