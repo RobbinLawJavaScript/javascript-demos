@@ -10,6 +10,7 @@
 
 export default function Demo(){
   let listOne = document.querySelector("#list-one");
+  // listOneItems will be a NODE-LIST but acts like an array.
   let listOneItems = document.querySelectorAll("#list-one li");
   let myArray = [];
 
