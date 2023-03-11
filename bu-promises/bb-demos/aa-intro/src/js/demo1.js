@@ -1,29 +1,31 @@
-function Demo1(){
+export default function Demo1(){
 
-function getPromise() {
-  console.log('inside getPromise: create and return a promise');
+const getPromise = () => {
+  console.log(`getPromise begin: create and return a promise`)
   return new Promise((resolve, reject) => {
+    const delay = 5000
     setTimeout(() => {
-      console.log('timer has timed out');
-      resolve(['Success:', 'We got an array of strings', 'hi there']);
-      reject('Error: Something went wrong');
-      resolve({Name: 'Robbin', Age: 62});
-      reject('Error: one more time');
-    }, 3000);
-  });
+      console.log(`timer has timed out after ${delay/1000} seconds`)
+      resolve(['Success:', 'We got an array of strings', 'hi there'])
+      reject(`Error: Something went wrong`)
+      resolve({Name: 'Robbin', Age: 62})
+      reject(`Error: Something went wrong again`)
+    }, delay);
+  })
 }
 
-console.log('begin of program');
-getPromise()
-.then(data => {
-  console.log('then is running')
-  console.log(data);
-})
-.catch(err => {
-  console.log('catch is running')
-  console.log(err);
-});
-console.log('promise returned to caller with state pending');
+const app = async () => {
+  try{
+    console.log(`app try begin`)
+    const data = await getPromise()
+    console.info(data)
+    console.log('app try end')
+  }
+  catch(error){
+    console.error(error)
+  }
 }
 
-export default Demo1;
+app()
+
+}
