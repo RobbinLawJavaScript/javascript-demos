@@ -32,6 +32,7 @@ const app = async (scenario, delay) => {
     console.log(`app catch end scenario ${scenario}`)
   }
 }
+
 console.clear()
 app(1, 5000)
 app(2, 10000)
