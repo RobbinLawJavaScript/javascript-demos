@@ -8,7 +8,6 @@ export default function End() {
 
 let count = 0
 let interval
-let playButton
 const delay = 3000
 
 const startButton = document.querySelector('#btn-start')

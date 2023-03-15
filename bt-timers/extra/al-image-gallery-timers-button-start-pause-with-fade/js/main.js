@@ -1,3 +1,5 @@
+// https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+
 var targetImage = document.querySelector('.target-image');
 var controlsDiv = document.querySelector('.controls');
 var currentImage = 0;
