@@ -1,40 +1,35 @@
+// https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#Active_learning_Creating_your_own_stopwatch!
+
+// https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
+
+// https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled
+
 export default function End() {
 
-let images = ['./img/beach1.jpg', './img/beach2.jpg', './img/beach3.jpg']
+let count = 0
+let interval
+let playButton
+const delay = 3000
 
-// https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
-images.forEach((imgUrl) => {
-	let img = new Image()
-	img.src = imgUrl
-})
-
-let currentImage = 0;
-
-const moveSlide = (dir) => {
-	currentImage += dir
-	if (currentImage < 0) {
-		currentImage = images.length - 1
-	} else if (currentImage === images.length) {
-		currentImage = 0
-	}
-	document.querySelector('.target-image').src = images[currentImage]
-}
+const startButton = document.querySelector('#btn-start')
 
 document.querySelector('#controls').addEventListener('click', (evt) => {
-	if (evt.target.className == 'btn-prev') {
-		moveSlide(-1);
-	} else if (evt.target.className == 'btn-next') {
-		moveSlide(+1);
+	try{
+		if (evt.target.id == 'btn-start') {
+			console.log(`timer started`)
+			interval = setInterval(() => {
+				count += 1
+				console.warn(`timer timed out after ${delay/1000} seconds for the ${count} time`)
+			}, delay)
+			startButton.disabled = true
+		} else if (evt.target.id == 'btn-stop') {
+			console.log(`timer stopped`)
+			clearInterval(interval)
+			startButton.disabled = false
+		}
 	}
-})
-
-//https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
-
-document.addEventListener('keydown', (evt) => {
-	if (evt.code == 'ArrowLeft') {
-		moveSlide(-1)
-	} else if (evt.code == 'ArrowRight') {
-		moveSlide(+1)
+	catch(error){
+		console.error(`catch error: ${error}`)
 	}
 })
 
