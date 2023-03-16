@@ -10,27 +10,25 @@
 
 export default function Demo(){
   let listOne = document.querySelector("#list-one")
-  // listOneItems will be a NODE-LIST but acts like an array.
+  // listOneItems will be a NODE-LIST of li elements but acts like an array.
   let listOneItems = document.querySelectorAll("#list-one li")
   let myArray = []
 
   listOneItems.forEach((element) => {
-    // Add the element to the end of the array.
-    myArray.push(element)
-    console.log(`myArray elements: ${myArray}`)
+    // Add each elements innerText to the end of the array.
+    myArray.push(element.innerText)
   })
 
   listOne.addEventListener("click", (event) => {
-    let listOneItem = event.target
+    let listOneItem = event.target.innerText
     removeFromList(listOneItem)
   })
   
   const removeFromList = (listOneItem) => {
     // Find the first occurrence of the 
-    // item (in this case a html li elements innerText)
+    // item (in this case a string)
     // in the array and return its index location in the array.
-    let index = myArray.findIndex((item) => item.innerText === listOneItem.innerText)
-    //let index = myArray.indexOf(listOneItem);
+    let index = myArray.indexOf(listOneItem);
     console.log(index)
     // Remove 1 element from the array at index location called "index".
     myArray.splice(index, 1)
@@ -40,9 +38,8 @@ export default function Demo(){
   const renderList = () => {
     listOne.replaceChildren()
     myArray.forEach((element)=> {
-      console.log(`typeof element:`, typeof(element))
-      console.log(`html li element contents:, ${element.innerText}`)
-      listOne.appendChild(element)
+      const listItem = `<li class="list-group-item">${element}</li>`
+      listOne.insertAdjacentHTML('beforeend', listItem);
     });
   }
 }

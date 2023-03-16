@@ -15,7 +15,7 @@ export default function Demo(){
 
   console.log(`typeof myArray:`, typeof(myArray))
   listOne.addEventListener("click", (event) => {
-    let item = event.target
+    let item = event.target.innerText
     addToArrayAndThenRenderToListTwo(item)    
   });
 
@@ -29,19 +29,10 @@ export default function Demo(){
     // Delete all the children of the list-two ul.
     listTwo.replaceChildren()
     myArray.forEach((element) => {
-      console.log(`typeof element:`, typeof(element))
-      console.log(`html li element contents:, ${element.innerText}`)
-      // Here we are creating a new cloned
-      // element that is orphaned from list-one ul.
-      // True means grab all children of element as well.
-      let clonedElement = element.cloneNode(true)
-      // Append the orphaned cloned element to the 
-      // end of the list-two ul.
-      // The element is an html object.
-      // Because we are appending the cloned element
-      // and not the original element, we do NOT delete
-      // it from list-one.
-      listTwo.appendChild(clonedElement)
+      // Create a new li element
+      const listItem = `<li class="list-group-item">${element}</li>`
+      // Insert the new li into the list
+      listTwo.insertAdjacentHTML('beforeend', listItem);
     })
   }
 }
