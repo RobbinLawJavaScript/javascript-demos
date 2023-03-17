@@ -1,4 +1,4 @@
-function Demo1() {
+export default function Demo1() {
 	
 	//const localDataURL = './data/bones.json';
 	//const localDataURL = './data/bones2.json';
@@ -21,5 +21,3 @@ function Demo1() {
 	});
 	console.log(2);
 }
-
-export default Demo1;
