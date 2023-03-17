@@ -42,6 +42,28 @@ export default function Demo1() {
 		}
 	}
 
+	let count = 0
+	document.querySelector('#button-next').addEventListener("click", (e) => {
+		count ++
+		console.clear()
+		if(count == 1){
+			app(localDataURLGood)
+		} else if (count == 2){
+			app(localDataURLBadEndPoint)
+		} else if (count == 3){
+			app(localDataURLBadData)
+		} else {
+			console.log(`Press the CLEAR button to start over`)
+		}
+	})
+
+
+	document.querySelector('#button-clear').addEventListener("click", (e) => {
+		count = 0
+		console.clear()
+		console.log(`Demos are reset and ready to run again by pressing the NEXT button`)
+	})
+
 	function sleep(ms) {
 		return new Promise(resolve => setTimeout(resolve, ms));
 	}
@@ -55,6 +77,6 @@ export default function Demo1() {
 		app(localDataURLBadData)
 	}
 	
-	runAppThreeTimesWithDelayBetween()
+	//runAppThreeTimesWithDelayBetween()
 
 }
