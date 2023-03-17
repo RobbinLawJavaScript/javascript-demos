@@ -20,7 +20,7 @@
 |Lab 4 Forms with Validation & Decisions|GitHub|Week 6|5
 |Quiz 3 Forms & Decisions|Moodle|Week 6|5
 |Assignment 1 Dom Access, Functions, Events, Decisions, Forms: Cheeper App|GitHub|Week 7|10
-|Lab 5 Arrays & Loops|GitHub|Week 9|5
+|Lab 5 Arrays & Loops|GitHub|Week 10|5
 |Quiz 4 Arrays & Loops|Moodle|Week 9|5
 |Lab 6 Fetch API with .forEach() and .map()|GitHub|Week 11|5
 |Quiz 5 Timers & DOM API|Moodle|Week 11|5
@@ -44,8 +44,8 @@
 |F20||||
 |7-F27|WP-Assign1|WP-Assign1|WP-Assign1|A1|
 |8-M06|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|
-|9-M13|Timers|Promises|WP L5-Arrays-Loops-Q4-Dido|L5 Q4|
-|10-M20|Fetch API|Fetch API|Fetch API|
+|9-M13|Timers|Promises|WP L5-Arrays-Loops-Q4-Dido|Q4|
+|10-M20|Fetch API|Fetch API|Fetch API|L5
 |11-M27|Fetch API|Fetch API|WP L6-Fetch Q5-Timers|L6 Q5|
 |12-A03|WP-Assign2|WP-Assign2|WP-Assign2|A2|
 |13-A10|ES Modules|ES Modules|WP L7-ES Modules Q6-Fetch|L7 Q6|

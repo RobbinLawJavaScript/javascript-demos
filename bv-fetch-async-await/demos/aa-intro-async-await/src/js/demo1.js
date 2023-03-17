@@ -1,14 +1,20 @@
 // https://www.sitepoint.com/delay-sleep-pause-wait/
 
+// async and await are part of the ES7 spec
+// async functions always return a promise
+
 export default function Demo1() {
 	
-	const localDataURLGood = './data/bones.json';
-	const localDataURLBadEndPoint = './data/no-file.json';
-	const localDataURLBadData = './data/bad-bones.json';
+	const localDataURLGood = './data/bones.json'
+	const localDataURLBadEndPoint = './data/no-file.json'
+	const localDataURLBadData = './data/bad-bones.json'
 
 
 	const getData = async (URL) => {
 		console.log(`getData begin with URL: ${URL}`)
+		// fetch() returns a promise to res.
+		// The await keyword "stalls" the JS assignment
+		// until the data or error is returned (promise resolves or is rejected).
 		const res = await fetch(URL, {
 			method: 'GET',
 			headers: {
@@ -20,13 +26,14 @@ export default function Demo1() {
 		console.log(`resolved response with URL: ${URL}`)
 		console.log(res)
 		if (!res.ok) {
-			throw new Error('Bad URL or Server is Down');
+			throw new Error('Bad URL or Server is Down')
 	 	}
-		const data = await res.json();
-		console.log(`resolved data with URL:', ${URL}`);
-		console.log(data);
+		// res.json() also returns a promise to data.
+		const data = await res.json()
+		console.log(`resolved data with URL:', ${URL}`)
+		console.log(data)
 		console.log(`getData end with URL: ${URL}`)
-		return data;
+		return data
 	}
 
 	const app = async (URL) => {
@@ -65,7 +72,7 @@ export default function Demo1() {
 	})
 
 	function sleep(ms) {
-		return new Promise(resolve => setTimeout(resolve, ms));
+		return new Promise(resolve => setTimeout(resolve, ms))
 	}
 	
 	const runAppThreeTimesWithDelayBetween = async () => {
