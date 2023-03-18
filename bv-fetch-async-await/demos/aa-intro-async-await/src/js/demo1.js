@@ -5,6 +5,9 @@
 
 export default function Demo1() {
 	
+	const title = document.querySelector('#demo-title')
+	title.innerText = `Fetch Demo 1 with local json files`
+
 	const localDataURLGood = './data/bones.json'
 	const localDataURLBadEndPoint = './data/no-file.json'
 	const localDataURLBadData = './data/bad-bones.json'
@@ -50,6 +53,9 @@ export default function Demo1() {
 	}
 
 	let count = 0
+	console.clear()
+	console.log(`Scenarios are reset and ready to run by pressing the NEXT button`)
+
 	document.querySelector('#button-next').addEventListener("click", (e) => {
 		count ++
 		console.clear()
@@ -60,30 +66,14 @@ export default function Demo1() {
 		} else if (count == 3){
 			app(localDataURLBadData)
 		} else {
-			console.log(`Press the CLEAR button to start over`)
+			console.log(`Press the RESET button to start over`)
 		}
 	})
 
-
-	document.querySelector('#button-clear').addEventListener("click", (e) => {
+	document.querySelector('#button-reset').addEventListener("click", (e) => {
 		count = 0
 		console.clear()
-		console.log(`Demos are reset and ready to run again by pressing the NEXT button`)
+		console.log(`Scenarios are reset and ready to run again by pressing the NEXT button`)
 	})
-
-	function sleep(ms) {
-		return new Promise(resolve => setTimeout(resolve, ms))
-	}
-	
-	const runAppThreeTimesWithDelayBetween = async () => {
-		console.clear()
-		app(localDataURLGood)
-		await sleep(5000);
-		app(localDataURLBadEndPoint)
-		await sleep(5000);
-		app(localDataURLBadData)
-	}
-	
-	//runAppThreeTimesWithDelayBetween()
 
 }

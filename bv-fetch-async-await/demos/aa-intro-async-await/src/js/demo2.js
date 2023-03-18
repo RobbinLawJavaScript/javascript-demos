@@ -3,11 +3,14 @@
 
 export default function Demo2() {
 
+	const title = document.querySelector('#demo-title')
+	title.innerText = `Fetch Demo 2 with remote server`
+
+	const outputDiv = document.querySelector('#output-div')
+
 	const remoteDataURLGood = "https://api.jsonbin.io/v3/b/6070a88dceba85732671d94c/3"
 	const remoteDataURLBad1 = "https://api.jsonbin.io/v3/b/6070a88dceba85732671d94c"
 	const remoteDataURLBad2 = "https://api.jsonbin.io/v3/b/6070a88d"
-
-	const outputList = document.querySelector('#output')
 
 	const getData = async (URL) => {
 		console.log(`getData begin with URL: ${URL}`)
@@ -31,55 +34,62 @@ export default function Demo2() {
 		return data
 	}
 
-	const app = async (URL) => {
+	const app = async (URL, ui) => {
 		try{
 			console.log(`app try begin with URL ${URL}`)
 			const data = await getData(URL)
-			renderData(data)
+			renderData(data, ui)
 			console.log(`app try end with URL ${URL}`)
 		}
 		catch(error){
 			console.log(`app catch begin with URL ${URL}`)
 			console.error(error)
-			outputList.replaceChildren()
+			renderData(null, ui)
 			console.log(`app catch end with URL ${URL}`)
 		}
 	}
 
-	const renderData = (data) => {
-		outputList.replaceChildren()
+	const renderData = (data, ui) => {
+		ui.replaceChildren()
 		let output = ''
-		data.items.forEach((item) => {
-			output += 
-			`
-				<div class="mb-3">
-					<p>Id: ${item.id}</p>
-					<p>Bone Type: ${item.boneType}</p>
-				</div>
-			`
-		})
-		outputList.insertAdjacentHTML('beforeend', output)
+		if(data != null){
+			data.items.forEach((item) => {
+				output += 
+				`
+					<div class="mb-1">
+						<p>Id: ${item.id}</p>
+						<p>Bone Type: ${item.boneType}</p>
+					</div>
+				`
+			})
+		}
+		ui.insertAdjacentHTML('beforeend', output)
 	}
 
 	let count = 0
+	console.clear()
+	console.log(`Scenarios are reset and ready to run by pressing the NEXT button`)
+
+
 	document.querySelector('#button-next').addEventListener("click", (e) => {
 		count ++
 		console.clear()
 		if(count == 1){
-			app(remoteDataURLGood)
+			app(remoteDataURLGood, outputDiv)
 		} else if (count == 2){
-			app(remoteDataURLBad1)
+			app(remoteDataURLBad1, outputDiv)
 		} else if (count == 3){
-			app(remoteDataURLBad2)
+			app(remoteDataURLBad2, outputDiv)
 		} else {
 			console.log(`Press the CLEAR button to start over`)
 		}
 	})
 
-	document.querySelector('#button-clear').addEventListener("click", (e) => {
+	document.querySelector('#button-reset').addEventListener("click", (e) => {
 		count = 0
 		console.clear()
-		console.log(`Demos are reset and ready to run again by pressing the NEXT button`)
+		renderData(null, outputDiv)
+		console.log(`Scenarios are reset and ready to run again by pressing the NEXT button`)
 	})
 
 }
