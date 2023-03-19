@@ -13,7 +13,7 @@ export default function Demo3(){
     let filterValue
     const activeElement = document.activeElement;
     if(activeElement.type === 'submit') {
-      console.log(activeElement.value)
+      console.log(`filter type: ${activeElement.value}`)
       if(activeElement.value == "text-filter"){
         filterValue = event.target.elements['form-text'].value
         console.log(`filter value: ${filterValue}`)

@@ -1,8 +1,4 @@
 
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren
-
-
-
 //import Demo1 from './demo1.js'
 //import Demo2 from './demo2.js'
 import Demo3 from './demo3.js'
