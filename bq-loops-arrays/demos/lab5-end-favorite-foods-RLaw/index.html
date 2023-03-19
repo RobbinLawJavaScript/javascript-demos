@@ -7,8 +7,7 @@
   <meta name="description" content="">
   <link rel="icon" href="img/favicon.png"  type="image/png">
   <meta charset="utf-8">
-  <title>Food Favorites</title>
-   <!-- Link to Bootstrap 5 -->
+  <title>Food Favorites by RLaw</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="module" src="./js/index.js" defer></script>
@@ -19,14 +18,45 @@
     <div class="container-fluid d-flex justify-content-start">
       <a class="navbar-brand" href="#">
         <img src="./img/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        Fetch
+        Loops-NodeLists-Arrays
       </a>
-      <button id="demo1" class="btn btn-sm btn-outline-secondary me-1" type="button">Demo with local json files</button>
-      <button id="demo2" class="btn btn-sm btn-outline-secondary" type="button">Demo with remote server</button>
+      <button id="demo1" class="btn btn-sm btn-outline-secondary me-2" type="button">DropDown Filter</button>
+      <button id="demo2" class="btn btn-sm btn-outline-secondary me-2" type="button">Copy List to List</button>
+      <button id="demo3" class="btn btn-sm btn-outline-secondary" type="button">Delete from List</button>
     </div>
   </nav>
   <div class="px-4 py-5 my-5 container text-center">
     <h1 class="display-5 fw-bold">Food Favorites</h1>
+    <form id="form">
+      <div class="row">
+        <div class="mb-3 col-9">
+         <input
+            type="text"
+            name="form-text"
+            class="form-control"
+          >
+        </div>
+        <div class="mb-3 col-3">
+          <button type="submit" id="text-submit" class="w-100 btn btn-dark" value="text-filter">Partial String Filter</button>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="mb-3 col-9">
+          <select 
+            name="form-dropdown"
+            class="form-select">
+            <option value="">All</option>
+            <option value="Meat">Meat</option>
+            <option value="Starch">Starch</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Desert">Desert</option>
+          </select>
+        </div>
+        <div class="mb-3 col-3">
+          <button type="submit" id="dropdown-submit" class="w-100 btn btn-dark" value="drop-down-filter">Drop Down Filter</button>
+        </div>
+      </div>
+    </form>
     <div class="row">
       <div class="col">
         <h5>Foods to Choose From</h5>

@@ -1,13 +1,3 @@
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
-
 export default function Demo(){
   let listOne = document.querySelector("#list-one")
   // listOneItems will be a NODE-LIST of li elements but acts like an array.

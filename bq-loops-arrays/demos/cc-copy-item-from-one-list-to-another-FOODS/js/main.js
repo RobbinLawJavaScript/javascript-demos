@@ -4,10 +4,6 @@
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren
 
-// https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
-
 export default function Demo(){
   let listOne = document.querySelector("#list-one")
   let listTwo = document.querySelector("#list-two")
