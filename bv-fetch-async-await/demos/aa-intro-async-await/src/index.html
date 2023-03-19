@@ -12,25 +12,22 @@
 	<script type="module" src="./js/index.js" defer></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a id="demo1" class="nav-link" href="#">Demo1</a>
-          <a id="demo2" class="nav-link" href="#">Demo2</a>
-        </div>
-      </div>
+  <nav class="navbar navbar-dark bg-dark bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-start">
+      <a class="navbar-brand" href="#">
+        <img src="./img/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Fetch
+      </a>
+      <button id="demo1" class="btn btn-sm btn-outline-secondary me-1" type="button">Demo with local json files</button>
+      <button id="demo2" class="btn btn-sm btn-outline-secondary" type="button">Demo with remote server</button>
     </div>
   </nav>
   <div class="container">
     <h1 id="demo-title" class="mt-3 mb-3 fw-bold"></h1>
-    <button id="button-next">Next</button>
-    <button id="button-reset">Reset</button>
+    <button id="button-next" 
+      class="btn btn-sm btn-outline-secondary me-1">Next</button>
+    <button id="button-reset"
+      class="btn btn-sm btn-outline-secondary me-1">Reset</button>
     <div id="output-div"></div>
   </div>
 </body>

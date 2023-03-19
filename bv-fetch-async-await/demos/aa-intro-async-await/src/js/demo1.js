@@ -6,7 +6,7 @@
 export default function Demo1() {
 	
 	const title = document.querySelector('#demo-title')
-	title.innerText = `Fetch Demo 1 with local json files`
+	title.innerText = `Demo 1 with local json files`
 
 	const localDataURLGood = './data/bones.json'
 	const localDataURLBadEndPoint = './data/no-file.json'

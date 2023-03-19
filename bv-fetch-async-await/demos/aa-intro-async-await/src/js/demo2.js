@@ -4,7 +4,7 @@
 export default function Demo2() {
 
 	const title = document.querySelector('#demo-title')
-	title.innerText = `Fetch Demo 2 with remote server`
+	title.innerText = `Demo 2 with remote server`
 
 	const outputDiv = document.querySelector('#output-div')
 
