@@ -1,4 +1,4 @@
-export default function Demo3(){
+export default function Demo5(data){
 
   let form = document.querySelector("#form")
   form.elements["form-text"].focus();
@@ -17,23 +17,21 @@ export default function Demo3(){
       if(activeElement.value == "text-filter"){
         filterValue = event.target.elements['form-text'].value
         console.log(`filter value: ${filterValue}`)
-        filter(listOneItems, filterValue)
+        filter(data, filterValue)
       } else if (activeElement.value == "drop-down-filter"){
         filterValue = event.target.elements['form-dropdown'].value
         console.log(`filter value: ${filterValue}`)
-        filter(listOneItems, filterValue)
+        filter(data, filterValue)
       }
     }
   })
 
-  const filter = (listItems, filterValue) => {
-    listItems.forEach((element) => {
-      if (element.innerText.includes(filterValue)) {
-        element.classList.remove("hidden")
-      } else {
-        element.classList.add("hidden")
-      }
+
+  const filter = (array, filterValue) => {
+    let filteredData = array.filter((item) => {
+      return item.toLowerCase().includes(filterValue.toLowerCase())
     })
+    renderList(listOne, filteredData)
   }
 
   listOne.addEventListener("click", (event) => {
@@ -43,7 +41,7 @@ export default function Demo3(){
 
   const addItemToArrayAndRenderList = (item, list) => {
     myArray.push(item)
-    renderList(list)
+    renderList(list, myArray)
   }
   
   listTwo.addEventListener("click", (event) => {
@@ -58,15 +56,17 @@ export default function Demo3(){
     let index = myArray.indexOf(item)
     // Remove 1 element from the array at index location called "index".
     myArray.splice(index, 1)
-    renderList(list)
+    renderList(list, myArray)
   }
   
-  const renderList = (list) => {
+  const renderList = (list, array) => {
     list.replaceChildren()
-    myArray.forEach((element) => {
+    array.forEach((element) => {
       const listItem = `<li class="list-group-item">${element}</li>`
       list.insertAdjacentHTML('beforeend', listItem)
     })
   }
+
+  renderList(listOne, data)
   
 }

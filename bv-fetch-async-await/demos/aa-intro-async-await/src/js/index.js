@@ -11,11 +11,13 @@ if(cookie == `demo=1`){
 }
 
 const demo1 = document.querySelector('#demo1')
+demo1.innerText = `Get data from local json files`
 demo1.addEventListener('click', (e) => {
   document.cookie = "demo=1"
   location.reload(true)
 })
 const demo2 = document.querySelector('#demo2')
+demo2.innerText = `Get data from a remote server`
 demo2.addEventListener('click', (e) => {
   document.cookie = "demo=2"
   location.reload(true)
