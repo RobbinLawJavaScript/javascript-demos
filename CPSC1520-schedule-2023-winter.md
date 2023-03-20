@@ -10,7 +10,7 @@
 
 ## Assessments
 
-|Assessment|Submit via|Due 11:59 PM Friday|Mark %|
+|Assessment|via|Due 11:59 PM Friday|%|
 |:-:|:-:|:-:|:-:|
 |L1 Console & DOM Access & Netlify|GitHub|Week 3|5
 |L2 Functions|GitHub|Week 4|5
