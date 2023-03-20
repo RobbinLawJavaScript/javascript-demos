@@ -34,20 +34,20 @@ export default function Demo5(data){
 
   listOne.addEventListener("click", (event) => {
     const item = event.target.innerText
-    addItemToArrayAndRenderList(item, listTwo, myArray)    
+    addItemToArrayAndRenderList(item, myArray, listTwo)    
   })
 
-  const addItemToArrayAndRenderList = (item, list, array) => {
+  const addItemToArrayAndRenderList = (item, array, list) => {
     array.push(item)
     renderList(list, array)
   }
   
   listTwo.addEventListener("click", (event) => {
     const item = event.target.innerText
-    removeItemFromArrayAndRenderList(item, listTwo, myArray)    
+    removeItemFromArrayAndRenderList(item, myArray, listTwo)    
   })
   
-  const removeItemFromArrayAndRenderList = (item, list, array) => {
+  const removeItemFromArrayAndRenderList = (item, array, list) => {
     // Find the first occurrence of the 
     // item (in this case a string)
     // in the array and return its index location in the array.
