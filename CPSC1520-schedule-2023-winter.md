@@ -12,23 +12,23 @@
 
 |Assessment|Submit via|Due 11:59 PM Friday|Mark %|
 |:-:|:-:|:-:|:-:|
-|Lab 1 Console & DOM Access & Netlify|GitHub|Week 3|5
-|Lab 2 Functions|GitHub|Week 4|5
-|Quiz 1 JavaScript Basics|Moodle|Week 4|5
-|Lab 3 Events|GitHub|Week 5|5
-|Quiz 2 Functions & Events|Moodle|Week 5|5
-|Lab 4 Forms with Validation & Decisions|GitHub|Week 6|5
-|Quiz 3 Forms & Decisions|Moodle|Week 6|5
-|Assignment 1 Dom Access, Functions, Events, Decisions, Forms: Cheeper App|GitHub|Week 7|10
-|Lab 5 Arrays & Loops|GitHub|Week 10|5
-|Quiz 4 Arrays & Loops|Moodle|Week 9|5
-|Lab 6 Fetch API with .forEach() and .map()|GitHub|Week 11|5
-|Quiz 5 Timers & DOM API|Moodle|Week 11|5
-|Assignment 2 Loops, Arrays, Fetch API: Ted Talks Search Filter App|GitHub|Week 12|10
-|Quiz 6 Fetch API|Moodle|Week 12|5
-|Lab 7 ES Modules, npm, json, 3d party packages|GitHub|Week 13|5
-|Lab 8 Classes & Objects|GitHub|Week 14|5
-|Assignment 3 Dictionary App|GitHub|Week 15|10
+|L1 Console & DOM Access & Netlify|GitHub|Week 3|5
+|L2 Functions|GitHub|Week 4|5
+|Q1 JavaScript Basics|Moodle|Week 4|5
+|L3 Events|GitHub|Week 5|5
+|Q2 Functions & Events|Moodle|Week 5|5
+|L4 Forms with Validation & Decisions|GitHub|Week 6|5
+|Q3 Forms & Decisions|Moodle|Week 6|5
+|A1 Dom Access, Functions, Events, Decisions, Forms: Cheeper App|GitHub|Week 7|10
+|L5 Arrays & Loops|GitHub|Week 10|5
+|Q4 Arrays & Loops|Moodle|Week 9|5
+|L6 Fetch API with .forEach() and .map()|GitHub|Week 11|5
+|Q5 Timers & DOM API|Moodle|Week 11|5
+|A2 Loops, Arrays, Fetch API: Ted Talks Search Filter App|GitHub|Week 12|10
+|Q6 Fetch API|Moodle|Week 12|5
+|L7 ES Modules, npm, json, 3d party packages|GitHub|Week 13|5
+|L8 Classes & Objects|GitHub|Week 14|5
+|A3 Dictionary App|GitHub|Week 15|10
 |Total|||100|
 
 ## Calendar
