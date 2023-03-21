@@ -36,18 +36,18 @@
 |Week|Day1|Day2|Day3|Due|
 |:-:|:-:|:-:|:-:|:-:|
 |1-J09|Environment-Setup|Environment-Setup|Console-Variables|
-|2-J16|Data-Types|Literal-Strings|DOM-Access|
-|3-J23|Functions|Events-Decisions|WP L1-DOM-Access|L1|
-|4-J30|Events-Decisions|Events-Decisions|WP L2-Funcs Q1-Basic|L2 Q1|
-|5-F06|Forms|Forms|WP L3-Events Q2-Funcs-Events|L3 Q2|
-|6-F13|Forms|Forms|WP L4-Forms Q3-Forms-Deci|L4 Q3|
+|2-J16|Data-Types|DOM-Access|DOM-Access|L1 Q1|
+|3-J23|Functions|Functions|Functions|L2 Q2|
+|4-J30|Events-Decisions|Events-Decisions|Events-Decisions|L3 Q3|
+|5-F06|Forms|Forms|Forms||
+|6-F13|Forms|Forms|Forms|L4 Q4|
 |F20||||
 |7-F27|WP-Assign1|WP-Assign1|WP-Assign1|A1|
-|8-M06|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|NodeLists-Arrays-Loops|
-|9-M13|Timers|Promises|WP L5-Arrays-Loops-Q4-Dido|Q4|
-|10-M20|Fetch API|Fetch API|Fetch API|L5
-|11-M27|Fetch API|Fetch API|WP L6-Fetch Q5-Timers|L6 Q5|
+|8-M06|NodeLists-Loops|NodeLists-Loops|NodeLists-Loops|
+|9-M13|Arrays-Loops|Arrays-Loops|Arrays-Loops|L5 Q5|
+|10-M20|Timers|Promises|Fetch API|
+|11-M27|Fetch API|Fetch API|Fetch API|L6 Q6|
 |12-A03|WP-Assign2|WP-Assign2|WP-Assign2|A2|
-|13-A10|ES Modules|ES Modules|WP L7-ES Modules Q6-Fetch|L7 Q6|
-|14-A17|Classes-Objects|Classes-Objects|WP L8-Classes-Objects|L8|
+|13-A10|ES Modules|ES Modules|ES Modules|L7|
+|14-A17|Classes-Objects|Classes-Objects|Classes-Objects|L8|
 |15-A24|WP-Assign3|WP-Assign3|WP-Assign3|A3|
