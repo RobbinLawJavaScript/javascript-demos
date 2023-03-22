@@ -15,22 +15,22 @@ export default function Demo5(data){
       if(activeElement.value == "text-filter"){
         filterValue = event.target.elements['form-text'].value
         console.log(`filter value: ${filterValue}`)
-        filter(data, filterValue)
+        filter(data, filterValue, listOne)
       } else if (activeElement.value == "drop-down-filter"){
         filterValue = event.target.elements['form-dropdown'].value
         console.log(`filter value: ${filterValue}`)
-        filter(data, filterValue)
+        filter(data, filterValue, listOne)
       }
     }
   })
 
 
-  const filter = (array, filterValue) => {
+  const filter = (array, filterValue, list) => {
     let filteredData = array.filter((item) => {
       return item.toLowerCase().includes(filterValue.toLowerCase())
     })
     console.log(`filteredData: ${filteredData}`)
-    renderList(listOne, filteredData)
+    renderList(list, filteredData)
   }
 
   listOne.addEventListener("click", (event) => {
