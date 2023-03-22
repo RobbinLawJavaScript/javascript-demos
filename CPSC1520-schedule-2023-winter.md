@@ -22,9 +22,9 @@
 |Q4 Loops, Arrays|Moodle|Week 6|5
 |A1 Dom Access, Functions, Events, Decisions, Forms: Cheeper App|GitHub|Week 7|10
 |L5 Loops, Arrays|GitHub|Week 9|5
-|Q5 Timers, DOM API|Moodle|Week 9|5
+|Q5 Timers, DOM API|Moodle|Week 11|5
 |L6 Fetch API with .forEach() and .map()|GitHub|Week 11|5
-|Q6 Fetch API|Moodle|Week 11|5
+|Q6 Fetch API|Moodle|Week 13|5
 |A2 Loops, Arrays, Fetch API: Ted Talks Search Filter App|GitHub|Week 12|10
 |L7 ES Modules, npm, json, 3d party packages|GitHub|Week 13|5
 |L8 Classes, Objects|GitHub|Week 14|5
