@@ -56,6 +56,7 @@ export default function Demo5(){
     // item (in this case a string)
     // in the array and return its index location in the array.
     let index = myArray.indexOf(item)
+    console.log(`index clicked: ${index}`)
     // Remove 1 element from the array at index location called "index".
     myArray.splice(index, 1)
     renderList(list)

@@ -21,7 +21,7 @@
 |L4 Forms with Validation, Decisions|GitHub|Week 6|5
 |Q4 Loops, Arrays|Moodle|Week 6|5
 |A1 Dom Access, Functions, Events, Decisions, Forms: Cheeper App|GitHub|Week 7|10
-|L5 Loops, Arrays|GitHub|Week 9|5
+|L5 Loops, Arrays|GitHub|Week 10|5
 |Q5 Timers, DOM API|Moodle|Week 11|5
 |L6 Fetch API with .forEach() and .map()|GitHub|Week 11|5
 |Q6 Fetch API|Moodle|Week 13|5
@@ -44,8 +44,8 @@
 |F20||||
 |7-F27|Assign1|Assign1|Assign1|A1|
 |8-M06|Loops-NodeLists|Loops-NodeLists|Loops-NodeLists|
-|9-M13|Loops-Arrays|Loops-Arrays|Loops-Arrays|L5|
-|10-M20|Timers|Promises|Fetch API|
+|9-M13|Loops-Arrays|Loops-Arrays|Loops-Arrays||
+|10-M20|Timers|Promises|Fetch API|L5|
 |11-M27|Fetch API|Fetch API|Fetch API|L6 Q5|
 |12-A03|Assign2|Assign2|Assign2|A2|
 |13-A10|ES Modules|ES Modules|ES Modules|L7 Q6|

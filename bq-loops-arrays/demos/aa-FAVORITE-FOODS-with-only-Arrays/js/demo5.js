@@ -29,6 +29,7 @@ export default function Demo5(data){
     let filteredData = array.filter((item) => {
       return item.toLowerCase().includes(filterValue.toLowerCase())
     })
+    console.log(`filteredData: ${filteredData}`)
     renderList(listOne, filteredData)
   }
 
