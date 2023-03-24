@@ -1,10 +1,28 @@
+// https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
+
 export default function Demo5(data){
 
-  let form = document.querySelector("#form")
+  const form = document.querySelector("#form")
   form.elements["form-text"].focus();
-  let listOne = document.querySelector("#list-one")
-  let listTwo = document.querySelector("#list-two")
-  let myArray = []
+  const listOne = document.querySelector("#list-one")
+  const listTwo = document.querySelector("#list-two")
+  const myArray = []
+
+  document.querySelector("#text-box-2")
+  .addEventListener("input", (event) => {
+    let filterValue = event.target.value
+    console.log(`filterValue: ${filterValue}`)
+    filter(data, filterValue, listOne)
+  })
+
+  document.querySelector("#dropdown-2")
+  .addEventListener("click", (event) => {
+    let filterValue = event.target.innerText
+    console.log(`filterValue: ${filterValue}`)
+    if(filterValue == "All")
+      filterValue = ""
+    filter(data, filterValue, listOne)
+  })
 
   form.addEventListener("submit", (event) => {
     event.preventDefault()

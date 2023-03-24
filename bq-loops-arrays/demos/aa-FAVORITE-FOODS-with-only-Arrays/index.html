@@ -21,9 +21,9 @@
         <img src="./img/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         Loops-Arrays
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
@@ -75,14 +75,39 @@
       </div>
     </form>
     <div class="row">
+      <div class="mb-3 col-12">
+       <input
+          type="text"
+          id="text-box-2"
+          class="form-control"
+        >
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="mb-3 col-12">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Filter on a Category of Foods
+          </button>
+          <ul id="dropdown-2" class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Meat</a></li>
+            <li><a class="dropdown-item" href="#">Starch</a></li>
+            <li><a class="dropdown-item" href="#">Vegetables</a></li>
+            <li><a class="dropdown-item" href="#">Desert</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col">
         <h5>Foods to Choose From</h5>
-        <ul id="list-one" class="list-group text-start">
+        <ul id="list-one" class="list-group text-center">
         </ul>
       </div>
       <div class="col">
         <h5>Favorite Foods</h5>
-        <ul id="list-two">
+        <ul id="list-two" class="list-group text-center">
         </ul>
       </div>
     </div>
