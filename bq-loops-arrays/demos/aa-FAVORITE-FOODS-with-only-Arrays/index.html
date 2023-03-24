@@ -8,23 +8,38 @@
   <link rel="icon" href="img/favicon.png"  type="image/png">
   <meta charset="utf-8">
   <title>Food Favorites by RLaw</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="module" src="./js/index.js" defer></script>
 </head>
   
 <body>
-  <nav class="navbar navbar-dark bg-dark bg-body-tertiary">
-    <div class="container-fluid d-flex justify-content-start">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./img/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         Loops-Arrays
       </a>
-      <button id="demo1" class="btn btn-sm btn-outline-secondary me-2" type="button"></button>
-      <button id="demo2" class="btn btn-sm btn-outline-secondary me-2" type="button"></button>
-      <button id="demo3" class="btn btn-sm btn-outline-secondary me-2" type="button"></button>
-      <button id="demo4" class="btn btn-sm btn-outline-secondary me-2" type="button"></button>
-      <button id="demo5" class="btn btn-sm btn-outline-secondary" type="button"></button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Choose a demo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a id="demo1" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo2" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo3" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo4" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo5" class="dropdown-item" href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="px-4 py-5 my-5 container text-center">
