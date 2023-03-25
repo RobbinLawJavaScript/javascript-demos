@@ -6,7 +6,7 @@
 
 - [Jake Archibauld Event Loop Youtube](https://www.youtube.com/watch?v=cCOL7MC4Pl0&t=1s) runtime 35min
 - [Philip Roberts Event Loop Youtube](https://www.youtube.com/watch?v=8aGhZQkoFbQ) runtime 28 min
-
+- [javaScript Visualized: Promises and Async/Await by Lydia Hallie](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke)
 ----
 
 ### Text
