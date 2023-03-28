@@ -48,6 +48,6 @@
 |10-M20|Timers|Promises|Fetch API||
 |11-M27|Fetch API|Fetch API|Fetch API|L6 Q5|
 |12-A03|Assign2|Assign2|EASTER|A2|
-|13-A10|ES Modules|ES Modules|ES Modules|L7 Q6|
+|13-A10|npm-external libs|npm-external libs|npm-external libs|L7 Q6|
 |14-A17|Classes-Objects|Classes-Objects|Classes-Objects|L8|
 |15-A24|Assign3|Assign3|Assign3|A3|
