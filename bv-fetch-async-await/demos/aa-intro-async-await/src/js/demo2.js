@@ -1,5 +1,5 @@
 // https://jsonbin.io/
-// login with gmail account
+// login with gmail account robbinlaw@gmail.com
 
 export default function Demo2() {
 
@@ -43,7 +43,7 @@ export default function Demo2() {
 		}
 		catch(error){
 			console.log(`app catch begin with URL ${URL}`)
-			console.error(error)
+			console.error(`The error is: ${error}`)
 			renderData(null, ui)
 			console.log(`app catch end with URL ${URL}`)
 		}
