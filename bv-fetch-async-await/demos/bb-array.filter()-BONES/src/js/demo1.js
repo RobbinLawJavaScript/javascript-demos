@@ -4,8 +4,9 @@ const localDataURL = './data/bones.json';
 //const localDataURL = './data/bones2.json';
 //const localDataURL = './data/bad-bones.json';
 
+const outputElement = document.querySelector('#output-element')
+
 let allData = [];
-let currentData = [];
 
 const getData = async (URL) => {
 	console.log(`getData begin with URL: ${URL}`)
@@ -48,30 +49,33 @@ let form = document.querySelector("#form")
 
 form.addEventListener("submit", (event) => {
 	event.preventDefault()
-	let searchString = event.target.elements["partial-search-string"].value
-	currentData = filterData(searchString, allData)
-	renderData(currentData)
+	const searchString = event.target.elements["partial-search-string"].value
+	const filteredData = filterData(searchString, allData)
+	renderData(filteredData, outputElement)
 })
 
-const filterData = (searchString, list) => {
-	let filteredData = list.filter((item) => {
+const filterData = (searchString, data) => {
+	let filteredData = data.filter((item) => {
 		return item.boneType.toLowerCase().includes(searchString.toLowerCase())
 	})
 	return filteredData
 }
 
-const renderData = (list) => {
-	let rows = document.querySelector("#rows")
-	rows.innerHTML = ""
-	list.map((item)=> {
-		rows.innerHTML += 
-		`
-		<tr>
-			<td>${item.id}</td>
-			<td>${item.boneType}</td>
-		</tr>
-		`
-	})
+const renderData = (data, ui) => {
+	ui.replaceChildren()
+	let output = ''
+	if(data != null){
+		data.forEach((item) => {
+			output += 
+			`
+			<tr>
+				<td>${item.id}</td>
+				<td>${item.boneType}</td>
+			</tr>
+			`
+		})
+	}
+	ui.insertAdjacentHTML('beforeend', output)
 }
 
 }
