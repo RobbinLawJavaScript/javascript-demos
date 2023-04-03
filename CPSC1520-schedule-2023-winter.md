@@ -50,4 +50,4 @@
 |12-A03|Assign2|Assign2|EASTER|A2|
 |13-A10|npm-external libs|npm-external libs|npm-external libs|L7 Q6|
 |14-A17|Classes-Objects|Classes-Objects|Classes-Objects|L8|
-|15-A24|Assign3|Assign3|Assign3|A3|
+|15-A24|Assign3|Assign3|NO CLASS|A3|
