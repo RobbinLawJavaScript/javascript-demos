@@ -44,10 +44,10 @@
 |F20||||
 |7-F27|Assign1|Assign1|Assign1|A1|
 |8-M06|Loops-NodeLists|Loops-NodeLists|Loops-NodeLists|
-|9-M13|Loops-Arrays|Loops-Arrays|Loops-Arrays|L5|
+|9-M13|Loops-Arrays|Loops-Arrays|Loops-Arrays|L5 Q5|
 |10-M20|Timers|Promises|Fetch API||
-|11-M27|Fetch API|Fetch API|Fetch API|L6 Q5|
+|11-M27|Fetch API|Fetch API|Fetch API|L6|
 |12-A03|Assign2|Assign2|EASTER|A2|
 |13-A10|npm-external libs|npm-external libs|npm-external libs|L7 Q6|
-|14-A17|Classes-Objects|Classes-Objects|Classes-Objects|L8|
+|14-A17|Assign3|Assign3|Assign3|L8|
 |15-A24|Assign3|Assign3|NO CLASS|A3|
