@@ -1,0 +1,21 @@
+{
+  "name": "src-delete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
