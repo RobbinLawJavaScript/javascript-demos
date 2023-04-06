@@ -5,12 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./img/favicon.png"  type="image/png">
-  <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/index.js" defer></script>
   <title>Node Project Demo</title>
 </head>
 <body>
-  <h1>Hi there</h1>
-  <button id="next-button">next superhero</button>
+  <nav class="navbar navbar-expand bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Fetch
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Choose a demo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a id="demo1" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo2" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo3" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo4" class="dropdown-item" href="#"></a></li>
+              <li><a id="demo5" class="dropdown-item" href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <h4>Super Heroes</h4>
+    <button id="next-button" class="btn btn-sm btn-outline-secondary me-1">
+      next superhero
+    </button>
   <div id="output"></div>
+</div>
 </body>
 </html>
