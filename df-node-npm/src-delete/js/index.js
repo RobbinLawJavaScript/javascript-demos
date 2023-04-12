@@ -1,1 +1,0 @@
-document.querySelector('body').innerHTML = '<h2>Hey there</h2>'
