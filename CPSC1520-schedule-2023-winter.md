@@ -49,5 +49,5 @@
 |11-M27|Fetch API|Fetch API|Fetch API|L6|
 |12-A03|Assign2|Assign2|EASTER|A2|
 |13-A10|npm-external libs|npm-external libs|npm-external libs|L7 Q6|
-|14-A17|Lab8|Assign3|Assign3||
+|14-A17|Assign3|Assign3|Assign3||
 |15-A24|Assign3|Assign3|NO CLASS|A3|
