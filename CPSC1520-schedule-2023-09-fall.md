@@ -36,8 +36,8 @@
 |Week|Day1|Day2|Day3|Due|
 |:-:|:-:|:-:|:-:|:-:|
 |1-S04|Environment-Setup|Environment-Setup|Console-Variables|
-|2-S11|Data-Types|DOM-Access|DOM-Access|L1 Q1|
-|3-S18|Functions|Functions|Functions|L2 Q2|
+|2-S11|Data-Types|Data-Types & DOM-Access|DOM-Access||
+|3-S18|Functions|Functions|Functions|L1 Q1|
 |4-S25|Events-Decisions|Events-Decisions|Events-Decisions|L3 Q3|
 |5-O02|Forms|Forms|Forms||
 |6-O09|THANKSGIVING|Forms|Forms|L4 Q4|
