@@ -10,7 +10,7 @@ console.log(NaN);
 console.log(undefined);
 let myString = 'Hey';
 console.log(myString);
-console.log([1,2,3,4]);
+console.log([10,2,3.5,4,35]);
 console.log({name:'bob', age:32});
 console.table({name:'jim', age:62});
 //console.clear();

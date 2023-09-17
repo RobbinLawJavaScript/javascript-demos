@@ -1,7 +1,7 @@
 export function demo() {
 
 const firstName = 'Robbin';
-const age = 21;
+const age = 19;
 const job = 'IOT Developer';
 const city = 'Edmonton';
 let html1;
@@ -20,7 +20,10 @@ document.body.innerHTML += html1;
 function hello(){
   return 'hello world';
 }
-// With template literal strings (es6) 2015
+// With template literal strings (es6) 2015.
+// ${} is called string interpolation in javaScript.
+// The last <li> is an example of using a ternary operator
+// (if-else shorthand).
 html2 = 
   `
   <ul>
@@ -30,7 +33,7 @@ html2 =
     <li>City: ${city}</li>
     <li>${2 + 2}</li>
     <li>${hello()}</li>
-    <li>${age > 20 ? 'Over 30' : 'Under 30'}</li>
+    <li>${age > 20 ? 'Over 20' : 'Under 20'}</li>
   </ul>
   `
 ;
