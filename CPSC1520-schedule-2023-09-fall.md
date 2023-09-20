@@ -13,7 +13,7 @@
 |:-:|:-:|:-:|:-:|
 |L1 Console, DOM Access, Netlify|GitHub|Week 3|5
 |Q1 JavaScript Basics & Functions|Moodle|Week 3|5
-|L2 Functions|GitHub|Week 4|5
+|L2 Functions|GitHub|Week 3|5
 |L3 Events & Decisions|GitHub|Week 5|5
 |Q2 Events & Decisions|Moodle|Week 5|5
 |L4 Forms with Validation, Decisions|GitHub|Week 6|5
