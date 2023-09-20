@@ -34,10 +34,10 @@
 |:-:|:-:|:-:|:-:|:-:|
 |1-S04|Environment-Setup|Environment-Setup|Console-Variables|
 |2-S11|Data-Types|Data-Types & DOM-Access|DOM-Access||
-|3-S18|Functions|Functions|Functions|L1 Q1|
-|4-S25|Events-Decisions|Events-Decisions|Events-Decisions|L2 Q2|
-|5-O02|Forms|Forms|Forms|L3 Q3|
-|6-O09|Forms|Forms|Forms|L4 Q4|
+|3-S18|Functions|Functions|Functions|L1 L2 Q1|
+|4-S25|Events-Decisions|Events-Decisions|Events-Decisions|L3 Q2|
+|5-O02|Forms|Forms|Forms||
+|6-O09|Forms|Forms|Forms|L4|
 |7-O16|Assign1|Assign1|Assign1|A1|
 |8-O23|Loops-NodeLists|Loops-NodeLists|Loops-NodeLists|
 |9-O30|Loops-Arrays|Loops-Arrays|Loops-Arrays|L5 Q5|
