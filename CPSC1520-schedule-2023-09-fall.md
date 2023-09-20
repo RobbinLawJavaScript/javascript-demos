@@ -12,10 +12,10 @@
 |Assessment|via|Due 11:59 PM Friday|%|
 |:-:|:-:|:-:|:-:|
 |L1 Console, DOM Access, Netlify|GitHub|Week 3|5
-|Q1 JavaScript Basics|Moodle|Week 3|5
+|Q1 JavaScript Basics & Functions|Moodle|Week 3|5
 |L2 Functions|GitHub|Week 4|5
-|L3 Events|GitHub|Week 5|5
-|Q2 Functions & Events|Moodle|Week 5|5
+|L3 Events & Decisions|GitHub|Week 5|5
+|Q2 Events & Decisions|Moodle|Week 5|5
 |L4 Forms with Validation, Decisions|GitHub|Week 6|5
 |A1 Dom Access, Functions, Events, Decisions, Forms: Cheeper App|GitHub|Week 7|10
 |L5 Loops & Arrays|GitHub|Week 9|5
