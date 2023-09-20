@@ -1,3 +1,3 @@
-import * as myDemo from './dom-access.js';
+import Demo from `./dom-access.js`
 
-myDemo.demo();
+Demo();
