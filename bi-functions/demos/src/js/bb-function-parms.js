@@ -34,7 +34,7 @@ greetUser1(myName)
 const greetUser2 = function(name) {
 	const ref = document.querySelector(`p.greeting2`)
 	console.log(`original innerText: ${ref.innerText}`)
-	ref.innerHTML = `Good afternoon ${name}`
+	ref.innerText = `Good afternoon ${name}`
 	console.log(`new innerText: ${ref.innerText}`)
 }
 

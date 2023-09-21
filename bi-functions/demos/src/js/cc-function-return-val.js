@@ -4,7 +4,7 @@ export default function Demo() {
 let firstName = `Robbin`
 let hobby = `coding in JavaScript`
 
-// This function takes two parameters but returns nothing
+// This basic function takes two parameters but returns nothing
 // to the caller of the function.
 function displayPerson(name, favoriteHobby) {
   const introString = `Hello ${name}, ${favoriteHobby} is your fav hobby`
@@ -19,22 +19,22 @@ function displayPerson(name, favoriteHobby) {
 }
 
 // Calling the function that does not return anything.
-displayPerson(firstName, hobby);
+displayPerson(firstName, hobby)
 
 // This basic function takes two parameters and returns
 // data to the caller of the function.
 function add(numberOne, numberTwo) {
-  return numberOne + numberTwo;
+  return numberOne + numberTwo
 }
 
 // Calling the function twice with different data types.
-// Also demonstrating coersion.
-let result = add(7.0, 5.0);
-document.querySelector('p#p2').innerHTML = `the result is ${result}`;
+// Also demonstrating coercion.
+let result = add(7, 5)
+document.querySelector('p#p2').innerText = `the result is ${result}`
 result = add('7.0','5');
-document.querySelector('p#p3').innerHTML = `the result is ${result}`;
-result = add('7.0', 8.0);
-document.querySelector('p#p4').innerHTML = `the result is ${result}`;
+document.querySelector('p#p3').innerText = `the result is ${result}`
+result = add('7.0', 8);
+document.querySelector('p#p4').innerText = `the result is ${result}`
 
 }
 
