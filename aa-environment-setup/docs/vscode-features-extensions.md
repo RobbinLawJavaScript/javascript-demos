@@ -56,7 +56,7 @@
 - Prettier-Code Formatter by Prettier
 - htmltagwrap by Brad Gashler (Alt + w) - to markup content that is already in place
     - multiple cursors
-- Auto Rename Tag by Jun Han - to rename an HTML tag faster
+- Auto Rename Tag by Jun Han - to rename an HTML tag faster. THIS FEATURE NOW COMES WITH VS CODE OUT OF THE BOX.
 - REST Client by Huachao Mao
 - HTML Snippets
 - HTML CSS Support
