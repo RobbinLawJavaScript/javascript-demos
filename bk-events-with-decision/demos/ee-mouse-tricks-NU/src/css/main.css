@@ -1,0 +1,31 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+a, a:visited {
+	color: #0066ff;
+}
+main {
+	background-color: #efefef;
+	height: 100%;
+	margin: auto;
+	padding: 1em;
+	width: 800px;
+}
+
+ul.flex-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+section.mouse-tricks {
+	background-color: bisque;
+	
+}
+section.mouse-tricks>p {
+	margin: 10px 0;
+}
