@@ -20,8 +20,9 @@ function ButtonClickHandler(){
 const naitLink = document.querySelector('a#a1')
 naitLink.addEventListener('click', LinkHandler)
 function LinkHandler(e) {
+    console.log(e)
     //preventDefault stops the normal operation of the href.
-    //e.preventDefault()   
+    e.preventDefault()   
 }
 
 // In the above example, the explicit variable and 
@@ -31,7 +32,7 @@ function LinkHandler(e) {
 
 document.querySelector('a#a2').addEventListener('click', (e) => {
     //preventDefault stops the normal operation of the href.
-    //e.preventDefault()
+    e.preventDefault()
 })
 
 
