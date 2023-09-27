@@ -1,6 +1,6 @@
 export function Demo() {
 
-const featureImage = document.querySelector('img.feature');
+const featureImage = window.document.querySelector('img.feature');
 featureImage.addEventListener('click', handleFeatureClick);
 function handleFeatureClick() {
 	const desc = document.querySelector('p.feature.description');
