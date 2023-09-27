@@ -1,0 +1,50 @@
+<!-- https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Forms Intro</title>
+	<link rel="icon" href="./img/favicon.png"  type="image/png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script type="module" src="./js/index.js" defer></script>
+</head>
+
+<body>
+	<div class="px-4 py-5 my-5 container center-page">
+		<form id="form" class="row" method="post" novalidate>
+			<div class="mb-3 col-6 position-relative">
+				<label class="form-label">First Name</label>
+				<input class="form-control" type="text" id="first-name-id" name="first-name">
+				<div class="invalid-feedback">
+					You need a valid first name.
+				</div>
+			</div>
+			<div class="mb-3 col-6 position-relative">
+				<label class="form-label">Contact Reason</label>
+				<select class="form-select" id="drop-down-id" name="drop-down">
+					<option value="">Select...</option>
+					<option value="Questions">Questions</option>
+					<option value="Job">Job</option>
+					<option value="Get Your Number">Can I get your number?</option>
+				</select>
+				<div class="invalid-feedback">
+					Please select a valid contact reason.
+				</div>
+			</div>
+			<div class="col-2 position-relative">
+				<button type="submit" class="btn btn-dark w-100">Add Item</button>
+			</div>
+		</form>
+		<div class="pt-3">
+			<ul id='list'></ul>
+		</div>
+	</div>
+</body>
+
+</html>
