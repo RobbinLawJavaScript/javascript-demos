@@ -4,6 +4,7 @@ export function demo() {
 
 //reference the p.city-intro>a element.
 const featureLink = document.querySelector('p.city-intro>a');
+console.log(`featureLink: ${featureLink}`)
 featureLink.addEventListener('click', featureLinkHandler);
 //Use the debugger in Chrome to see what is happening at each statement.
 function featureLinkHandler(e) {
