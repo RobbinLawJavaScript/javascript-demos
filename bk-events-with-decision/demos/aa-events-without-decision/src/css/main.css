@@ -10,9 +10,9 @@ a, a:visited {
 main {
 	background-color: #efefef;
 	height: 100%;
-	margin: auto;
+	/* margin: auto; */
 	padding: 1em;
-	width: 800px;
+	width: 400px;
 }
 
 ul.flex-container {
@@ -20,12 +20,4 @@ ul.flex-container {
 	align-items: center;
 	gap: 10px;
 	margin: 20px 0;
-}
-
-section.mouse-tricks {
-	background-color: bisque;
-	
-}
-section.mouse-tricks>p {
-	margin: 10px 0;
 }

@@ -8,9 +8,9 @@ body {
 main {
 	background-color: #efefef;
 	height: 100%;
-	margin: auto;
+	/* margin: auto; */
 	padding: 1em;
-	width: 800px;
+	width: 400px;
 	text-align: center;
 }
 
