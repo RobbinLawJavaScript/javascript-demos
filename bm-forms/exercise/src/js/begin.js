@@ -1,35 +1,29 @@
 export default function Run(){
 
 	const form = document.querySelector("#form")
+	const list = document.querySelector("#list")
 	
-	form.addEventListener("submit", e => {
-		e.preventDefault();
-		let textElement = e.target.elements["text-name"];
-		let text = textElement.value;
+	form.addEventListener("submit", (e) => {
+		e.preventDefault()
+		let textElement = e.target.elements["text-name"]
+		let text = textElement.value
 		//TODO: Add code here to trim the entered text.
 		
-		let isFormValid = true;
+		let isFormValid = true
 		//TODO: validate the text name element as per specs
 		
 		if (isFormValid) {
-			addItemToList(text);
-			textElement.value = "";
+			addItemToList(text, list)
+			form.reset()
 		}
 	});
-	
-	const isValueNotEmpty = (value) => {
-		if (value !== "") {
-			return true;
-		}
-		return false;
-	}
 
-	function addItemToList(text) {
-		let list = document.querySelector("#list")
+	function addItemToList(text, list) {
 		let newItem = 
 		`
 			<p>#${text}</p>
 		`
-		list.innerHTML =  newItem + list.innerHTML;
+		list.insertAdjacentHTML('afterbegin', newItem);
 	}
-	}
+	
+}

@@ -1,7 +1,7 @@
 export default function Run(){
 
 	const form = document.querySelector("#form")
-	let list = document.querySelector("#list")
+	const list = document.querySelector("#list")
 	
 	form.addEventListener("submit", (e) => {
 		e.preventDefault()
@@ -21,7 +21,7 @@ export default function Run(){
 		}
 		if (isFormValid) {
 			addItemToList(text, list)
-			textElement.value = ""
+			form.reset()
 		}
 	});
 
