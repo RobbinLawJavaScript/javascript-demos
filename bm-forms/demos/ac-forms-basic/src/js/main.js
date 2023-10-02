@@ -28,38 +28,33 @@ export function Demo(){
 		console.log(`textElement: ${textElement}, textElement Value: ${textElement.value}`)
 		let selectElement = e.target.elements["drop-down"]
 		console.log(`selectElement: ${selectElement}, selectElement Value: ${selectElement.value}`)
-		let textValue = textElement.value.trim()
-		let selectValue = selectElement.value    
 
-		// let isFormValid = true
-		// // validate the first name element
-		// if (textValue === '') {
-		// 	// textValue is invalid
-		// 	isFormValid = false
-		// 	textElement.classList.add("is-invalid")
-		// } else {
-		// 	// textValue is valid
-		// 	textElement.classList.remove("is-invalid")	
-		// }
-		// // validate the contact reason element
-		// if (selectValue === '') {
-		// 	// selectValue is invalid
-		// 	isFormValid = false
-		// 	selectElement.classList.add("is-invalid")
-		// } else {
-		// 	// selectValue is valid
-		// 	selectElement.classList.remove("is-invalid")	
-		// }
-		// // if both are valid then add to the list
-		// // otherwise do NOT add to the list
-		// if (isFormValid) {
-		// 	addItemToList(textValue, selectValue, list)
-		// 	textElement.value = ""
-		// 	selectElement.value = ""
-		// }
+		let isValidForm = validateForm(textElement, selectElement)
+		if (isValidForm) {
+			addItemToList(textElement.value.trim(), selectElement.value, list)
+			form.reset()
+			textElement.focus()
+		}
 	})
 
-	function addItemToList(text, select, list) {
+	const validateForm = (textElement, selectElement) => {
+		let valid = true
+		if (textElement.value.trim().length === 0) {
+			valid = false
+			textElement.classList.add("is-invalid")
+		} else {
+			textElement.classList.remove("is-invalid")	
+		}
+		if (selectElement.value.trim().length === 0) {
+			valid = false
+			selectElement.classList.add("is-invalid")
+		} else {
+			selectElement.classList.remove("is-invalid")	
+		}
+		return valid
+	}
+
+	const addItemToList = (text, select, list) => {
 		let newItem = 
 		`
 		<div class="mb-3">
@@ -81,4 +76,15 @@ export function Demo(){
 		// Alternative way but has bad consequences, and is slow, don't use.
 		//list.innerHTML =  list.innerHTML + newItem;
 	}
+
+	// This 'input' event listener will validate the form
+	// every time there is an input of any kind in
+	// either element.
+	// Buy we still need the 'submit' event listener
+	// to check things when we press the submit button.
+	form.addEventListener("input", (e) => {
+		let textElement = form.elements["first-name"]
+		let selectElement = form.elements["drop-down"]
+		validateForm(textElement, selectElement)
+	})
 }
