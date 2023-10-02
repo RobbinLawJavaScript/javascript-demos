@@ -23,37 +23,40 @@ export function Demo(){
 
 	form.addEventListener("submit", (e) => {
 		e.preventDefault()
+		console.log(`Event Object: ${e}`)
 		let textElement = e.target.elements["first-name"]
+		console.log(`textElement: ${textElement}, textElement Value: ${textElement.value}`)
 		let selectElement = e.target.elements["drop-down"]
+		console.log(`selectElement: ${selectElement}, selectElement Value: ${selectElement.value}`)
 		let textValue = textElement.value.trim()
 		let selectValue = selectElement.value    
 
-		let isFormValid = true
-		// validate the first name element
-		if (textValue === '') {
-			// textValue is invalid
-			isFormValid = false
-			textElement.classList.add("is-invalid")
-		} else {
-			// textValue is valid
-			textElement.classList.remove("is-invalid")	
-		}
-		// validate the contact reason element
-		if (selectValue === '') {
-			// selectValue is invalid
-			isFormValid = false
-			selectElement.classList.add("is-invalid")
-		} else {
-			// selectValue is valid
-			selectElement.classList.remove("is-invalid")	
-		}
-		// if both are valid then add to the list
-		// otherwise do NOT add to the list
-		if (isFormValid) {
-			addItemToList(textValue, selectValue, list)
-			textElement.value = ""
-			selectElement.value = ""
-		}
+		// let isFormValid = true
+		// // validate the first name element
+		// if (textValue === '') {
+		// 	// textValue is invalid
+		// 	isFormValid = false
+		// 	textElement.classList.add("is-invalid")
+		// } else {
+		// 	// textValue is valid
+		// 	textElement.classList.remove("is-invalid")	
+		// }
+		// // validate the contact reason element
+		// if (selectValue === '') {
+		// 	// selectValue is invalid
+		// 	isFormValid = false
+		// 	selectElement.classList.add("is-invalid")
+		// } else {
+		// 	// selectValue is valid
+		// 	selectElement.classList.remove("is-invalid")	
+		// }
+		// // if both are valid then add to the list
+		// // otherwise do NOT add to the list
+		// if (isFormValid) {
+		// 	addItemToList(textValue, selectValue, list)
+		// 	textElement.value = ""
+		// 	selectElement.value = ""
+		// }
 	})
 
 	function addItemToList(text, select, list) {
