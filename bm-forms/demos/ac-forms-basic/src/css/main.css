@@ -1,18 +1,1 @@
-body {
-	font-family: sans-serif;
-	line-height: 1.5em;
-	margin: 0;
-	padding: 0;
-}
-
-.center-page {
-	background-color: #efefef;
-	height: 100%;
-	margin: auto;
-	padding: 1em;
-	width: 960px;
-}
-
-.hidden {
-	display: none;
-}
+/* our custom CSS file*/ 
