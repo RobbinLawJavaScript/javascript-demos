@@ -89,7 +89,7 @@ export function Demo(){
 		// .insertAdjacentHTML() has two parameters:
 		// a position (four possible, see docs),
 		// and a text string that is parsed into html.
-		// list.insertAdjacentHTML('beforeend', '<div>hello world</div>');
+		//list.insertAdjacentHTML('beforeend', '<div>hello world</div>');
 		
 		// Add newItem to the beginning of the list.
 		list.insertAdjacentHTML('afterbegin', newItem);

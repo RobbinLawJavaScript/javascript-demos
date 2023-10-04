@@ -28,7 +28,9 @@ export default function Run(){
 	function addItemToList(text, list) {
 		let newItem = 
 		`
+		<div class="mb-1 col-6 list-group-item">
 			<p>#${text}</p>
+		</div>
 		`
 		list.insertAdjacentHTML('afterbegin', newItem);
 	}
