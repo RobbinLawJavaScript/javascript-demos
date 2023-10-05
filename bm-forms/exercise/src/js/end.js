@@ -4,19 +4,20 @@ export default function Run(){
 	const list = document.querySelector("#list")
 	
 	form.addEventListener("input", (e) => {
-		if (e.target.id === 'text-id'){
-			console.log(`INPUT text Value: ${e.target.value}`)
-			validate('text', e.target)
-		}
+		console.log(`INPUT ${e.target.id} Value: ${e.target.value}`)
+		validate(e.target)
 	})
 
-	const validate = (elementType, element) => {
+	const validate = (element) => {
 		let valid = true
-		//TODO: Add code here to trim the entered text.
-		let text = element.value.trim()
-		//TODO: validate the text name element as per specs
-		if ((text.length === 0) || (text.length > 10))
-			valid = false
+		let val
+		if (element.id === 'text'){
+			//TODO: Add code here to trim the entered text.
+			val = element.value.trim()
+			//TODO: Validate the text element as per HTML messages
+			if (val.length === 0 || val.length > 10)
+				valid = false
+		}
 		if(valid === false)
 			element.classList.add("is-invalid")
 		else
@@ -26,19 +27,19 @@ export default function Run(){
 
 	form.addEventListener("submit", (e) => {
 		e.preventDefault()
-		let textElement = e.target.elements["text-name"]
-		let isTextValid = validate('text', textElement)
+		let text = e.target.elements["text-name"]
+		let isTextValid = validate(text)
 		if (isTextValid) {
-			addItemToList(textElement.value.trim(), list)
+			addItemToList(text.value.trim(), list)
 			form.reset()
 		}
 	});
 
-	function addItemToList(text, list) {
+	function addItemToList(textVal, list) {
 		let newItem = 
 		`
 		<div class="mb-1 col-6 list-group-item">
-			<p>#${text}</p>
+			<p>#${textVal}</p>
 		</div>
 		`
 		list.insertAdjacentHTML('afterbegin', newItem);
