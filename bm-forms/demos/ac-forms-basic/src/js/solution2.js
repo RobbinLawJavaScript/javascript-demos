@@ -17,58 +17,33 @@ export function Demo(){
 	// Note that here we use the target.id to see which input
 	// has been changed.
 	form.addEventListener("input", (e) => {
-		if (e.target.id === 'first-name-id'){
-			console.log(`INPUT textElement Value: ${e.target.value}`)
+		if (e.target.id === 'text-id'){
+			console.log(`INPUT text (${typeof e.target.value}) Value: ${e.target.value}`)
 			validate('text', e.target)
 		}
-		if (e.target.id === 'drop-down-id'){
-			console.log(`INPUT selectElement Value: ${e.target.value}`)
+		if (e.target.id === 'select-id'){
+			console.log(`INPUT select (${typeof e.target.value}) Value: ${e.target.value}`)
 			validate('select', e.target)
 		}
 	})
 
 	const validate = (elementType, element) => {
 		let valid = true
-		let trimmedValue = element.value.trim()
-		
+		let v
 		if (elementType === 'text'){
-			if (trimmedValue.length === 0 || trimmedValue.length > 8) {
+			v = element.value.trim()
+			if (v.length === 0 || v.length > 8)
 				valid = false
-				element.classList.add("is-invalid")
-			} else {
-				element.classList.remove("is-invalid")	
-			}
 		}
-		else if (elementType === 'select'){
-			if(trimmedValue.length === 0) {
-			valid = false
+		if (elementType === 'select'){
+			v = element.value
+			if (v.length === 0)
+				valid = false
+		}
+		if (valid === false)
 			element.classList.add("is-invalid")
-			} else {
-				element.classList.remove("is-invalid")	
-			}
-		}
-		return valid
-	}
-
-	const validateText = (textElement) => {
-		let valid = true
-		if (textElement.value.trim().length === 0) {
-			valid = false
-			textElement.classList.add("is-invalid")
-		} else {
-			textElement.classList.remove("is-invalid")	
-		}
-		return valid
-	}
-
-	const validateSelect = (selectElement) => {
-		let valid = true
-		if (selectElement.value.trim().length === 0) {
-			valid = false
-			selectElement.classList.add("is-invalid")
-		} else {
-			selectElement.classList.remove("is-invalid")	
-		}
+		else
+			element.classList.remove("is-invalid")	
 		return valid
 	}
 
@@ -89,12 +64,12 @@ export function Demo(){
 	// would have a dash (e.g. -) in it.
 	form.addEventListener("submit", (e) => {
 		e.preventDefault()
-		let textElement = e.target.elements["first-name"]
-		console.log(`SUBMIT textElement Value: ${textElement.value}`)
-		let selectElement = e.target.elements["drop-down"]
-		console.log(`SUBMIT selectElement Value: ${selectElement.value}`)
-		let isValidText = validateText(textElement)
-		let isValidSelect = validateSelect(selectElement)
+		let textElement = e.target.elements["text-name"]
+		console.log(`SUBMIT text Value: ${textElement.value}`)
+		let selectElement = e.target.elements["select-name"]
+		console.log(`SUBMIT select Value: ${selectElement.value}`)
+		let isValidText = validate('text', textElement)
+		let isValidSelect = validate('select', selectElement)
 		if (isValidText && isValidSelect) {
 			addItemToList(textElement.value.trim(), selectElement.value, list)
 			form.reset()

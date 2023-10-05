@@ -31,16 +31,27 @@
 		</div>
 		<form id="form" class="row" novalidate>
 			<div class="mb-3 col-4">
-				<input class="form-control" type="text" placeholder="type a tag" id="text-id" name="text-name">
+				<input
+					type="text" 
+					id="text-id"
+					class="form-control" 
+					name="text-name" 
+					placeholder="text...">
 				<div class="invalid-feedback">
-					Text must have more than 1 char but less than 11.
+					Between 1 and 10 inclusive chars.
 				</div>
 			</div>
 			<div class="col-2">
-				<button type="submit" class="btn btn-dark w-100">Add Tag</button>
+				<button 
+					type="submit" 
+					class="btn btn-dark w-100">
+					Add Tag
+				</button>
 			</div>
 		</form>
-		<div id="list" class="my-3 list-group">
+		<div 
+			id="list" 
+			class="my-3 list-group">
 		</div>
 	</main>
 </body>
