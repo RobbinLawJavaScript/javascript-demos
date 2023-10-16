@@ -23,6 +23,7 @@ Now config git to always use the user name and email that you used to set up you
 ```script
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+git config --global credential.https://github.com.username=robbinl
 ```
 Now to see that the config sticks.
 
