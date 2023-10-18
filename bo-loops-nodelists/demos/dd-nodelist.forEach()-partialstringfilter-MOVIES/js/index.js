@@ -1,3 +1,3 @@
-import End from './end.js';
+import {End} from './end.js';
 
 End();

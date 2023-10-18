@@ -1,17 +1,17 @@
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
-export default function End(){
+export function End(){
 
-	let movieFilterForm = document.querySelector("#movie-filter-form");
+	const movieFilterForm = document.querySelector("#movie-filter-form");
 	movieFilterForm.elements["filter-query"].focus();
 
-	let allMovieItems = document.querySelectorAll(".top-movies-list li");
+	const allMovieItems = document.querySelectorAll(".top-movies-list li");
 	console.log(allMovieItems);
 
-	movieFilterForm.addEventListener("submit", (evt) => {
-		evt.preventDefault();
-		let filter = evt.target.elements["filter-query"].value;
-		console.log(filter);
+	movieFilterForm.addEventListener("submit", (e) => {
+		e.preventDefault();
+		let filter = e.target.elements["filter-query"].value;
+		console.log(`Entered Value: ${filter}`);
 		filterItems(filter);
 	});
 
