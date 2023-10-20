@@ -1,9 +1,9 @@
 
-//import Demo1 from './demo1.js'
-//import Demo2 from './demo2.js'
-//import Demo3 from './demo3.js'
-//import Demo4 from './demo4.js'
-import Demo5 from './demo5.js'
+//import {Demo1} from './demo1.js'
+//import {Demo2} from './demo2.js'
+//import {Demo3} from './demo3.js'
+//import {Demo4} from './demo4.js'
+import {Demo5} from './demo5.js'
 
 let cookie = document.cookie
 console.log(`loaded: ${cookie}`)

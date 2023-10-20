@@ -1,70 +1,70 @@
-export default function Demo5(){
+export function Demo5(){
 
-  let form = document.querySelector("#form")
+  let form = document.querySelector("#form-id")
   form.elements["form-text"].focus();
-  let listOne = document.querySelector("#list-one")
-  // listOneItems will be a NODE-LIST of li elements but acts like an array.
-  let listOneItems = document.querySelectorAll("#list-one li")
-  let listTwo = document.querySelector("#list-two")
-  let myArray = []
+  let originalList = document.querySelector('#original-list-id')
+  let originalListItems = document.querySelectorAll("#original-list-id li")
+  let filteredList = document.querySelector("#filtered-list-id")
+  let favoritesList = document.querySelector("#favorites-list-id")
+  let arrayOfOriginalData = []
+  let arrayOfFilteredData = []
+  let arrayOfFavoritesData = []
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault()
+  originalListItems.forEach((item) => {
+    arrayOfOriginalData.push(item.innerText)
+  })
+  console.log(`arrayOfOriginalData: ${arrayOfOriginalData}`)
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault()
     let filterValue
-    const activeElement = document.activeElement;
-    if(activeElement.type === 'submit') {
-      console.log(`filter type: ${activeElement.value}`)
-      if(activeElement.value == "text-filter"){
-        filterValue = event.target.elements['form-text'].value
-        console.log(`filter value: ${filterValue}`)
-        filter(listOneItems, filterValue)
-      } else if (activeElement.value == "drop-down-filter"){
-        filterValue = event.target.elements['form-dropdown'].value
-        console.log(`filter value: ${filterValue}`)
-        filter(listOneItems, filterValue)
-      }
+    if(e.submitter.id === 'text-submit-id'){
+      filterValue = e.target.elements['form-text'].value
     }
+    if(e.submitter.id === 'dropdown-submit-id'){
+      filterValue = e.target.elements['form-dropdown'].value
+    }
+    console.log(`submitter: ${e.submitter.id}; filterValue: ${filterValue}`)
+    filterArrayAndRenderList(arrayOfOriginalData, filterValue)
   })
 
-  const filter = (listItems, filterValue) => {
-    listItems.forEach((element) => {
-      if (element.innerText.includes(filterValue)) {
-        element.classList.remove("hidden")
-      } else {
-        element.classList.add("hidden")
-      }
+  const filterArrayAndRenderList = (array, filterValue, list) => {
+    arrayOfFilteredData = array.filter((item) => {
+      return item.toLowerCase().includes(filterValue.toLowerCase())
     })
+    console.log(`filteredData: ${arrayOfFilteredData}`)
+    renderList(arrayOfFilteredData, list)
   }
 
-  listOne.addEventListener("click", (event) => {
-    const item = event.target.innerText
-    addItemToArrayAndRenderList(item, listTwo)    
+  filteredList.addEventListener("click", (e) => {
+    const item = e.target.innerText
+    addItemToArrayAndRenderList(item, arrayOfFavoritesData, favoritesList)    
   })
 
-  const addItemToArrayAndRenderList = (item, list) => {
-    myArray.push(item)
-    renderList(list)
+  const addItemToArrayAndRenderList = (item, array, list) => {
+    array.push(item)
+    renderList(array, list)
   }
   
-  listTwo.addEventListener("click", (event) => {
-    const item = event.target.innerText
-    removeItemFromArrayAndRenderList(item, listTwo)    
+  favoritesList.addEventListener("click", (e) => {
+    const item = e.target.innerText
+    removeItemFromArrayAndRenderList(item, arrayOfFavoritesData, favoritesList)    
   })
   
-  const removeItemFromArrayAndRenderList = (item, list) => {
+  const removeItemFromArrayAndRenderList = (item, array, list) => {
     // Find the first occurrence of the 
     // item (in this case a string)
     // in the array and return its index location in the array.
-    let index = myArray.indexOf(item)
+    let index = array.indexOf(item)
     console.log(`index clicked: ${index}`)
     // Remove 1 element from the array at index location called "index".
-    myArray.splice(index, 1)
-    renderList(list)
+    array.splice(index, 1)
+    renderList(array, list)
   }
   
-  const renderList = (list) => {
+  const renderList = (array, list) => {
     list.replaceChildren()
-    myArray.forEach((element) => {
+    array.forEach((element) => {
       const listItem = `<li class="list-group-item">${element}</li>`
       list.insertAdjacentHTML('beforeend', listItem)
     })

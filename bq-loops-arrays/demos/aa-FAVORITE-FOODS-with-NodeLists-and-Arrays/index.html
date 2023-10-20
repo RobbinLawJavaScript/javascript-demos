@@ -29,23 +29,23 @@
   </nav>
   <div class="px-4 py-5 my-5 container text-center">
     <h1 class="display-5 fw-bold">Food Favorites</h1>
-    <form id="form">
+    <form id="form-id">
       <div class="row">
         <div class="mb-3 col-9">
          <input
             type="text"
-            name="form-text"
+            name="form-text-name"
             class="form-control"
           >
         </div>
         <div class="mb-3 col-3">
-          <button type="submit" id="text-submit" class="w-100 btn btn-dark" value="text-filter">Partial String Filter</button>
+          <button type="submit" id="text-submit-id" class="w-100 btn btn-dark" value="text-filter">Partial String Filter</button>
         </div>
       </div>
       <div class="row"> 
         <div class="mb-3 col-9">
           <select 
-            name="form-dropdown"
+            name="form-dropdown-name"
             class="form-select">
             <option value="">All</option>
             <option value="Meat">Meat</option>
@@ -55,14 +55,14 @@
           </select>
         </div>
         <div class="mb-3 col-3">
-          <button type="submit" id="dropdown-submit" class="w-100 btn btn-dark" value="drop-down-filter">Drop Down Filter</button>
+          <button type="submit" id="dropdown-submit-id" class="w-100 btn btn-dark" value="drop-down-filter">Drop Down Filter</button>
         </div>
       </div>
     </form>
     <div class="row">
       <div class="col">
         <h5>Foods to Choose From</h5>
-        <ul id="list-one" class="list-group text-start">
+        <ul id="original-list" class="list-group text-start">
           <li class="list-group-item">Orzo, (Starch)</li>
           <li class="list-group-item">Fruit, (Desert)</li>
           <li class="list-group-item">Beats, (Vegetables)</li>
@@ -86,8 +86,12 @@
         </ul>
       </div>
       <div class="col">
+        <h5>Filtered Foods</h5>
+        <ul id="filtered-list"></ul>
+      </div>
+      <div class="col">
         <h5>Favorite Foods</h5>
-        <ul id="list-two"></ul>
+        <ul id="favorites-list"></ul>
       </div>
     </div>
   </div>
