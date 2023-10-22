@@ -10,7 +10,7 @@ export function Demo1(data){
   .addEventListener("input", (event) => {
     let filterValue = event.target.value
     console.log(`filterValue: ${filterValue}`)
-    filter(data, filterValue, listOne)
+    filter(filterValue, data, listOne)
   })
 
   document.querySelector("#drop-down")
@@ -19,34 +19,15 @@ export function Demo1(data){
     console.log(`filterValue: ${filterValue}`)
     if(filterValue == "All")
       filterValue = ""
-    filter(data, filterValue, listOne)
+    filter(filterValue, data, listOne)
   })
 
-  // form.addEventListener("submit", (event) => {
-  //   event.preventDefault()
-  //   let filterValue
-  //   const activeElement = document.activeElement;
-  //   if(activeElement.type === 'submit') {
-  //     console.log(`filter type: ${activeElement.value}`)
-  //     if(activeElement.value == "text-filter"){
-  //       filterValue = event.target.elements['form-text'].value
-  //       console.log(`filter value: ${filterValue}`)
-  //       filter(data, filterValue, listOne)
-  //     } else if (activeElement.value == "drop-down-filter"){
-  //       filterValue = event.target.elements['form-dropdown'].value
-  //       console.log(`filter value: ${filterValue}`)
-  //       filter(data, filterValue, listOne)
-  //     }
-  //   }
-  // })
-
-
-  const filter = (array, filterValue, list) => {
+  const filter = (filterValue, array, list) => {
     let filteredData = array.filter((item) => {
       return item.toLowerCase().includes(filterValue.toLowerCase())
     })
     console.log(`filteredData: ${filteredData}`)
-    renderList(list, filteredData)
+    renderList(filteredData, list)
   }
 
   listOne.addEventListener("click", (event) => {
@@ -56,7 +37,7 @@ export function Demo1(data){
 
   const addItemToArrayAndRenderList = (item, array, list) => {
     array.push(item)
-    renderList(list, array)
+    renderList(array, list)
   }
   
   listTwo.addEventListener("click", (event) => {
@@ -74,10 +55,10 @@ export function Demo1(data){
     let index2 = array.findIndex((element) => element == item)
     // Remove 1 element from the array at index location.
     array.splice(index2, 1)
-    renderList(list, array)
+    renderList(array, list)
   }
   
-  const renderList = (list, array) => {
+  const renderList = (array, list) => {
     list.replaceChildren()
     array.forEach((element) => {
       const listItem = `<li class="list-group-item">${element}</li>`
@@ -85,6 +66,6 @@ export function Demo1(data){
     })
   }
 
-  renderList(listOne, data)
+  renderList(data, listOne)
   
 }

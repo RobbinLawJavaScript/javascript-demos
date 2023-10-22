@@ -81,7 +81,7 @@ export default function Demo2() {
 		} else if (count == 3){
 			app(remoteDataURLBad2, outputDiv)
 		} else {
-			console.log(`Press the CLEAR button to start over`)
+			console.log(`Press the RESET button to start over`)
 		}
 	})
 
