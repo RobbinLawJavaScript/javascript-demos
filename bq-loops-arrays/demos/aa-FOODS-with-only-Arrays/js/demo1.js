@@ -1,21 +1,19 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
 
-export default function Demo5(data){
+export function Demo1(data){
 
-  const form = document.querySelector("#form")
-  form.elements["form-text"].focus();
   const listOne = document.querySelector("#list-one")
   const listTwo = document.querySelector("#list-two")
   const myArray = []
 
-  document.querySelector("#text-box-2")
+  document.querySelector("#text-box")
   .addEventListener("input", (event) => {
     let filterValue = event.target.value
     console.log(`filterValue: ${filterValue}`)
     filter(data, filterValue, listOne)
   })
 
-  document.querySelector("#dropdown-2")
+  document.querySelector("#drop-down")
   .addEventListener("click", (event) => {
     let filterValue = event.target.innerText
     console.log(`filterValue: ${filterValue}`)
@@ -24,23 +22,23 @@ export default function Demo5(data){
     filter(data, filterValue, listOne)
   })
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault()
-    let filterValue
-    const activeElement = document.activeElement;
-    if(activeElement.type === 'submit') {
-      console.log(`filter type: ${activeElement.value}`)
-      if(activeElement.value == "text-filter"){
-        filterValue = event.target.elements['form-text'].value
-        console.log(`filter value: ${filterValue}`)
-        filter(data, filterValue, listOne)
-      } else if (activeElement.value == "drop-down-filter"){
-        filterValue = event.target.elements['form-dropdown'].value
-        console.log(`filter value: ${filterValue}`)
-        filter(data, filterValue, listOne)
-      }
-    }
-  })
+  // form.addEventListener("submit", (event) => {
+  //   event.preventDefault()
+  //   let filterValue
+  //   const activeElement = document.activeElement;
+  //   if(activeElement.type === 'submit') {
+  //     console.log(`filter type: ${activeElement.value}`)
+  //     if(activeElement.value == "text-filter"){
+  //       filterValue = event.target.elements['form-text'].value
+  //       console.log(`filter value: ${filterValue}`)
+  //       filter(data, filterValue, listOne)
+  //     } else if (activeElement.value == "drop-down-filter"){
+  //       filterValue = event.target.elements['form-dropdown'].value
+  //       console.log(`filter value: ${filterValue}`)
+  //       filter(data, filterValue, listOne)
+  //     }
+  //   }
+  // })
 
 
   const filter = (array, filterValue, list) => {

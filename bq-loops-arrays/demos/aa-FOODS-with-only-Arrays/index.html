@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <link rel="icon" href="img/favicon.png"  type="image/png">
+  <meta charset="utf-8">
+  <title>Food Favorites by RLaw</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="module" src="./js/index.js" defer></script>
+</head>
+  
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/favicon.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+        Loops-Arrays
+      </a>
+    </div>
+  </nav>
+  <div class="px-4 py-5 my-5 container text-center">
+    <h3 class="fw-bold">Foods Filter</h3>
+    <div class="row">
+      <div class="mb-3 col-3"></div>
+      <div class="mb-3 col-3">
+       <input
+          type="text"
+          id="text-box"
+          class="form-control"
+          placeholder="Filter on a Partial String"
+        >
+      </div>
+      <div class="mb-3 col-3">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Filter on a Category of Foods
+          </button>
+          <ul id="drop-down" class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Meat</a></li>
+            <li><a class="dropdown-item" href="#">Starch</a></li>
+            <li><a class="dropdown-item" href="#">Vegetables</a></li>
+            <li><a class="dropdown-item" href="#">Desert</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col">
+        <h5>Foods to Choose From</h5>
+        <ul id="list-one" class="list-group text-center">
+        </ul>
+      </div>
+      <div class="col">
+        <h5>Favorite Foods</h5>
+        <ul id="list-two" class="list-group text-center">
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
