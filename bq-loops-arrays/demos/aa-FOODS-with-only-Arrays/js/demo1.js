@@ -7,15 +7,15 @@ export function Demo1(data){
   const myArray = []
 
   document.querySelector("#text-box")
-  .addEventListener("input", (event) => {
-    let filterValue = event.target.value
+  .addEventListener("input", (e) => {
+    let filterValue = e.target.value
     console.log(`filterValue: ${filterValue}`)
     filter(filterValue, data, listOne)
   })
 
   document.querySelector("#drop-down")
-  .addEventListener("click", (event) => {
-    let filterValue = event.target.innerText
+  .addEventListener("click", (e) => {
+    let filterValue = e.target.innerText
     console.log(`filterValue: ${filterValue}`)
     if(filterValue == "All")
       filterValue = ""
