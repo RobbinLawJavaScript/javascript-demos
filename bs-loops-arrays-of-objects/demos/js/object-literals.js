@@ -10,16 +10,16 @@ export default function Demo() {
   const myArrayOfObjects =
   [
     {
-        name: "Steve Something",
-        email: "steve.something@fake.test.com"
+      name: "Steve Something",
+      email: "steve.something@fake.test.com"
     },
     {
-        name: "gary else",
-        email: "gary.else@fake.test.com"
+      name: "gary else",
+      email: "gary.else@fake.test.com"
     },
     {
-        name: "elsa ellie",
-        email: "elsa.ellie@fake.test.com"
+      name: "elsa ellie",
+      email: "elsa.ellie@fake.test.com"
     },
   ];
 
@@ -28,7 +28,7 @@ export default function Demo() {
     let stringList = document.querySelector("#strings")
     stringList.replaceChildren()
     console.log('typeof arrayOfStrings: ', typeof(arrayOfStrings))
-    arrayOfStrings.forEach(element => {
+    arrayOfStrings.forEach( (element) => {
       console.log('typeof element: ', typeof(element))
       let htmlItem = 
       `
@@ -47,7 +47,7 @@ export default function Demo() {
     let objectsList = document.querySelector("#objects");
     objectsList.replaceChildren()
     console.log('typeof arrayOfObjects: ', typeof(arrayOfObjects));
-    arrayOfObjects.forEach(element => {
+    arrayOfObjects.forEach( (element) => {
       console.log('typeof element: ', typeof(element));
       let htmlItem =  
       `
