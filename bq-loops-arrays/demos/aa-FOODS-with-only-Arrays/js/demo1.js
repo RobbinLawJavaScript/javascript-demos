@@ -49,6 +49,8 @@ export function Demo1(data){
     addItemToArrayAndRenderList(item, myArray, listTwo)    
   })
 
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+  
   const addItemToArrayAndRenderList = (item, array, list) => {
     array.push(item)
     renderList(array, list)
@@ -61,6 +63,11 @@ export function Demo1(data){
     removeItemFromArrayAndRenderList(item, myArray, listTwo)    
   })
   
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 
   //https://medium.com/front-end-weekly/the-difference-between-indexof-and-findindex-in-javascript-a2035639dce5
 
