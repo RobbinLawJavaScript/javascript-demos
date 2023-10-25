@@ -63,6 +63,8 @@ export function Demo1(data){
   
 
   //https://medium.com/front-end-weekly/the-difference-between-indexof-and-findindex-in-javascript-a2035639dce5
+
+  //https://medium.com/javascript-in-plain-english/javascript-splice-explained-in-detail-136d0cf39e7c
   
   const removeItemFromArrayAndRenderList = (item, array, list) => {
     // Find the first occurrence of the 
