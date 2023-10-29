@@ -3,8 +3,11 @@
 // async and await are part of the ES7 spec
 // async functions always return a promise
 
-export function Demo() {
+export default function Demo1() {
 	
+	const title = document.querySelector('#demo-title')
+	title.innerText = `Demo 1 with local json files`
+
 	const outputDiv = document.querySelector('#output-div')
 
 	const localDataURLGood = './data/bones.json'
@@ -70,8 +73,29 @@ export function Demo() {
 		}
 	}
 
-	app(localDataURLGood, outputDiv)
-	//app(localDataURLBadEndPoint, outputDiv)
-	//app(localDataURLBadData, outputDiv)
+	let count = 0
+	console.clear()
+	console.log(`Scenarios are reset and ready to run by pressing the NEXT button`)
+
+	document.querySelector('#button-next').addEventListener("click", (e) => {
+		count ++
+		console.clear()
+		if(count == 1){
+			app(localDataURLGood, outputDiv)
+		} else if (count == 2){
+			app(localDataURLBadEndPoint, outputDiv)
+		} else if (count == 3){
+			app(localDataURLBadData, outputDiv)
+		} else {
+			console.log(`Press the RESET button to start over`)
+		}
+	})
+
+	document.querySelector('#button-reset').addEventListener("click", (e) => {
+		count = 0
+		console.clear()
+		renderData(null, outputDiv)
+		console.log(`Scenarios are reset and ready to run again by pressing the NEXT button`)
+	})
 
 }

@@ -1,7 +1,10 @@
 // https://jsonbin.io/
 // login with gmail account robbinlaw@gmail.com
 
-export function Demo() {
+export default function Demo2() {
+
+	const title = document.querySelector('#demo-title')
+	title.innerText = `Demo 2 with remote server`
 
 	const outputDiv = document.querySelector('#output-div')
 
@@ -31,6 +34,21 @@ export function Demo() {
 		return data
 	}
 
+	const app = async (URL, ui) => {
+		try{
+			console.log(`app try begin with URL ${URL}`)
+			const data = await getData(URL)
+			renderData(data, ui)
+			console.log(`app try end with URL ${URL}`)
+		}
+		catch(error){
+			console.log(`app catch begin with URL ${URL}`)
+			console.error(`The error is: ${error}`)
+			renderData(null, ui)
+			console.log(`app catch end with URL ${URL}`)
+		}
+	}
+
 	const renderData = (data, ui) => {
 		ui.replaceChildren()
 		let output = ''
@@ -48,23 +66,30 @@ export function Demo() {
 		ui.insertAdjacentHTML('beforeend', output)
 	}
 
-	const app = async (URL, ui) => {
-		try{
-			console.log(`app try begin with URL ${URL}`)
-			const data = await getData(URL)
-			renderData(data, ui)
-			console.log(`app try end with URL ${URL}`)
-		}
-		catch(error){
-			console.log(`app catch begin with URL ${URL}`)
-			console.error(`The error is: ${error}`)
-			renderData(null, ui)
-			console.log(`app catch end with URL ${URL}`)
-		}
-	}
+	let count = 0
+	console.clear()
+	console.log(`Scenarios are reset and ready to run by pressing the NEXT button`)
 
-	app(remoteDataURLGood, outputDiv)
-	//app(remoteDataURLBad1, outputDiv)
-	//app(remoteDataURLBad2, outputDiv)
+
+	document.querySelector('#button-next').addEventListener("click", (e) => {
+		count ++
+		console.clear()
+		if(count == 1){
+			app(remoteDataURLGood, outputDiv)
+		} else if (count == 2){
+			app(remoteDataURLBad1, outputDiv)
+		} else if (count == 3){
+			app(remoteDataURLBad2, outputDiv)
+		} else {
+			console.log(`Press the RESET button to start over`)
+		}
+	})
+
+	document.querySelector('#button-reset').addEventListener("click", (e) => {
+		count = 0
+		console.clear()
+		renderData(null, outputDiv)
+		console.log(`Scenarios are reset and ready to run again by pressing the NEXT button`)
+	})
 
 }
