@@ -1,3 +1,4 @@
+// https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 // https://www.sitepoint.com/delay-sleep-pause-wait/
 
 // async and await are part of the ES7 spec
@@ -70,8 +71,8 @@ export function Demo() {
 		}
 	}
 
-	app(localDataURLGood, outputDiv)
+	//app(localDataURLGood, outputDiv)
 	//app(localDataURLBadEndPoint, outputDiv)
-	//app(localDataURLBadData, outputDiv)
+	app(localDataURLBadData, outputDiv)
 
 }
