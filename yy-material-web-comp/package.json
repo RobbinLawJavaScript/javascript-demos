@@ -1,0 +1,20 @@
+{
+  "name": "robbinlaw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "my-element.js",
+  "module": "my-element.js",
+  "type": "module",
+  "scripts": {
+    "start": "web-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material/web": "^1.0.1",
+    "lit": "^3.0.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.3.6"
+  }
+}
