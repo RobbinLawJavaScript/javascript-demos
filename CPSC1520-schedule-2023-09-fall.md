@@ -42,7 +42,7 @@
 |6-O09|Forms|Forms|Forms|L4|
 |7-O16|Assign1|Assign1|Assign1|A1|
 |8-O23|Loops-NodeLists-Arrays|Loops-NodeLists-Arrays|Loops-NodeLists-Arrays|L5|
-|9-O30|Fetch-API/json|Fetch-API/json|Fetch-API/json|Q3|
+|9-O30|Fetch-API/json|Fetch-API/json|Fetch-API/json|A2 Q3|
 |10-N06|Fetch-API/json|Fetch-API/json|Fetch-API/json|L6 Q4|
 |11-N13|Assign2|Assign2|Assign2|A2|
 |12-N20|Timers|Promises|Promises||

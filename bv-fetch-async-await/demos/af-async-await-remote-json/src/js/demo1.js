@@ -21,9 +21,7 @@ export function Demo() {
 		const res = await fetch(URL, {
 			method: 'GET',
 			headers: {
-				'Accept': 'application/json. text/plain, */*',
-				"Content-Type": "application/json",
-				'X-Bin-Meta': 'false'
+				"Content-Type": "application/json"
 			},
 		})
 		console.log(`resolved response with URL: ${URL}`)

@@ -1,0 +1,22 @@
+[
+{"id":"1", "foodName": "Orzo", "foodCategory": "Starch", "rating": "1.1"},
+{"id":"2", "foodName": "Fruit", "foodCategory": "Desert", "rating": "1.1"},
+{"id":"3", "foodName": "Beats", "foodCategory": "Vegetables", "rating": "8.1"},
+{"id":"4", "foodName": "Potatoes", "foodCategory": "Starch", "rating": "7.1"},
+{"id":"5", "foodName": "Cheese Cake", "foodCategory": "Desert", "rating": "5.1"},
+{"id":"6", "foodName": "Ice Cream", "foodCategory": "Desert", "rating": "7.1"},
+{"id":"7", "foodName": "Rice", "foodCategory": "Starch", "rating": "6.1"},
+{"id":"8", "foodName": "Pasta", "foodCategory": "Starch", "rating": "8.1"},
+{"id":"9", "foodName": "Carrots", "foodCategory": "Vegetables", "rating": "5.1"},
+{"id":"10", "foodName": "Chocolate Cake", "foodCategory": "Desert", "rating": "6.1"},
+{"id":"11", "foodName": "Tarts", "foodCategory": "Desert", "rating": "7.1"},
+{"id":"12", "foodName": "Lamb with Mint Sauce", "foodCategory": "Meat", "rating": "9.1"},
+{"id":"13", "foodName": "Corn", "foodCategory": "Vegetables", "rating": "8.1"},
+{"id":"14", "foodName": "Pie", "foodCategory": "Desert", "rating": "9.1"},
+{"id":"15", "foodName": "Asparagus", "foodCategory": "Vegetables", "rating": "9.1"},
+{"id":"16", "foodName": "Peas", "foodCategory": "Vegetables", "rating": "6.1"},
+{"id":"17", "foodName": "Prime Rib", "foodCategory": "Meat", "rating": "9.1"},
+{"id":"18", "foodName": "Squash", "foodCategory": "Vegetables", "rating": "7.1"},
+{"id":"19", "foodName": "Pork Tenderloin", "foodCategory": "Meat", "rating": "6.1"},
+{"id":"20", "foodName": "Beef Tenderloin", "foodCategory": "Meat", "rating": "9.1"}
+]
