@@ -6,22 +6,16 @@
 
 export function Demo() {
 	
-	const outputDiv = document.querySelector('#ui-output-data')
+	const ui = document.querySelector('#ui-output-data')
 
 	const localDataURLGood = './data/foods.json'
 	const localDataURLBadEndPoint = './data/no-file.json'
 	const localDataURLBadData = './data/bad-foods.json'
-
-	// const localDataURLGood = './data/bones.json'
-	// const localDataURLBadEndPoint = './data/no-file.json'
-	// const localDataURLBadData = './data/bad-bones.json'
-
+	let allData = []
+	let filteredData = []
 
 	const getData = async (URL) => {
 		console.log(`getData begin with URL: ${URL}`)
-		// fetch() returns a promise to res.
-		// The await keyword "stalls" the JS assignment
-		// until the data or error is returned (promise resolves or is rejected).
 		const res = await fetch(URL, {
 			method: 'GET',
 			headers: {
@@ -33,7 +27,6 @@ export function Demo() {
 		if (!res.ok) {
 			throw new Error('Bad URL or Server is Down')
 	 	}
-		// res.json() also returns a promise to data.
 		const data = await res.json()
 		console.log(`resolved data with URL:', ${URL}`)
 		console.log(data)
@@ -50,8 +43,8 @@ export function Demo() {
 				`
 				<tr>
 					<td>${item.id}</td>
-					<td>${item.foodName}</td>
-					<td>${item.foodCategory}</td>
+					<td>${item.name}</td>
+					<td>${item.category}</td>
 					<td>${item.rating}</td>
 				</tr>
 				`
@@ -63,8 +56,8 @@ export function Demo() {
 	const app = async (URL, ui) => {
 		try{
 			console.log(`app try begin with URL ${URL}`)
-			const data = await getData(URL)
-			renderData(data, ui)
+			allData = await getData(URL)
+			renderData(allData, ui)
 			console.log(`app try end with URL ${URL}`)
 		}
 		catch(error){
@@ -75,8 +68,47 @@ export function Demo() {
 		}
 	}
 
-	app(localDataURLGood, outputDiv)
-	//app(localDataURLBadEndPoint, outputDiv)
-	//app(localDataURLBadData, outputDiv)
+	app(localDataURLGood, ui)
+	//app(localDataURLBadEndPoint, ui)
+	//app(localDataURLBadData, ui)
 
+	let form = document.querySelector("#form")
+	form.addEventListener('submit', (e)=> {
+		console.log(`submit event`)
+		console.log(`resolved data with URL: ${localDataURLGood}`)
+		console.log(allData)
+		e.preventDefault()
+		let name = e.target.elements["name"].value.trim()
+		let rating = e.target.elements["rating"].value
+		console.log(`name: ${name}; rating: ${rating}`)
+		filteredData = allData
+		if (name) {
+			filteredData = filterOnName(name, filteredData)
+		}
+		if (rating) {
+			filteredData = filterOnRating(rating, filteredData)
+		}
+		renderData(filteredData, ui)
+	})
+
+	const filterOnName = (criteria, data)=> {
+		console.log(`filterOnName begin`)
+		criteria = criteria.toLowerCase()
+		let filteredData = data.filter((item)=> {
+			return (item.name.toLowerCase().includes(criteria))
+		})
+		return filteredData
+	}
+	
+	const filterOnRating = (criteria, data) => {
+		console.log(`filterOnRating begin`)
+		criteria = parseFloat(criteria)
+		let filteredData = data.filter((item)=> {
+			if (criteria > item.rating){
+					return false
+			}
+			return true
+		})
+		return filteredData
+	}
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Album Filter</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <script type="module" src="./js/index.js" defer></script>
+</head> 
+<body class=" h-100  text-white bg-light">
+  <header data-bs-theme="dark">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4>About</h4>
+            <p class="text-body-secondary">An app to filter Albums.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4>Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://en.wikipedia.org/wiki/English_Carrier_pigeon" class="text-white">We only use Carrier Pigeons</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <strong>Album Filter</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="pt-3 mx-auto">
+    <div class="container">
+      <h5 class="text-dark">Filter Criteria</h2>
+      <form id="form" novalidate>
+        <div class="row">
+          <div class="col-7 mb-1">
+            <input
+              name="album-name"
+              type="text"
+              class="form-control"
+              placeholder="Album Names"
+              id="album-name"
+            >
+            <div class="invalid-feedback">
+              Invalid Album Name
+            </div>
+          </div>
+          <div class="col-3 mb-1">
+            <input
+              name="min-rating"
+              type="number"
+              class="form-control"
+              placeholder="Minimum Album Rating"
+              id="min-rating"
+              step=".1"
+            >
+            <div class="invalid-feedback">
+              Invalid Album Rating
+            </div>
+          </div>
+          <div class="col mb-1">
+            <button type="submit" class="btn btn-dark w-100">Filter</button>
+          </div>
+        </div>
+      </form> 
+    </div>
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <h5 class="text-dark">Filtered Albums</h5>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr id="albumn-column-headers">
+                <th scope="col">Album</th>
+                <th scope="col">Release</th>
+                <th scope="col">Artist Name</th>
+                <th scope="col">Genres</th>
+                <th scope="col">Average Rating</th>
+                <th scope="col"># of Reviews</th>
+              </tr>
+            </thead>
+            <tbody id="ui-output-data"> 
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
