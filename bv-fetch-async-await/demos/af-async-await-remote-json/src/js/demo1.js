@@ -1,35 +1,30 @@
-// https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-// https://www.sitepoint.com/delay-sleep-pause-wait/
-
-// async and await are part of the ES7 spec
-// async functions always return a promise
+// https://jsonbin.io/
+// login with gmail account robbinlaw@gmail.com
 
 export function Demo() {
-	
-	const outputDiv = document.querySelector('#output-div')
 
-	const localDataURLGood = './data/bones.json'
-	const localDataURLBadEndPoint = './data/no-file.json'
-	const localDataURLBadData = './data/bad-bones.json'
+	const ui = document.querySelector('#ui-output-data')
+	const remoteDataURLGood = "https://api.jsonbin.io/v3/b/6543d77654105e766fca83ff"
+	const remoteDataURLGood2 = "https://api.jsonbin.io/v3/b/6543d77654105e766fca83ff/3"
+	const remoteDataURLBad1 = "https://api.jsonbin.io/v3/b/6543d77654105e766fca83ff"
+	const remoteDataURLBad2 = "https://api.jsonbin.io/v3/b/6543d776"
 
+	let allData = []
+	let filteredData = []
 
 	const getData = async (URL) => {
 		console.log(`getData begin with URL: ${URL}`)
-		// fetch() returns a promise to res.
-		// The await keyword "stalls" the JS assignment
-		// until the data or error is returned (promise resolves or is rejected).
 		const res = await fetch(URL, {
 			method: 'GET',
 			headers: {
 				"Content-Type": "application/json"
 			},
-		})
+		});
 		console.log(`resolved response with URL: ${URL}`)
 		console.log(res)
 		if (!res.ok) {
 			throw new Error('Bad URL or Server is Down')
 	 	}
-		// res.json() also returns a promise to data.
 		const data = await res.json()
 		console.log(`resolved data with URL:', ${URL}`)
 		console.log(data)
@@ -44,10 +39,12 @@ export function Demo() {
 			data.forEach((item) => {
 				output += 
 				`
-					<div class="mb-1">
-						<p>Id: ${item.id}</p>
-						<p>Bone Type: ${item.boneType}</p>
-					</div>
+				<tr>
+					<td>${item.id}</td>
+					<td>${item.name}</td>
+					<td>${item.category}</td>
+					<td>${item.rating}</td>
+				</tr>
 				`
 			})
 		}
@@ -58,7 +55,9 @@ export function Demo() {
 		try{
 			console.log(`app try begin with URL ${URL}`)
 			const data = await getData(URL)
-			renderData(data, ui)
+			allData = data.record
+			console.log(allData)
+			renderData(allData, ui)
 			console.log(`app try end with URL ${URL}`)
 		}
 		catch(error){
@@ -69,8 +68,38 @@ export function Demo() {
 		}
 	}
 
-	//app(localDataURLGood, outputDiv)
-	//app(localDataURLBadEndPoint, outputDiv)
-	app(localDataURLBadData, outputDiv)
+	app(remoteDataURLGood, ui)
+	//app(remoteDataURLBad1, ui)
+	//app(remoteDataURLBad2, ui)
 
+	let form = document.querySelector("#form")
+	form.addEventListener('submit', (e)=> {
+		e.preventDefault()
+		let name = e.target.elements["name"].value.trim()
+		let rating = e.target.elements["rating"].value
+		console.log(`name: ${name}; rating: ${rating}`)
+		filteredData = allData
+		if (name) {
+			filteredData = filterOnName(name, filteredData)
+		}
+		if (rating) {
+			filteredData = filterOnRating(rating, filteredData)
+		}
+		renderData(filteredData, ui)
+	})
+
+	const filterOnName = (criteria, data)=> {
+		let filteredData = data.filter((item)=> {
+			return (item.name.toLowerCase().includes(criteria.toLowerCase()))
+		})
+		return filteredData
+	}
+	
+	const filterOnRating = (criteria, data) => {
+		let filteredData = data.filter((item)=> {
+			return (parseFloat(item.rating) >= parseFloat(criteria))
+		})
+		return filteredData
+	}
+	
 }

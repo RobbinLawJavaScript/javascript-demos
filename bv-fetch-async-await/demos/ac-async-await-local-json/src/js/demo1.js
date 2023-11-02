@@ -1,8 +1,4 @@
 // https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-// https://www.sitepoint.com/delay-sleep-pause-wait/
-
-// async and await are part of the ES7 spec
-// async functions always return a promise
 
 export function Demo() {
 	
@@ -11,6 +7,7 @@ export function Demo() {
 	const localDataURLGood = './data/foods.json'
 	const localDataURLBadEndPoint = './data/no-file.json'
 	const localDataURLBadData = './data/bad-foods.json'
+	
 	let allData = []
 	let filteredData = []
 
@@ -56,7 +53,8 @@ export function Demo() {
 	const app = async (URL, ui) => {
 		try{
 			console.log(`app try begin with URL ${URL}`)
-			allData = await getData(URL)
+			const data = await getData(URL)
+			allData = data.record
 			renderData(allData, ui)
 			console.log(`app try end with URL ${URL}`)
 		}
@@ -74,9 +72,6 @@ export function Demo() {
 
 	let form = document.querySelector("#form")
 	form.addEventListener('submit', (e)=> {
-		console.log(`submit event`)
-		console.log(`resolved data with URL: ${localDataURLGood}`)
-		console.log(allData)
 		e.preventDefault()
 		let name = e.target.elements["name"].value.trim()
 		let rating = e.target.elements["rating"].value
