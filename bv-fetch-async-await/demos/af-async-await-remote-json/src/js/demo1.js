@@ -4,31 +4,24 @@
 export function Demo() {
 
 	const ui = document.querySelector('#ui-output-data')
+
 	const remoteDataURLGood = "https://api.jsonbin.io/v3/b/6543d77654105e766fca83ff"
-	const remoteDataURLGood2 = "https://api.jsonbin.io/v3/b/6543d77654105e766fca83ff/3"
-	const remoteDataURLBad1 = "https://api.jsonbin.io/v3/b/6543d77654105e766fca83ff"
-	const remoteDataURLBad2 = "https://api.jsonbin.io/v3/b/6543d776"
+	const remoteDataURLBad = "https://api.jsonbin.io/v3/b/6543d77654105e7"
 
 	let allData = []
 	let filteredData = []
 
 	const getData = async (URL) => {
-		console.log(`getData begin with URL: ${URL}`)
 		const res = await fetch(URL, {
 			method: 'GET',
 			headers: {
 				"Content-Type": "application/json"
 			},
 		});
-		console.log(`resolved response with URL: ${URL}`)
-		console.log(res)
 		if (!res.ok) {
 			throw new Error('Bad URL or Server is Down')
 	 	}
 		const data = await res.json()
-		console.log(`resolved data with URL:', ${URL}`)
-		console.log(data)
-		console.log(`getData end with URL: ${URL}`)
 		return data
 	}
 
@@ -56,28 +49,24 @@ export function Demo() {
 			console.log(`app try begin with URL ${URL}`)
 			const data = await getData(URL)
 			allData = data.record
-			console.log(allData)
 			renderData(allData, ui)
-			console.log(`app try end with URL ${URL}`)
 		}
 		catch(error){
 			console.log(`app catch begin with URL ${URL}`)
 			console.error(`The error is: ${error}`)
 			renderData(null, ui)
-			console.log(`app catch end with URL ${URL}`)
 		}
 	}
 
 	app(remoteDataURLGood, ui)
-	//app(remoteDataURLBad1, ui)
-	//app(remoteDataURLBad2, ui)
+	//app(remoteDataURLBad, ui)
 
 	let form = document.querySelector("#form")
 	form.addEventListener('submit', (e)=> {
 		e.preventDefault()
 		let name = e.target.elements["name"].value.trim()
 		let rating = e.target.elements["rating"].value
-		console.log(`name: ${name}; rating: ${rating}`)
+		console.log(`submit event; name: ${name}; rating: ${rating}`)
 		filteredData = allData
 		if (name) {
 			filteredData = filterOnName(name, filteredData)
