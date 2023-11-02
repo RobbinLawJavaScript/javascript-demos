@@ -92,22 +92,15 @@ export function Demo() {
 	})
 
 	const filterOnName = (criteria, data)=> {
-		console.log(`filterOnName begin`)
-		criteria = criteria.toLowerCase()
 		let filteredData = data.filter((item)=> {
-			return (item.name.toLowerCase().includes(criteria))
+			return (item.name.toLowerCase().includes(criteria.toLowerCase()))
 		})
 		return filteredData
 	}
 	
 	const filterOnRating = (criteria, data) => {
-		console.log(`filterOnRating begin`)
-		criteria = parseFloat(criteria)
 		let filteredData = data.filter((item)=> {
-			if (criteria > item.rating){
-					return false
-			}
-			return true
+			return (parseFloat(item.rating) >= parseFloat(criteria))
 		})
 		return filteredData
 	}
