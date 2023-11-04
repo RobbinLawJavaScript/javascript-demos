@@ -38,14 +38,14 @@
 |2-S11|Data-Types|Data-Types & DOM-Access|DOM-Access||
 |3-S18|Functions|Functions|Functions|L1|
 |4-S25|EventsDecisions/debugger|Events/Decisions/debugger|Events/Decisions/debugger|L2 Q1|
-|5-O02|Forms|Forms|Forms|L3 Q2|
-|6-O09|Forms|Forms|Forms|L4|
-|7-O16|Assign1|Assign1|Assign1|A1|
+|5-O02|Forms|Forms|Forms|L3|
+|6-O09|Forms|Forms|Forms|L4 Q2|
+|7-O16|Forms|Forms|Forms|A1|
 |8-O23|Loops-NodeLists-Arrays|Loops-NodeLists-Arrays|Loops-NodeLists-Arrays|L5|
-|9-O30|Fetch-API/json|Fetch-API/json|Fetch-API/json|A2 Q3|
-|10-N06|Fetch-API/json|Fetch-API/json|Fetch-API/json|L6 Q4|
-|11-N13|Assign2|Assign2|Assign2|A2|
-|12-N20|Timers|Promises|Promises||
-|13-N27|npm-external libs|npm-external libs|npm-external libs|L7|
-|14-D04|Assign3|Assign3|Assign3|L8 Q5|
-|15-D11|Assign3|Assign3|Assign3|A3 Q6|
+|9-O30|Fetch/async-await/local-json|Fetch/async-await/local-json|Fetch/async-await/local-json|A2 Q3|
+|10-N06|Fetch/async-await/remote-json|Fetch/async-await/remote-json|Fetch/async-await/remote-json|L6 Q4|
+|11-N13|npm-external libs|npm-external libs|npm-external libs|L7|
+|12-N20|npm/json-server/get/post|npm/json-server/get/post|npm/json-server/get/post||
+|13-N27|npm/json-server/get/post|npm/json-server/get/post|npm/json-server/get/post|L8|
+|14-D04|Assign3|Assign3|Assign3|A3 Q5|
+|15-D11|Timers|Promises|Promises|Q6|
