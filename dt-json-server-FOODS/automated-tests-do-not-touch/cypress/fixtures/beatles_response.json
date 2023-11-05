@@ -1,0 +1,68 @@
+[
+    {
+        "ranking": "8.",
+        "album": "Abbey Road",
+        "artistName": "The Beatles",
+        "releaseDate": "26 September 1969",
+        "genres": "Pop Rock",
+        "descriptors": "melodic, warm, male vocals, bittersweet, summer, uplifting, love, romantic, medley, happy",
+        "averageRating": "4.25",
+        "numberRatings": "44,544",
+        "numberReviews": "961"
+    },
+    {
+        "ranking": "11.",
+        "album": "Revolver",
+        "artistName": "The Beatles",
+        "releaseDate": "5 August 1966",
+        "genres": "Pop Rock, Psychedelic Pop",
+        "descriptors": "psychedelic, melodic, male vocals, drugs, eclectic, warm, playful, quirky, happy, surreal",
+        "averageRating": "4.23",
+        "numberRatings": "43,178",
+        "numberReviews": "1160"
+    },
+    {
+        "ranking": "24.",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "artistName": "The Beatles",
+        "releaseDate": "1 June 1967",
+        "genres": "Psychedelic Pop, Pop Rock",
+        "descriptors": "psychedelic, playful, melodic, male vocals, warm, optimistic, eclectic, lush, uplifting, drugs",
+        "averageRating": "4.13",
+        "numberRatings": "43,576",
+        "numberReviews": "863"
+    },
+    {
+        "ranking": "31.",
+        "album": "The Beatles [White Album]",
+        "artistName": "The Beatles",
+        "releaseDate": "22 November 1968",
+        "genres": "Pop Rock, Rock",
+        "descriptors": "eclectic, melodic, playful, male vocals, quirky, energetic, introspective, love, sarcastic, rebellious",
+        "averageRating": "4.14",
+        "numberRatings": "35,545",
+        "numberReviews": "1085"
+    },
+    {
+        "ranking": "73.",
+        "album": "Rubber Soul",
+        "artistName": "The Beatles",
+        "releaseDate": "3 December 1965",
+        "genres": "Pop Rock",
+        "descriptors": "melodic, love, male vocals, bittersweet, romantic, mellow, autumn, melancholic, eclectic, happy",
+        "averageRating": "4.03",
+        "numberRatings": "33,508",
+        "numberReviews": "721"
+    },
+    {
+        "ranking": "79.",
+        "album": "Magical Mystery Tour",
+        "artistName": "The Beatles",
+        "releaseDate": "27 November 1967",
+        "genres": "Psychedelic Pop, Pop Rock",
+        "descriptors": "psychedelic, melodic, playful, surreal, male vocals, lush, summer, quirky, bittersweet, uplifting",
+        "averageRating": "4.06",
+        "numberRatings": "27,318",
+        "numberReviews": "560"
+    }
+]

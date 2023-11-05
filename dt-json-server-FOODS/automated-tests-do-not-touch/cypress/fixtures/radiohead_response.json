@@ -1,0 +1,68 @@
+[
+    {
+        "ranking": "1.",
+        "album": "OK Computer",
+        "artistName": "Radiohead",
+        "releaseDate": "16 June 1997",
+        "genres": "Alternative Rock, Art Rock",
+        "descriptors": "melancholic, anxious, futuristic, alienation, existential, male vocals, atmospheric, lonely, cold, introspective",
+        "averageRating": "4.23",
+        "numberRatings": "70,382",
+        "numberReviews": "1531"
+    },
+    {
+        "ranking": "4.",
+        "album": "Kid A",
+        "artistName": "Radiohead",
+        "releaseDate": "3 October 2000",
+        "genres": "Art Rock, Experimental Rock, Electronic",
+        "descriptors": "cold, melancholic, futuristic, atmospheric, anxious, cryptic, sombre, abstract, introspective, male vocals",
+        "averageRating": "4.21",
+        "numberRatings": "58,590",
+        "numberReviews": "734"
+    },
+    {
+        "ranking": "15.",
+        "album": "In Rainbows",
+        "artistName": "Radiohead",
+        "releaseDate": "10 October 2007",
+        "genres": "Art Rock, Alternative Rock",
+        "descriptors": "lush, male vocals, melancholic, introspective, bittersweet, warm, mellow, atmospheric, ethereal, longing",
+        "averageRating": "4.18",
+        "numberRatings": "48,484",
+        "numberReviews": "756"
+    },
+    {
+        "ranking": "187.",
+        "album": "The Bends",
+        "artistName": "Radiohead",
+        "releaseDate": "13 March 1995",
+        "genres": "Alternative Rock",
+        "descriptors": "melancholic, lonely, anxious, introspective, melodic, bittersweet, male vocals, existential, alienation, longing",
+        "averageRating": "3.83",
+        "numberRatings": "46,351",
+        "numberReviews": "789"
+    },
+    {
+        "ranking": "207.",
+        "album": "A Moon Shaped Pool",
+        "artistName": "Radiohead",
+        "releaseDate": "8 May 2016",
+        "genres": "Art Pop, Art Rock, Chamber Pop",
+        "descriptors": "atmospheric, melancholic, sombre, introspective, lush, mellow, male vocals, mysterious, soft, sad",
+        "averageRating": "3.89",
+        "numberRatings": "29,246",
+        "numberReviews": "279"
+    },
+    {
+        "ranking": "344.",
+        "album": "Amnesiac",
+        "artistName": "Radiohead",
+        "releaseDate": "4 June 2001",
+        "genres": "Art Rock, Experimental Rock",
+        "descriptors": "anxious, sombre, atmospheric, melancholic, cryptic, cold, abstract, mysterious, male vocals, dark",
+        "averageRating": "3.79",
+        "numberRatings": "37,932",
+        "numberReviews": "544"
+    }
+]

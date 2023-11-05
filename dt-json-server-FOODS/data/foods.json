@@ -1,0 +1,147 @@
+{
+  "favoriteFoods": [
+    {
+      "rank": "12",
+      "name": "Beef Tenderloin",
+      "category": "Meat",
+      "rating": "9.0",
+      "id": 1
+    },
+    {
+      "rank": "20",
+      "name": "Butternut Squash",
+      "category": "Vegetables",
+      "rating": "9.1",
+      "id": 2
+    },
+    {
+      "rank": "20",
+      "name": "Butternut Squash",
+      "category": "Vegetables",
+      "rating": "9.1",
+      "id": 3
+    }
+  ],
+  "allFoods": [
+    {
+      "rank": "1",
+      "name": "Orzo",
+      "category": "Starch",
+      "rating": "1.1"
+    },
+    {
+      "rank": "2",
+      "name": "Fruit",
+      "category": "Desert",
+      "rating": "1.1"
+    },
+    {
+      "rank": "3",
+      "name": "Beats",
+      "category": "Vegetables",
+      "rating": "8.1"
+    },
+    {
+      "rank": "4",
+      "name": "Potatoes",
+      "category": "Starch",
+      "rating": "7.1"
+    },
+    {
+      "rank": "5",
+      "name": "Cheese Cake",
+      "category": "Desert",
+      "rating": "5.1"
+    },
+    {
+      "rank": "6",
+      "name": "Ice Cream",
+      "category": "Desert",
+      "rating": "7.1"
+    },
+    {
+      "rank": "7",
+      "name": "Rice",
+      "category": "Starch",
+      "rating": "6.1"
+    },
+    {
+      "rank": "8",
+      "name": "Pasta",
+      "category": "Starch",
+      "rating": "8.1"
+    },
+    {
+      "rank": "9",
+      "name": "Carrots",
+      "category": "Vegetables",
+      "rating": "5.1"
+    },
+    {
+      "rank": "10",
+      "name": "Chocolate Cake",
+      "category": "Desert",
+      "rating": "6.1"
+    },
+    {
+      "rank": "11",
+      "name": "Tarts",
+      "category": "Desert",
+      "rating": "7.1"
+    },
+    {
+      "rank": "12",
+      "name": "Beef Tenderloin",
+      "category": "Meat",
+      "rating": "9.0"
+    },
+    {
+      "rank": "13",
+      "name": "Corn",
+      "category": "Vegetables",
+      "rating": "8.1"
+    },
+    {
+      "rank": "14",
+      "name": "Pie",
+      "category": "Desert",
+      "rating": "9.1"
+    },
+    {
+      "rank": "15",
+      "name": "Asparagus",
+      "category": "Vegetables",
+      "rating": "9.9"
+    },
+    {
+      "rank": "16",
+      "name": "Peas",
+      "category": "Vegetables",
+      "rating": "6.1"
+    },
+    {
+      "rank": "17",
+      "name": "Prime Rib",
+      "category": "Meat",
+      "rating": "9.4"
+    },
+    {
+      "rank": "18",
+      "name": "Acorn Squash",
+      "category": "Vegetables",
+      "rating": "7.1"
+    },
+    {
+      "rank": "19",
+      "name": "Pork Tenderloin",
+      "category": "Meat",
+      "rating": "6.1"
+    },
+    {
+      "rank": "20",
+      "name": "Butternut Squash",
+      "category": "Vegetables",
+      "rating": "9.1"
+    }
+  ]
+}

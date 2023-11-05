@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta charset="utf-8">
+  <title>Album Creator</title>
+  
+  <script type="module" src="js/main.js" defer></script>
+</head>
+<body class=" h-100  text-white bg-light">
+  <header data-bs-theme="dark">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4>About</h4>
+            <p class="text-body-secondary">An app to save your newly created album and album art, and to search popular albums.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4>Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://en.wikipedia.org/wiki/English_Carrier_pigeon" class="text-white">We only use Carrier Pigeons</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <strong>Album Creator</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="pt-3 mx-auto">
+    <div class="container">
+      <ul id="tab-navigation" class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Search Albums</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Favorite Albums</a>
+        </li>
+      </ul>
+    </div>
+    <div id="searched-tab" class="container album py-5 bg-body-tertiary">
+      <h5 class="text-dark">Search Library</h5>
+      <form id="form">
+        <div class="row">
+          <div class="col-lg-7 mb-1">
+            <input
+              name="query"
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              id="query-input"
+            >
+            <div class="invalid-feedback">
+              Invalid Name
+            </div>
+          </div>
+          <div class="col-lg-2 mb-1">
+            <button type="submit" class="btn btn-dark w-100">Search</button>
+          </div>
+      </form>
+      <h5 class="text-dark">Results</h5>
+      <div class="col-lg-9 mb-1">
+        <ul id="searched-list" class="list-group "> 
+        </ul>
+      </div>
+    </div>
+    <div id="favorites-tab" class="d-none container album py-5 bg-body-tertiary">
+      <h5 class="text-dark mb-1">Favorite Albums</h5>
+      <div class="col-lg-9 mb-1">
+        <ul id="favorites-list" class="list-group">
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
