@@ -25,12 +25,12 @@ tabNavigator.addEventListener("click", async (e)=> {
   let tabName = e.target.textContent
   let searched = tabNavigator.children[0].firstElementChild
   let favorites = tabNavigator.children[1].firstElementChild
-  if (tabName === "Search Albums") {
+  if (tabName === "Search Foods") {
     searched.classList.add("active")
     favorites.classList.remove("active")
     searchedTab.classList.remove("d-none")
     favoritesTab.classList.add("d-none")
-  } else if (tabName === "Favorite Albums") {
+  } else if (tabName === "Favorite Foods") {
     searched.classList.remove("active")
     favorites.classList.add("active")
     searchedTab.classList.add("d-none")
