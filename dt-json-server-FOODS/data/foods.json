@@ -1,27 +1,5 @@
 {
-  "favoriteFoods": [
-    {
-      "rank": "12",
-      "name": "Beef Tenderloin",
-      "category": "Meat",
-      "rating": "9.0",
-      "id": 5
-    },
-    {
-      "rank": "12",
-      "name": "Beef Tenderloin",
-      "category": "Meat",
-      "rating": "9.0",
-      "id": 6
-    },
-    {
-      "rank": "3",
-      "name": "Beats",
-      "category": "Vegetables",
-      "rating": "8.1",
-      "id": 7
-    }
-  ],
+  "favoriteFoods": [],
   "allFoods": [
     {
       "rank": "1",

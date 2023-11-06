@@ -7,7 +7,6 @@
   <meta charset="utf-8">
   <title>Demo: json-server</title>
   <link rel="icon" href="./img/favicon.png"  type="image/png">
-  
   <script type="module" src="js/main.js" defer></script>
 </head>
 <body class=" h-100  text-white bg-light">
@@ -33,7 +32,6 @@
       </ul>
     </div>
     <div id="searched-tab" class="container album py-5 bg-body-tertiary">
-      <h5 class="text-dark">Search Library</h5>
       <form id="form">
         <div class="row">
           <div class="col-lg-7 mb-1">
@@ -52,14 +50,14 @@
             <button type="submit" class="btn btn-dark w-100">Search</button>
           </div>
       </form>
-      <h5 class="text-dark">Results</h5>
+      <h5 id="add-alert" class="text-dark d-none">Added to Favorites</h5>
       <div class="col-lg-9 mb-1">
         <ul id="searched-list" class="list-group "> 
         </ul>
       </div>
     </div>
     <div id="favorites-tab" class="d-none container album py-5 bg-body-tertiary">
-      <h5 class="text-dark mb-1">Favorite Foods</h5>
+      <h5 id="delete-alert" class="text-dark d-none">Deleted from Favorites</h5>
       <div class="col-lg-9 mb-1">
         <ul id="favorites-list" class="list-group">
         </ul>

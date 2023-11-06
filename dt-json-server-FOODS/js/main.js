@@ -7,7 +7,7 @@ import {
   getFavoriteItems,
   deleteFavoriteItem,
 } from './network.js'
-import { renderData } from './ui.js'
+import { renderData, showAlert } from './ui.js'
 
 let tabNavigator = document.querySelector("#tab-navigation")
 let searchedTab = document.querySelector("#searched-tab")
@@ -16,6 +16,8 @@ let favoritesTab = document.querySelector("#favorites-tab")
 let form = document.querySelector("#form")
 let searchedList = document.querySelector("#searched-list")
 let favoritesList = document.querySelector("#favorites-list")
+let addAlert = document.querySelector("#add-alert")
+let deleteAlert = document.querySelector("#delete-alert")
 
 let searchedArray = []
 let favoritesArray = []
@@ -55,6 +57,7 @@ searchedList.addEventListener("click", async (e)=> {
     let selectedIndex = Array.from(searchedList.children).indexOf(listItem)
     let selectedItem = searchedArray[selectedIndex]
     let data = await saveFavoriteItem(selectedItem)
+    showAlert(addAlert, 1000)
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
   }
@@ -67,6 +70,7 @@ favoritesList.addEventListener("click", async (e)=> {
     let selectedIndex = Array.from(favoritesList.children).indexOf(listItem)
     let selectedItem = favoritesArray[selectedIndex]
     let data = await deleteFavoriteItem(selectedItem.id)
+    showAlert(deleteAlert, 1000)
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
   }

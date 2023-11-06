@@ -45,3 +45,16 @@ export const renderData = (type, myArray, list) => {
 		list.insertAdjacentHTML('beforeend', listItem)
 	})
 }
+
+export const showAlert = (element, delay) => {
+	try{
+		element.classList.remove('d-none')
+		const interval = setTimeout(() => {
+			console.warn(`timer timed out after ${delay/1000}`)
+			element.classList.add('d-none')
+		}, delay)
+	}
+	catch(error){
+		console.error(`catch error: ${error}`)
+	}
+}
