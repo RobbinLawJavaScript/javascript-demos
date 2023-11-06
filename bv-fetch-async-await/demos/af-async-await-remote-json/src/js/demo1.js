@@ -8,20 +8,26 @@ export function Demo() {
 	const remoteDataURLGood = "https://api.jsonbin.io/v3/b/6543d77654105e766fca83ff"
 	const remoteDataURLBad = "https://api.jsonbin.io/v3/b/6543d77654105e7"
 
-	let allData = []
-	let filteredData = []
+	let allDataArray = []
+	let filteredDataArray = []
 
 	const getData = async (URL) => {
+		console.log(`getData begin with URL: ${URL}`)
 		const res = await fetch(URL, {
 			method: 'GET',
 			headers: {
 				"Content-Type": "application/json"
 			},
-		});
-		if (!res.ok) {
+		})
+		console.log(`resolved response with URL: ${URL}`)
+		console.log(res)
+		if (res.ok == false) {
 			throw new Error('Bad URL or Server is Down')
 	 	}
 		const data = await res.json()
+		console.log(`resolved data with URL:', ${URL}`)
+		console.log(data)
+		console.log(`getData end with URL: ${URL}`)
 		return data
 	}
 
@@ -48,8 +54,11 @@ export function Demo() {
 		try{
 			console.log(`app try begin with URL ${URL}`)
 			const data = await getData(URL)
-			allData = data.record
-			renderData(allData, ui)
+			console.log(`data: ${JSON.stringify(data)}`)
+			// VERY IMPORTANT: We want the array value
+			// from the key called "record".
+			allDataArray = data.record
+			renderData(allDataArray, ui)
 		}
 		catch(error){
 			console.log(`app catch begin with URL ${URL}`)
@@ -58,8 +67,8 @@ export function Demo() {
 		}
 	}
 
-	app(remoteDataURLGood, ui)
-	//app(remoteDataURLBad, ui)
+	//app(remoteDataURLGood, ui)
+	app(remoteDataURLBad, ui)
 
 	let form = document.querySelector("#form")
 	form.addEventListener('submit', (e)=> {
@@ -67,28 +76,32 @@ export function Demo() {
 		let name = e.target.elements["name"].value.trim()
 		let rating = e.target.elements["rating"].value
 		console.log(`submit event; name: ${name}; rating: ${rating}`)
-		filteredData = allData
+		filteredDataArray = allDataArray
 		if (name) {
-			filteredData = filterOnName(name, filteredData)
+			filteredDataArray = filterOnName(name, filteredDataArray)
 		}
 		if (rating) {
-			filteredData = filterOnRating(rating, filteredData)
+			filteredDataArray = filterOnRating(rating, filteredDataArray)
 		}
-		renderData(filteredData, ui)
+		renderData(filteredDataArray, ui)
 	})
 
 	const filterOnName = (criteria, data)=> {
-		let filteredData = data.filter((item)=> {
+		let filteredDataArray = data.filter((item)=> {
+			// VERY IMPORTANT: We want a match for only
+			// the "name" key in each item of the data array.
 			return (item.name.toLowerCase().includes(criteria.toLowerCase()))
 		})
-		return filteredData
+		return filteredDataArray
 	}
 	
 	const filterOnRating = (criteria, data) => {
-		let filteredData = data.filter((item)=> {
+		let filteredDataArray = data.filter((item)=> {
+			// VERY IMPORTANT: We want a match for only
+			// the "rating" key in each item of the data array.
 			return (parseFloat(item.rating) >= parseFloat(criteria))
 		})
-		return filteredData
+		return filteredDataArray
 	}
 	
 }

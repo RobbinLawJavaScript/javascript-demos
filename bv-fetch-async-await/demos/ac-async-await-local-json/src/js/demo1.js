@@ -21,7 +21,7 @@ export function Demo() {
 		})
 		console.log(`resolved response with URL: ${URL}`)
 		console.log(res)
-		if (!res.ok) {
+		if (res.ok == false) {
 			throw new Error('Bad URL or Server is Down')
 	 	}
 		const data = await res.json()
