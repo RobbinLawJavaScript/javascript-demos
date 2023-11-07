@@ -1,1 +1,101 @@
-/* our custom CSS file*/ 
+:root {
+  --rem-font-size: 16px;
+  --body-width: 80rem;
+  --body-margin: 60px;
+  --bg-color: #b5b5b5;
+  --bg-color-success: seagreen;
+  --bg-color-error: salmon;
+  --text-color-error-success: #fff;
+  --box-shadow: 0px 0px 0px 0.25rem rgba(66, 70, 73, 0.5);
+  --border-color: #212529;
+  --background-color: #212529;
+}
+
+.no-vis {
+  visibility: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+.error-message, .error-message:hover {
+  background: var(--bg-color-error);
+  color: var(--text-color-error-success);
+}
+
+.success-message, .success-message:hover {
+  background: var(--bg-color-success);
+  color: var(--text-color-error-success);
+}
+
+button.link {
+background: none;
+border: none;
+padding: 0;
+}
+
+button.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.form-control:focus {
+    border-color: var(--border-color);
+    box-shadow:  var(--box-shadow);
+}
+	
+.form-select:focus {
+  border-color: var(--border-color);
+  box-shadow:  var(--box-shadow);
+}
+
+.dropdown-item:active {
+  color: #fff;
+  background-color: var(--background-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+.form-check-input:focus {
+  border-color: var(--border-color);
+  outline: 0;
+  box-shadow:  var(--box-shadow);
+}
+
+html {
+  font-size: var(--rem-font-size);
+}
+
+body {
+  margin-bottom: var(--body-margin);
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.error, .success {
+	color: var(--text-color-error-success);
+}
+
+.error {
+	background: var(--bg-color-error);
+}
+
+.success {
+	background: var(--bg-color-success);
+}
+
+a.delete {
+	color: red;
+}
+  
+a.edit {
+	color: green
+}

@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/cover.css'
+import '../css/main.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import { 
   searchAllData,
