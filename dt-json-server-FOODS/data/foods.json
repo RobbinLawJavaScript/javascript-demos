@@ -5,28 +5,7 @@
       "name": "Orzo",
       "category": "Starch",
       "rating": "1.1",
-      "id": 3
-    },
-    {
-      "rank": "13",
-      "name": "Corn",
-      "category": "Vegetables",
-      "rating": "8.1",
-      "id": 4
-    },
-    {
-      "rank": "20",
-      "name": "Butternut Squash",
-      "category": "Vegetables",
-      "rating": "9.1",
-      "id": 7
-    },
-    {
-      "rank": "3",
-      "name": "Beats",
-      "category": "Vegetables",
-      "rating": "8.1",
-      "id": 8
+      "id": 1
     }
   ],
   "allFoods": [
