@@ -13,6 +13,13 @@
       "category": "Desert",
       "rating": "1.1",
       "id": 2
+    },
+    {
+      "rank": "3",
+      "name": "Beats",
+      "category": "Vegetables",
+      "rating": "8.1",
+      "id": 3
     }
   ],
   "allFoods": [
