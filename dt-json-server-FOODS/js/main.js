@@ -6,8 +6,8 @@ import {
   searchAllData,
   searchFavoritesData,
   saveFavoriteItem,
-  getFavoriteItems,
   deleteFavoriteItem,
+  getFavoriteItems,
 } from './network.js'
 import { renderData, showAlert } from './ui.js'
 
@@ -18,8 +18,6 @@ let favoritesTab = document.querySelector("#favorites-tab")
 let form = document.querySelector("#form")
 let searchedList = document.querySelector("#searched-list")
 let favoritesList = document.querySelector("#favorites-list")
-let addAlert = document.querySelector("#add-alert")
-let deleteAlert = document.querySelector("#delete-alert")
 
 let searchedArray = []
 let favoritesArray = []
@@ -65,10 +63,10 @@ searchedList.addEventListener("click", async (e)=> {
     console.log(`listItem.children[1]:`)
     console.log(listItem.children[1])
     if(favoritesArray.length != 0){
-      showAlert(listItem.children[1], 'error', 'item already in favorites', 1000)
+      showAlert(listItem.children[1], 'error', 'already in favorites', 1000)
     }else{
-      let data = await saveFavoriteItem(selectedItem)
-      showAlert(listItem.children[1], 'success', 'item added to favorites', 1000)
+      await saveFavoriteItem(selectedItem)
+      showAlert(listItem.children[1], 'success', 'added to favorites', 1000)
     }
     
     favoritesArray = await getFavoriteItems()
@@ -82,7 +80,7 @@ favoritesList.addEventListener("click", async (e)=> {
     let listItem = e.target.parentNode
     let selectedIndex = Array.from(favoritesList.children).indexOf(listItem)
     let selectedItem = favoritesArray[selectedIndex]
-    let data = await deleteFavoriteItem(selectedItem.id)
+    await deleteFavoriteItem(selectedItem.id)
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
   }
