@@ -67,8 +67,8 @@ export function Demo() {
 		}
 	}
 
-	//app(remoteDataURLGood, ui)
-	app(remoteDataURLBad, ui)
+	app(remoteDataURLGood, ui)
+	//app(remoteDataURLBad, ui)
 
 	let form = document.querySelector("#form")
 	form.addEventListener('submit', (e)=> {
