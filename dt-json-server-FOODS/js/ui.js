@@ -9,6 +9,8 @@ const createSearchedItem = (data) => {
 			</div>
 			<span>${data.category}</span>
 		</div>
+		<div class="mx-4 btn error-or-success-text-color no-vis">
+    </div>
 		<button type="button" class="btn btn-dark add-button">Add to Favorites</button>
 	</li>
 	`
@@ -46,13 +48,14 @@ export const renderData = (type, myArray, list) => {
 	})
 }
 
-export const showAlert = (element, delay) => {
+export const showAlert = (element, type, message, delay) => {
 	try{
-		element.classList.add('success')
+		element.classList.add(type)
+		element.innerText = message
 		element.classList.remove('no-vis')
 		const interval = setTimeout(() => {
-			console.warn(`timer timed out after ${delay/1000}`)
 			element.classList.add('no-vis')
+			element.classList.remove(type)
 		}, delay)
 	}
 	catch(error){

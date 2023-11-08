@@ -80,7 +80,7 @@ body {
 	padding: 0;
 }
 
-.error, .success {
+.error-or-success-text-color {
 	color: var(--text-color-error-success);
 }
 
@@ -90,12 +90,4 @@ body {
 
 .success {
 	background: var(--bg-color-success);
-}
-
-a.delete {
-	color: red;
-}
-  
-a.edit {
-	color: green
 }

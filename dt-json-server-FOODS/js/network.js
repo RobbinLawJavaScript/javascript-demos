@@ -11,6 +11,12 @@ export const searchAllData = async (query) => {
   return data
 }
 
+export const searchFavoritesData = async (query) => {
+  let url = `http://localhost:5000/favoriteFoods?name=${query}`
+  const data = await getData(url)
+  return data
+}
+
 export const saveFavoriteItem = async (item) => {
   let url = `http://localhost:5000/favoriteFoods`
   const data = await postData(url, item)

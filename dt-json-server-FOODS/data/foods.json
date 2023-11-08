@@ -1,25 +1,11 @@
 {
   "favoriteFoods": [
     {
-      "rank": "3",
-      "name": "Beats",
-      "category": "Vegetables",
-      "rating": "8.1",
+      "rank": "2",
+      "name": "Fruit",
+      "category": "Desert",
+      "rating": "1.1",
       "id": 1
-    },
-    {
-      "rank": "17",
-      "name": "Prime Rib",
-      "category": "Meat",
-      "rating": "9.4",
-      "id": 25
-    },
-    {
-      "rank": "12",
-      "name": "Beef Tenderloin",
-      "category": "Meat",
-      "rating": "9.0",
-      "id": 26
     }
   ],
   "allFoods": [

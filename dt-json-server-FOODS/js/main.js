@@ -4,6 +4,7 @@ import '../css/main.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import { 
   searchAllData,
+  searchFavoritesData,
   saveFavoriteItem,
   getFavoriteItems,
   deleteFavoriteItem,
@@ -55,10 +56,21 @@ form.addEventListener("submit", async (e)=> {
 searchedList.addEventListener("click", async (e)=> {
   if (e.target.classList.contains("add-button")) {
     let listItem = e.target.parentNode
+    console.log(`listItem:`)
+    console.log(listItem)
     let selectedIndex = Array.from(searchedList.children).indexOf(listItem)
     let selectedItem = searchedArray[selectedIndex]
-    let data = await saveFavoriteItem(selectedItem)
-    showAlert(addAlert, 1000)
+    console.log(`selected name: ${selectedItem.name}`)
+    favoritesArray = await searchFavoritesData(selectedItem.name)
+    console.log(`listItem.children[1]:`)
+    console.log(listItem.children[1])
+    if(favoritesArray.length != 0){
+      showAlert(listItem.children[1], 'error', 'item already in favorites', 1000)
+    }else{
+      let data = await saveFavoriteItem(selectedItem)
+      showAlert(listItem.children[1], 'success', 'item added to favorites', 1000)
+    }
+    
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
   }
@@ -71,7 +83,6 @@ favoritesList.addEventListener("click", async (e)=> {
     let selectedIndex = Array.from(favoritesList.children).indexOf(listItem)
     let selectedItem = favoritesArray[selectedIndex]
     let data = await deleteFavoriteItem(selectedItem.id)
-    showAlert(deleteAlert, 1000)
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
   }
