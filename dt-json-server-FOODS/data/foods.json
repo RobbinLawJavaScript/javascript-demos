@@ -6,6 +6,13 @@
       "category": "Starch",
       "rating": "1.1",
       "id": 1
+    },
+    {
+      "rank": "2",
+      "name": "Fruit",
+      "category": "Desert",
+      "rating": "1.1",
+      "id": 2
     }
   ],
   "allFoods": [
