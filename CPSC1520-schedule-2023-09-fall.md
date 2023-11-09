@@ -19,14 +19,14 @@
 |L4 Forms with Validation/Decisions|GitHub/Netlify/Moodle|Week 6|5
 |A1 DOM Access/Functions/Events/Decisions/Forms|GitHub/Netlify/Moodle|Week 7|10
 |L5 Loops/Arrays|GitHub/Netlify/Moodle|Week 8|5
+|A2 Loops/Arrays/Fetch-API/local-json|GitHub/Netlify/Moodle|Week9|10
 |Q3 Loops/Arrays|Moodle|Week 9|5
-|L6 Fetch-API/json/.forEach()/.map()|GitHub/Netlify/Moodle|Week 11|5
-|Q4 Fetch-API|Moodle|Week 11|5
-|A2 Loops/Arrays/Fetch-API/json|GitHub/Netlify/Moodle|Week 12|10
-|L7 npm/json/packages|GitHub/Netlify/Moodle|Week 13|5
+|L6 Fetch-API/remote-json|GitHub/Netlify/Moodle|Week 10|5
+|Q4 Fetch-API|Moodle|Week 10|5
+|L7 npm/json/packages|GitHub/Netlify/Moodle|Week 11|5
+|A3 npm/fetch-api/json/packages|GitHub/Netlify/Moodle|Week 13|10
 |L8 Classes/Objects|GitHub/Netlify/Moodle|Week 14|5
 |Q5 npm/fetch-api/json/packages|Moodle|Week 14|5
-|A3 npm/fetch-api/json/packages|GitHub/Netlify/Moodle|Week 15|10
 |Q6 Classes/Objects/DOM API/Timers|Moodle|Week 15|5
 |Total|||100|
 
@@ -45,7 +45,7 @@
 |9-O30|Fetch/async-await/local-json|Fetch/async-await/local-json|Fetch/async-await/local-json|A2 Q3|
 |10-N06|Fetch/async-await/remote-json|Fetch/async-await/remote-json|Fetch/async-await/remote-json|L6 Q4|
 |11-N13|npm-external libs|npm-external libs|npm-external libs|L7|
-|12-N20|npm/json-server/get/post|npm/json-server/get/post|npm/json-server/get/post||
-|13-N27|npm/json-server/get/post|npm/json-server/get/post|npm/json-server/get/post|L8|
-|14-D04|Assign3|Assign3|Assign3|A3 Q5|
-|15-D11|Timers|Promises|Promises|Q6|
+|12-N20|npm/json-server/timers|npm/json-server/timers|npm/json-server/timers||
+|13-N27|npm/json-server/timers|npm/json-server/timers|npm/json-server/timers|A3|
+|14-D04|OOP|OOP|OOP|L8 Q5|
+|15-D11|Promises|Promises|Promises|Q6|
