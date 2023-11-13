@@ -1,4 +1,7 @@
 {
+  "//":[
+    "https://www.npmjs.com/package/chart.js"
+  ],
   "name": "npm-fundamentals-start",
   "version": "1.0.0",
   "description": "",

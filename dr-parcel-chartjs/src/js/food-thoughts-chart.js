@@ -21,7 +21,7 @@ Chart.register(DoughnutController,
   Tooltip,
   SubTitle)
 
-const renderFoodThoughtsChart= () => {
+export const renderFoodThoughtsChart= () => {
   // get the chart element
   const chartElement = document.querySelector('#food-thoughts-chart');
 
@@ -53,5 +53,3 @@ const renderFoodThoughtsChart= () => {
 
   const myChart = new Chart(chartElement, config)
 }
-
-export {renderFoodThoughtsChart}

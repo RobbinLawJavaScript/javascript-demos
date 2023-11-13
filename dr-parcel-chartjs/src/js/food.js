@@ -31,7 +31,7 @@ const FOOD_TIMES = {
   '12am':1,
 }
 
-const getFoodThoughtsKeys = () => {
+export const getFoodThoughtsKeys = () => {
   const keys = Object.keys(FOOD_THOUGHTS);
   console.log (`Food Thought Keys = ${keys}`);
   console.log (`typeof = ${typeof(keys)}`);
@@ -39,31 +39,24 @@ const getFoodThoughtsKeys = () => {
 
 }
 
-const getFoodThoughtsValues = () => {
+export const getFoodThoughtsValues = () => {
   const values = Object.values(FOOD_THOUGHTS);
   console.log (`Food Thought values = ${values}`);
   console.log (`typeof = ${typeof(values)}`);
   return values;
 }
 
-const getFoodTimesKeys = () => {
+export const getFoodTimesKeys = () => {
   const keys = Object.keys(FOOD_TIMES);
   console.log (`Food Times Keys = ${keys}`);
   console.log (`typeof = ${typeof(keys)}`);
   return keys;
 }
 
-const getFoodTimesValues = () => {
+export const getFoodTimesValues = () => {
   const values = Object.values(FOOD_TIMES);
   //const values = [5,3,8,9,10,2];
   console.log (`Food Times values = ${values}`);
   console.log (`typeof = ${typeof(values)}`);
   return values;
 }
-
-
-
-
-// this is how you make your functions and other pieces available
-// to other files.
-export {getFoodThoughtsKeys, getFoodThoughtsValues, getFoodTimesKeys, getFoodTimesValues}

@@ -1,3 +1,6 @@
+
+// https://www.npmjs.com/package/chart.js
+
 // this is our main file because we've imported it in our 
 
 // import our bootstrap css
