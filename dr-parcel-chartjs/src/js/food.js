@@ -32,6 +32,7 @@ const FOOD_TIMES = {
 }
 
 export const getFoodThoughtsKeys = () => {
+  // Returns an array of keys as strings from a literal object.
   const keys = Object.keys(FOOD_THOUGHTS);
   console.log (`Food Thought Keys = ${keys}`);
   console.log (`typeof = ${typeof(keys)}`);
@@ -40,6 +41,7 @@ export const getFoodThoughtsKeys = () => {
 }
 
 export const getFoodThoughtsValues = () => {
+  // Returns an array of values as numbers from a literal object.
   const values = Object.values(FOOD_THOUGHTS);
   console.log (`Food Thought values = ${values}`);
   console.log (`typeof = ${typeof(values)}`);
