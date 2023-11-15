@@ -40,7 +40,7 @@ const renderFoodTimesChart = () => {
       data: getFoodTimesValues(),
       fill: false,
       borderColor: 'rgb(75, 192, 192)',
-      tension: 0
+      tension: 0.1
     }]
   };
 

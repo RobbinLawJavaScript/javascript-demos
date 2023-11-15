@@ -52,4 +52,5 @@ export const renderFoodThoughtsChart= () => {
   };
 
   const myChart = new Chart(chartElement, config)
+  console.log(myChart)
 }
