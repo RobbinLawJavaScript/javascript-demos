@@ -1,5 +1,27 @@
 {
-  "favoriteFoods": [],
+  "favoriteFoods": [
+    {
+      "rank": "1",
+      "name": "Orzo",
+      "category": "Starch",
+      "rating": "1.1",
+      "id": 1
+    },
+    {
+      "rank": "4",
+      "name": "Potatoes",
+      "category": "Starch",
+      "rating": "7.1",
+      "id": 3
+    },
+    {
+      "rank": "3",
+      "name": "Beats",
+      "category": "Vegetables",
+      "rating": "8.1",
+      "id": 4
+    }
+  ],
   "allFoods": [
     {
       "rank": "1",
