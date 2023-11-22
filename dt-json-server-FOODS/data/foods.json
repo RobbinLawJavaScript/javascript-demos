@@ -1,13 +1,6 @@
 {
   "favoriteFoods": [
     {
-      "rank": "1",
-      "name": "Orzo",
-      "category": "Starch",
-      "rating": "1.1",
-      "id": 1
-    },
-    {
       "rank": "4",
       "name": "Potatoes",
       "category": "Starch",
@@ -20,6 +13,20 @@
       "category": "Vegetables",
       "rating": "8.1",
       "id": 4
+    },
+    {
+      "rank": "13",
+      "name": "Corn",
+      "category": "Vegetables",
+      "rating": "8.1",
+      "id": 5
+    },
+    {
+      "rank": "1",
+      "name": "Orzo",
+      "category": "Starch",
+      "rating": "1.1",
+      "id": 6
     }
   ],
   "allFoods": [

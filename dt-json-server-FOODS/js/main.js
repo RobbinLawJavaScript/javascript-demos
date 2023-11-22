@@ -27,6 +27,10 @@ tabNavigator.addEventListener("click", async (e)=> {
   let tabName = e.target.textContent
   let searched = tabNavigator.children[0].firstElementChild
   let favorites = tabNavigator.children[1].firstElementChild
+  console.log(`searched=`)
+  console.log(searched)
+  console.log(`favorites=`)
+  console.log(favorites)
   if (tabName === "Search Foods") {
     searched.classList.add("active")
     favorites.classList.remove("active")
