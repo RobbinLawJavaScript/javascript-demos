@@ -21,12 +21,12 @@
 |L5 Loops/Arrays|GitHub/Netlify/Moodle|Week 8|5
 |A2 Loops/Arrays/Fetch-API/local-json|GitHub/Netlify/Moodle|Week9|10
 |Q3 Loops/Arrays|Moodle|Week 9|5
-|L6 Fetch-API/remote-json|GitHub/Netlify/Moodle|Week 10|5
-|Q4 Fetch-API|Moodle|Week 10|5
-|L7 npm/json/packages|GitHub/Netlify/Moodle|Week 11|5
-|A3 npm/fetch-api/json/packages|GitHub/Netlify/Moodle|Week 13|10
-|L8 Classes/Objects|GitHub/Netlify/Moodle|Week 14|5
+|L6 Fetch-API/remote-json|GitHub/Netlify/Moodle|Week 11|5
+|Q4 Fetch-API|Moodle|Week 11|5
+|L7 npm/json/packages|GitHub/Netlify/Moodle|Week 12|5
+|A3 npm/fetch-api/json/packages|GitHub/Netlify/Moodle|Week 14|10
 |Q5 npm/fetch-api/json/packages|Moodle|Week 14|5
+|L8 Classes/Objects|GitHub/Netlify/Moodle|Week 15|5
 |Q6 Classes/Objects/DOM API/Timers|Moodle|Week 15|5
 |Total|||100|
 
@@ -43,9 +43,9 @@
 |7-O16|Forms|Forms|Forms|A1|
 |8-O23|Loops-NodeLists-Arrays|Loops-NodeLists-Arrays|Loops-NodeLists-Arrays|L5|
 |9-O30|Fetch/async-await/local-json|Fetch/async-await/local-json|Fetch/async-await/local-json|A2 Q3|
-|10-N06|Fetch/async-await/remote-json|Fetch/async-await/remote-json|Fetch/async-await/remote-json|L6 Q4|
-|11-N13|npm-external libs|npm-external libs|npm-external libs|L7|
-|12-N20|npm/json-server/timers|npm/json-server/timers|npm/json-server/timers||
-|13-N27|npm/json-server/timers|npm/json-server/timers|npm/json-server/timers|A3|
-|14-D04|OOP|OOP|OOP|L8 Q5|
-|15-D11|Promises|Promises|Promises|Q6|
+|10-N06|Fetch/async-await/remote-json|Fetch/async-await/remote-json|Fetch/async-await/remote-json||
+|11-N13|npm-external libs|npm-external libs|npm-external libs|L6 Q4|
+|12-N20|npm/json-server/timers|npm/json-server/timers|npm/json-server/timers|L7|
+|13-N27|npm/json-server/timers|npm/json-server/timers|npm/json-server/timers||
+|14-D04|Classes/Objects|Classes/Objects|Classes/Objects|A3 Q5|
+|15-D11|Classes/Objects|Classes/Objects|Classes/Objects|L8 Q6|
