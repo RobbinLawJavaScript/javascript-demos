@@ -60,19 +60,18 @@ searchedList.addEventListener("click", async (e)=> {
     let listItem = e.target.parentNode
     console.log(`listItem:`)
     console.log(listItem)
+    console.log(`listItem.children[1]:`)
+    console.log(listItem.children[1])
     let selectedIndex = Array.from(searchedList.children).indexOf(listItem)
     let selectedItem = searchedArray[selectedIndex]
     console.log(`selected name: ${selectedItem.name}`)
     favoritesArray = await searchFavoritesData(selectedItem.name)
-    console.log(`listItem.children[1]:`)
-    console.log(listItem.children[1])
     if(favoritesArray.length != 0){
       showAlert(listItem.children[1], 'error', 'already in favorites', 1000)
     }else{
       await saveFavoriteItem(selectedItem)
       showAlert(listItem.children[1], 'success', 'added to favorites', 1000)
     }
-    
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
   }

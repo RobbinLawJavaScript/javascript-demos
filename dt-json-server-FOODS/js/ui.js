@@ -56,6 +56,7 @@ export const showAlert = (element, type, message, delay) => {
 		const interval = setTimeout(() => {
 			element.classList.add('no-vis')
 			element.classList.remove(type)
+			element.innerText = ''
 		}, delay)
 	}
 	catch(error){
