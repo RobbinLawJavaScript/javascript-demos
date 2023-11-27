@@ -1,13 +1,5 @@
 {
-  "favoriteFoods": [
-    {
-      "rank": "2",
-      "name": "Fruit",
-      "category": "Desert",
-      "rating": "1.1",
-      "id": 5
-    }
-  ],
+  "favoriteFoods": [],
   "allFoods": [
     {
       "rank": "1",

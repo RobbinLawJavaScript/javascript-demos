@@ -51,6 +51,8 @@ form.addEventListener("submit", async (e)=> {
   e.preventDefault()
   let query = e.target.elements["query"].value
   searchedArray = await searchAllData(query)
+  console.log(`returned data`)
+  console.log(searchedArray)
   renderData('searched', searchedArray, searchedList)
 })
 
@@ -67,10 +69,10 @@ searchedList.addEventListener("click", async (e)=> {
     console.log(`selected name: ${selectedItem.name}`)
     favoritesArray = await searchFavoritesData(selectedItem.name)
     if(favoritesArray.length != 0){
-      showAlert(listItem.children[1], 'error', 'already in favorites', 1000)
+      showAlert(listItem.children[1], 'error', 'already in favorites', 10000)
     }else{
       await saveFavoriteItem(selectedItem)
-      showAlert(listItem.children[1], 'success', 'added to favorites', 1000)
+      showAlert(listItem.children[1], 'success', 'added to favorites', 10000)
     }
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
