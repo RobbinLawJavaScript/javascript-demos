@@ -57,7 +57,10 @@ form.addEventListener("submit", async (e)=> {
 })
 
 // part 3: add item to favorites
-searchedList.addEventListener("click", async (e)=> {
+searchedList.addEventListener("click", async (e) => {
+  console.log('add item to favorites click event handler')
+  console.log('searchedList children')
+  console.log(searchedList.children)
   if (e.target.classList.contains("add-button")) {
     let listItem = e.target.parentNode
     console.log(`listItem:`)
@@ -65,14 +68,15 @@ searchedList.addEventListener("click", async (e)=> {
     console.log(`listItem.children[1]:`)
     console.log(listItem.children[1])
     let selectedIndex = Array.from(searchedList.children).indexOf(listItem)
+    console.log(`selectedIndex: ${selectedIndex}`)
     let selectedItem = searchedArray[selectedIndex]
     console.log(`selected name: ${selectedItem.name}`)
     favoritesArray = await searchFavoritesData(selectedItem.name)
     if(favoritesArray.length != 0){
-      showAlert(listItem.children[1], 'error', 'already in favorites', 10000)
+      showAlert(listItem.children[1], 'error', 'already in favorites', 2000)
     }else{
       await saveFavoriteItem(selectedItem)
-      showAlert(listItem.children[1], 'success', 'added to favorites', 10000)
+      showAlert(listItem.children[1], 'success', 'added to favorites', 2000)
     }
     favoritesArray = await getFavoriteItems()
     renderData('favorites', favoritesArray, favoritesList)
