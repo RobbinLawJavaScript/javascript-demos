@@ -1,0 +1,25 @@
+{
+  "//": 
+  [
+    "https://www.npmjs.com/package/parcel",
+    "https://www.npmjs.com/package/bootstrap",
+    "https://www.npmjs.com/package/validator"
+  ],
+  "name": "lab7",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "validator": "^13.7.0"
+  }
+}
