@@ -13,7 +13,7 @@ export class Car {
 		`
 		<img class="car" src=${this.image}>
 		<div>${this.name}</div>
-		`;
+		`
 		car.innerHTML = carDetails;
 		return car;
 	}
