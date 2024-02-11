@@ -49,6 +49,7 @@ val2 = 6;
 sum = val1 + val2;
 //console.log(sum);
 //console.log(typeof sum);
+product = val1 * val2
 
 // Here we convert the string addition into a number.
 sum = Number(val1 + val2);
